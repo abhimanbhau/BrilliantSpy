@@ -13,7 +13,7 @@
     <FileAlignment>512</FileAlignment>
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
-    <PlatformTarget>AnyCPU</PlatformTarget>
+    <PlatformTarget>x86</PlatformTarget>
     <DebugSymbols>true</DebugSymbols>
     <DebugType>full</DebugType>
     <Optimize>false</Optimize>
@@ -56,6 +56,7 @@
     <Compile Include="Properties\Resources.Designer.cs">
       <AutoGen>True</AutoGen>
       <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
     </Compile>
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>
@@ -66,6 +67,69 @@
       <DependentUpon>Settings.settings</DependentUpon>
       <DesignTimeSharedInput>True</DesignTimeSharedInput>
     </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\BG.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\button1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\IMG_0001.JPG" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\NO_Image.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\SplashBG.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\siren04.wav" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Aforge.Net_License.txt" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\kellermanLicense.txt" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\about.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\camera.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\clear.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\down.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\exit %283%29.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\exit.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\folder.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\folder1.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\OK.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\pictures.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\settings.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\up.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\vlc.ico" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 

@@ -1,0 +1,68 @@
+Kellerman Software END-USER LICENSE AGREEMENT FOR .NET ENCRYPTION LIBRARY
+
+ 
+
+Please read carefully before installing this software package. Your installation of the package indicates your acceptance of the terms and conditions of this license agreement. Contact Kellerman Software if you have any questions about this license.
+
+ 
+
+The Software (libraries and object code) is proprietary to Kellerman Software and is protected by Federal Copyright Law. Kellerman Software retains the title to and ownership of the Software. 
+
+ 
+
+This End-User License Agreement ("EULA") is a legally enforceable contract between you ("Customer" or "you") and Kellerman Software a Sole Proprietorship of Ohio ("Kellerman Software").  By clicking I agree, installing, or otherwise using any part of the Software, you agree to be bound by the terms of this EULA.  If you do not agree to the terms of this EULA, do not install the software. 
+
+ 
+
+1.       GRANT OF NON-EXCLUSIVE, LIMITED LICENSE
+
+The Software and related documentation is licensed, not sold. Any rights not clearly and expressly granted to you under this EULA are reserved to Kellerman Software. Provided you have paid all applicable fees, registered the Software with Kellerman Software, and otherwise complied with this EULA, Kellerman Software grants you the following personal, non-exclusive, non-transferable, limited rights:
+
+a.       The Software is licensed per software application developer ("developer"). Kellerman Software hereby grants you a nonexclusive License authorizing one, and only one, developer at a time to use the Software for development purposes per license purchased. You are also permitted to distribute applications containing the compiled files on a royalty free basis. The use of this License does not create any kind of partnership or joint ownership interest in your proprietary applications. Please contact Kellerman Software if you require additional Licenses.  Use of the Product by more than one developer at a time terminates, without notification, this License and the right to use the Product.  You may copy the Software for archival purposes, provided the copy contains all of the original Software’s proprietary notices.
+
+b.       If a Site License of the Software has been purchased; all developers at a single physical postal address may use the Software.  
+
+c.       If an Enterprise License of the Software has been purchased; all developers in all locations of a Single Company may use the Software.
+
+d.       If a license to the source code for the Software is purchased, you may modify and compile the source code in your application.  No portion of the source code in an un-compiled form may be distributed even if modifications have been made.
+
+e.       You may not distribute, rent, sub-license or otherwise make available to others the software or documentation or copies thereof, except as expressly permitted in this License without prior written consent from Kellerman Software. In the case of an authorized transfer, the transferee must agree to be bound by the terms and conditions of this License Agreement.
+
+f.        You may not decompile, disassemble, extract or otherwise reverse engineer any of the Software. 
+
+ 
+
+2.       WARRANTY, REMEDY, AND LIMITATIONS
+
+a.       Kellerman Software WARRANTS THAT THE SOFTWARE WILL PERFORM IN SUBSTANTIAL ACCORDANCE WITH THE ACCOMPANYING USER MANUAL FOR 30 DAYS FOLLOWING YOUR RECEIPT OF THE SOFTWARE.  THIS IS YOUR ONLY WARRANTY.
+
+b.       Kellerman Software’ SOLE OBLIGATION AND YOUR EXCLUSIVE REMEDY FOR ANY WARRANTY FAILURE IS TO FOLLOW Kellerman Software’ REGULAR BUSINESS PRACTICES FOR THE CORRECTION, REPLACEMENT OR REMEDY OF A DEFECT.
+
+c.       UNLESS OTHERWISE STATED ABOVE, THE SOFTWARE AND THE DOCUMENTATION ARE PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND EITHER EXPRESS OR IMPLIED, INCLUDING BUT NOT LIMITED TO THE IMPLIED WARRANTIES OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  THE ENTIRE RISK ARISING OUT OF THE USE OR PERFORMANCE OF THIS SOFTWARE REMAINS WITH YOU.  IN NO EVENT WILL Kellerman Software OR ANY OF ITS SUPPLIERS BE LIABLE FOR ANY INCIDENTAL, CONSEQUENTIAL, INDIRECT OR OTHER SPECIAL DAMAGES, INCLUDING LOST DATA, LOST REVENUES OR LOST PROFITS, EVEN IF THEY HAVE BEEN ADVISED OF THE POSSIBILITY OF SUCH DAMAGES.  Kellerman Software RESERVES THE RIGHT TO MODIFY THIS DOCUMENT AT ANY TIME WITHOUT OBLIGATION TO NOTIFY ANYONE.   IN NO EVENT SHALL Kellerman Software OR ITS SUPPLIERS’ LIABILITY UNDER THIS AGREEMENT EXCEED THE SUM OF ANY AMOUNTS PAID HEREUNDER BY YOU TO Kellerman Software OR THE SUPPLIER.
+
+ 
+
+3.       TERMINATION
+
+The license will terminate automatically if you fail to comply with the terms, conditions, or limitations contained in this EULA, including the payment of applicable license or other fees.  You may terminate this EULA at any time (with no obligation on the part of Kellerman Software) by destroying all copies of the Software, deleting any copies of the Software from your hard drives, ceasing all use of the Software and documentation; and providing satisfactory proof to Kellerman Software that you have done so.  The disclaimer of warranty and limitations on liability contained in Section 2 shall continue in force even after your rights to use the Software are terminated.
+
+ 
+
+4.       DEMO OR EVALUATION VERSIONS
+
+If Kellerman Software designates the Software as a "Demo" or "Evaluation" version, you may use the Software solely for evaluation purposes for a 30-day period.  Use of the Software and/or documentation beyond the 30-day evaluation period violates Kellerman Software’s rights, as described above, including but not limited to Kellerman Software’ rights under the United States Copyright Act. You acknowledge that any Demo or Evaluation version is merely a technology demonstration that may not be at the level of performance or compatibility of generally available Kellerman Software’s products. Demo or Evaluation versions are provided strictly on an "as is" basis and are subject to Section 2 above.
+
+ 
+
+5.       UPGRADES
+
+If the Software is designated by Kellerman Software as an Upgrade product, you may only use the Software if you are also currently a licensed user of the base product to which the Upgrade applies.  Unless the Kellerman Software documentation for an Upgrade specifically provides, you shall not separate upgrade products from base products, nor transfer them separately.  Kellerman Software reserves the sole and exclusive right to set its policies and prices regarding updates, upgrades and enhancements.  All other terms of this EULA apply with equal force to any such Upgrades.
+
+ 
+
+6.       GOVERNING LAW; VENUE 
+
+This EULA shall be governed by and construed under the substantive laws applicable to the State of Ohio, United States of America.  If any provision of this EULA is held to be unenforceable, the remaining provisions shall remain in full force and effect.
+
+The undersigned agrees that this EULA is entered into at Columbus, Ohio, and further agrees that any legal or equitable dispute brought or arising under this Agreement shall be brought in the State and Federal courts for Columbus, Ohio. This Agreement constitutes the entire Agreement between the undersigned and Kellerman Software about the Software and documentation, and shall not be modified except in a writing signed by Kellerman Software.
+
