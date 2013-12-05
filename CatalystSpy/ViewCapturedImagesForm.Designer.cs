@@ -1,6 +1,6 @@
 ﻿namespace CatalystSpy
 {
-    partial class ViewHistoryForm
+    partial class ViewCapturedImagesForm
     {
         /// <summary>
         /// Required designer variable.

@@ -14,7 +14,13 @@ namespace CatalystSpy
         {
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
-            Application.Run(new MainWindowForm());
+            LoginPageForm form = new LoginPageForm();
+            Application.Run(form);
+            if (form.getLoginStatus())
+            {
+                Application.Run(new MainWindowForm());
+            }
+
         }
     }
 }

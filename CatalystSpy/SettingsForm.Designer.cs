@@ -1,6 +1,6 @@
 ﻿namespace CatalystSpy
 {
-    partial class SettingsFormWindow
+    partial class SettingsForm
     {
         /// <summary>
         /// Required designer variable.

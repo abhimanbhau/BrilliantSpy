@@ -54,15 +54,13 @@
             this.videoSourcePlayer = new AForge.Controls.VideoSourcePlayer();
             this.btnStopAlarm = new System.Windows.Forms.Button();
             this.btnStopProcessing = new System.Windows.Forms.Button();
-            this.button1 = new System.Windows.Forms.Button();
-            this.button2 = new System.Windows.Forms.Button();
             this.lblDetectorLevel = new System.Windows.Forms.Label();
             this.label3 = new System.Windows.Forms.Label();
             this.chbEnableMotionDisplay = new System.Windows.Forms.CheckBox();
             this.txtCurrentMotion = new System.Windows.Forms.TextBox();
             this.MotionLabel = new System.Windows.Forms.Label();
             this.label1 = new System.Windows.Forms.Label();
-            this.StatusPanel = new AForge.Controls.PictureBox();
+            this.pcbStatusPanel = new AForge.Controls.PictureBox();
             this.btnClearHistoryBox = new System.Windows.Forms.Button();
             this.btnSaveMotionHistory = new System.Windows.Forms.Button();
             this.btnRefreshDetectorLevel = new System.Windows.Forms.Button();
@@ -71,7 +69,7 @@
             this.lblWarning = new System.Windows.Forms.Label();
             this.openFileDialog = new System.Windows.Forms.OpenFileDialog();
             this.MainMenuStrip.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.StatusPanel)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pcbStatusPanel)).BeginInit();
             this.SuspendLayout();
             // 
             // MainMenuStrip
@@ -283,6 +281,7 @@
             this.btnStopAlarm.TabIndex = 18;
             this.btnStopAlarm.Text = "STOP ALARM";
             this.btnStopAlarm.UseVisualStyleBackColor = true;
+            this.btnStopAlarm.Click += new System.EventHandler(this.btnStopAlarm_Click);
             // 
             // btnStopProcessing
             // 
@@ -293,26 +292,7 @@
             this.btnStopProcessing.TabIndex = 17;
             this.btnStopProcessing.Text = "STOP";
             this.btnStopProcessing.UseVisualStyleBackColor = true;
-            // 
-            // button1
-            // 
-            this.button1.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button1.Location = new System.Drawing.Point(89, 630);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(113, 23);
-            this.button1.TabIndex = 27;
-            this.button1.Text = "STOP ALARM";
-            this.button1.UseVisualStyleBackColor = true;
-            // 
-            // button2
-            // 
-            this.button2.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button2.Location = new System.Drawing.Point(8, 630);
-            this.button2.Name = "button2";
-            this.button2.Size = new System.Drawing.Size(75, 23);
-            this.button2.TabIndex = 26;
-            this.button2.Text = "STOP";
-            this.button2.UseVisualStyleBackColor = true;
+            this.btnStopProcessing.Click += new System.EventHandler(this.btnStopProcessing_Click);
             // 
             // lblDetectorLevel
             // 
@@ -343,6 +323,7 @@
             this.chbEnableMotionDisplay.TabIndex = 23;
             this.chbEnableMotionDisplay.Text = "Enable";
             this.chbEnableMotionDisplay.UseVisualStyleBackColor = true;
+            this.chbEnableMotionDisplay.CheckedChanged += new System.EventHandler(this.chbEnableMotionDisplay_CheckedChanged);
             // 
             // txtCurrentMotion
             // 
@@ -371,14 +352,14 @@
             this.label1.TabIndex = 20;
             this.label1.Text = "Status";
             // 
-            // StatusPanel
+            // pcbStatusPanel
             // 
-            this.StatusPanel.Image = null;
-            this.StatusPanel.Location = new System.Drawing.Point(674, 63);
-            this.StatusPanel.Name = "StatusPanel";
-            this.StatusPanel.Size = new System.Drawing.Size(318, 197);
-            this.StatusPanel.TabIndex = 19;
-            this.StatusPanel.TabStop = false;
+            this.pcbStatusPanel.Image = null;
+            this.pcbStatusPanel.Location = new System.Drawing.Point(674, 63);
+            this.pcbStatusPanel.Name = "pcbStatusPanel";
+            this.pcbStatusPanel.Size = new System.Drawing.Size(318, 197);
+            this.pcbStatusPanel.TabIndex = 19;
+            this.pcbStatusPanel.TabStop = false;
             // 
             // btnClearHistoryBox
             // 
@@ -453,15 +434,13 @@
             this.Controls.Add(this.btnRefreshDetectorLevel);
             this.Controls.Add(this.HistoryList);
             this.Controls.Add(this.label2);
-            this.Controls.Add(this.button1);
-            this.Controls.Add(this.button2);
             this.Controls.Add(this.lblDetectorLevel);
             this.Controls.Add(this.label3);
             this.Controls.Add(this.chbEnableMotionDisplay);
             this.Controls.Add(this.txtCurrentMotion);
             this.Controls.Add(this.MotionLabel);
             this.Controls.Add(this.label1);
-            this.Controls.Add(this.StatusPanel);
+            this.Controls.Add(this.pcbStatusPanel);
             this.Controls.Add(this.btnStopAlarm);
             this.Controls.Add(this.btnStopProcessing);
             this.Controls.Add(this.videoSourcePlayer);
@@ -477,7 +456,7 @@
             this.Load += new System.EventHandler(this.MainWindowForm_Load);
             this.MainMenuStrip.ResumeLayout(false);
             this.MainMenuStrip.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.StatusPanel)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pcbStatusPanel)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -510,15 +489,13 @@
         private AForge.Controls.VideoSourcePlayer videoSourcePlayer;
         private System.Windows.Forms.Button btnStopAlarm;
         private System.Windows.Forms.Button btnStopProcessing;
-        private System.Windows.Forms.Button button1;
-        private System.Windows.Forms.Button button2;
         private System.Windows.Forms.Label lblDetectorLevel;
         private System.Windows.Forms.Label label3;
         private System.Windows.Forms.CheckBox chbEnableMotionDisplay;
         private System.Windows.Forms.TextBox txtCurrentMotion;
         private System.Windows.Forms.Label MotionLabel;
         private System.Windows.Forms.Label label1;
-        private AForge.Controls.PictureBox StatusPanel;
+        private AForge.Controls.PictureBox pcbStatusPanel;
         private System.Windows.Forms.Button btnClearHistoryBox;
         private System.Windows.Forms.Button btnSaveMotionHistory;
         private System.Windows.Forms.Button btnRefreshDetectorLevel;

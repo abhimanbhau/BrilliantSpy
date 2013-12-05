@@ -8,9 +8,9 @@ using System.Windows.Forms;
 
 namespace CatalystSpy
 {
-    public partial class ViewHistoryForm : Form
+    public partial class SettingsForm : Form
     {
-        public ViewHistoryForm()
+        public SettingsForm()
         {
             InitializeComponent();
         }
