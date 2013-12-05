@@ -1,5 +1,5 @@
 ﻿<?xml version='1.0' encoding='utf-8'?>
-<SettingsFile xmlns="http://schemas.microsoft.com/VisualStudio/2004/01/settings" CurrentProfile="(Default)" GeneratedClassNamespace="intelliSpy.Properties" GeneratedClassName="Settings">
+<SettingsFile xmlns="http://schemas.microsoft.com/VisualStudio/2004/01/settings" CurrentProfile="(Default)" GeneratedClassNamespace="CatalystSpy.Properties" GeneratedClassName="Settings">
   <Profiles />
   <Settings>
     <Setting Name="userName" Type="System.String" Scope="User">
@@ -18,7 +18,7 @@
       <Value Profile="(Default)">True</Value>
     </Setting>
     <Setting Name="homeDirectory" Type="System.String" Scope="User">
-      <Value Profile="(Default)">D:\intelliSpy</Value>
+      <Value Profile="(Default)">D:\CatalystSpy</Value>
     </Setting>
   </Settings>
 </SettingsFile>

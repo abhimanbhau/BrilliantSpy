@@ -1,4 +1,4 @@
-﻿namespace intelliSpy
+﻿namespace CatalystSpy
 {
     partial class MainWindowForm
     {
@@ -445,7 +445,7 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.BackgroundImage = global::intelliSpy.Properties.Resources.BG;
+            this.BackgroundImage = global::CatalystSpy.Properties.Resources.BG;
             this.ClientSize = new System.Drawing.Size(1008, 665);
             this.Controls.Add(this.lblWarning);
             this.Controls.Add(this.btnClearHistoryBox);
@@ -472,7 +472,7 @@
             this.Name = "MainWindowForm";
             this.SizeGripStyle = System.Windows.Forms.SizeGripStyle.Hide;
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
-            this.Text = "intelliSpy : Turns Your PC Into An Intelligent Spy";
+            this.Text = "CatalystSpy : Turns Your PC Into An Intelligent Spy";
             this.FormClosing += new System.Windows.Forms.FormClosingEventHandler(this.MainWindowForm_FormClosing);
             this.Load += new System.EventHandler(this.MainWindowForm_Load);
             this.MainMenuStrip.ResumeLayout(false);

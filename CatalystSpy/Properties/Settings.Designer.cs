@@ -8,7 +8,7 @@
 // </auto-generated>
 //------------------------------------------------------------------------------
 
-namespace intelliSpy.Properties {
+namespace CatalystSpy.Properties {
     
     
     [global::System.Runtime.CompilerServices.CompilerGeneratedAttribute()]
@@ -85,7 +85,7 @@ namespace intelliSpy.Properties {
         
         [global::System.Configuration.UserScopedSettingAttribute()]
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-        [global::System.Configuration.DefaultSettingValueAttribute("D:\\intelliSpy")]
+        [global::System.Configuration.DefaultSettingValueAttribute("D:\\CatalystSpy")]
         public string homeDirectory {
             get {
                 return ((string)(this["homeDirectory"]));

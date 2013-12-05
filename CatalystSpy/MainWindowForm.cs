@@ -11,7 +11,7 @@ using AForge.Video.DirectShow;
 using System.Media;
 using System.IO;
 
-namespace intelliSpy
+namespace CatalystSpy
 {
     public partial class MainWindowForm : Form
     {

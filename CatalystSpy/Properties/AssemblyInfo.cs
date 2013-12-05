@@ -5,11 +5,11 @@ using System.Runtime.InteropServices;
 // General Information about an assembly is controlled through the following 
 // set of attributes. Change these attribute values to modify the information
 // associated with an assembly.
-[assembly: AssemblyTitle("intelliSpy")]
+[assembly: AssemblyTitle("CatalystSpy")]
 [assembly: AssemblyDescription("Turns Your PC Into An Intelligent Spy")]
 [assembly: AssemblyConfiguration("")]
 [assembly: AssemblyCompany("Abhimanbhau Kolte")]
-[assembly: AssemblyProduct("intelliSpy")]
+[assembly: AssemblyProduct("CatalystSpy")]
 [assembly: AssemblyCopyright("Copyright ©  2013")]
 [assembly: AssemblyTrademark("Abhimanbhau Kolte CopyRight")]
 [assembly: AssemblyCulture("")]
