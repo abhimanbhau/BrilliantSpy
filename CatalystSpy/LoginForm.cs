@@ -8,7 +8,7 @@ using System.Windows.Forms;
 
 namespace CatalystSpy
 {
-    public partial class LoginPageForm : Form
+    public partial class LoginForm : Form
     {
         private bool loginSuccessfull = false;
 
@@ -17,7 +17,7 @@ namespace CatalystSpy
             return loginSuccessfull;
         }
 
-        public LoginPageForm()
+        public LoginForm()
         {
             InitializeComponent();
         }
@@ -71,6 +71,11 @@ namespace CatalystSpy
             {
                 DoLogin();
             }
+        }
+
+        private void btnExit_Click(object sender, EventArgs e)
+        {
+            this.Close();
         }
     }
 }

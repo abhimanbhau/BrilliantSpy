@@ -45,7 +45,7 @@
             this.lblNote.AutoSize = true;
             this.lblNote.Font = new System.Drawing.Font("Copperplate Gothic Light", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblNote.ForeColor = System.Drawing.Color.Maroon;
-            this.lblNote.Location = new System.Drawing.Point(17, 222);
+            this.lblNote.Location = new System.Drawing.Point(12, 250);
             this.lblNote.Name = "lblNote";
             this.lblNote.Size = new System.Drawing.Size(44, 17);
             this.lblNote.TabIndex = 19;
@@ -136,7 +136,7 @@
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackgroundImage = global::CatalystSpy.Properties.Resources.BG;
-            this.ClientSize = new System.Drawing.Size(434, 268);
+            this.ClientSize = new System.Drawing.Size(439, 276);
             this.Controls.Add(this.lblNote);
             this.Controls.Add(this.btnSubmit);
             this.Controls.Add(this.txtNewPassword);

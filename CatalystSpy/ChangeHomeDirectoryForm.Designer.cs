@@ -40,11 +40,12 @@
             // btnOk
             // 
             this.btnOk.Image = global::CatalystSpy.Properties.Resources.OK;
-            this.btnOk.Location = new System.Drawing.Point(16, 212);
+            this.btnOk.Location = new System.Drawing.Point(16, 195);
             this.btnOk.Name = "btnOk";
             this.btnOk.Size = new System.Drawing.Size(75, 34);
             this.btnOk.TabIndex = 11;
             this.btnOk.UseVisualStyleBackColor = true;
+            this.btnOk.Click += new System.EventHandler(this.btnOk_Click);
             // 
             // btnBrowseNewDirectory
             // 
@@ -54,6 +55,7 @@
             this.btnBrowseNewDirectory.Size = new System.Drawing.Size(66, 43);
             this.btnBrowseNewDirectory.TabIndex = 10;
             this.btnBrowseNewDirectory.UseVisualStyleBackColor = true;
+            this.btnBrowseNewDirectory.Click += new System.EventHandler(this.btnBrowseNewDirectory_Click);
             // 
             // txtNewDirectory
             // 
@@ -96,7 +98,7 @@
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackgroundImage = global::CatalystSpy.Properties.Resources.BG;
-            this.ClientSize = new System.Drawing.Size(384, 261);
+            this.ClientSize = new System.Drawing.Size(384, 241);
             this.Controls.Add(this.btnOk);
             this.Controls.Add(this.btnBrowseNewDirectory);
             this.Controls.Add(this.txtNewDirectory);
@@ -112,6 +114,7 @@
             this.SizeGripStyle = System.Windows.Forms.SizeGripStyle.Hide;
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "ChangeHomeDirectoryForm";
+            this.Load += new System.EventHandler(this.ChangeHomeDirectoryForm_Load);
             this.ResumeLayout(false);
             this.PerformLayout();
 

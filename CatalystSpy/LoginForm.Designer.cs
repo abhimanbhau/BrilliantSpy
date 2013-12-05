@@ -1,6 +1,6 @@
 ﻿namespace CatalystSpy
 {
-    partial class LoginPageForm
+    partial class LoginForm
     {
         /// <summary>
         /// Required designer variable.
@@ -33,12 +33,13 @@
             this.txtUsername = new System.Windows.Forms.TextBox();
             this.lblPassword = new System.Windows.Forms.Label();
             this.lblUsername = new System.Windows.Forms.Label();
+            this.btnExit = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // btnLogin
             // 
             this.btnLogin.Image = global::CatalystSpy.Properties.Resources.OK;
-            this.btnLogin.Location = new System.Drawing.Point(250, 104);
+            this.btnLogin.Location = new System.Drawing.Point(147, 104);
             this.btnLogin.Name = "btnLogin";
             this.btnLogin.Size = new System.Drawing.Size(75, 34);
             this.btnLogin.TabIndex = 10;
@@ -85,21 +86,32 @@
             this.lblUsername.Text = "Username";
             this.lblUsername.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
-            // LoginPageForm
+            // btnExit
+            // 
+            this.btnExit.Image = global::CatalystSpy.Properties.Resources.exit__3_;
+            this.btnExit.Location = new System.Drawing.Point(250, 104);
+            this.btnExit.Name = "btnExit";
+            this.btnExit.Size = new System.Drawing.Size(75, 34);
+            this.btnExit.TabIndex = 11;
+            this.btnExit.UseVisualStyleBackColor = true;
+            this.btnExit.Click += new System.EventHandler(this.btnExit_Click);
+            // 
+            // LoginForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackgroundImage = global::CatalystSpy.Properties.Resources.BG;
             this.ClientSize = new System.Drawing.Size(344, 150);
+            this.Controls.Add(this.btnExit);
             this.Controls.Add(this.btnLogin);
             this.Controls.Add(this.txtPassword);
             this.Controls.Add(this.txtUsername);
             this.Controls.Add(this.lblPassword);
             this.Controls.Add(this.lblUsername);
-            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedToolWindow;
+            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.MaximizeBox = false;
             this.MinimizeBox = false;
-            this.Name = "LoginPageForm";
+            this.Name = "LoginForm";
             this.ShowIcon = false;
             this.ShowInTaskbar = false;
             this.SizeGripStyle = System.Windows.Forms.SizeGripStyle.Hide;
@@ -118,5 +130,6 @@
         private System.Windows.Forms.TextBox txtUsername;
         private System.Windows.Forms.Label lblPassword;
         private System.Windows.Forms.Label lblUsername;
+        private System.Windows.Forms.Button btnExit;
     }
 }

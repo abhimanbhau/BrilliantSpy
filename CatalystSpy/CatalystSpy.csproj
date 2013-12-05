@@ -133,11 +133,11 @@
       <DependentUpon>EncryptDecryptFilesForm.cs</DependentUpon>
     </Compile>
     <Compile Include="FileEncryptTools.cs" />
-    <Compile Include="LoginPageForm.cs">
+    <Compile Include="LoginForm.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="LoginPageForm.Designer.cs">
-      <DependentUpon>LoginPageForm.cs</DependentUpon>
+    <Compile Include="LoginForm.Designer.cs">
+      <DependentUpon>LoginForm.cs</DependentUpon>
     </Compile>
     <Compile Include="MainWindowForm.cs">
       <SubType>Form</SubType>
@@ -186,6 +186,9 @@
     <EmbeddedResource Include="AboutMeForm.resx">
       <DependentUpon>AboutMeForm.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="BugReportForm.resx">
+      <DependentUpon>BugReportForm.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="ChangeCredentialsForm.resx">
       <DependentUpon>ChangeCredentialsForm.cs</DependentUpon>
     </EmbeddedResource>
@@ -195,11 +198,14 @@
     <EmbeddedResource Include="EncryptDecryptFilesForm.resx">
       <DependentUpon>EncryptDecryptFilesForm.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="LoginPageForm.resx">
-      <DependentUpon>LoginPageForm.cs</DependentUpon>
+    <EmbeddedResource Include="LoginForm.resx">
+      <DependentUpon>LoginForm.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="MainWindowForm.resx">
       <DependentUpon>MainWindowForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="OpenSourceLicenseForm.resx">
+      <DependentUpon>OpenSourceLicenseForm.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>
@@ -211,6 +217,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="ViewCapturedImagesForm.resx">
       <DependentUpon>ViewCapturedImagesForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ViewLicenseForm.resx">
+      <DependentUpon>ViewLicenseForm.cs</DependentUpon>
     </EmbeddedResource>
     <None Include="app.config">
       <SubType>Designer</SubType>
@@ -283,6 +292,15 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="Resources\clear.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\exit.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Icon_320.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\exit %283%29.ico" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 

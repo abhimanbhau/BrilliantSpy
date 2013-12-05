@@ -137,6 +137,7 @@
             this.btnResetDefault.TabIndex = 27;
             this.btnResetDefault.Text = "Reset Default";
             this.btnResetDefault.UseVisualStyleBackColor = true;
+            this.btnResetDefault.Click += new System.EventHandler(this.btnResetDefault_Click);
             // 
             // txtMotionLevel
             // 

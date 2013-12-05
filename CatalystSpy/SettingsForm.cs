@@ -113,5 +113,34 @@ namespace CatalystSpy
             ChangeHomeDirectoryForm form = new ChangeHomeDirectoryForm();
             form.ShowDialog();
         }
+
+        private void btnResetDefault_Click(object sender, EventArgs e)
+        {
+            if (MessageBox.Show(this,
+                "All settings will be restored", "Sure?", MessageBoxButtons.YesNo
+                , MessageBoxIcon.Question) == System.Windows.Forms.DialogResult.No)
+            {
+                return;
+            }
+            else
+            {
+                try
+                {
+                    Properties.Settings.Default.Reset();
+                    Properties.Settings.Default.Save();
+                    MessageBox.Show(this, "Settings successfully restored to defaults\nDefault Username"
+                        + " and Password is abhiman",
+                        "Success",
+                        MessageBoxButtons.OK, MessageBoxIcon.Information);
+                    MessageBox.Show(this, "Restart software for changes to get applied", "Warning",
+                        MessageBoxButtons.OK, MessageBoxIcon.Warning);
+                }
+                catch (Exception ex)
+                {
+                    MessageBox.Show(this, "Error Restoring Settings\n" + ex.Message, "Error",
+                        MessageBoxButtons.OK, MessageBoxIcon.Error);
+                }
+            }
+        }
     }
 }

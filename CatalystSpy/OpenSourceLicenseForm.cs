@@ -14,5 +14,17 @@ namespace CatalystSpy
         {
             InitializeComponent();
         }
+
+        private void btnKellerman_Click(object sender, EventArgs e)
+        {
+            ViewLicenseForm form = new ViewLicenseForm("Kellerman");
+            form.ShowDialog();
+        }
+
+        private void btnAForge_Click(object sender, EventArgs e)
+        {
+            ViewLicenseForm form = new ViewLicenseForm("AForge");
+            form.ShowDialog();
+        }
     }
 }

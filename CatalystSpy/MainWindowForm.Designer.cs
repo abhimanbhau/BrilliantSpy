@@ -68,6 +68,7 @@
             this.label2 = new System.Windows.Forms.Label();
             this.lblWarning = new System.Windows.Forms.Label();
             this.openFileDialog = new System.Windows.Forms.OpenFileDialog();
+            this.saveFile = new System.Windows.Forms.SaveFileDialog();
             this.MainMenuStrip.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pcbStatusPanel)).BeginInit();
             this.SuspendLayout();
@@ -150,6 +151,7 @@
             // 
             // noneToolStripMenuItem
             // 
+            this.noneToolStripMenuItem.Image = global::CatalystSpy.Properties.Resources.exit;
             this.noneToolStripMenuItem.Name = "noneToolStripMenuItem";
             this.noneToolStripMenuItem.Size = new System.Drawing.Size(234, 22);
             this.noneToolStripMenuItem.Text = "None";
@@ -196,8 +198,10 @@
             // 
             // viewPreviousImagesToolStripMenuItem
             // 
+            this.viewPreviousImagesToolStripMenuItem.Image = global::CatalystSpy.Properties.Resources.Icon_320;
             this.viewPreviousImagesToolStripMenuItem.Name = "viewPreviousImagesToolStripMenuItem";
-            this.viewPreviousImagesToolStripMenuItem.Size = new System.Drawing.Size(188, 22);
+            this.viewPreviousImagesToolStripMenuItem.ShortcutKeys = ((System.Windows.Forms.Keys)((System.Windows.Forms.Keys.Control | System.Windows.Forms.Keys.H)));
+            this.viewPreviousImagesToolStripMenuItem.Size = new System.Drawing.Size(231, 22);
             this.viewPreviousImagesToolStripMenuItem.Text = "View Previous Images";
             this.viewPreviousImagesToolStripMenuItem.Click += new System.EventHandler(this.viewPreviousImagesToolStripMenuItem_Click);
             // 
@@ -214,21 +218,22 @@
             // toolsToolStripMenuItem1
             // 
             this.toolsToolStripMenuItem1.Name = "toolsToolStripMenuItem1";
-            this.toolsToolStripMenuItem1.Size = new System.Drawing.Size(160, 22);
+            this.toolsToolStripMenuItem1.Size = new System.Drawing.Size(176, 22);
             this.toolsToolStripMenuItem1.Text = "Encrypt/Decrypt";
             this.toolsToolStripMenuItem1.Click += new System.EventHandler(this.toolsToolStripMenuItem1_Click);
             // 
             // compressToolStripMenuItem
             // 
             this.compressToolStripMenuItem.Name = "compressToolStripMenuItem";
-            this.compressToolStripMenuItem.Size = new System.Drawing.Size(160, 22);
+            this.compressToolStripMenuItem.Size = new System.Drawing.Size(176, 22);
             this.compressToolStripMenuItem.Text = "Compress";
             this.compressToolStripMenuItem.Click += new System.EventHandler(this.compressToolStripMenuItem_Click);
             // 
             // preferancesToolStripMenuItem
             // 
             this.preferancesToolStripMenuItem.Name = "preferancesToolStripMenuItem";
-            this.preferancesToolStripMenuItem.Size = new System.Drawing.Size(160, 22);
+            this.preferancesToolStripMenuItem.ShortcutKeys = ((System.Windows.Forms.Keys)((System.Windows.Forms.Keys.Control | System.Windows.Forms.Keys.P)));
+            this.preferancesToolStripMenuItem.Size = new System.Drawing.Size(176, 22);
             this.preferancesToolStripMenuItem.Text = "Preferences";
             this.preferancesToolStripMenuItem.Click += new System.EventHandler(this.preferancesToolStripMenuItem_Click);
             // 
@@ -363,30 +368,33 @@
             // 
             // btnClearHistoryBox
             // 
-            this.btnClearHistoryBox.Location = new System.Drawing.Point(836, 630);
+            this.btnClearHistoryBox.Image = global::CatalystSpy.Properties.Resources.clear;
+            this.btnClearHistoryBox.Location = new System.Drawing.Point(901, 630);
             this.btnClearHistoryBox.Name = "btnClearHistoryBox";
-            this.btnClearHistoryBox.Size = new System.Drawing.Size(75, 23);
+            this.btnClearHistoryBox.Size = new System.Drawing.Size(48, 34);
             this.btnClearHistoryBox.TabIndex = 32;
-            this.btnClearHistoryBox.Text = "Clear";
             this.btnClearHistoryBox.UseVisualStyleBackColor = true;
+            this.btnClearHistoryBox.Click += new System.EventHandler(this.btnClearHistoryBox_Click);
             // 
             // btnSaveMotionHistory
             // 
-            this.btnSaveMotionHistory.Location = new System.Drawing.Point(917, 630);
+            this.btnSaveMotionHistory.Image = global::CatalystSpy.Properties.Resources.folder;
+            this.btnSaveMotionHistory.Location = new System.Drawing.Point(955, 630);
             this.btnSaveMotionHistory.Name = "btnSaveMotionHistory";
-            this.btnSaveMotionHistory.Size = new System.Drawing.Size(86, 23);
+            this.btnSaveMotionHistory.Size = new System.Drawing.Size(48, 34);
             this.btnSaveMotionHistory.TabIndex = 31;
-            this.btnSaveMotionHistory.Text = "Save";
             this.btnSaveMotionHistory.UseVisualStyleBackColor = true;
+            this.btnSaveMotionHistory.Click += new System.EventHandler(this.btnSaveMotionHistory_Click);
             // 
             // btnRefreshDetectorLevel
             // 
-            this.btnRefreshDetectorLevel.Location = new System.Drawing.Point(909, 319);
+            this.btnRefreshDetectorLevel.Location = new System.Drawing.Point(941, 319);
             this.btnRefreshDetectorLevel.Name = "btnRefreshDetectorLevel";
             this.btnRefreshDetectorLevel.Size = new System.Drawing.Size(26, 23);
             this.btnRefreshDetectorLevel.TabIndex = 30;
             this.btnRefreshDetectorLevel.Text = "R";
             this.btnRefreshDetectorLevel.UseVisualStyleBackColor = true;
+            this.btnRefreshDetectorLevel.Click += new System.EventHandler(this.btnRefreshDetectorLevel_Click);
             // 
             // HistoryList
             // 
@@ -427,7 +435,7 @@
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackgroundImage = global::CatalystSpy.Properties.Resources.BG;
-            this.ClientSize = new System.Drawing.Size(1008, 665);
+            this.ClientSize = new System.Drawing.Size(1008, 667);
             this.Controls.Add(this.lblWarning);
             this.Controls.Add(this.btnClearHistoryBox);
             this.Controls.Add(this.btnSaveMotionHistory);
@@ -504,5 +512,6 @@
         private System.Windows.Forms.Label lblWarning;
         private System.Windows.Forms.OpenFileDialog openFileDialog;
         private System.Windows.Forms.ToolStripMenuItem preferancesToolStripMenuItem;
+        private System.Windows.Forms.SaveFileDialog saveFile;
     }
 }

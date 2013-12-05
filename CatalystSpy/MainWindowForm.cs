@@ -217,7 +217,7 @@ namespace CatalystSpy
 
         private void startFeedFromVideoToolStripMenuItem_Click(object sender, EventArgs e)
         {
-            openFileDialog.InitialDirectory = Properties.Settings.Default.homeDirectory ;
+            openFileDialog.InitialDirectory = Properties.Settings.Default.homeDirectory;
             openFileDialog.Multiselect = false;
             openFileDialog.Title = "Select a file to process";
             openFileDialog.Filter = "CatalystSpy Supported Video Files (*.avi)|*.avi";
@@ -341,8 +341,20 @@ namespace CatalystSpy
 
         private void preferancesToolStripMenuItem_Click(object sender, EventArgs e)
         {
-            SettingsForm form = new SettingsForm();
-            form.ShowDialog();
+            LoginForm LoginForm = new CatalystSpy.LoginForm();
+            LoginForm.Text = "Re-login with your credentials";
+            LoginForm.ShowDialog();
+            if (LoginForm.getLoginStatus())
+            {
+                SettingsForm form = new SettingsForm();
+                form.ShowDialog();
+            }
+            else
+            {
+                MessageBox.Show(this, "Authentication is required to access settings",
+                    "Note",
+                    MessageBoxButtons.OK, MessageBoxIcon.Error);
+            }
         }
 
         private void suggetionsToolStripMenuItem_Click(object sender, EventArgs e)
@@ -394,6 +406,30 @@ namespace CatalystSpy
         private void btnStopAlarm_Click(object sender, EventArgs e)
         {
             StopAlertSound();
+        }
+
+        private void btnClearHistoryBox_Click(object sender, EventArgs e)
+        {
+            HistoryList.Items.Clear();
+        }
+
+        private void btnSaveMotionHistory_Click(object sender, EventArgs e)
+        {
+            saveFile.Filter = "CatalystSpy History Save File (*.txt)|*.txt";
+            if (saveFile.ShowDialog() == System.Windows.Forms.DialogResult.OK)
+            {
+                StringBuilder sb = new StringBuilder();
+                foreach (Object item in HistoryList.Items)
+                {
+                    sb.AppendLine(item.ToString());
+                }
+                File.WriteAllText(saveFile.FileName, sb.ToString());
+            }
+        }
+
+        private void btnRefreshDetectorLevel_Click(object sender, EventArgs e)
+        {
+            lblDetectorLevel.Text = Convert.ToString(Properties.Settings.Default.motionLevel);
         }
 
     }
