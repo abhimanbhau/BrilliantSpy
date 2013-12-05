@@ -25,7 +25,12 @@ namespace CatalystSpy
 
         private void ViewLicenseForm_Load(object sender, EventArgs e)
         {
-            if (license == "AForge")
+            if (license == "CatalystSpy")
+            {
+                rtbLicenseView.Text = Properties.Resources.CatalystSpy_LICENSE;
+                this.Text = "CatalystSpy License";
+            }
+            else if (license == "AForge")
             {
                 rtbLicenseView.Text = Properties.Resources.Aforge_Net_License;
                 this.Text = "AForge.Net Computer Vision Library License";

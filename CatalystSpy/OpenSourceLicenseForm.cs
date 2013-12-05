@@ -26,5 +26,11 @@ namespace CatalystSpy
             ViewLicenseForm form = new ViewLicenseForm("AForge");
             form.ShowDialog();
         }
+
+        private void button1_Click(object sender, EventArgs e)
+        {
+            ViewLicenseForm form = new ViewLicenseForm("CatalystSpy");
+            form.ShowDialog();
+        }
     }
 }
