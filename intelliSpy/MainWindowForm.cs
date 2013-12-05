@@ -229,5 +229,70 @@ namespace intelliSpy
         {
             this.Close();
         }
+
+        private void simpleBackgroundModellingToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void twoFrameDifferenceToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void noneToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void areaHighlightToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void gridMotionProcessingToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void borderToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void viewPreviousImagesToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void toolsToolStripMenuItem1_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void compressToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void preferancesToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void suggetionsToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void openSourceLicensesToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void aboutMeToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }
