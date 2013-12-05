@@ -292,7 +292,8 @@ namespace CatalystSpy
 
         private void aboutMeToolStripMenuItem_Click(object sender, EventArgs e)
         {
-
+            AboutMeForm form = new AboutMeForm();
+            form.ShowDialog();
         }
     }
 }
