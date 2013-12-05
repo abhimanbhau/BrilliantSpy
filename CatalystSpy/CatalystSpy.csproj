@@ -106,6 +106,12 @@
     <Compile Include="BugReportForm.Designer.cs">
       <DependentUpon>BugReportForm.cs</DependentUpon>
     </Compile>
+    <Compile Include="ChangeCredentialsForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ChangeCredentialsForm.Designer.cs">
+      <DependentUpon>ChangeCredentialsForm.cs</DependentUpon>
+    </Compile>
     <Compile Include="ChangeHomeDirectoryForm.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -180,6 +186,15 @@
     <EmbeddedResource Include="AboutMeForm.resx">
       <DependentUpon>AboutMeForm.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="ChangeCredentialsForm.resx">
+      <DependentUpon>ChangeCredentialsForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ChangeHomeDirectoryForm.resx">
+      <DependentUpon>ChangeHomeDirectoryForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="EncryptDecryptFilesForm.resx">
+      <DependentUpon>EncryptDecryptFilesForm.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="LoginPageForm.resx">
       <DependentUpon>LoginPageForm.cs</DependentUpon>
     </EmbeddedResource>
@@ -193,6 +208,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="SettingsForm.resx">
       <DependentUpon>SettingsForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ViewCapturedImagesForm.resx">
+      <DependentUpon>ViewCapturedImagesForm.cs</DependentUpon>
     </EmbeddedResource>
     <None Include="app.config">
       <SubType>Designer</SubType>
@@ -250,6 +268,21 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="Resources\OK.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\down.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\down1.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\up.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\folder.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\clear.ico" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 

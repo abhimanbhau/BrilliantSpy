@@ -217,6 +217,10 @@ namespace CatalystSpy
 
         private void startFeedFromVideoToolStripMenuItem_Click(object sender, EventArgs e)
         {
+            openFileDialog.InitialDirectory = Properties.Settings.Default.homeDirectory ;
+            openFileDialog.Multiselect = false;
+            openFileDialog.Title = "Select a file to process";
+            openFileDialog.Filter = "CatalystSpy Supported Video Files (*.avi)|*.avi";
             if (openFileDialog.ShowDialog() == System.Windows.Forms.DialogResult.OK)
             {
                 fileVideoSource = new FileVideoSource(openFileDialog.FileName);

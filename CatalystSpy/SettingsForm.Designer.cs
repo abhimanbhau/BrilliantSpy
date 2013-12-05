@@ -42,7 +42,7 @@
             this.label4 = new System.Windows.Forms.Label();
             this.btnChangePassword = new System.Windows.Forms.Button();
             this.label3 = new System.Windows.Forms.Label();
-            this.btnClear = new System.Windows.Forms.Button();
+            this.btnClearStorage = new System.Windows.Forms.Button();
             this.label2 = new System.Windows.Forms.Label();
             this.txtsize = new System.Windows.Forms.TextBox();
             this.label1 = new System.Windows.Forms.Label();
@@ -56,6 +56,7 @@
             this.btnChangeHomeDirectory.TabIndex = 35;
             this.btnChangeHomeDirectory.Text = "Change";
             this.btnChangeHomeDirectory.UseVisualStyleBackColor = true;
+            this.btnChangeHomeDirectory.Click += new System.EventHandler(this.btnChangeHomeDirectory_Click);
             // 
             // label7
             // 
@@ -69,11 +70,13 @@
             // 
             // btnIsHiddenSet
             // 
+            this.btnIsHiddenSet.Image = global::CatalystSpy.Properties.Resources.OK;
             this.btnIsHiddenSet.Location = new System.Drawing.Point(372, 318);
             this.btnIsHiddenSet.Name = "btnIsHiddenSet";
             this.btnIsHiddenSet.Size = new System.Drawing.Size(75, 34);
             this.btnIsHiddenSet.TabIndex = 33;
             this.btnIsHiddenSet.UseVisualStyleBackColor = true;
+            this.btnIsHiddenSet.Click += new System.EventHandler(this.btnIsHiddenSet_Click);
             // 
             // cmbIsHidden
             // 
@@ -99,11 +102,13 @@
             // 
             // btnSetCustomWarningMessage
             // 
+            this.btnSetCustomWarningMessage.Image = global::CatalystSpy.Properties.Resources.OK;
             this.btnSetCustomWarningMessage.Location = new System.Drawing.Point(372, 275);
             this.btnSetCustomWarningMessage.Name = "btnSetCustomWarningMessage";
             this.btnSetCustomWarningMessage.Size = new System.Drawing.Size(75, 34);
             this.btnSetCustomWarningMessage.TabIndex = 30;
             this.btnSetCustomWarningMessage.UseVisualStyleBackColor = true;
+            this.btnSetCustomWarningMessage.Click += new System.EventHandler(this.btnSetCustomWarningMessage_Click);
             // 
             // txtCustomWarningMessage
             // 
@@ -149,6 +154,7 @@
             this.btnChangeMotion.TabIndex = 25;
             this.btnChangeMotion.Text = "Change";
             this.btnChangeMotion.UseVisualStyleBackColor = true;
+            this.btnChangeMotion.Click += new System.EventHandler(this.btnChangeMotion_Click);
             // 
             // label4
             // 
@@ -169,6 +175,7 @@
             this.btnChangePassword.TabIndex = 23;
             this.btnChangePassword.Text = "Change";
             this.btnChangePassword.UseVisualStyleBackColor = true;
+            this.btnChangePassword.Click += new System.EventHandler(this.btnChangePassword_Click);
             // 
             // label3
             // 
@@ -181,14 +188,15 @@
             this.label3.Text = "Change Credentials";
             this.label3.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
-            // btnClear
+            // btnClearStorage
             // 
-            this.btnClear.Location = new System.Drawing.Point(372, 78);
-            this.btnClear.Name = "btnClear";
-            this.btnClear.Size = new System.Drawing.Size(75, 23);
-            this.btnClear.TabIndex = 21;
-            this.btnClear.Text = "Clear";
-            this.btnClear.UseVisualStyleBackColor = true;
+            this.btnClearStorage.Location = new System.Drawing.Point(372, 78);
+            this.btnClearStorage.Name = "btnClearStorage";
+            this.btnClearStorage.Size = new System.Drawing.Size(75, 23);
+            this.btnClearStorage.TabIndex = 21;
+            this.btnClearStorage.Text = "Clear";
+            this.btnClearStorage.UseVisualStyleBackColor = true;
+            this.btnClearStorage.Click += new System.EventHandler(this.btnClearStorage_Click);
             // 
             // label2
             // 
@@ -219,10 +227,11 @@
             this.label1.Text = "Current Disk Usage";
             this.label1.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
-            // SettingsFormWindow
+            // SettingsForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.BackgroundImage = global::CatalystSpy.Properties.Resources.BG;
             this.ClientSize = new System.Drawing.Size(459, 448);
             this.Controls.Add(this.btnChangeHomeDirectory);
             this.Controls.Add(this.label7);
@@ -238,17 +247,20 @@
             this.Controls.Add(this.label4);
             this.Controls.Add(this.btnChangePassword);
             this.Controls.Add(this.label3);
-            this.Controls.Add(this.btnClear);
+            this.Controls.Add(this.btnClearStorage);
             this.Controls.Add(this.label2);
             this.Controls.Add(this.txtsize);
             this.Controls.Add(this.label1);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedToolWindow;
             this.MaximizeBox = false;
             this.MinimizeBox = false;
-            this.Name = "SettingsFormWindow";
+            this.Name = "SettingsForm";
+            this.ShowIcon = false;
+            this.ShowInTaskbar = false;
             this.SizeGripStyle = System.Windows.Forms.SizeGripStyle.Hide;
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "SettingsFormWindow";
+            this.Load += new System.EventHandler(this.SettingsForm_Load);
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -270,7 +282,7 @@
         private System.Windows.Forms.Label label4;
         private System.Windows.Forms.Button btnChangePassword;
         private System.Windows.Forms.Label label3;
-        private System.Windows.Forms.Button btnClear;
+        private System.Windows.Forms.Button btnClearStorage;
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.TextBox txtsize;
         private System.Windows.Forms.Label label1;

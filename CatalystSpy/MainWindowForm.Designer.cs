@@ -229,7 +229,7 @@
             // 
             this.preferancesToolStripMenuItem.Name = "preferancesToolStripMenuItem";
             this.preferancesToolStripMenuItem.Size = new System.Drawing.Size(160, 22);
-            this.preferancesToolStripMenuItem.Text = "Preferances";
+            this.preferancesToolStripMenuItem.Text = "Preferences";
             this.preferancesToolStripMenuItem.Click += new System.EventHandler(this.preferancesToolStripMenuItem_Click);
             // 
             // aboutToolStripMenuItem
@@ -420,7 +420,7 @@
             // 
             // openFileDialog
             // 
-            this.openFileDialog.FileName = "openFileDialog1";
+            this.openFileDialog.FileName = "Open a video file to process";
             // 
             // MainWindowForm
             // 
