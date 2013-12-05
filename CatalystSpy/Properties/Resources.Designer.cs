@@ -158,16 +158,6 @@ namespace CatalystSpy.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
-        internal static System.Drawing.Bitmap exit__3_ {
-            get {
-                object obj = ResourceManager.GetObject("exit (3)", resourceCulture);
-                return ((System.Drawing.Bitmap)(obj));
-            }
-        }
-        
-        /// <summary>
-        ///   Looks up a localized resource of type System.Drawing.Bitmap.
-        /// </summary>
         internal static System.Drawing.Bitmap folder {
             get {
                 object obj = ResourceManager.GetObject("folder", resourceCulture);
@@ -218,6 +208,16 @@ namespace CatalystSpy.Properties {
         internal static System.Drawing.Bitmap NO_Image {
             get {
                 object obj = ResourceManager.GetObject("NO_Image", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap None {
+            get {
+                object obj = ResourceManager.GetObject("None", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }

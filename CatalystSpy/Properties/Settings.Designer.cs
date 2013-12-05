@@ -94,5 +94,14 @@ namespace CatalystSpy.Properties {
                 this["homeDirectory"] = value;
             }
         }
+        
+        [global::System.Configuration.ApplicationScopedSettingAttribute()]
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        [global::System.Configuration.DefaultSettingValueAttribute("ftp://127.0.0.1/")]
+        public string ftpIpAddress {
+            get {
+                return ((string)(this["ftpIpAddress"]));
+            }
+        }
     }
 }

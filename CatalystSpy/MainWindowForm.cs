@@ -432,5 +432,51 @@ namespace CatalystSpy
             lblDetectorLevel.Text = Convert.ToString(Properties.Settings.Default.motionLevel);
         }
 
+        private void suggestAnIdeaToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            SuggestionForm form = new SuggestionForm();
+            form.ShowDialog();
+        }
+
+        private void videoSourcePlayer_MouseHover(object sender, EventArgs e)
+        {
+            toolTip.Show("This is where you get the preview of your web-cam " +
+            "or video feed", videoSourcePlayer);
+        }
+
+        private void btnStopProcessing_MouseHover(object sender, EventArgs e)
+        {
+            toolTip.Show("Stops the motion detector processing", btnStopProcessing);
+        }
+
+        private void btnStopAlarm_MouseHover(object sender, EventArgs e)
+        {
+            toolTip.Show("Stops alarm if it was turned on falsely", btnStopAlarm);
+        }
+
+        private void HistoryList_MouseHover(object sender, EventArgs e)
+        {
+            toolTip.Show("Contains history of all recorded motion which exceeded threshold",
+                HistoryList);
+        }
+
+        private void chbEnableMotionDisplay_MouseHover(object sender, EventArgs e)
+        {
+            toolTip.Show("Displays the motion processing data for every frame " +
+            "Helpful in analysing thresholds for different situations", chbEnableMotionDisplay);
+        }
+
+        private void lblDetectorLevel_MouseHover(object sender, EventArgs e)
+        {
+            toolTip.Show("This is max threshold value above which any motion is considered as intrusion",
+                lblDetectorLevel);
+        }
+
+        private void pcbStatusPanel_MouseHover(object sender, EventArgs e)
+        {
+            toolTip.Show("This Box remains green untill no suspect-able motion is detected",
+                pcbStatusPanel);
+        }
+
     }
 }

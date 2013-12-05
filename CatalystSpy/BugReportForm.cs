@@ -32,7 +32,7 @@ namespace CatalystSpy
                 sb.AppendLine(txtMessage.Text);
                 File.WriteAllText(Properties.Settings.Default.homeDirectory +
                     @"\bugReport.txt", sb.ToString());
-                request = WebRequest.Create(new Uri("ftp://127.0.0.1/BugReports/" + fileName))
+                request = WebRequest.Create(new Uri(Properties.Settings.Default.ftpIpAddress + fileName))
                     as FtpWebRequest;
                 request.Method = WebRequestMethods.Ftp.UploadFile;
                 request.UseBinary = true;

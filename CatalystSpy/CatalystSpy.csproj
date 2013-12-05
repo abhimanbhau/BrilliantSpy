@@ -215,6 +215,9 @@
     <EmbeddedResource Include="SettingsForm.resx">
       <DependentUpon>SettingsForm.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="SuggestionForm.resx">
+      <DependentUpon>SuggestionForm.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="ViewCapturedImagesForm.resx">
       <DependentUpon>ViewCapturedImagesForm.cs</DependentUpon>
     </EmbeddedResource>

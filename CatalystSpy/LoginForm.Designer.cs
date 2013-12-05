@@ -88,7 +88,7 @@
             // 
             // btnExit
             // 
-            this.btnExit.Image = global::CatalystSpy.Properties.Resources.exit__3_;
+            this.btnExit.Image = global::CatalystSpy.Properties.Resources.exit;
             this.btnExit.Location = new System.Drawing.Point(250, 104);
             this.btnExit.Name = "btnExit";
             this.btnExit.Size = new System.Drawing.Size(75, 34);

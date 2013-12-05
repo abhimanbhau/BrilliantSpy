@@ -38,6 +38,8 @@
             this.label3 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
             this.label1 = new System.Windows.Forms.Label();
+            this.label5 = new System.Windows.Forms.Label();
+            this.txtReverifyPassword = new System.Windows.Forms.TextBox();
             this.SuspendLayout();
             // 
             // lblNote
@@ -45,7 +47,7 @@
             this.lblNote.AutoSize = true;
             this.lblNote.Font = new System.Drawing.Font("Copperplate Gothic Light", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblNote.ForeColor = System.Drawing.Color.Maroon;
-            this.lblNote.Location = new System.Drawing.Point(12, 250);
+            this.lblNote.Location = new System.Drawing.Point(12, 282);
             this.lblNote.Name = "lblNote";
             this.lblNote.Size = new System.Drawing.Size(44, 17);
             this.lblNote.TabIndex = 19;
@@ -54,7 +56,7 @@
             // btnSubmit
             // 
             this.btnSubmit.Image = global::CatalystSpy.Properties.Resources.OK;
-            this.btnSubmit.Location = new System.Drawing.Point(342, 195);
+            this.btnSubmit.Location = new System.Drawing.Point(342, 226);
             this.btnSubmit.Name = "btnSubmit";
             this.btnSubmit.Size = new System.Drawing.Size(75, 44);
             this.btnSubmit.TabIndex = 18;
@@ -131,12 +133,32 @@
             this.label1.TabIndex = 10;
             this.label1.Text = "Current Username";
             // 
+            // label5
+            // 
+            this.label5.AutoSize = true;
+            this.label5.Font = new System.Drawing.Font("Lucida Calligraphy", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label5.Location = new System.Drawing.Point(17, 200);
+            this.label5.Name = "label5";
+            this.label5.Size = new System.Drawing.Size(169, 21);
+            this.label5.TabIndex = 20;
+            this.label5.Text = "Re-enter Password";
+            // 
+            // txtReverifyPassword
+            // 
+            this.txtReverifyPassword.Location = new System.Drawing.Point(214, 200);
+            this.txtReverifyPassword.Name = "txtReverifyPassword";
+            this.txtReverifyPassword.PasswordChar = '*';
+            this.txtReverifyPassword.Size = new System.Drawing.Size(203, 20);
+            this.txtReverifyPassword.TabIndex = 21;
+            // 
             // ChangeCredentialsForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackgroundImage = global::CatalystSpy.Properties.Resources.BG;
-            this.ClientSize = new System.Drawing.Size(439, 276);
+            this.ClientSize = new System.Drawing.Size(439, 336);
+            this.Controls.Add(this.txtReverifyPassword);
+            this.Controls.Add(this.label5);
             this.Controls.Add(this.lblNote);
             this.Controls.Add(this.btnSubmit);
             this.Controls.Add(this.txtNewPassword);
@@ -174,5 +196,7 @@
         private System.Windows.Forms.Label label3;
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.Label label1;
+        private System.Windows.Forms.Label label5;
+        private System.Windows.Forms.TextBox txtReverifyPassword;
     }
 }

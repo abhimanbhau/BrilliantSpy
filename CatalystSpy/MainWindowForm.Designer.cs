@@ -28,6 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
+            this.components = new System.ComponentModel.Container();
             this.MainMenuStrip = new System.Windows.Forms.MenuStrip();
             this.menuToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.startFeedFromCameraToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
@@ -48,6 +49,7 @@
             this.compressToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.preferancesToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.aboutToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.suggestAnIdeaToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.suggetionsToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.openSourceLicensesToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.aboutMeToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
@@ -69,6 +71,7 @@
             this.lblWarning = new System.Windows.Forms.Label();
             this.openFileDialog = new System.Windows.Forms.OpenFileDialog();
             this.saveFile = new System.Windows.Forms.SaveFileDialog();
+            this.toolTip = new System.Windows.Forms.ToolTip(this.components);
             this.MainMenuStrip.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pcbStatusPanel)).BeginInit();
             this.SuspendLayout();
@@ -151,7 +154,7 @@
             // 
             // noneToolStripMenuItem
             // 
-            this.noneToolStripMenuItem.Image = global::CatalystSpy.Properties.Resources.exit;
+            this.noneToolStripMenuItem.Image = global::CatalystSpy.Properties.Resources.None;
             this.noneToolStripMenuItem.Name = "noneToolStripMenuItem";
             this.noneToolStripMenuItem.Size = new System.Drawing.Size(234, 22);
             this.noneToolStripMenuItem.Text = "None";
@@ -240,6 +243,7 @@
             // aboutToolStripMenuItem
             // 
             this.aboutToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.suggestAnIdeaToolStripMenuItem,
             this.suggetionsToolStripMenuItem,
             this.openSourceLicensesToolStripMenuItem,
             this.aboutMeToolStripMenuItem});
@@ -247,17 +251,24 @@
             this.aboutToolStripMenuItem.Size = new System.Drawing.Size(44, 20);
             this.aboutToolStripMenuItem.Text = "Help";
             // 
+            // suggestAnIdeaToolStripMenuItem
+            // 
+            this.suggestAnIdeaToolStripMenuItem.Name = "suggestAnIdeaToolStripMenuItem";
+            this.suggestAnIdeaToolStripMenuItem.Size = new System.Drawing.Size(253, 22);
+            this.suggestAnIdeaToolStripMenuItem.Text = "Suggest an idea/Request a feature";
+            this.suggestAnIdeaToolStripMenuItem.Click += new System.EventHandler(this.suggestAnIdeaToolStripMenuItem_Click);
+            // 
             // suggetionsToolStripMenuItem
             // 
             this.suggetionsToolStripMenuItem.Name = "suggetionsToolStripMenuItem";
-            this.suggetionsToolStripMenuItem.Size = new System.Drawing.Size(189, 22);
+            this.suggetionsToolStripMenuItem.Size = new System.Drawing.Size(253, 22);
             this.suggetionsToolStripMenuItem.Text = "Report Bug";
             this.suggetionsToolStripMenuItem.Click += new System.EventHandler(this.suggetionsToolStripMenuItem_Click);
             // 
             // openSourceLicensesToolStripMenuItem
             // 
             this.openSourceLicensesToolStripMenuItem.Name = "openSourceLicensesToolStripMenuItem";
-            this.openSourceLicensesToolStripMenuItem.Size = new System.Drawing.Size(189, 22);
+            this.openSourceLicensesToolStripMenuItem.Size = new System.Drawing.Size(253, 22);
             this.openSourceLicensesToolStripMenuItem.Text = "Open Source Licenses";
             this.openSourceLicensesToolStripMenuItem.Click += new System.EventHandler(this.openSourceLicensesToolStripMenuItem_Click);
             // 
@@ -265,7 +276,7 @@
             // 
             this.aboutMeToolStripMenuItem.Name = "aboutMeToolStripMenuItem";
             this.aboutMeToolStripMenuItem.ShortcutKeys = ((System.Windows.Forms.Keys)((System.Windows.Forms.Keys.Control | System.Windows.Forms.Keys.A)));
-            this.aboutMeToolStripMenuItem.Size = new System.Drawing.Size(189, 22);
+            this.aboutMeToolStripMenuItem.Size = new System.Drawing.Size(253, 22);
             this.aboutMeToolStripMenuItem.Text = "About Me";
             this.aboutMeToolStripMenuItem.Click += new System.EventHandler(this.aboutMeToolStripMenuItem_Click);
             // 
@@ -276,6 +287,7 @@
             this.videoSourcePlayer.Size = new System.Drawing.Size(640, 480);
             this.videoSourcePlayer.TabIndex = 2;
             this.videoSourcePlayer.VideoSource = null;
+            this.videoSourcePlayer.MouseHover += new System.EventHandler(this.videoSourcePlayer_MouseHover);
             // 
             // btnStopAlarm
             // 
@@ -287,6 +299,7 @@
             this.btnStopAlarm.Text = "STOP ALARM";
             this.btnStopAlarm.UseVisualStyleBackColor = true;
             this.btnStopAlarm.Click += new System.EventHandler(this.btnStopAlarm_Click);
+            this.btnStopAlarm.MouseHover += new System.EventHandler(this.btnStopAlarm_MouseHover);
             // 
             // btnStopProcessing
             // 
@@ -298,6 +311,7 @@
             this.btnStopProcessing.Text = "STOP";
             this.btnStopProcessing.UseVisualStyleBackColor = true;
             this.btnStopProcessing.Click += new System.EventHandler(this.btnStopProcessing_Click);
+            this.btnStopProcessing.MouseHover += new System.EventHandler(this.btnStopProcessing_MouseHover);
             // 
             // lblDetectorLevel
             // 
@@ -308,6 +322,7 @@
             this.lblDetectorLevel.Size = new System.Drawing.Size(80, 26);
             this.lblDetectorLevel.TabIndex = 25;
             this.lblDetectorLevel.Text = "aaaa";
+            this.lblDetectorLevel.MouseHover += new System.EventHandler(this.lblDetectorLevel_MouseHover);
             // 
             // label3
             // 
@@ -329,6 +344,7 @@
             this.chbEnableMotionDisplay.Text = "Enable";
             this.chbEnableMotionDisplay.UseVisualStyleBackColor = true;
             this.chbEnableMotionDisplay.CheckedChanged += new System.EventHandler(this.chbEnableMotionDisplay_CheckedChanged);
+            this.chbEnableMotionDisplay.MouseHover += new System.EventHandler(this.chbEnableMotionDisplay_MouseHover);
             // 
             // txtCurrentMotion
             // 
@@ -365,6 +381,7 @@
             this.pcbStatusPanel.Size = new System.Drawing.Size(318, 197);
             this.pcbStatusPanel.TabIndex = 19;
             this.pcbStatusPanel.TabStop = false;
+            this.pcbStatusPanel.MouseHover += new System.EventHandler(this.pcbStatusPanel_MouseHover);
             // 
             // btnClearHistoryBox
             // 
@@ -403,6 +420,7 @@
             this.HistoryList.Name = "HistoryList";
             this.HistoryList.Size = new System.Drawing.Size(328, 212);
             this.HistoryList.TabIndex = 29;
+            this.HistoryList.MouseHover += new System.EventHandler(this.HistoryList_MouseHover);
             // 
             // label2
             // 
@@ -513,5 +531,7 @@
         private System.Windows.Forms.OpenFileDialog openFileDialog;
         private System.Windows.Forms.ToolStripMenuItem preferancesToolStripMenuItem;
         private System.Windows.Forms.SaveFileDialog saveFile;
+        private System.Windows.Forms.ToolStripMenuItem suggestAnIdeaToolStripMenuItem;
+        private System.Windows.Forms.ToolTip toolTip;
     }
 }

@@ -24,6 +24,12 @@ namespace CatalystSpy
                     MessageBoxIcon.Information);
                 return;
             }
+            else if (txtNewPassword.Text != txtReverifyPassword.Text)
+            {
+                MessageBox.Show(this, "New Password and Re-enter password field do not match",
+                    "Error",
+                    MessageBoxButtons.OK, MessageBoxIcon.Error);
+            }
             else
             {
                 bool isValid = CredentialTools.validate(txtOldUsername.Text, txtOldPassword.Text);
