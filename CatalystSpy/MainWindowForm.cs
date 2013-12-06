@@ -22,6 +22,7 @@ namespace CatalystSpy
         FileVideoSource fileVideoSource;
         MotionDetector detector;
         SoundPlayer sound;
+        int detectedObject = 0;
         string[] files;
         int counter;
         string detectorMode = "DIFF";
@@ -101,6 +102,10 @@ namespace CatalystSpy
                         case "GRID":
                             detector = null;
                             break;
+
+                        case "BLOB":
+                            detector = null;
+                            break;
                     }
                     break;
 
@@ -126,6 +131,12 @@ namespace CatalystSpy
                                 new SimpleBackgroundModelingDetector(),
                                 new GridMotionAreaProcessing());
                             detector.Reset();
+                            break;
+
+                        case "BLOB":
+                            detector = new MotionDetector(
+                                new SimpleBackgroundModelingDetector(),
+                                new BlobCountingObjectsProcessing());
                             break;
                     }
                     break;
@@ -153,6 +164,12 @@ namespace CatalystSpy
                                 new GridMotionAreaProcessing());
                             detector.Reset();
                             break;
+
+                        case "BLOB":
+                            detector = new MotionDetector(
+                                new TwoFramesDifferenceDetector(),
+                                new BlobCountingObjectsProcessing());
+                            break;
                     }
                     break;
             }
@@ -163,6 +180,12 @@ namespace CatalystSpy
             Bitmap temp;
             if (detector != null)
             {
+                if (detector.MotionProcessingAlgorithm is BlobCountingObjectsProcessing)
+                {
+                    BlobCountingObjectsProcessing countProcessor = (BlobCountingObjectsProcessing)
+                        detector.MotionProcessingAlgorithm;
+                    detectedObject = countProcessor.ObjectsCount;
+                }
                 temp = new Bitmap(image);
                 float motion = detector.ProcessFrame(image);
                 if (motion > Properties.Settings.Default.motionLevel)
@@ -323,7 +346,7 @@ namespace CatalystSpy
 
         private void viewPreviousImagesToolStripMenuItem_Click(object sender, EventArgs e)
         {
-            ViewCapturedImagesForm form = new ViewCapturedImagesForm();
+            SelectImageFolderForm form = new SelectImageFolderForm();
             form.ShowDialog();
         }
 
@@ -476,6 +499,20 @@ namespace CatalystSpy
         {
             toolTip.Show("This Box remains green untill no suspect-able motion is detected",
                 pcbStatusPanel);
+        }
+
+        private void blobCountingToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            if (videoSource == null && fileVideoSource == null)
+            {
+                MessageBox.Show(this, "Please start video feed from camera or vide file first",
+                   "No source detected", MessageBoxButtons.OK, MessageBoxIcon.Error);
+            }
+            else
+            {
+                motionProcess = "BLOB";
+                MotionDetectorAlgorithmStart();
+            }
         }
 
     }

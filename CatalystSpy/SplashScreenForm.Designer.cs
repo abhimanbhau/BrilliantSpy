@@ -28,9 +28,18 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.components = new System.ComponentModel.Container();
+            this.SuspendLayout();
+            // 
+            // SplashScreenForm
+            // 
+            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.ClientSize = new System.Drawing.Size(284, 261);
+            this.Name = "SplashScreenForm";
             this.Text = "SplashScreenForm";
+            this.Load += new System.EventHandler(this.SplashScreenForm_Load);
+            this.ResumeLayout(false);
+
         }
 
         #endregion

@@ -11,30 +11,25 @@ namespace CatalystSpy
 {
     public partial class ViewCapturedImagesForm : Form
     {
-        string HistoryDBPath = Properties.Settings.Default.homeDirectory +
-            "\\" + DateTime.UtcNow.ToShortDateString() + "\\";
+        string HistoryDBPath;
         static string[] images;
         int position = 0;
 
-        public ViewCapturedImagesForm()
+        public ViewCapturedImagesForm(string p)
         {
             InitializeComponent();
+            string dir = Path.GetDirectoryName(p);
+            HistoryDBPath = Properties.Settings.Default.homeDirectory + "\\" + p;
         }
 
         private void ViewCapturedImagesForm_Load(object sender, EventArgs e)
         {
-            if (Directory.Exists(HistoryDBPath))
-            {
-                images = Directory.GetFiles(Properties.Settings.Default.homeDirectory +
-                    "\\" + DateTime.UtcNow.ToShortDateString()
-                    + "\\");
-            }
-            this.MinimizeBox = false;
-            this.MaximizeBox = false;
+            images = Directory.GetFiles(HistoryDBPath + "\\", "*.*");
             if (images.Length != 0)
             {
                 HistoryViewer.Image = new Bitmap(images[position]);
             }
+
         }
 
         private void btnNext_Click(object sender, EventArgs e)
@@ -49,7 +44,7 @@ namespace CatalystSpy
 
         private void ViewCapturedImagesForm_KeyDown(object sender, KeyEventArgs e)
         {
-            if(e.KeyCode == Keys.Left )
+            if (e.KeyCode == Keys.Left)
             {
                 ViewPreviousPicture();
             }

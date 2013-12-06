@@ -66,7 +66,7 @@
             this.label7.Name = "label7";
             this.label7.Size = new System.Drawing.Size(317, 21);
             this.label7.TabIndex = 34;
-            this.label7.Text = "Change intelliSpy Storage Directory";
+            this.label7.Text = "Change CatalystSpy Storage Directory";
             // 
             // btnIsHiddenSet
             // 
@@ -97,7 +97,7 @@
             this.label6.Name = "label6";
             this.label6.Size = new System.Drawing.Size(236, 21);
             this.label6.TabIndex = 31;
-            this.label6.Text = "intelliSpy Storage Hidden?";
+            this.label6.Text = "CatalystSpy Storage Hidden?";
             this.label6.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
             // btnSetCustomWarningMessage
@@ -207,7 +207,7 @@
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(207, 21);
             this.label2.TabIndex = 20;
-            this.label2.Text = "Clear intelliSpy storage";
+            this.label2.Text = "Clear CatalystSpy storage";
             this.label2.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
             // txtsize

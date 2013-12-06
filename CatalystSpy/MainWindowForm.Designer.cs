@@ -29,6 +29,7 @@
         private void InitializeComponent()
         {
             this.components = new System.ComponentModel.Container();
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(MainWindowForm));
             this.MainMenuStrip = new System.Windows.Forms.MenuStrip();
             this.menuToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.startFeedFromCameraToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
@@ -72,6 +73,7 @@
             this.openFileDialog = new System.Windows.Forms.OpenFileDialog();
             this.saveFile = new System.Windows.Forms.SaveFileDialog();
             this.toolTip = new System.Windows.Forms.ToolTip(this.components);
+            this.blobCountingToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.MainMenuStrip.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pcbStatusPanel)).BeginInit();
             this.SuspendLayout();
@@ -165,7 +167,8 @@
             this.highlightingAlgorithmToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
             this.areaHighlightToolStripMenuItem,
             this.borderToolStripMenuItem,
-            this.gridMotionProcessingToolStripMenuItem});
+            this.gridMotionProcessingToolStripMenuItem,
+            this.blobCountingToolStripMenuItem});
             this.highlightingAlgorithmToolStripMenuItem.Name = "highlightingAlgorithmToolStripMenuItem";
             this.highlightingAlgorithmToolStripMenuItem.Size = new System.Drawing.Size(175, 20);
             this.highlightingAlgorithmToolStripMenuItem.Text = "Motion Processing Algorithm";
@@ -448,6 +451,13 @@
             // 
             this.openFileDialog.FileName = "Open a video file to process";
             // 
+            // blobCountingToolStripMenuItem
+            // 
+            this.blobCountingToolStripMenuItem.Name = "blobCountingToolStripMenuItem";
+            this.blobCountingToolStripMenuItem.Size = new System.Drawing.Size(198, 22);
+            this.blobCountingToolStripMenuItem.Text = "Blob Counting";
+            this.blobCountingToolStripMenuItem.Click += new System.EventHandler(this.blobCountingToolStripMenuItem_Click);
+            // 
             // MainWindowForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -472,6 +482,7 @@
             this.Controls.Add(this.videoSourcePlayer);
             this.Controls.Add(this.MainMenuStrip);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.Fixed3D;
+            this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.MaximizeBox = false;
             this.MinimizeBox = false;
             this.Name = "MainWindowForm";
@@ -533,5 +544,6 @@
         private System.Windows.Forms.SaveFileDialog saveFile;
         private System.Windows.Forms.ToolStripMenuItem suggestAnIdeaToolStripMenuItem;
         private System.Windows.Forms.ToolTip toolTip;
+        private System.Windows.Forms.ToolStripMenuItem blobCountingToolStripMenuItem;
     }
 }

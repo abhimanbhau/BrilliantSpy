@@ -14,5 +14,10 @@ namespace CatalystSpy
         {
             InitializeComponent();
         }
+
+        private void SplashScreenForm_Load(object sender, EventArgs e)
+        {
+
+        }
     }
 }
