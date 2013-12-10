@@ -103,5 +103,41 @@ namespace CatalystSpy.Properties {
                 return ((string)(this["ftpIpAddress"]));
             }
         }
+        
+        [global::System.Configuration.UserScopedSettingAttribute()]
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        [global::System.Configuration.DefaultSettingValueAttribute("D:\\CatalystSpy\\Compressed")]
+        public string compressedFileDirectory {
+            get {
+                return ((string)(this["compressedFileDirectory"]));
+            }
+            set {
+                this["compressedFileDirectory"] = value;
+            }
+        }
+        
+        [global::System.Configuration.UserScopedSettingAttribute()]
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        [global::System.Configuration.DefaultSettingValueAttribute("D:\\CatalystSpy\\Encrypted")]
+        public string encryptedFilesDirectory {
+            get {
+                return ((string)(this["encryptedFilesDirectory"]));
+            }
+            set {
+                this["encryptedFilesDirectory"] = value;
+            }
+        }
+        
+        [global::System.Configuration.UserScopedSettingAttribute()]
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        [global::System.Configuration.DefaultSettingValueAttribute("D:\\Catalyst\\Decrypted")]
+        public string decryptedFilesDirectory {
+            get {
+                return ((string)(this["decryptedFilesDirectory"]));
+            }
+            set {
+                this["decryptedFilesDirectory"] = value;
+            }
+        }
     }
 }

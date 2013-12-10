@@ -41,8 +41,9 @@ Features
 20. You can also process a video for motion[demonstration purposes]
 21. Intuitive UI
 22. Simple User Interface. Even a person having no computer experience can use it
-23. Get display of current motion level by a simple click. Useful while analysing different situations for possible motion thresholds
-24. Many I forgot..... And More to come
+23. Get display of current motion level by a simple click. Useful while analysing different situations for possible motion thresholds.
+24. File compression tool built-in.(Creates normal as well as protected archives)
+25. Many I forgot..... And More to come
 
 TO-DO
 1. Manageable maximum disk space usage

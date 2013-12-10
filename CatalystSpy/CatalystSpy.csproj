@@ -44,7 +44,7 @@
     <OutputPath>bin\Release\</OutputPath>
     <DefineConstants>TRACE</DefineConstants>
     <ErrorReport>prompt</ErrorReport>
-    <WarningLevel>4</WarningLevel>
+    <WarningLevel>0</WarningLevel>
   </PropertyGroup>
   <PropertyGroup>
     <SignAssembly>true</SignAssembly>
@@ -203,6 +203,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="ChangeHomeDirectoryForm.resx">
       <DependentUpon>ChangeHomeDirectoryForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="CompressFilesForm.resx">
+      <DependentUpon>CompressFilesForm.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="EncryptDecryptFilesForm.resx">
       <DependentUpon>EncryptDecryptFilesForm.cs</DependentUpon>

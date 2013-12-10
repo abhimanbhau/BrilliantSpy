@@ -23,5 +23,14 @@
     <Setting Name="ftpIpAddress" Type="System.String" Scope="Application">
       <Value Profile="(Default)">ftp://127.0.0.1/</Value>
     </Setting>
+    <Setting Name="compressedFileDirectory" Type="System.String" Scope="User">
+      <Value Profile="(Default)">D:\CatalystSpy\Compressed</Value>
+    </Setting>
+    <Setting Name="encryptedFilesDirectory" Type="System.String" Scope="User">
+      <Value Profile="(Default)">D:\CatalystSpy\Encrypted</Value>
+    </Setting>
+    <Setting Name="decryptedFilesDirectory" Type="System.String" Scope="User">
+      <Value Profile="(Default)">D:\Catalyst\Decrypted</Value>
+    </Setting>
   </Settings>
 </SettingsFile>
