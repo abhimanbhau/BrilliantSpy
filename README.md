@@ -1,5 +1,5 @@
 CatalystSpy
-==========
+===========
 Turns Your PC Into An Intelligent Spy
 
 
@@ -16,6 +16,10 @@ How does it work?
 1. CatalystSpy takes feed from any camera(web-cam/USB camera) connected to your PC.
 2. It then processes every single frame for detecting motion.
 3. If motion detected is more than the threshold value then alarm is raised(both audio and visual).
+
+Price?
+
+If you are reading this then hardly you might want to ask for price. It's totally free to use and redistribute until you keep/give credits
 
 Features
 

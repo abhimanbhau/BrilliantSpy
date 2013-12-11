@@ -130,7 +130,7 @@ namespace CatalystSpy.Properties {
         
         [global::System.Configuration.UserScopedSettingAttribute()]
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-        [global::System.Configuration.DefaultSettingValueAttribute("D:\\Catalyst\\Decrypted")]
+        [global::System.Configuration.DefaultSettingValueAttribute("D:\\CatalystSpy\\Decrypted")]
         public string decryptedFilesDirectory {
             get {
                 return ((string)(this["decryptedFilesDirectory"]));

@@ -30,7 +30,7 @@
       <Value Profile="(Default)">D:\CatalystSpy\Encrypted</Value>
     </Setting>
     <Setting Name="decryptedFilesDirectory" Type="System.String" Scope="User">
-      <Value Profile="(Default)">D:\Catalyst\Decrypted</Value>
+      <Value Profile="(Default)">D:\CatalystSpy\Decrypted</Value>
     </Setting>
   </Settings>
 </SettingsFile>

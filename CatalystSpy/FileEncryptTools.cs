@@ -12,18 +12,15 @@ namespace CatalystSpy
         {
             try
             {
-                if (!(Directory.Exists(Properties.Settings.Default.homeDirectory
-                    + "\\ENCRYPTED")))
+                if (!(Directory.Exists(Properties.Settings.Default.encryptedFilesDirectory)))
                 {
-                    Directory.CreateDirectory(Properties.Settings.Default.homeDirectory
-                        + "\\ENCRYPTED");
+                    Directory.CreateDirectory(Properties.Settings.Default.encryptedFilesDirectory);
                 }
                 Encryption encrypt = new Encryption();
                 encrypt.Salt = "kolte";
                 encrypt.InitializationVector = "ask";
                 var name = Path.GetFileName(inputPath);
-                string outFile = Properties.Settings.Default.homeDirectory
-                    + "\\ENCRYPTED\\" + name;
+                string outFile = Properties.Settings.Default.encryptedFilesDirectory + @"\" + name;
                 encrypt.EncryptFile(EncryptionProvider.Rijndael, password, inputPath,
                     outFile);
             }
@@ -37,18 +34,15 @@ namespace CatalystSpy
         {
             try
             {
-                if (!(Directory.Exists(Properties.Settings.Default.homeDirectory
-                    + "\\DECRYPTED")))
+                if (!(Directory.Exists(Properties.Settings.Default.decryptedFilesDirectory)))
                 {
-                    Directory.CreateDirectory(Properties.Settings.Default.homeDirectory
-                        + "\\DECRYPTED");
+                    Directory.CreateDirectory(Properties.Settings.Default.decryptedFilesDirectory);
                 }
                 Encryption encrypt = new Encryption();
                 encrypt.Salt = "kolte";
                 encrypt.InitializationVector = "ask";
                 var name = Path.GetFileName(inputPath);
-                string outFile = Properties.Settings.Default.homeDirectory
-                    + "\\DECRYPTED\\" + name;
+                string outFile = Properties.Settings.Default.decryptedFilesDirectory + @"\" + name;
                 encrypt.DecryptFile(EncryptionProvider.Rijndael, password, inputPath,
                     outFile);
             }

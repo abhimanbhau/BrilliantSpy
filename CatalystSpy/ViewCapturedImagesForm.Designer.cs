@@ -83,6 +83,7 @@
             this.Text = "ViewHistoryForm";
             this.Load += new System.EventHandler(this.ViewCapturedImagesForm_Load);
             this.KeyDown += new System.Windows.Forms.KeyEventHandler(this.ViewCapturedImagesForm_KeyDown);
+            this.KeyUp += new System.Windows.Forms.KeyEventHandler(this.ViewCapturedImagesForm_KeyUp);
             ((System.ComponentModel.ISupportInitialize)(this.HistoryViewer)).EndInit();
             this.ResumeLayout(false);
 

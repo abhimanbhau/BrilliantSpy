@@ -110,7 +110,7 @@ namespace CatalystSpy
 
         private void btnChangeHomeDirectory_Click(object sender, EventArgs e)
         {
-            ChangeHomeDirectoryForm form = new ChangeHomeDirectoryForm();
+            ChangeDirectoriesForm form = new ChangeDirectoriesForm();
             form.ShowDialog();
         }
 

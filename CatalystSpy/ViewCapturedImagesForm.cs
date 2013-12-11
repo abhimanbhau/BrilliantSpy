@@ -15,11 +15,10 @@ namespace CatalystSpy
         static string[] images;
         int position = 0;
 
-        public ViewCapturedImagesForm(string p)
+        public ViewCapturedImagesForm(string path)
         {
             InitializeComponent();
-            string dir = Path.GetDirectoryName(p);
-            HistoryDBPath = Properties.Settings.Default.homeDirectory + "\\" + p;
+            HistoryDBPath = path;
         }
 
         private void ViewCapturedImagesForm_Load(object sender, EventArgs e)
@@ -81,6 +80,23 @@ namespace CatalystSpy
             {
                 --position;
                 HistoryViewer.Image = new Bitmap(images[position]);
+            }
+        }
+
+
+        private void ViewCapturedImagesForm_KeyUp(object sender, KeyEventArgs e)
+        {
+            if (e.KeyCode == Keys.Left)
+            {
+                ViewPreviousPicture();
+            }
+            else if (e.KeyCode == Keys.Right)
+            {
+                ViewNextPicture();
+            }
+            else if (e.KeyCode == Keys.Escape)
+            {
+                this.Close();
             }
         }
     }

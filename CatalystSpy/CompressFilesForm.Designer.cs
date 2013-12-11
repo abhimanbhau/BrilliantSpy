@@ -117,6 +117,7 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.BackgroundImage = global::CatalystSpy.Properties.Resources.BG;
             this.ClientSize = new System.Drawing.Size(482, 291);
             this.Controls.Add(this.lblWarning);
             this.Controls.Add(this.btnClearList);
@@ -125,7 +126,14 @@
             this.Controls.Add(this.txtPassword);
             this.Controls.Add(this.btnBrowse);
             this.Controls.Add(this.listFiles);
+            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedToolWindow;
+            this.MaximizeBox = false;
+            this.MinimizeBox = false;
             this.Name = "CompressFilesForm";
+            this.ShowIcon = false;
+            this.ShowInTaskbar = false;
+            this.SizeGripStyle = System.Windows.Forms.SizeGripStyle.Hide;
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "CompressFilesForm";
             this.Load += new System.EventHandler(this.CompressFilesForm_Load);
             this.ResumeLayout(false);

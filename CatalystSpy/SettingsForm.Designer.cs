@@ -64,9 +64,9 @@
             this.label7.Font = new System.Drawing.Font("Lucida Calligraphy", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label7.Location = new System.Drawing.Point(12, 373);
             this.label7.Name = "label7";
-            this.label7.Size = new System.Drawing.Size(317, 21);
+            this.label7.Size = new System.Drawing.Size(349, 21);
             this.label7.TabIndex = 34;
-            this.label7.Text = "Change CatalystSpy Storage Directory";
+            this.label7.Text = "Change CatalystSpy Storage Directories";
             // 
             // btnIsHiddenSet
             // 
@@ -95,7 +95,7 @@
             this.label6.Font = new System.Drawing.Font("Lucida Calligraphy", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label6.Location = new System.Drawing.Point(12, 324);
             this.label6.Name = "label6";
-            this.label6.Size = new System.Drawing.Size(236, 21);
+            this.label6.Size = new System.Drawing.Size(257, 21);
             this.label6.TabIndex = 31;
             this.label6.Text = "CatalystSpy Storage Hidden?";
             this.label6.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
@@ -205,7 +205,7 @@
             this.label2.Font = new System.Drawing.Font("Lucida Calligraphy", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label2.Location = new System.Drawing.Point(12, 78);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(207, 21);
+            this.label2.Size = new System.Drawing.Size(228, 21);
             this.label2.TabIndex = 20;
             this.label2.Text = "Clear CatalystSpy storage";
             this.label2.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
