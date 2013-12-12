@@ -76,7 +76,6 @@
             // 
             // btnBrowse
             // 
-            this.btnBrowse.BackgroundImage = global::CatalystSpy.Properties.Resources.folder;
             this.btnBrowse.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
             this.btnBrowse.Location = new System.Drawing.Point(16, 158);
             this.btnBrowse.Name = "btnBrowse";

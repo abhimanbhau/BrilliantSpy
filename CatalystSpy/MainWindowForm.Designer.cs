@@ -105,6 +105,7 @@
             // 
             // startFeedFromCameraToolStripMenuItem
             // 
+            this.startFeedFromCameraToolStripMenuItem.Image = ((System.Drawing.Image)(resources.GetObject("startFeedFromCameraToolStripMenuItem.Image")));
             this.startFeedFromCameraToolStripMenuItem.Name = "startFeedFromCameraToolStripMenuItem";
             this.startFeedFromCameraToolStripMenuItem.ShortcutKeys = ((System.Windows.Forms.Keys)((System.Windows.Forms.Keys.Control | System.Windows.Forms.Keys.O)));
             this.startFeedFromCameraToolStripMenuItem.Size = new System.Drawing.Size(244, 22);
@@ -113,6 +114,7 @@
             // 
             // startFeedFromVideoToolStripMenuItem
             // 
+            this.startFeedFromVideoToolStripMenuItem.Image = global::CatalystSpy.Properties.Resources.video;
             this.startFeedFromVideoToolStripMenuItem.Name = "startFeedFromVideoToolStripMenuItem";
             this.startFeedFromVideoToolStripMenuItem.ShortcutKeys = ((System.Windows.Forms.Keys)((System.Windows.Forms.Keys.Control | System.Windows.Forms.Keys.V)));
             this.startFeedFromVideoToolStripMenuItem.Size = new System.Drawing.Size(244, 22);
@@ -121,6 +123,7 @@
             // 
             // exitToolStripMenuItem
             // 
+            this.exitToolStripMenuItem.Image = global::CatalystSpy.Properties.Resources.exit;
             this.exitToolStripMenuItem.Name = "exitToolStripMenuItem";
             this.exitToolStripMenuItem.ShortcutKeys = ((System.Windows.Forms.Keys)((System.Windows.Forms.Keys.Control | System.Windows.Forms.Keys.E)));
             this.exitToolStripMenuItem.Size = new System.Drawing.Size(244, 22);
@@ -211,7 +214,7 @@
             // 
             // viewPreviousImagesToolStripMenuItem
             // 
-            this.viewPreviousImagesToolStripMenuItem.Image = global::CatalystSpy.Properties.Resources.Icon_320;
+            this.viewPreviousImagesToolStripMenuItem.Image = global::CatalystSpy.Properties.Resources.photo;
             this.viewPreviousImagesToolStripMenuItem.Name = "viewPreviousImagesToolStripMenuItem";
             this.viewPreviousImagesToolStripMenuItem.ShortcutKeys = ((System.Windows.Forms.Keys)((System.Windows.Forms.Keys.Control | System.Windows.Forms.Keys.H)));
             this.viewPreviousImagesToolStripMenuItem.Size = new System.Drawing.Size(231, 22);
@@ -244,6 +247,7 @@
             // 
             // preferancesToolStripMenuItem
             // 
+            this.preferancesToolStripMenuItem.Image = global::CatalystSpy.Properties.Resources.settings;
             this.preferancesToolStripMenuItem.Name = "preferancesToolStripMenuItem";
             this.preferancesToolStripMenuItem.ShortcutKeys = ((System.Windows.Forms.Keys)((System.Windows.Forms.Keys.Control | System.Windows.Forms.Keys.P)));
             this.preferancesToolStripMenuItem.Size = new System.Drawing.Size(176, 22);
@@ -263,6 +267,7 @@
             // 
             // suggestAnIdeaToolStripMenuItem
             // 
+            this.suggestAnIdeaToolStripMenuItem.Image = global::CatalystSpy.Properties.Resources.bubble;
             this.suggestAnIdeaToolStripMenuItem.Name = "suggestAnIdeaToolStripMenuItem";
             this.suggestAnIdeaToolStripMenuItem.Size = new System.Drawing.Size(253, 22);
             this.suggestAnIdeaToolStripMenuItem.Text = "Suggest an idea/Request a feature";
@@ -270,6 +275,7 @@
             // 
             // suggetionsToolStripMenuItem
             // 
+            this.suggetionsToolStripMenuItem.Image = global::CatalystSpy.Properties.Resources.pen;
             this.suggetionsToolStripMenuItem.Name = "suggetionsToolStripMenuItem";
             this.suggetionsToolStripMenuItem.Size = new System.Drawing.Size(253, 22);
             this.suggetionsToolStripMenuItem.Text = "Report Bug";
@@ -277,6 +283,7 @@
             // 
             // openSourceLicensesToolStripMenuItem
             // 
+            this.openSourceLicensesToolStripMenuItem.Image = global::CatalystSpy.Properties.Resources.world;
             this.openSourceLicensesToolStripMenuItem.Name = "openSourceLicensesToolStripMenuItem";
             this.openSourceLicensesToolStripMenuItem.Size = new System.Drawing.Size(253, 22);
             this.openSourceLicensesToolStripMenuItem.Text = "Open Source Licenses";
@@ -284,6 +291,7 @@
             // 
             // aboutMeToolStripMenuItem
             // 
+            this.aboutMeToolStripMenuItem.Image = global::CatalystSpy.Properties.Resources.user;
             this.aboutMeToolStripMenuItem.Name = "aboutMeToolStripMenuItem";
             this.aboutMeToolStripMenuItem.ShortcutKeys = ((System.Windows.Forms.Keys)((System.Windows.Forms.Keys.Control | System.Windows.Forms.Keys.A)));
             this.aboutMeToolStripMenuItem.Size = new System.Drawing.Size(253, 22);
@@ -401,11 +409,9 @@
             this.btnClearHistoryBox.Size = new System.Drawing.Size(48, 34);
             this.btnClearHistoryBox.TabIndex = 32;
             this.btnClearHistoryBox.UseVisualStyleBackColor = true;
-            this.btnClearHistoryBox.Click += new System.EventHandler(this.btnClearHistoryBox_Click);
             // 
             // btnSaveMotionHistory
             // 
-            this.btnSaveMotionHistory.Image = global::CatalystSpy.Properties.Resources.folder;
             this.btnSaveMotionHistory.Location = new System.Drawing.Point(955, 630);
             this.btnSaveMotionHistory.Name = "btnSaveMotionHistory";
             this.btnSaveMotionHistory.Size = new System.Drawing.Size(48, 34);

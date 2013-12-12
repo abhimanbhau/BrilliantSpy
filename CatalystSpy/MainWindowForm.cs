@@ -71,6 +71,7 @@ namespace CatalystSpy
         private void startFeedFromCameraToolStripMenuItem_Click(object sender, EventArgs e)
         {
             VideoCaptureDeviceForm form = new VideoCaptureDeviceForm();
+            form.Text = "Select the camera.Recommended Res is 640*480 & keep defaults";
             if (form.ShowDialog(this) == System.Windows.Forms.DialogResult.OK)
             {
                 videoSource = new VideoCaptureDevice(form.VideoDeviceMoniker);
