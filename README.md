@@ -1,19 +1,19 @@
-CatalystSpy
+BrilliantSpy
 ===========
 Turns Your PC Into An Intelligent Spy
 
 
 
-What is CatalystSpy?
+What is BrilliantSpy?
 
-1. 'CatalystSpy' is an intelligent Spying application which makes use of web-cam or/and microphone
+1. 'BrilliantSpy' is an intelligent Spying application which makes use of web-cam or/and microphone
 2. It is written in C#. It makes use of AForge.NET, Kellerman-Encryption-Library, DOTNETZIP. All these libraries are open source(Except kellerman).
 3. .NET version 2.0+ are supported.
 
 
 How does it work?
 
-1. CatalystSpy takes feed from any camera(web-cam/USB camera) connected to your PC.
+1. BrilliantSpy takes feed from any camera(web-cam/USB camera) connected to your PC.
 2. It then processes every single frame for detecting motion.
 3. If motion detected is more than the threshold value then alarm is raised(both audio and visual).
 
@@ -26,10 +26,10 @@ Features
 1.  Intelligent Spying : No interaction needed except for starting the software
 2.  Continuous surveillance
 3.  Alerts if suspect-able motion detected
-4.  Immediately captures pictures and saves to secure 'CatalystSpy Storage'
+4.  Immediately captures pictures and saves to secure 'BrilliantSpy Storage'
 5.  Access is password protected and it's nearly impossible to break the password
 6.  Build-in captured images viewer
-7.  The 'CatalystSpy Storage' can be changed as per user choice as long as user has permissions to access chose location
+7.  The 'BrilliantSpy Storage' can be changed as per user choice as long as user has permissions to access chose location
 8.  File Encryption/Decryption support built-in
 9.  Found a Bug? Report it via built-in feature
 10. Any suggestion? Submit it via built-in feature
@@ -38,7 +38,7 @@ Features
 13. Custom Alert message can be set via menu
 14. Two motion detection algorithms, they are - Two Frame Difference & Background Modelling
 15. Detection can be manually stopped at user's choice
-16. Settings menu shows the current disk space use by 'CatalystSpy Storage'
+16. Settings menu shows the current disk space use by 'BrilliantSpy Storage'
 17. If disk space is low, you can clear it @any time
 18. Save the motion history as a text file
 19. Audio Alarm can be stopped without disturbing the detector's process
