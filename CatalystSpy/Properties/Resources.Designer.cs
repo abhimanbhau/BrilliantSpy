@@ -8,7 +8,7 @@
 // </auto-generated>
 //------------------------------------------------------------------------------
 
-namespace WinSpy.Properties {
+namespace BrilliantSpy.Properties {
     using System;
     
     
@@ -39,7 +39,7 @@ namespace WinSpy.Properties {
         internal static global::System.Resources.ResourceManager ResourceManager {
             get {
                 if (object.ReferenceEquals(resourceMan, null)) {
-                    global::System.Resources.ResourceManager temp = new global::System.Resources.ResourceManager("WinSpy.Properties.Resources", typeof(Resources).Assembly);
+                    global::System.Resources.ResourceManager temp = new global::System.Resources.ResourceManager("BrilliantSpy.Properties.Resources", typeof(Resources).Assembly);
                     resourceMan = temp;
                 }
                 return resourceMan;
@@ -89,6 +89,29 @@ namespace WinSpy.Properties {
             get {
                 object obj = ResourceManager.GetObject("BG", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Apache License
+        ///                           Version 2.0, January 2004
+        ///                        http://www.apache.org/licenses/
+        ///
+        ///   TERMS AND CONDITIONS FOR USE, REPRODUCTION, AND DISTRIBUTION
+        ///
+        ///   1. Definitions.
+        ///
+        ///      &quot;License&quot; shall mean the terms and conditions for use, reproduction,
+        ///      and distribution as defined by Sections 1 through 9 of this document.
+        ///
+        ///      &quot;Licensor&quot; shall mean the copyright owner or entity authorized by
+        ///      the copyright owner that is granting the License.
+        ///
+        ///      &quot; [rest of string was truncated]&quot;;.
+        /// </summary>
+        internal static string BrilliantSpy_LICENSE {
+            get {
+                return ResourceManager.GetString("BrilliantSpy_LICENSE", resourceCulture);
             }
         }
         
@@ -305,29 +328,6 @@ namespace WinSpy.Properties {
             get {
                 object obj = ResourceManager.GetObject("video", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
-            }
-        }
-        
-        /// <summary>
-        ///   Looks up a localized string similar to Apache License
-        ///                           Version 2.0, January 2004
-        ///                        http://www.apache.org/licenses/
-        ///
-        ///   TERMS AND CONDITIONS FOR USE, REPRODUCTION, AND DISTRIBUTION
-        ///
-        ///   1. Definitions.
-        ///
-        ///      &quot;License&quot; shall mean the terms and conditions for use, reproduction,
-        ///      and distribution as defined by Sections 1 through 9 of this document.
-        ///
-        ///      &quot;Licensor&quot; shall mean the copyright owner or entity authorized by
-        ///      the copyright owner that is granting the License.
-        ///
-        ///      &quot; [rest of string was truncated]&quot;;.
-        /// </summary>
-        internal static string WinSpy_LICENSE {
-            get {
-                return ResourceManager.GetString("WinSpy_LICENSE", resourceCulture);
             }
         }
         

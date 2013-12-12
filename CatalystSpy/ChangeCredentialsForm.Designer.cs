@@ -1,4 +1,4 @@
-﻿namespace WinSpy
+﻿namespace BrilliantSpy
 {
     partial class ChangeCredentialsForm
     {
@@ -55,7 +55,7 @@
             // 
             // btnSubmit
             // 
-            this.btnSubmit.Image = global::WinSpy.Properties.Resources.OK;
+            this.btnSubmit.Image = global::BrilliantSpy.Properties.Resources.OK;
             this.btnSubmit.Location = new System.Drawing.Point(342, 226);
             this.btnSubmit.Name = "btnSubmit";
             this.btnSubmit.Size = new System.Drawing.Size(75, 44);
@@ -155,7 +155,7 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.BackgroundImage = global::WinSpy.Properties.Resources.BG;
+            this.BackgroundImage = global::BrilliantSpy.Properties.Resources.BG;
             this.ClientSize = new System.Drawing.Size(439, 336);
             this.Controls.Add(this.txtReverifyPassword);
             this.Controls.Add(this.label5);

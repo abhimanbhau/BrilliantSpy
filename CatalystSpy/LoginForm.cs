@@ -6,7 +6,7 @@ using System.Drawing;
 using System.Text;
 using System.Windows.Forms;
 
-namespace WinSpy
+namespace BrilliantSpy
 {
     public partial class LoginForm : Form
     {

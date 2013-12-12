@@ -7,7 +7,7 @@ using System.Text;
 using System.Windows.Forms;
 using System.IO;
 
-namespace WinSpy
+namespace BrilliantSpy
 {
     public partial class SettingsForm : Form
     {

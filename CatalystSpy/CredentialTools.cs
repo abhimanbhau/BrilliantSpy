@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using System.Text;
 using KellermanSoftware.NetEncryptionLibrary;
 
-namespace WinSpy
+namespace BrilliantSpy
 {
     class CredentialTools
     {

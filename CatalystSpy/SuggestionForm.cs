@@ -8,7 +8,7 @@ using System.Windows.Forms;
 using System.IO;
 using System.Net;
 
-namespace WinSpy
+namespace BrilliantSpy
 {
     public partial class SuggestionForm : Form
     {

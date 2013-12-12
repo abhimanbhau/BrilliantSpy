@@ -1,4 +1,4 @@
-﻿namespace WinSpy
+﻿namespace BrilliantSpy
 {
     partial class ChangeDirectoryPath
     {
@@ -77,7 +77,7 @@
             // btnBrowse
             // 
             this.btnBrowse.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
-            this.btnBrowse.Image = global::WinSpy.Properties.Resources.vallet;
+            this.btnBrowse.Image = global::BrilliantSpy.Properties.Resources.vallet;
             this.btnBrowse.Location = new System.Drawing.Point(12, 158);
             this.btnBrowse.Name = "btnBrowse";
             this.btnBrowse.Size = new System.Drawing.Size(44, 40);
@@ -99,7 +99,7 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.BackgroundImage = global::WinSpy.Properties.Resources.BG;
+            this.BackgroundImage = global::BrilliantSpy.Properties.Resources.BG;
             this.ClientSize = new System.Drawing.Size(310, 202);
             this.Controls.Add(this.btnNewSet);
             this.Controls.Add(this.btnBrowse);

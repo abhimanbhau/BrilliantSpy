@@ -6,7 +6,7 @@ using System.Drawing;
 using System.Text;
 using System.Windows.Forms;
 
-namespace WinSpy
+namespace BrilliantSpy
 {
     public partial class OpenSourceLicenseForm : Form
     {
@@ -29,7 +29,7 @@ namespace WinSpy
 
         private void button1_Click(object sender, EventArgs e)
         {
-            ViewLicenseForm form = new ViewLicenseForm("WinSpy");
+            ViewLicenseForm form = new ViewLicenseForm("BrilliantSpy");
             form.ShowDialog();
         }
     }

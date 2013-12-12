@@ -1,4 +1,4 @@
-﻿namespace WinSpy
+﻿namespace BrilliantSpy
 {
     partial class SplashScreenForm
     {

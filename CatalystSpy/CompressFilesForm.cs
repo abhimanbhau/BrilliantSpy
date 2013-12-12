@@ -8,7 +8,7 @@ using System.Windows.Forms;
 using Ionic.Zip;
 using System.IO;
 
-namespace WinSpy
+namespace BrilliantSpy
 {
     public partial class CompressFilesForm : Form
     {
@@ -52,7 +52,7 @@ namespace WinSpy
         private void CompressFilesForm_Load(object sender, EventArgs e)
         {
             lblWarning.Text = "";
-            openFileDialog.Filter = "WinSpy Captured Image Files (*.bmp)|*.bmp";
+            openFileDialog.Filter = "BrilliantSpy Captured Image Files (*.bmp)|*.bmp";
             openFileDialog.InitialDirectory = Properties.Settings.Default.homeDirectory;
             openFileDialog.Multiselect = true;
         }

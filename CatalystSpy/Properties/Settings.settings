@@ -1,5 +1,5 @@
 ﻿<?xml version='1.0' encoding='utf-8'?>
-<SettingsFile xmlns="http://schemas.microsoft.com/VisualStudio/2004/01/settings" CurrentProfile="(Default)" GeneratedClassNamespace="WinSpy.Properties" GeneratedClassName="Settings">
+<SettingsFile xmlns="http://schemas.microsoft.com/VisualStudio/2004/01/settings" CurrentProfile="(Default)" GeneratedClassNamespace="BrilliantSpy.Properties" GeneratedClassName="Settings">
   <Profiles />
   <Settings>
     <Setting Name="userName" Type="System.String" Scope="User">
@@ -18,19 +18,19 @@
       <Value Profile="(Default)">True</Value>
     </Setting>
     <Setting Name="homeDirectory" Type="System.String" Scope="User">
-      <Value Profile="(Default)">D:\WinSpy</Value>
+      <Value Profile="(Default)">D:\BrilliantSpy</Value>
     </Setting>
     <Setting Name="ftpIpAddress" Type="System.String" Scope="Application">
       <Value Profile="(Default)">ftp://127.0.0.1/</Value>
     </Setting>
     <Setting Name="compressedFileDirectory" Type="System.String" Scope="User">
-      <Value Profile="(Default)">D:\WinSpy\Compressed</Value>
+      <Value Profile="(Default)">D:\BrilliantSpy\Compressed</Value>
     </Setting>
     <Setting Name="encryptedFilesDirectory" Type="System.String" Scope="User">
-      <Value Profile="(Default)">D:\WinSpy\Encrypted</Value>
+      <Value Profile="(Default)">D:\BrilliantSpy\Encrypted</Value>
     </Setting>
     <Setting Name="decryptedFilesDirectory" Type="System.String" Scope="User">
-      <Value Profile="(Default)">D:\WinSpy\Decrypted</Value>
+      <Value Profile="(Default)">D:\BrilliantSpy\Decrypted</Value>
     </Setting>
     <Setting Name="isShowMotionInPlayer" Type="System.Boolean" Scope="User">
       <Value Profile="(Default)">True</Value>

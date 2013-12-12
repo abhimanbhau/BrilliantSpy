@@ -8,7 +8,7 @@
 // </auto-generated>
 //------------------------------------------------------------------------------
 
-namespace WinSpy.Properties {
+namespace BrilliantSpy.Properties {
     
     
     [global::System.Runtime.CompilerServices.CompilerGeneratedAttribute()]
@@ -85,7 +85,7 @@ namespace WinSpy.Properties {
         
         [global::System.Configuration.UserScopedSettingAttribute()]
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-        [global::System.Configuration.DefaultSettingValueAttribute("D:\\WinSpy")]
+        [global::System.Configuration.DefaultSettingValueAttribute("D:\\BrilliantSpy")]
         public string homeDirectory {
             get {
                 return ((string)(this["homeDirectory"]));
@@ -106,7 +106,7 @@ namespace WinSpy.Properties {
         
         [global::System.Configuration.UserScopedSettingAttribute()]
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-        [global::System.Configuration.DefaultSettingValueAttribute("D:\\WinSpy\\Compressed")]
+        [global::System.Configuration.DefaultSettingValueAttribute("D:\\BrilliantSpy\\Compressed")]
         public string compressedFileDirectory {
             get {
                 return ((string)(this["compressedFileDirectory"]));
@@ -118,7 +118,7 @@ namespace WinSpy.Properties {
         
         [global::System.Configuration.UserScopedSettingAttribute()]
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-        [global::System.Configuration.DefaultSettingValueAttribute("D:\\WinSpy\\Encrypted")]
+        [global::System.Configuration.DefaultSettingValueAttribute("D:\\BrilliantSpy\\Encrypted")]
         public string encryptedFilesDirectory {
             get {
                 return ((string)(this["encryptedFilesDirectory"]));
@@ -130,7 +130,7 @@ namespace WinSpy.Properties {
         
         [global::System.Configuration.UserScopedSettingAttribute()]
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-        [global::System.Configuration.DefaultSettingValueAttribute("D:\\WinSpy\\Decrypted")]
+        [global::System.Configuration.DefaultSettingValueAttribute("D:\\BrilliantSpy\\Decrypted")]
         public string decryptedFilesDirectory {
             get {
                 return ((string)(this["decryptedFilesDirectory"]));

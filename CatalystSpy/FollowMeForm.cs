@@ -6,7 +6,7 @@ using System.Drawing;
 using System.Text;
 using System.Windows.Forms;
 
-namespace WinSpy
+namespace BrilliantSpy
 {
     public partial class FollowMeForm : Form
     {
@@ -17,7 +17,7 @@ namespace WinSpy
 
         private void linkGithub_LinkClicked(object sender, LinkLabelLinkClickedEventArgs e)
         {
-            System.Diagnostics.Process.Start("https://github.com/abhimanbhau/WinSpy");
+            System.Diagnostics.Process.Start("https://github.com/abhimanbhau/BrilliantSpy");
         }
 
         private void linkLabel1_LinkClicked(object sender, LinkLabelLinkClickedEventArgs e)

@@ -1,4 +1,4 @@
-﻿namespace WinSpy
+﻿namespace BrilliantSpy
 {
     partial class LoginForm
     {
@@ -38,7 +38,7 @@
             // 
             // btnLogin
             // 
-            this.btnLogin.Image = global::WinSpy.Properties.Resources.OK;
+            this.btnLogin.Image = global::BrilliantSpy.Properties.Resources.OK;
             this.btnLogin.Location = new System.Drawing.Point(147, 104);
             this.btnLogin.Name = "btnLogin";
             this.btnLogin.Size = new System.Drawing.Size(75, 34);
@@ -88,7 +88,7 @@
             // 
             // btnExit
             // 
-            this.btnExit.Image = global::WinSpy.Properties.Resources.exit;
+            this.btnExit.Image = global::BrilliantSpy.Properties.Resources.exit;
             this.btnExit.Location = new System.Drawing.Point(250, 104);
             this.btnExit.Name = "btnExit";
             this.btnExit.Size = new System.Drawing.Size(75, 34);
@@ -100,7 +100,7 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.BackgroundImage = global::WinSpy.Properties.Resources.BG;
+            this.BackgroundImage = global::BrilliantSpy.Properties.Resources.BG;
             this.ClientSize = new System.Drawing.Size(344, 150);
             this.Controls.Add(this.btnExit);
             this.Controls.Add(this.btnLogin);

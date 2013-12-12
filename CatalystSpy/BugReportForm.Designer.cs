@@ -1,4 +1,4 @@
-﻿namespace WinSpy
+﻿namespace BrilliantSpy
 {
     partial class BugReportForm
     {
@@ -86,7 +86,7 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.BackgroundImage = global::WinSpy.Properties.Resources.BG;
+            this.BackgroundImage = global::BrilliantSpy.Properties.Resources.BG;
             this.ClientSize = new System.Drawing.Size(460, 311);
             this.Controls.Add(this.btnSubmit);
             this.Controls.Add(this.label2);
