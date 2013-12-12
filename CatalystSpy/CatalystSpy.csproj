@@ -326,7 +326,7 @@
     <None Include="Resources\Icon_320.ico" />
   </ItemGroup>
   <ItemGroup>
-    <None Include="Resources\exit %283%29.ico" />
+    <None Include="Resources\exit%283%29.ico" />
   </ItemGroup>
   <ItemGroup>
     <None Include="Resources\LICENSE.txt" />

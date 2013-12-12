@@ -41,8 +41,18 @@ namespace CatalystSpy
 
         private void btnSelectedFolder_Click(object sender, EventArgs e)
         {
-            ViewCapturedImagesForm form = new ViewCapturedImagesForm(lstFolders.Text);
-            form.ShowDialog();
+            if (lstFolders.Text.Trim() == "")
+            {
+                MessageBox.Show(this, "Please select a folder from the list",
+                    "Did you select a folder?",
+                    MessageBoxButtons.OK, MessageBoxIcon.Hand);
+                return;
+            }
+            else
+            {
+                ViewCapturedImagesForm form = new ViewCapturedImagesForm(lstFolders.Text);
+                form.ShowDialog();
+            }
         }
     }
 }

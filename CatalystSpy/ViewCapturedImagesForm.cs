@@ -43,7 +43,7 @@ namespace CatalystSpy
 
         private void ViewCapturedImagesForm_KeyDown(object sender, KeyEventArgs e)
         {
-            if (e.KeyCode == Keys.Left)
+            if (e.KeyCode == Keys.ControlKey && e.KeyCode ==  Keys.Left)
             {
                 ViewPreviousPicture();
             }

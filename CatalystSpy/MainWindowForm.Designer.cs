@@ -43,6 +43,7 @@
             this.areaHighlightToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.borderToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.gridMotionProcessingToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.blobCountingToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.historyToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.viewPreviousImagesToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.toolsToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
@@ -73,7 +74,6 @@
             this.openFileDialog = new System.Windows.Forms.OpenFileDialog();
             this.saveFile = new System.Windows.Forms.SaveFileDialog();
             this.toolTip = new System.Windows.Forms.ToolTip(this.components);
-            this.blobCountingToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.MainMenuStrip.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pcbStatusPanel)).BeginInit();
             this.SuspendLayout();
@@ -193,6 +193,13 @@
             this.gridMotionProcessingToolStripMenuItem.Size = new System.Drawing.Size(198, 22);
             this.gridMotionProcessingToolStripMenuItem.Text = "Grid Motion Processing";
             this.gridMotionProcessingToolStripMenuItem.Click += new System.EventHandler(this.gridMotionProcessingToolStripMenuItem_Click);
+            // 
+            // blobCountingToolStripMenuItem
+            // 
+            this.blobCountingToolStripMenuItem.Name = "blobCountingToolStripMenuItem";
+            this.blobCountingToolStripMenuItem.Size = new System.Drawing.Size(198, 22);
+            this.blobCountingToolStripMenuItem.Text = "Blob Counting";
+            this.blobCountingToolStripMenuItem.Click += new System.EventHandler(this.blobCountingToolStripMenuItem_Click);
             // 
             // historyToolStripMenuItem
             // 
@@ -440,7 +447,7 @@
             this.lblWarning.AutoSize = true;
             this.lblWarning.Font = new System.Drawing.Font("Copperplate Gothic Bold", 20.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblWarning.ForeColor = System.Drawing.Color.Red;
-            this.lblWarning.Location = new System.Drawing.Point(242, 560);
+            this.lblWarning.Location = new System.Drawing.Point(147, 553);
             this.lblWarning.Name = "lblWarning";
             this.lblWarning.Size = new System.Drawing.Size(148, 30);
             this.lblWarning.TabIndex = 33;
@@ -450,13 +457,6 @@
             // openFileDialog
             // 
             this.openFileDialog.FileName = "Open a video file to process";
-            // 
-            // blobCountingToolStripMenuItem
-            // 
-            this.blobCountingToolStripMenuItem.Name = "blobCountingToolStripMenuItem";
-            this.blobCountingToolStripMenuItem.Size = new System.Drawing.Size(198, 22);
-            this.blobCountingToolStripMenuItem.Text = "Blob Counting";
-            this.blobCountingToolStripMenuItem.Click += new System.EventHandler(this.blobCountingToolStripMenuItem_Click);
             // 
             // MainWindowForm
             // 
