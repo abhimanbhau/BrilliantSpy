@@ -561,5 +561,11 @@ namespace CatalystSpy
             }
         }
 
+        private void followMeToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            FollowMeForm form = new FollowMeForm();
+            form.ShowDialog();
+        }
+
     }
 }

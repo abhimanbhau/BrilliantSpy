@@ -55,6 +55,7 @@
             this.suggetionsToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.openSourceLicensesToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.aboutMeToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.followMeToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.videoSourcePlayer = new AForge.Controls.VideoSourcePlayer();
             this.btnStopAlarm = new System.Windows.Forms.Button();
             this.btnStopProcessing = new System.Windows.Forms.Button();
@@ -260,7 +261,8 @@
             this.suggestAnIdeaToolStripMenuItem,
             this.suggetionsToolStripMenuItem,
             this.openSourceLicensesToolStripMenuItem,
-            this.aboutMeToolStripMenuItem});
+            this.aboutMeToolStripMenuItem,
+            this.followMeToolStripMenuItem});
             this.aboutToolStripMenuItem.Name = "aboutToolStripMenuItem";
             this.aboutToolStripMenuItem.Size = new System.Drawing.Size(44, 20);
             this.aboutToolStripMenuItem.Text = "Help";
@@ -297,6 +299,14 @@
             this.aboutMeToolStripMenuItem.Size = new System.Drawing.Size(253, 22);
             this.aboutMeToolStripMenuItem.Text = "About Me";
             this.aboutMeToolStripMenuItem.Click += new System.EventHandler(this.aboutMeToolStripMenuItem_Click);
+            // 
+            // followMeToolStripMenuItem
+            // 
+            this.followMeToolStripMenuItem.Image = global::CatalystSpy.Properties.Resources.cloud;
+            this.followMeToolStripMenuItem.Name = "followMeToolStripMenuItem";
+            this.followMeToolStripMenuItem.Size = new System.Drawing.Size(253, 22);
+            this.followMeToolStripMenuItem.Text = "Follow Me";
+            this.followMeToolStripMenuItem.Click += new System.EventHandler(this.followMeToolStripMenuItem_Click);
             // 
             // videoSourcePlayer
             // 
@@ -412,6 +422,7 @@
             // 
             // btnSaveMotionHistory
             // 
+            this.btnSaveMotionHistory.Image = global::CatalystSpy.Properties.Resources.vallet;
             this.btnSaveMotionHistory.Location = new System.Drawing.Point(955, 630);
             this.btnSaveMotionHistory.Name = "btnSaveMotionHistory";
             this.btnSaveMotionHistory.Size = new System.Drawing.Size(48, 34);
@@ -551,5 +562,6 @@
         private System.Windows.Forms.ToolStripMenuItem suggestAnIdeaToolStripMenuItem;
         private System.Windows.Forms.ToolTip toolTip;
         private System.Windows.Forms.ToolStripMenuItem blobCountingToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem followMeToolStripMenuItem;
     }
 }

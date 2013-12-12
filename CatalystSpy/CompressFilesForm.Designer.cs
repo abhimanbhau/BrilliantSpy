@@ -94,6 +94,7 @@
             // 
             // btnBrowse
             // 
+            this.btnBrowse.Image = global::CatalystSpy.Properties.Resources.vallet;
             this.btnBrowse.Location = new System.Drawing.Point(395, 22);
             this.btnBrowse.Name = "btnBrowse";
             this.btnBrowse.Size = new System.Drawing.Size(75, 50);
