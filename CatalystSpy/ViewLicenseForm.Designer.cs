@@ -1,4 +1,4 @@
-﻿namespace CatalystSpy
+﻿namespace WinSpy
 {
     partial class ViewLicenseForm
     {

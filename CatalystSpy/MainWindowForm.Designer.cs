@@ -1,4 +1,4 @@
-﻿namespace CatalystSpy
+﻿namespace WinSpy
 {
     partial class MainWindowForm
     {
@@ -115,7 +115,7 @@
             // 
             // startFeedFromVideoToolStripMenuItem
             // 
-            this.startFeedFromVideoToolStripMenuItem.Image = global::CatalystSpy.Properties.Resources.video;
+            this.startFeedFromVideoToolStripMenuItem.Image = global::WinSpy.Properties.Resources.video;
             this.startFeedFromVideoToolStripMenuItem.Name = "startFeedFromVideoToolStripMenuItem";
             this.startFeedFromVideoToolStripMenuItem.ShortcutKeys = ((System.Windows.Forms.Keys)((System.Windows.Forms.Keys.Control | System.Windows.Forms.Keys.V)));
             this.startFeedFromVideoToolStripMenuItem.Size = new System.Drawing.Size(244, 22);
@@ -124,7 +124,7 @@
             // 
             // exitToolStripMenuItem
             // 
-            this.exitToolStripMenuItem.Image = global::CatalystSpy.Properties.Resources.exit;
+            this.exitToolStripMenuItem.Image = global::WinSpy.Properties.Resources.exit;
             this.exitToolStripMenuItem.Name = "exitToolStripMenuItem";
             this.exitToolStripMenuItem.ShortcutKeys = ((System.Windows.Forms.Keys)((System.Windows.Forms.Keys.Control | System.Windows.Forms.Keys.E)));
             this.exitToolStripMenuItem.Size = new System.Drawing.Size(244, 22);
@@ -160,7 +160,7 @@
             // 
             // noneToolStripMenuItem
             // 
-            this.noneToolStripMenuItem.Image = global::CatalystSpy.Properties.Resources.None;
+            this.noneToolStripMenuItem.Image = global::WinSpy.Properties.Resources.None;
             this.noneToolStripMenuItem.Name = "noneToolStripMenuItem";
             this.noneToolStripMenuItem.Size = new System.Drawing.Size(234, 22);
             this.noneToolStripMenuItem.Text = "None";
@@ -215,7 +215,7 @@
             // 
             // viewPreviousImagesToolStripMenuItem
             // 
-            this.viewPreviousImagesToolStripMenuItem.Image = global::CatalystSpy.Properties.Resources.photo;
+            this.viewPreviousImagesToolStripMenuItem.Image = global::WinSpy.Properties.Resources.photo;
             this.viewPreviousImagesToolStripMenuItem.Name = "viewPreviousImagesToolStripMenuItem";
             this.viewPreviousImagesToolStripMenuItem.ShortcutKeys = ((System.Windows.Forms.Keys)((System.Windows.Forms.Keys.Control | System.Windows.Forms.Keys.H)));
             this.viewPreviousImagesToolStripMenuItem.Size = new System.Drawing.Size(231, 22);
@@ -248,7 +248,7 @@
             // 
             // preferancesToolStripMenuItem
             // 
-            this.preferancesToolStripMenuItem.Image = global::CatalystSpy.Properties.Resources.settings;
+            this.preferancesToolStripMenuItem.Image = global::WinSpy.Properties.Resources.settings;
             this.preferancesToolStripMenuItem.Name = "preferancesToolStripMenuItem";
             this.preferancesToolStripMenuItem.ShortcutKeys = ((System.Windows.Forms.Keys)((System.Windows.Forms.Keys.Control | System.Windows.Forms.Keys.P)));
             this.preferancesToolStripMenuItem.Size = new System.Drawing.Size(176, 22);
@@ -269,7 +269,7 @@
             // 
             // suggestAnIdeaToolStripMenuItem
             // 
-            this.suggestAnIdeaToolStripMenuItem.Image = global::CatalystSpy.Properties.Resources.bubble;
+            this.suggestAnIdeaToolStripMenuItem.Image = global::WinSpy.Properties.Resources.bubble;
             this.suggestAnIdeaToolStripMenuItem.Name = "suggestAnIdeaToolStripMenuItem";
             this.suggestAnIdeaToolStripMenuItem.Size = new System.Drawing.Size(253, 22);
             this.suggestAnIdeaToolStripMenuItem.Text = "Suggest an idea/Request a feature";
@@ -277,7 +277,7 @@
             // 
             // suggetionsToolStripMenuItem
             // 
-            this.suggetionsToolStripMenuItem.Image = global::CatalystSpy.Properties.Resources.pen;
+            this.suggetionsToolStripMenuItem.Image = global::WinSpy.Properties.Resources.pen;
             this.suggetionsToolStripMenuItem.Name = "suggetionsToolStripMenuItem";
             this.suggetionsToolStripMenuItem.Size = new System.Drawing.Size(253, 22);
             this.suggetionsToolStripMenuItem.Text = "Report Bug";
@@ -285,7 +285,7 @@
             // 
             // openSourceLicensesToolStripMenuItem
             // 
-            this.openSourceLicensesToolStripMenuItem.Image = global::CatalystSpy.Properties.Resources.world;
+            this.openSourceLicensesToolStripMenuItem.Image = global::WinSpy.Properties.Resources.world;
             this.openSourceLicensesToolStripMenuItem.Name = "openSourceLicensesToolStripMenuItem";
             this.openSourceLicensesToolStripMenuItem.Size = new System.Drawing.Size(253, 22);
             this.openSourceLicensesToolStripMenuItem.Text = "Open Source Licenses";
@@ -293,7 +293,7 @@
             // 
             // aboutMeToolStripMenuItem
             // 
-            this.aboutMeToolStripMenuItem.Image = global::CatalystSpy.Properties.Resources.user;
+            this.aboutMeToolStripMenuItem.Image = global::WinSpy.Properties.Resources.user;
             this.aboutMeToolStripMenuItem.Name = "aboutMeToolStripMenuItem";
             this.aboutMeToolStripMenuItem.ShortcutKeys = ((System.Windows.Forms.Keys)((System.Windows.Forms.Keys.Control | System.Windows.Forms.Keys.A)));
             this.aboutMeToolStripMenuItem.Size = new System.Drawing.Size(253, 22);
@@ -302,7 +302,7 @@
             // 
             // followMeToolStripMenuItem
             // 
-            this.followMeToolStripMenuItem.Image = global::CatalystSpy.Properties.Resources.cloud;
+            this.followMeToolStripMenuItem.Image = global::WinSpy.Properties.Resources.cloud;
             this.followMeToolStripMenuItem.Name = "followMeToolStripMenuItem";
             this.followMeToolStripMenuItem.Size = new System.Drawing.Size(253, 22);
             this.followMeToolStripMenuItem.Text = "Follow Me";
@@ -413,19 +413,19 @@
             // 
             // btnClearHistoryBox
             // 
-            this.btnClearHistoryBox.Image = global::CatalystSpy.Properties.Resources.clear;
-            this.btnClearHistoryBox.Location = new System.Drawing.Point(901, 630);
+            this.btnClearHistoryBox.Image = global::WinSpy.Properties.Resources.clear;
+            this.btnClearHistoryBox.Location = new System.Drawing.Point(901, 618);
             this.btnClearHistoryBox.Name = "btnClearHistoryBox";
-            this.btnClearHistoryBox.Size = new System.Drawing.Size(48, 34);
+            this.btnClearHistoryBox.Size = new System.Drawing.Size(48, 43);
             this.btnClearHistoryBox.TabIndex = 32;
             this.btnClearHistoryBox.UseVisualStyleBackColor = true;
             // 
             // btnSaveMotionHistory
             // 
-            this.btnSaveMotionHistory.Image = global::CatalystSpy.Properties.Resources.vallet;
-            this.btnSaveMotionHistory.Location = new System.Drawing.Point(955, 630);
+            this.btnSaveMotionHistory.Image = global::WinSpy.Properties.Resources.vallet;
+            this.btnSaveMotionHistory.Location = new System.Drawing.Point(955, 618);
             this.btnSaveMotionHistory.Name = "btnSaveMotionHistory";
-            this.btnSaveMotionHistory.Size = new System.Drawing.Size(48, 34);
+            this.btnSaveMotionHistory.Size = new System.Drawing.Size(48, 43);
             this.btnSaveMotionHistory.TabIndex = 31;
             this.btnSaveMotionHistory.UseVisualStyleBackColor = true;
             this.btnSaveMotionHistory.Click += new System.EventHandler(this.btnSaveMotionHistory_Click);
@@ -443,7 +443,7 @@
             // HistoryList
             // 
             this.HistoryList.FormattingEnabled = true;
-            this.HistoryList.Location = new System.Drawing.Point(675, 412);
+            this.HistoryList.Location = new System.Drawing.Point(675, 400);
             this.HistoryList.Name = "HistoryList";
             this.HistoryList.Size = new System.Drawing.Size(328, 212);
             this.HistoryList.TabIndex = 29;
@@ -453,7 +453,7 @@
             // 
             this.label2.AutoSize = true;
             this.label2.Font = new System.Drawing.Font("Lucida Calligraphy", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label2.Location = new System.Drawing.Point(670, 366);
+            this.label2.Location = new System.Drawing.Point(670, 360);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(248, 24);
             this.label2.TabIndex = 28;
@@ -479,7 +479,7 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.BackgroundImage = global::CatalystSpy.Properties.Resources.BG;
+            this.BackgroundImage = global::WinSpy.Properties.Resources.BG;
             this.ClientSize = new System.Drawing.Size(1008, 667);
             this.Controls.Add(this.lblWarning);
             this.Controls.Add(this.btnClearHistoryBox);
@@ -505,7 +505,7 @@
             this.Name = "MainWindowForm";
             this.SizeGripStyle = System.Windows.Forms.SizeGripStyle.Hide;
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
-            this.Text = "CatalystSpy : Turns Your PC Into An Intelligent Spy";
+            this.Text = "WinSpy : Turns Your PC Into An Intelligent Spy";
             this.FormClosing += new System.Windows.Forms.FormClosingEventHandler(this.MainWindowForm_FormClosing);
             this.Load += new System.EventHandler(this.MainWindowForm_Load);
             this.MainMenuStrip.ResumeLayout(false);

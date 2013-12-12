@@ -8,7 +8,7 @@
 // </auto-generated>
 //------------------------------------------------------------------------------
 
-namespace CatalystSpy.Properties {
+namespace WinSpy.Properties {
     
     
     [global::System.Runtime.CompilerServices.CompilerGeneratedAttribute()]
@@ -85,7 +85,7 @@ namespace CatalystSpy.Properties {
         
         [global::System.Configuration.UserScopedSettingAttribute()]
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-        [global::System.Configuration.DefaultSettingValueAttribute("D:\\CatalystSpy")]
+        [global::System.Configuration.DefaultSettingValueAttribute("D:\\WinSpy")]
         public string homeDirectory {
             get {
                 return ((string)(this["homeDirectory"]));
@@ -106,7 +106,7 @@ namespace CatalystSpy.Properties {
         
         [global::System.Configuration.UserScopedSettingAttribute()]
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-        [global::System.Configuration.DefaultSettingValueAttribute("D:\\CatalystSpy\\Compressed")]
+        [global::System.Configuration.DefaultSettingValueAttribute("D:\\WinSpy\\Compressed")]
         public string compressedFileDirectory {
             get {
                 return ((string)(this["compressedFileDirectory"]));
@@ -118,7 +118,7 @@ namespace CatalystSpy.Properties {
         
         [global::System.Configuration.UserScopedSettingAttribute()]
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-        [global::System.Configuration.DefaultSettingValueAttribute("D:\\CatalystSpy\\Encrypted")]
+        [global::System.Configuration.DefaultSettingValueAttribute("D:\\WinSpy\\Encrypted")]
         public string encryptedFilesDirectory {
             get {
                 return ((string)(this["encryptedFilesDirectory"]));
@@ -130,7 +130,7 @@ namespace CatalystSpy.Properties {
         
         [global::System.Configuration.UserScopedSettingAttribute()]
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-        [global::System.Configuration.DefaultSettingValueAttribute("D:\\CatalystSpy\\Decrypted")]
+        [global::System.Configuration.DefaultSettingValueAttribute("D:\\WinSpy\\Decrypted")]
         public string decryptedFilesDirectory {
             get {
                 return ((string)(this["decryptedFilesDirectory"]));

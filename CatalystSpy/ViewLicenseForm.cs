@@ -6,7 +6,7 @@ using System.Drawing;
 using System.Text;
 using System.Windows.Forms;
 
-namespace CatalystSpy
+namespace WinSpy
 {
     public partial class ViewLicenseForm : Form
     {
@@ -25,10 +25,10 @@ namespace CatalystSpy
 
         private void ViewLicenseForm_Load(object sender, EventArgs e)
         {
-            if (license == "CatalystSpy")
+            if (license == "WinSpy")
             {
-                rtbLicenseView.Text = Properties.Resources.CatalystSpy_LICENSE;
-                this.Text = "CatalystSpy License";
+                rtbLicenseView.Text = Properties.Resources.WinSpy_LICENSE;
+                this.Text = "WinSpy License";
             }
             else if (license == "AForge")
             {

@@ -6,7 +6,7 @@ using System.Drawing;
 using System.Text;
 using System.Windows.Forms;
 
-namespace CatalystSpy
+namespace WinSpy
 {
     public partial class FollowMeForm : Form
     {
@@ -17,7 +17,7 @@ namespace CatalystSpy
 
         private void linkGithub_LinkClicked(object sender, LinkLabelLinkClickedEventArgs e)
         {
-            System.Diagnostics.Process.Start("https://github.com/abhimanbhau/CatalystSpy");
+            System.Diagnostics.Process.Start("https://github.com/abhimanbhau/WinSpy");
         }
 
         private void linkLabel1_LinkClicked(object sender, LinkLabelLinkClickedEventArgs e)

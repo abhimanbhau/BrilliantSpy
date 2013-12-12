@@ -1,4 +1,4 @@
-﻿namespace CatalystSpy
+﻿namespace WinSpy
 {
     partial class EncryptDecryptFilesForm
     {
@@ -67,7 +67,7 @@
             // 
             // btnClearList
             // 
-            this.btnClearList.Image = global::CatalystSpy.Properties.Resources.clear;
+            this.btnClearList.Image = global::WinSpy.Properties.Resources.clear;
             this.btnClearList.Location = new System.Drawing.Point(395, 78);
             this.btnClearList.Name = "btnClearList";
             this.btnClearList.Size = new System.Drawing.Size(75, 50);
@@ -105,7 +105,7 @@
             // 
             // btnBrowse
             // 
-            this.btnBrowse.Image = global::CatalystSpy.Properties.Resources.vallet;
+            this.btnBrowse.Image = global::WinSpy.Properties.Resources.vallet;
             this.btnBrowse.Location = new System.Drawing.Point(395, 22);
             this.btnBrowse.Name = "btnBrowse";
             this.btnBrowse.Size = new System.Drawing.Size(75, 50);
@@ -128,7 +128,7 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.BackgroundImage = global::CatalystSpy.Properties.Resources.BG;
+            this.BackgroundImage = global::WinSpy.Properties.Resources.BG;
             this.ClientSize = new System.Drawing.Size(482, 291);
             this.Controls.Add(this.lblWarning);
             this.Controls.Add(this.btnDecryptFiles);

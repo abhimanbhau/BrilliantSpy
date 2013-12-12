@@ -1,4 +1,4 @@
-﻿namespace CatalystSpy
+﻿namespace WinSpy
 {
     partial class ChangeDirectoriesForm
     {
@@ -70,7 +70,7 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.BackgroundImage = global::CatalystSpy.Properties.Resources.BG;
+            this.BackgroundImage = global::WinSpy.Properties.Resources.BG;
             this.ClientSize = new System.Drawing.Size(384, 71);
             this.Controls.Add(this.btnChangeDirectory);
             this.Controls.Add(this.cmbSelectChangeDirectory);

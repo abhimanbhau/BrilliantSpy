@@ -2,7 +2,7 @@
 using System.Collections.Generic;
 using System.Windows.Forms;
 
-namespace CatalystSpy
+namespace WinSpy
 {
     static class Program
     {

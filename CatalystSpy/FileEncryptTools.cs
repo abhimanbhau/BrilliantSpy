@@ -4,7 +4,7 @@ using System.Text;
 using KellermanSoftware.NetEncryptionLibrary;
 using System.IO;
 
-namespace CatalystSpy
+namespace WinSpy
 {
     class FileEncryptTools
     {

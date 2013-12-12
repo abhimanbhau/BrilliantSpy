@@ -6,7 +6,7 @@ using System.Drawing;
 using System.Text;
 using System.Windows.Forms;
 
-namespace CatalystSpy
+namespace WinSpy
 {
     public partial class ChangeDirectoriesForm : Form
     {

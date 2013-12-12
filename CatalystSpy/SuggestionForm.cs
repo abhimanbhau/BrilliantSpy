@@ -8,7 +8,7 @@ using System.Windows.Forms;
 using System.IO;
 using System.Net;
 
-namespace CatalystSpy
+namespace WinSpy
 {
     public partial class SuggestionForm : Form
     {

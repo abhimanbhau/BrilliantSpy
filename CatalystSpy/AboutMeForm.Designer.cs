@@ -1,4 +1,4 @@
-﻿namespace CatalystSpy
+﻿namespace WinSpy
 {
     partial class AboutMeForm
     {
@@ -69,7 +69,7 @@
             // 
             // pictureBox1
             // 
-            this.pictureBox1.Image = global::CatalystSpy.Properties.Resources.IMG_0001;
+            this.pictureBox1.Image = global::WinSpy.Properties.Resources.IMG_0001;
             this.pictureBox1.Location = new System.Drawing.Point(13, 12);
             this.pictureBox1.Name = "pictureBox1";
             this.pictureBox1.Size = new System.Drawing.Size(219, 161);

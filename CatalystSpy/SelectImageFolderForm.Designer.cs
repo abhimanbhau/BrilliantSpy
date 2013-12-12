@@ -1,4 +1,4 @@
-﻿namespace CatalystSpy
+﻿namespace WinSpy
 {
     partial class SelectImageFolderForm
     {
@@ -54,7 +54,7 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.BackgroundImage = global::CatalystSpy.Properties.Resources.BG;
+            this.BackgroundImage = global::WinSpy.Properties.Resources.BG;
             this.ClientSize = new System.Drawing.Size(342, 261);
             this.Controls.Add(this.btnSelectedFolder);
             this.Controls.Add(this.lstFolders);

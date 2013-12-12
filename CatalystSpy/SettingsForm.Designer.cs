@@ -1,4 +1,4 @@
-﻿namespace CatalystSpy
+﻿namespace WinSpy
 {
     partial class SettingsForm
     {
@@ -69,11 +69,11 @@
             this.label7.Name = "label7";
             this.label7.Size = new System.Drawing.Size(349, 21);
             this.label7.TabIndex = 34;
-            this.label7.Text = "Change CatalystSpy Storage Directories";
+            this.label7.Text = "Change WinSpy Storage Directories";
             // 
             // btnIsHiddenSet
             // 
-            this.btnIsHiddenSet.Image = global::CatalystSpy.Properties.Resources.OK;
+            this.btnIsHiddenSet.Image = global::WinSpy.Properties.Resources.OK;
             this.btnIsHiddenSet.Location = new System.Drawing.Point(372, 318);
             this.btnIsHiddenSet.Name = "btnIsHiddenSet";
             this.btnIsHiddenSet.Size = new System.Drawing.Size(75, 34);
@@ -100,12 +100,12 @@
             this.label6.Name = "label6";
             this.label6.Size = new System.Drawing.Size(257, 21);
             this.label6.TabIndex = 31;
-            this.label6.Text = "CatalystSpy Storage Hidden?";
+            this.label6.Text = "WinSpy Storage Hidden?";
             this.label6.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
             // btnSetCustomWarningMessage
             // 
-            this.btnSetCustomWarningMessage.Image = global::CatalystSpy.Properties.Resources.OK;
+            this.btnSetCustomWarningMessage.Image = global::WinSpy.Properties.Resources.OK;
             this.btnSetCustomWarningMessage.Location = new System.Drawing.Point(372, 275);
             this.btnSetCustomWarningMessage.Name = "btnSetCustomWarningMessage";
             this.btnSetCustomWarningMessage.Size = new System.Drawing.Size(75, 34);
@@ -202,7 +202,7 @@
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(228, 21);
             this.label2.TabIndex = 20;
-            this.label2.Text = "Clear CatalystSpy storage";
+            this.label2.Text = "Clear WinSpy storage";
             this.label2.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
             // txtsize
@@ -254,7 +254,7 @@
             // 
             // btnViewMotionInPlayer
             // 
-            this.btnViewMotionInPlayer.Image = global::CatalystSpy.Properties.Resources.OK;
+            this.btnViewMotionInPlayer.Image = global::WinSpy.Properties.Resources.OK;
             this.btnViewMotionInPlayer.Location = new System.Drawing.Point(372, 410);
             this.btnViewMotionInPlayer.Name = "btnViewMotionInPlayer";
             this.btnViewMotionInPlayer.Size = new System.Drawing.Size(75, 34);
@@ -266,7 +266,7 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.BackgroundImage = global::CatalystSpy.Properties.Resources.BG;
+            this.BackgroundImage = global::WinSpy.Properties.Resources.BG;
             this.ClientSize = new System.Drawing.Size(459, 486);
             this.Controls.Add(this.btnViewMotionInPlayer);
             this.Controls.Add(this.cmbIsShowMotionInPlayer);

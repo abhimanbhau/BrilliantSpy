@@ -1,4 +1,4 @@
-﻿namespace CatalystSpy
+﻿namespace WinSpy
 {
     partial class ViewCapturedImagesForm
     {
@@ -36,7 +36,7 @@
             // 
             // btnNext
             // 
-            this.btnNext.Image = global::CatalystSpy.Properties.Resources.up;
+            this.btnNext.Image = global::WinSpy.Properties.Resources.up;
             this.btnNext.Location = new System.Drawing.Point(357, 496);
             this.btnNext.Name = "btnNext";
             this.btnNext.Size = new System.Drawing.Size(35, 25);
@@ -46,7 +46,7 @@
             // 
             // btnBack
             // 
-            this.btnBack.Image = global::CatalystSpy.Properties.Resources.down;
+            this.btnBack.Image = global::WinSpy.Properties.Resources.down;
             this.btnBack.Location = new System.Drawing.Point(254, 496);
             this.btnBack.Name = "btnBack";
             this.btnBack.Size = new System.Drawing.Size(35, 25);
@@ -56,7 +56,7 @@
             // 
             // HistoryViewer
             // 
-            this.HistoryViewer.Image = global::CatalystSpy.Properties.Resources.NO_Image;
+            this.HistoryViewer.Image = global::WinSpy.Properties.Resources.NO_Image;
             this.HistoryViewer.Location = new System.Drawing.Point(11, 10);
             this.HistoryViewer.Name = "HistoryViewer";
             this.HistoryViewer.Size = new System.Drawing.Size(640, 480);
@@ -67,7 +67,7 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.BackgroundImage = global::CatalystSpy.Properties.Resources.BG;
+            this.BackgroundImage = global::WinSpy.Properties.Resources.BG;
             this.ClientSize = new System.Drawing.Size(662, 531);
             this.Controls.Add(this.btnNext);
             this.Controls.Add(this.btnBack);

@@ -7,7 +7,7 @@ using System.Text;
 using System.Windows.Forms;
 using System.IO;
 
-namespace CatalystSpy
+namespace WinSpy
 {
     public partial class ViewCapturedImagesForm : Form
     {

@@ -11,7 +11,7 @@ using AForge.Video.DirectShow;
 using System.Media;
 using System.IO;
 
-namespace CatalystSpy
+namespace WinSpy
 {
     public partial class MainWindowForm : Form
     {
@@ -274,7 +274,7 @@ namespace CatalystSpy
             openFileDialog.InitialDirectory = Properties.Settings.Default.homeDirectory;
             openFileDialog.Multiselect = false;
             openFileDialog.Title = "Select a file to process";
-            openFileDialog.Filter = "CatalystSpy Supported Video Files (*.avi)|*.avi";
+            openFileDialog.Filter = "WinSpy Supported Video Files (*.avi)|*.avi";
             if (openFileDialog.ShowDialog() == System.Windows.Forms.DialogResult.OK)
             {
                 fileVideoSource = new FileVideoSource(openFileDialog.FileName);
@@ -395,7 +395,7 @@ namespace CatalystSpy
 
         private void preferancesToolStripMenuItem_Click(object sender, EventArgs e)
         {
-            LoginForm LoginForm = new CatalystSpy.LoginForm();
+            LoginForm LoginForm = new WinSpy.LoginForm();
             LoginForm.Text = "Re-login with your credentials";
             LoginForm.ShowDialog();
             if (LoginForm.getLoginStatus())
@@ -484,7 +484,7 @@ namespace CatalystSpy
 
         private void btnSaveMotionHistory_Click(object sender, EventArgs e)
         {
-            saveFile.Filter = "CatalystSpy History Save File (*.txt)|*.txt";
+            saveFile.Filter = "WinSpy History Save File (*.txt)|*.txt";
             if (saveFile.ShowDialog() == System.Windows.Forms.DialogResult.OK)
             {
                 StringBuilder sb = new StringBuilder();
