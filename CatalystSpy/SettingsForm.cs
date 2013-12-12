@@ -142,5 +142,30 @@ namespace CatalystSpy
                 }
             }
         }
+
+        private void btnViewMotionInPlayer_Click(object sender, EventArgs e)
+        {
+            if (cmbIsShowMotionInPlayer.Text.ToString().Trim() == "YES")
+            {
+                Properties.Settings.Default.isShowMotionInPlayer = true;
+                Properties.Settings.Default.Save();
+                MessageBox.Show(this, "Successfully saved the setting." +
+                    "\nRestart for changes to take place"
+                    , "Success", MessageBoxButtons.OK, MessageBoxIcon.Information);
+            }
+            else if (cmbIsShowMotionInPlayer.Text.ToString().Trim() == "NO")
+            {
+                Properties.Settings.Default.isShowMotionInPlayer = false;
+                Properties.Settings.Default.Save();
+                MessageBox.Show(this, "Successfully saved the setting." +
+                    "\nRestart for changes to take place"
+                    , "Success", MessageBoxButtons.OK, MessageBoxIcon.Information);
+            }
+            else
+            {
+                MessageBox.Show(this, "Did you select choice?", "Error"
+                    , MessageBoxButtons.OK, MessageBoxIcon.Error);
+            }
+        }
     }
 }

@@ -139,5 +139,17 @@ namespace CatalystSpy.Properties {
                 this["decryptedFilesDirectory"] = value;
             }
         }
+        
+        [global::System.Configuration.UserScopedSettingAttribute()]
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        [global::System.Configuration.DefaultSettingValueAttribute("True")]
+        public bool isShowMotionInPlayer {
+            get {
+                return ((bool)(this["isShowMotionInPlayer"]));
+            }
+            set {
+                this["isShowMotionInPlayer"] = value;
+            }
+        }
     }
 }

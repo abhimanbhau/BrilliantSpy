@@ -37,7 +37,6 @@
             this.txtCustomWarningMessage = new System.Windows.Forms.TextBox();
             this.label5 = new System.Windows.Forms.Label();
             this.btnResetDefault = new System.Windows.Forms.Button();
-            this.txtMotionLevel = new System.Windows.Forms.TextBox();
             this.btnChangeMotion = new System.Windows.Forms.Button();
             this.label4 = new System.Windows.Forms.Label();
             this.btnChangePassword = new System.Windows.Forms.Button();
@@ -46,6 +45,10 @@
             this.label2 = new System.Windows.Forms.Label();
             this.txtsize = new System.Windows.Forms.TextBox();
             this.label1 = new System.Windows.Forms.Label();
+            this.txtMotionLevel = new System.Windows.Forms.TextBox();
+            this.label8 = new System.Windows.Forms.Label();
+            this.cmbIsShowMotionInPlayer = new System.Windows.Forms.ComboBox();
+            this.btnViewMotionInPlayer = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // btnChangeHomeDirectory
@@ -84,9 +87,9 @@
             this.cmbIsHidden.Items.AddRange(new object[] {
             "YES",
             "NO"});
-            this.cmbIsHidden.Location = new System.Drawing.Point(254, 324);
+            this.cmbIsHidden.Location = new System.Drawing.Point(275, 324);
             this.cmbIsHidden.Name = "cmbIsHidden";
-            this.cmbIsHidden.Size = new System.Drawing.Size(111, 21);
+            this.cmbIsHidden.Size = new System.Drawing.Size(91, 21);
             this.cmbIsHidden.TabIndex = 32;
             // 
             // label6
@@ -115,7 +118,7 @@
             this.txtCustomWarningMessage.Font = new System.Drawing.Font("Lucida Console", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtCustomWarningMessage.Location = new System.Drawing.Point(12, 281);
             this.txtCustomWarningMessage.Name = "txtCustomWarningMessage";
-            this.txtCustomWarningMessage.Size = new System.Drawing.Size(350, 23);
+            this.txtCustomWarningMessage.Size = new System.Drawing.Size(354, 23);
             this.txtCustomWarningMessage.TabIndex = 29;
             // 
             // label5
@@ -131,21 +134,13 @@
             // 
             // btnResetDefault
             // 
-            this.btnResetDefault.Location = new System.Drawing.Point(12, 413);
+            this.btnResetDefault.Location = new System.Drawing.Point(12, 451);
             this.btnResetDefault.Name = "btnResetDefault";
             this.btnResetDefault.Size = new System.Drawing.Size(94, 23);
             this.btnResetDefault.TabIndex = 27;
             this.btnResetDefault.Text = "Reset Default";
             this.btnResetDefault.UseVisualStyleBackColor = true;
             this.btnResetDefault.Click += new System.EventHandler(this.btnResetDefault_Click);
-            // 
-            // txtMotionLevel
-            // 
-            this.txtMotionLevel.Location = new System.Drawing.Point(295, 193);
-            this.txtMotionLevel.Name = "txtMotionLevel";
-            this.txtMotionLevel.Size = new System.Drawing.Size(71, 20);
-            this.txtMotionLevel.TabIndex = 26;
-            this.txtMotionLevel.Text = "0.2";
             // 
             // btnChangeMotion
             // 
@@ -228,12 +223,54 @@
             this.label1.Text = "Current Disk Usage";
             this.label1.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
+            // txtMotionLevel
+            // 
+            this.txtMotionLevel.Location = new System.Drawing.Point(295, 193);
+            this.txtMotionLevel.Name = "txtMotionLevel";
+            this.txtMotionLevel.Size = new System.Drawing.Size(71, 20);
+            this.txtMotionLevel.TabIndex = 26;
+            this.txtMotionLevel.Text = "0.2";
+            // 
+            // label8
+            // 
+            this.label8.AutoSize = true;
+            this.label8.Font = new System.Drawing.Font("Lucida Calligraphy", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label8.Location = new System.Drawing.Point(12, 416);
+            this.label8.Name = "label8";
+            this.label8.Size = new System.Drawing.Size(212, 21);
+            this.label8.TabIndex = 36;
+            this.label8.Text = "View Motion in Player?";
+            // 
+            // cmbIsShowMotionInPlayer
+            // 
+            this.cmbIsShowMotionInPlayer.FormattingEnabled = true;
+            this.cmbIsShowMotionInPlayer.Items.AddRange(new object[] {
+            "YES",
+            "NO"});
+            this.cmbIsShowMotionInPlayer.Location = new System.Drawing.Point(275, 416);
+            this.cmbIsShowMotionInPlayer.Name = "cmbIsShowMotionInPlayer";
+            this.cmbIsShowMotionInPlayer.Size = new System.Drawing.Size(91, 21);
+            this.cmbIsShowMotionInPlayer.TabIndex = 37;
+            // 
+            // btnViewMotionInPlayer
+            // 
+            this.btnViewMotionInPlayer.Image = global::CatalystSpy.Properties.Resources.OK;
+            this.btnViewMotionInPlayer.Location = new System.Drawing.Point(372, 410);
+            this.btnViewMotionInPlayer.Name = "btnViewMotionInPlayer";
+            this.btnViewMotionInPlayer.Size = new System.Drawing.Size(75, 34);
+            this.btnViewMotionInPlayer.TabIndex = 38;
+            this.btnViewMotionInPlayer.UseVisualStyleBackColor = true;
+            this.btnViewMotionInPlayer.Click += new System.EventHandler(this.btnViewMotionInPlayer_Click);
+            // 
             // SettingsForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackgroundImage = global::CatalystSpy.Properties.Resources.BG;
-            this.ClientSize = new System.Drawing.Size(459, 448);
+            this.ClientSize = new System.Drawing.Size(459, 486);
+            this.Controls.Add(this.btnViewMotionInPlayer);
+            this.Controls.Add(this.cmbIsShowMotionInPlayer);
+            this.Controls.Add(this.label8);
             this.Controls.Add(this.btnChangeHomeDirectory);
             this.Controls.Add(this.label7);
             this.Controls.Add(this.btnIsHiddenSet);
@@ -278,7 +315,6 @@
         private System.Windows.Forms.TextBox txtCustomWarningMessage;
         private System.Windows.Forms.Label label5;
         private System.Windows.Forms.Button btnResetDefault;
-        private System.Windows.Forms.TextBox txtMotionLevel;
         private System.Windows.Forms.Button btnChangeMotion;
         private System.Windows.Forms.Label label4;
         private System.Windows.Forms.Button btnChangePassword;
@@ -287,5 +323,9 @@
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.TextBox txtsize;
         private System.Windows.Forms.Label label1;
+        private System.Windows.Forms.TextBox txtMotionLevel;
+        private System.Windows.Forms.Label label8;
+        private System.Windows.Forms.ComboBox cmbIsShowMotionInPlayer;
+        private System.Windows.Forms.Button btnViewMotionInPlayer;
     }
 }

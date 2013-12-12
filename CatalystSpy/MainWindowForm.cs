@@ -169,6 +169,7 @@ namespace CatalystSpy
                             detector = new MotionDetector(
                                 new TwoFramesDifferenceDetector(),
                                 new BlobCountingObjectsProcessing());
+                            detector.Reset();
                             break;
                     }
                     break;
@@ -177,7 +178,10 @@ namespace CatalystSpy
 
         private void videoSourcePlayer_NewFrame(object sender, ref Bitmap image)
         {
-            Bitmap temp;
+            Bitmap temp, tempCapture;
+            tempCapture = new Bitmap(image);
+            temp = new Bitmap(image);
+            float motion;
             if (detector != null)
             {
                 if (detector.MotionProcessingAlgorithm is BlobCountingObjectsProcessing)
@@ -186,8 +190,14 @@ namespace CatalystSpy
                         detector.MotionProcessingAlgorithm;
                     detectedObject = countProcessor.ObjectsCount;
                 }
-                temp = new Bitmap(image);
-                float motion = detector.ProcessFrame(image);
+                if (Properties.Settings.Default.isShowMotionInPlayer)
+                {
+                    motion = detector.ProcessFrame(image);
+                }
+                else
+                {
+                    motion = detector.ProcessFrame(temp);
+                }
                 if (motion > Properties.Settings.Default.motionLevel)
                 {
                     HistoryList.Items.Add("Motion ->" + motion + "       @"
@@ -195,8 +205,16 @@ namespace CatalystSpy
                     pcbStatusPanel.BackColor = Color.Red;
                     lblWarning.Text = Properties.Settings.Default.customWarningMessage;
                     AlertBySound();
-                    temp.Save(HistoryDBSavePath + "\\00" + counter + ".bmp", ImageFormat.Bmp);
-                    counter++;
+                    if (Properties.Settings.Default.isShowMotionInPlayer)
+                    {
+                        temp.Save(HistoryDBSavePath + "\\00" + counter + ".bmp", ImageFormat.Bmp);
+                        counter++;
+                    }
+                    else
+                    {
+                        tempCapture.Save(HistoryDBSavePath + "\\00" + counter + ".bmp", ImageFormat.Bmp);
+                        counter++;
+                    }
                 }
                 else
                 {
@@ -206,14 +224,22 @@ namespace CatalystSpy
                         txtCurrentMotion.Text = "MOTION->" + motion;
                     }
                 }
-                temp.Dispose();
             }
+            temp.Dispose();
+            tempCapture.Dispose();
         }
 
         private void AlertBySound()
         {
-            sound = new SoundPlayer(Properties.Resources.siren);
-            sound.PlayLooping();
+            if (sound != null)
+            {
+                return;
+            }
+            else
+            {
+                sound = new SoundPlayer(Properties.Resources.siren);
+                sound.PlayLooping();
+            }
         }
 
         private void MainWindowForm_FormClosing(object sender, FormClosingEventArgs e)
@@ -235,6 +261,10 @@ namespace CatalystSpy
                 fileVideoSource.SignalToStop();
                 fileVideoSource.Stop();
                 fileVideoSource = null;
+            }
+            if (detector != null)
+            {
+                detector = null;
             }
         }
 
@@ -414,21 +444,36 @@ namespace CatalystSpy
 
         private void btnStopProcessing_Click(object sender, EventArgs e)
         {
-            StopVideoSource();
-            StopAlertSound();
-            lblWarning.Text = "";
-            pcbStatusPanel.BackColor = Color.Green;
+            try
+            {
+                StopVideoSource();
+                StopAlertSound();
+                lblWarning.Text = "";
+                pcbStatusPanel.BackColor = Color.Green;
+            }
+            catch (Exception ex)
+            {
+                System.Diagnostics.Debug.WriteLine("No video source loaded" + ex.Message);
+            }
         }
 
         private void StopAlertSound()
         {
             sound.Stop();
             sound.Dispose();
+            sound = null;
         }
 
         private void btnStopAlarm_Click(object sender, EventArgs e)
         {
-            StopAlertSound();
+            try
+            {
+                StopAlertSound();
+            }
+            catch (Exception ex)
+            {
+                System.Diagnostics.Debug.WriteLine("No sound playing" + ex.Message);
+            }
         }
 
         private void btnClearHistoryBox_Click(object sender, EventArgs e)
