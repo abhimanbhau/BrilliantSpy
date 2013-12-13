@@ -59,7 +59,7 @@
             this.btnSubmit.Location = new System.Drawing.Point(342, 226);
             this.btnSubmit.Name = "btnSubmit";
             this.btnSubmit.Size = new System.Drawing.Size(75, 44);
-            this.btnSubmit.TabIndex = 18;
+            this.btnSubmit.TabIndex = 21;
             this.btnSubmit.UseVisualStyleBackColor = true;
             this.btnSubmit.Click += new System.EventHandler(this.btnSubmit_Click);
             // 
@@ -149,7 +149,7 @@
             this.txtReverifyPassword.Name = "txtReverifyPassword";
             this.txtReverifyPassword.PasswordChar = '*';
             this.txtReverifyPassword.Size = new System.Drawing.Size(203, 20);
-            this.txtReverifyPassword.TabIndex = 21;
+            this.txtReverifyPassword.TabIndex = 18;
             // 
             // ChangeCredentialsForm
             // 

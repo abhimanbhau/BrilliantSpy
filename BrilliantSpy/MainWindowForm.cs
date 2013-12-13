@@ -567,5 +567,30 @@ namespace BrilliantSpy
             form.ShowDialog();
         }
 
+        private void btnResetDetector_Click(object sender, EventArgs e)
+        {
+            if (detector != null)
+            {
+                detector.Reset();
+            }
+            else
+            {
+                MessageBox.Show(this, "No instance of feed found\nDetector isn't running", "Error",
+                    MessageBoxButtons.OK, MessageBoxIcon.Error);
+            }
+        }
+
+        private void btnClearHistoryBox_Click_1(object sender, EventArgs e)
+        {
+            if (HistoryList.Items.Count != 0)
+            {
+                HistoryList.Items.Clear();
+            }
+            else
+            {
+                MessageBox.Show(this, "Already cleared", "Warning",
+                    MessageBoxButtons.OK, MessageBoxIcon.Error);
+            }
+        }
     }
 }

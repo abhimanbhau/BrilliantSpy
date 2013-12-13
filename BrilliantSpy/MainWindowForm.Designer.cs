@@ -28,7 +28,6 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.components = new System.ComponentModel.Container();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(MainWindowForm));
             this.MainMenuStrip = new System.Windows.Forms.MenuStrip();
             this.menuToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
@@ -74,7 +73,8 @@
             this.lblWarning = new System.Windows.Forms.Label();
             this.openFileDialog = new System.Windows.Forms.OpenFileDialog();
             this.saveFile = new System.Windows.Forms.SaveFileDialog();
-            this.toolTip = new System.Windows.Forms.ToolTip(this.components);
+            this.toolTip = new System.Windows.Forms.ToolTip();
+            this.btnResetDetector = new System.Windows.Forms.Button();
             this.MainMenuStrip.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pcbStatusPanel)).BeginInit();
             this.SuspendLayout();
@@ -234,6 +234,7 @@
             // 
             // toolsToolStripMenuItem1
             // 
+            this.toolsToolStripMenuItem1.Image = global::BrilliantSpy.Properties.Resources.key;
             this.toolsToolStripMenuItem1.Name = "toolsToolStripMenuItem1";
             this.toolsToolStripMenuItem1.Size = new System.Drawing.Size(176, 22);
             this.toolsToolStripMenuItem1.Text = "Encrypt/Decrypt";
@@ -241,6 +242,7 @@
             // 
             // compressToolStripMenuItem
             // 
+            this.compressToolStripMenuItem.Image = global::BrilliantSpy.Properties.Resources.data;
             this.compressToolStripMenuItem.Name = "compressToolStripMenuItem";
             this.compressToolStripMenuItem.Size = new System.Drawing.Size(176, 22);
             this.compressToolStripMenuItem.Text = "Compress";
@@ -419,6 +421,7 @@
             this.btnClearHistoryBox.Size = new System.Drawing.Size(48, 43);
             this.btnClearHistoryBox.TabIndex = 32;
             this.btnClearHistoryBox.UseVisualStyleBackColor = true;
+            this.btnClearHistoryBox.Click += new System.EventHandler(this.btnClearHistoryBox_Click_1);
             // 
             // btnSaveMotionHistory
             // 
@@ -475,12 +478,24 @@
             // 
             this.openFileDialog.FileName = "Open a video file to process";
             // 
+            // btnResetDetector
+            // 
+            this.btnResetDetector.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnResetDetector.Location = new System.Drawing.Point(212, 630);
+            this.btnResetDetector.Name = "btnResetDetector";
+            this.btnResetDetector.Size = new System.Drawing.Size(75, 23);
+            this.btnResetDetector.TabIndex = 34;
+            this.btnResetDetector.Text = "RESET";
+            this.btnResetDetector.UseVisualStyleBackColor = true;
+            this.btnResetDetector.Click += new System.EventHandler(this.btnResetDetector_Click);
+            // 
             // MainWindowForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackgroundImage = global::BrilliantSpy.Properties.Resources.BG;
             this.ClientSize = new System.Drawing.Size(1008, 667);
+            this.Controls.Add(this.btnResetDetector);
             this.Controls.Add(this.lblWarning);
             this.Controls.Add(this.btnClearHistoryBox);
             this.Controls.Add(this.btnSaveMotionHistory);
@@ -563,5 +578,6 @@
         private System.Windows.Forms.ToolTip toolTip;
         private System.Windows.Forms.ToolStripMenuItem blobCountingToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem followMeToolStripMenuItem;
+        private System.Windows.Forms.Button btnResetDetector;
     }
 }
