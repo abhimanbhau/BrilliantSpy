@@ -14,13 +14,27 @@ namespace BrilliantSpy
         {
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
-            LoginForm form = new LoginForm();
-            Application.Run(form);
-            if (form.getLoginStatus())
+            if (Properties.Settings.Default.isFirstRun)
             {
-                Application.Run(new MainWindowForm());
+                Properties.Settings.Default.isFirstRun = false;
+                Properties.Settings.Default.Save();
+                FirstRunForm firstRunForm = new FirstRunForm();
+                Application.Run(firstRunForm);
             }
-
+            else
+            {
+                SplashScreenForm form = new SplashScreenForm();
+                Application.Run(form);
+                if (form.isLogin)
+                {
+                    LoginForm loginForm = new LoginForm();
+                    Application.Run(loginForm);
+                    if (loginForm.getLoginStatus())
+                    {
+                        Application.Run(new MainWindowForm());
+                    }
+                }
+            }
         }
     }
 }

@@ -151,5 +151,26 @@ namespace BrilliantSpy.Properties {
                 this["isShowMotionInPlayer"] = value;
             }
         }
+        
+        [global::System.Configuration.UserScopedSettingAttribute()]
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        [global::System.Configuration.DefaultSettingValueAttribute("True")]
+        public bool isFirstRun {
+            get {
+                return ((bool)(this["isFirstRun"]));
+            }
+            set {
+                this["isFirstRun"] = value;
+            }
+        }
+        
+        [global::System.Configuration.ApplicationScopedSettingAttribute()]
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        [global::System.Configuration.DefaultSettingValueAttribute("0")]
+        public double howManyRuns {
+            get {
+                return ((double)(this["howManyRuns"]));
+            }
+        }
     }
 }

@@ -28,6 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(MainWindowForm));
             this.MainMenuStrip = new System.Windows.Forms.MenuStrip();
             this.menuToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.startFeedFromCameraToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
@@ -74,7 +75,7 @@
             this.aboutToolStripMenuItem});
             this.MainMenuStrip.Location = new System.Drawing.Point(0, 0);
             this.MainMenuStrip.Name = "MainMenuStrip";
-            this.MainMenuStrip.Size = new System.Drawing.Size(1184, 24);
+            this.MainMenuStrip.Size = new System.Drawing.Size(1084, 24);
             this.MainMenuStrip.TabIndex = 2;
             this.MainMenuStrip.Text = "MainMenuStrip";
             // 
@@ -323,10 +324,16 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(1184, 661);
+            this.BackgroundImage = global::BrilliantSpy_MultiCam.Properties.Resources.BG;
+            this.ClientSize = new System.Drawing.Size(1084, 661);
             this.Controls.Add(this.tableLayoutPanel);
             this.Controls.Add(this.MainMenuStrip);
+            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.Fixed3D;
+            this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
+            this.MaximizeBox = false;
+            this.MinimizeBox = false;
             this.Name = "MainWindowForm";
+            this.SizeGripStyle = System.Windows.Forms.SizeGripStyle.Hide;
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "BrilliantSpy-MultiCam : Turns Your PC Into An Intelligent Spy";
             this.Load += new System.EventHandler(this.MainWindowForm_Load);

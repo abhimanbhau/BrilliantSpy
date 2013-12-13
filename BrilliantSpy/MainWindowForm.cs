@@ -62,8 +62,8 @@ namespace BrilliantSpy
 
         private void MainWindowForm_Load(object sender, EventArgs e)
         {
-            lblDetectorLevel.Text = Convert.ToString(Properties.Settings.
-                Default.motionLevel);
+            lblDetectorLevel.Text = Convert.ToString(Math.Round(Properties.Settings.
+                Default.motionLevel, 1));
             lblWarning.Text = "";
             txtCurrentMotion.Visible = false;
         }
@@ -76,8 +76,6 @@ namespace BrilliantSpy
             {
                 videoSource = new VideoCaptureDevice(form.VideoDeviceMoniker);
                 videoSource.Start();
-                //detector = new MotionDetector(new TwoFramesDifferenceDetector(),
-                //   new MotionAreaHighlighting());
                 videoSourcePlayer.VideoSource = videoSource;
                 videoSourcePlayer.NewFrame += videoSourcePlayer_NewFrame;
                 pcbStatusPanel.BackColor = Color.Green;
@@ -86,7 +84,6 @@ namespace BrilliantSpy
 
         private void MotionDetectorAlgorithmStart()
         {
-            // pcbStatusPanel.BackColor = Color.Green;
             switch (detectorMode)
             {
                 case "NONE":
@@ -245,8 +242,17 @@ namespace BrilliantSpy
 
         private void MainWindowForm_FormClosing(object sender, FormClosingEventArgs e)
         {
-            StopVideoSource();
-            this.Dispose();
+            if (MessageBox.Show(this, "Do You Really want to close the application",
+                "Really Quit?", MessageBoxButtons.YesNo,
+                MessageBoxIcon.Question) == System.Windows.Forms.DialogResult.No)
+            {
+                e.Cancel = true;
+            }
+            else
+            {
+                StopVideoSource();
+                this.Dispose();
+            }
         }
 
         private void StopVideoSource()
@@ -460,9 +466,16 @@ namespace BrilliantSpy
 
         private void StopAlertSound()
         {
-            sound.Stop();
-            sound.Dispose();
-            sound = null;
+            if (sound == null)
+            {
+                return;
+            }
+            else
+            {
+                sound.Stop();
+                sound.Dispose();
+                sound = null;
+            }
         }
 
         private void btnStopAlarm_Click(object sender, EventArgs e)
@@ -498,7 +511,8 @@ namespace BrilliantSpy
 
         private void btnRefreshDetectorLevel_Click(object sender, EventArgs e)
         {
-            lblDetectorLevel.Text = Convert.ToString(Properties.Settings.Default.motionLevel);
+            lblDetectorLevel.Text = Convert.ToString(Math.Round(Properties.Settings.
+                Default.motionLevel, 1));
         }
 
         private void suggestAnIdeaToolStripMenuItem_Click(object sender, EventArgs e)
@@ -571,6 +585,9 @@ namespace BrilliantSpy
         {
             if (detector != null)
             {
+                pcbStatusPanel.BackColor = Color.Green;
+                lblWarning.Text = "";
+                StopAlertSound();
                 detector.Reset();
             }
             else
