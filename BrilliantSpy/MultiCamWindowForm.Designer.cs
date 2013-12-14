@@ -847,7 +847,7 @@
             this.label3.Font = new System.Drawing.Font("Lucida Calligraphy", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label3.Location = new System.Drawing.Point(5, 2);
             this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(66, 53);
+            this.label3.Size = new System.Drawing.Size(62, 53);
             this.label3.TabIndex = 0;
             this.label3.Text = "Status 1";
             this.label3.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
@@ -857,7 +857,7 @@
             this.tableLayoutPanel2.CellBorderStyle = System.Windows.Forms.TableLayoutPanelCellBorderStyle.Inset;
             this.tableLayoutPanel2.ColumnCount = 2;
             this.tableLayoutPanel2.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 100F));
-            this.tableLayoutPanel2.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 207F));
+            this.tableLayoutPanel2.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 211F));
             this.tableLayoutPanel2.Controls.Add(this.label3, 0, 0);
             this.tableLayoutPanel2.Controls.Add(this.pcbStatus1, 1, 0);
             this.tableLayoutPanel2.Controls.Add(this.label4, 0, 1);
@@ -880,9 +880,9 @@
             // 
             this.pcbStatus1.Dock = System.Windows.Forms.DockStyle.Fill;
             this.pcbStatus1.Image = null;
-            this.pcbStatus1.Location = new System.Drawing.Point(79, 5);
+            this.pcbStatus1.Location = new System.Drawing.Point(75, 5);
             this.pcbStatus1.Name = "pcbStatus1";
-            this.pcbStatus1.Size = new System.Drawing.Size(201, 47);
+            this.pcbStatus1.Size = new System.Drawing.Size(205, 47);
             this.pcbStatus1.TabIndex = 1;
             this.pcbStatus1.TabStop = false;
             // 
@@ -893,7 +893,7 @@
             this.label4.Font = new System.Drawing.Font("Lucida Calligraphy", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label4.Location = new System.Drawing.Point(5, 57);
             this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(66, 53);
+            this.label4.Size = new System.Drawing.Size(62, 53);
             this.label4.TabIndex = 2;
             this.label4.Text = "Status 2";
             this.label4.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
@@ -905,7 +905,7 @@
             this.label5.Font = new System.Drawing.Font("Lucida Calligraphy", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label5.Location = new System.Drawing.Point(5, 112);
             this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(66, 53);
+            this.label5.Size = new System.Drawing.Size(62, 53);
             this.label5.TabIndex = 3;
             this.label5.Text = "Status 3";
             this.label5.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
@@ -917,7 +917,7 @@
             this.label6.Font = new System.Drawing.Font("Lucida Calligraphy", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label6.Location = new System.Drawing.Point(5, 167);
             this.label6.Name = "label6";
-            this.label6.Size = new System.Drawing.Size(66, 55);
+            this.label6.Size = new System.Drawing.Size(62, 55);
             this.label6.TabIndex = 4;
             this.label6.Text = "Status 4";
             this.label6.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
@@ -925,27 +925,27 @@
             // pcbStatus2
             // 
             this.pcbStatus2.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.pcbStatus2.Location = new System.Drawing.Point(79, 60);
+            this.pcbStatus2.Location = new System.Drawing.Point(75, 60);
             this.pcbStatus2.Name = "pcbStatus2";
-            this.pcbStatus2.Size = new System.Drawing.Size(201, 47);
+            this.pcbStatus2.Size = new System.Drawing.Size(205, 47);
             this.pcbStatus2.TabIndex = 5;
             this.pcbStatus2.TabStop = false;
             // 
             // pcbStatus3
             // 
             this.pcbStatus3.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.pcbStatus3.Location = new System.Drawing.Point(79, 115);
+            this.pcbStatus3.Location = new System.Drawing.Point(75, 115);
             this.pcbStatus3.Name = "pcbStatus3";
-            this.pcbStatus3.Size = new System.Drawing.Size(201, 47);
+            this.pcbStatus3.Size = new System.Drawing.Size(205, 47);
             this.pcbStatus3.TabIndex = 6;
             this.pcbStatus3.TabStop = false;
             // 
             // pcbStatus4
             // 
             this.pcbStatus4.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.pcbStatus4.Location = new System.Drawing.Point(79, 170);
+            this.pcbStatus4.Location = new System.Drawing.Point(75, 170);
             this.pcbStatus4.Name = "pcbStatus4";
-            this.pcbStatus4.Size = new System.Drawing.Size(201, 49);
+            this.pcbStatus4.Size = new System.Drawing.Size(205, 49);
             this.pcbStatus4.TabIndex = 7;
             this.pcbStatus4.TabStop = false;
             // 
