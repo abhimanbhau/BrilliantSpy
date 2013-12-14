@@ -300,18 +300,6 @@
     <None Include="Resources\BG.png" />
   </ItemGroup>
   <ItemGroup>
-    <None Include="Resources\button1.png" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="Resources\IMG_0001.JPG" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="Resources\NO_Image.png" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="Resources\SplashBG.png" />
-  </ItemGroup>
-  <ItemGroup>
     <None Include="Resources\siren04.wav" />
   </ItemGroup>
   <ItemGroup>
@@ -333,37 +321,19 @@
     </BootstrapperPackage>
   </ItemGroup>
   <ItemGroup>
-    <None Include="Resources\OK.ico" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="Resources\down.ico" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="Resources\down1.ico" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="Resources\up.ico" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="Resources\folder.ico" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="Resources\clear.ico" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="Resources\exit.ico" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="Resources\Icon_320.ico" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="Resources\exit%283%29.ico" />
-  </ItemGroup>
-  <ItemGroup>
     <None Include="Resources\LICENSE.txt" />
   </ItemGroup>
   <ItemGroup>
     <Content Include="Icon.ico" />
+    <None Include="Resources\up.png" />
+    <None Include="Resources\SplashBG.jpg" />
+    <None Include="Resources\shutdown.png" />
+    <None Include="Resources\OK.png" />
+    <None Include="Resources\None.png" />
+    <None Include="Resources\NO_Image.jpg" />
+    <None Include="Resources\down.png" />
+    <None Include="Resources\clear.png" />
+    <None Include="Resources\Abhimanbhau.JPG" />
     <None Include="Resources\multi-video.png" />
     <None Include="Resources\data.png" />
     <None Include="Resources\key.png" />

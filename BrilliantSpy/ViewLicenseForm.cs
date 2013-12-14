@@ -27,7 +27,7 @@ namespace BrilliantSpy
         {
             if (license == "BrilliantSpy")
             {
-                rtbLicenseView.Text = Properties.Resources.BrilliantSpy_LICENSE;
+                rtbLicenseView.Text = Properties.Resources.LICENSE;
                 this.Text = "BrilliantSpy License";
             }
             else if (license == "AForge")

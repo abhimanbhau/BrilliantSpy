@@ -10,7 +10,6 @@ using AForge.Vision.Motion;
 using AForge.Video.DirectShow;
 using System.Media;
 using System.IO;
-using AForge.Video.VFW;
 
 namespace BrilliantSpy
 {
@@ -243,7 +242,7 @@ namespace BrilliantSpy
             }
             else
             {
-                sound = new SoundPlayer(Properties.Resources.siren);
+                sound = new SoundPlayer(Properties.Resources.siren04);
                 sound.PlayLooping();
             }
         }

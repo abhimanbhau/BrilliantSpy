@@ -31,7 +31,7 @@ namespace BrilliantSpy
                     Application.Run(loginForm);
                     if (loginForm.getLoginStatus())
                     {
-                        Application.Run(new MainWindowForm());
+                        Application.Run(new MultiCamWindowForm());
                     }
                 }
             }

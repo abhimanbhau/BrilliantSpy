@@ -61,6 +61,16 @@ namespace BrilliantSpy.Properties {
         }
         
         /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap Abhimanbhau {
+            get {
+                object obj = ResourceManager.GetObject("Abhimanbhau", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
         ///   Looks up a localized string similar to                     GNU GENERAL PUBLIC LICENSE
         ///                       Version 3, 29 June 2007
         ///
@@ -89,29 +99,6 @@ namespace BrilliantSpy.Properties {
             get {
                 object obj = ResourceManager.GetObject("BG", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
-            }
-        }
-        
-        /// <summary>
-        ///   Looks up a localized string similar to Apache License
-        ///                           Version 2.0, January 2004
-        ///                        http://www.apache.org/licenses/
-        ///
-        ///   TERMS AND CONDITIONS FOR USE, REPRODUCTION, AND DISTRIBUTION
-        ///
-        ///   1. Definitions.
-        ///
-        ///      &quot;License&quot; shall mean the terms and conditions for use, reproduction,
-        ///      and distribution as defined by Sections 1 through 9 of this document.
-        ///
-        ///      &quot;Licensor&quot; shall mean the copyright owner or entity authorized by
-        ///      the copyright owner that is granting the License.
-        ///
-        ///      &quot; [rest of string was truncated]&quot;;.
-        /// </summary>
-        internal static string BrilliantSpy_LICENSE {
-            get {
-                return ResourceManager.GetString("BrilliantSpy_LICENSE", resourceCulture);
             }
         }
         
@@ -176,26 +163,6 @@ namespace BrilliantSpy.Properties {
         }
         
         /// <summary>
-        ///   Looks up a localized resource of type System.Drawing.Bitmap.
-        /// </summary>
-        internal static System.Drawing.Bitmap exit {
-            get {
-                object obj = ResourceManager.GetObject("exit", resourceCulture);
-                return ((System.Drawing.Bitmap)(obj));
-            }
-        }
-        
-        /// <summary>
-        ///   Looks up a localized resource of type System.Drawing.Bitmap.
-        /// </summary>
-        internal static System.Drawing.Bitmap IMG_0001 {
-            get {
-                object obj = ResourceManager.GetObject("IMG_0001", resourceCulture);
-                return ((System.Drawing.Bitmap)(obj));
-            }
-        }
-        
-        /// <summary>
         ///   Looks up a localized string similar to Kellerman Software END-USER LICENSE AGREEMENT FOR .NET ENCRYPTION LIBRARY
         ///
         /// 
@@ -218,6 +185,39 @@ namespace BrilliantSpy.Properties {
         internal static System.Drawing.Bitmap key {
             get {
                 object obj = ResourceManager.GetObject("key", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Apache License
+        ///                           Version 2.0, January 2004
+        ///                        http://www.apache.org/licenses/
+        ///
+        ///   TERMS AND CONDITIONS FOR USE, REPRODUCTION, AND DISTRIBUTION
+        ///
+        ///   1. Definitions.
+        ///
+        ///      &quot;License&quot; shall mean the terms and conditions for use, reproduction,
+        ///      and distribution as defined by Sections 1 through 9 of this document.
+        ///
+        ///      &quot;Licensor&quot; shall mean the copyright owner or entity authorized by
+        ///      the copyright owner that is granting the License.
+        ///
+        ///      &quot; [rest of string was truncated]&quot;;.
+        /// </summary>
+        internal static string LICENSE {
+            get {
+                return ResourceManager.GetString("LICENSE", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap multi_video {
+            get {
+                object obj = ResourceManager.GetObject("multi_video", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -283,11 +283,21 @@ namespace BrilliantSpy.Properties {
         }
         
         /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap shutdown {
+            get {
+                object obj = ResourceManager.GetObject("shutdown", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
         ///   Looks up a localized resource of type System.IO.UnmanagedMemoryStream similar to System.IO.MemoryStream.
         /// </summary>
-        internal static System.IO.UnmanagedMemoryStream siren {
+        internal static System.IO.UnmanagedMemoryStream siren04 {
             get {
-                return ResourceManager.GetStream("siren", resourceCulture);
+                return ResourceManager.GetStream("siren04", resourceCulture);
             }
         }
         
