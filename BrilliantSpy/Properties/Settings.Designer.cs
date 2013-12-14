@@ -187,5 +187,53 @@ namespace BrilliantSpy.Properties {
                 this["videoCaptureFolder"] = value;
             }
         }
+        
+        [global::System.Configuration.UserScopedSettingAttribute()]
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        [global::System.Configuration.DefaultSettingValueAttribute("0.4")]
+        public double motionLevelCam1 {
+            get {
+                return ((double)(this["motionLevelCam1"]));
+            }
+            set {
+                this["motionLevelCam1"] = value;
+            }
+        }
+        
+        [global::System.Configuration.UserScopedSettingAttribute()]
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        [global::System.Configuration.DefaultSettingValueAttribute("0.4")]
+        public double motionLevelCam2 {
+            get {
+                return ((double)(this["motionLevelCam2"]));
+            }
+            set {
+                this["motionLevelCam2"] = value;
+            }
+        }
+        
+        [global::System.Configuration.UserScopedSettingAttribute()]
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        [global::System.Configuration.DefaultSettingValueAttribute("0.4")]
+        public double motionLevelCam3 {
+            get {
+                return ((double)(this["motionLevelCam3"]));
+            }
+            set {
+                this["motionLevelCam3"] = value;
+            }
+        }
+        
+        [global::System.Configuration.UserScopedSettingAttribute()]
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        [global::System.Configuration.DefaultSettingValueAttribute("0.4")]
+        public double motionLevelCam4 {
+            get {
+                return ((double)(this["motionLevelCam4"]));
+            }
+            set {
+                this["motionLevelCam4"] = value;
+            }
+        }
     }
 }

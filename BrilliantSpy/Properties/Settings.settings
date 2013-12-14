@@ -44,5 +44,17 @@
     <Setting Name="videoCaptureFolder" Type="System.String" Scope="User">
       <Value Profile="(Default)">D:\BrilliantSpy\CapturedVideos</Value>
     </Setting>
+    <Setting Name="motionLevelCam1" Type="System.Double" Scope="User">
+      <Value Profile="(Default)">0.4</Value>
+    </Setting>
+    <Setting Name="motionLevelCam2" Type="System.Double" Scope="User">
+      <Value Profile="(Default)">0.4</Value>
+    </Setting>
+    <Setting Name="motionLevelCam3" Type="System.Double" Scope="User">
+      <Value Profile="(Default)">0.4</Value>
+    </Setting>
+    <Setting Name="motionLevelCam4" Type="System.Double" Scope="User">
+      <Value Profile="(Default)">0.4</Value>
+    </Setting>
   </Settings>
 </SettingsFile>
