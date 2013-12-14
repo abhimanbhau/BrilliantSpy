@@ -879,5 +879,85 @@ namespace BrilliantSpy
                 detector4 = null;
             }
         }
+
+        private void btnStop_Click(object sender, EventArgs e)
+        {
+            stopVideoSources();
+            StopAlarmSound();
+            resetStatusColorMotionText();
+        }
+
+        private void resetStatusColorMotionText()
+        {
+            pcbStatus1.BackColor = Color.Transparent;
+            pcbStatus2.BackColor = Color.Transparent;
+            pcbStatus3.BackColor = Color.Transparent;
+            pcbStatus4.BackColor = Color.Transparent;
+            txtDetectorLevel1.Text = "";
+            txtDetectorLevel2.Text = "";
+            txtDetectorLevel3.Text = "";
+            txtDetectorLevel4.Text = "";
+        }
+
+        private void StopAlarmSound()
+        {
+            if (sound == null)
+            {
+                return;
+            }
+            else
+            {
+                sound.Stop();
+                sound.Dispose();
+                sound = null;
+            }
+        }
+
+        private void btnStopAlarm_Click(object sender, EventArgs e)
+        {
+            try
+            {
+                StopAlarmSound();
+            }
+            catch (Exception ex)
+            {
+                System.Diagnostics.Debug.WriteLine("No sound playing" + ex.Message);
+            }
+        }
+
+        private void btnResetDetector_Click(object sender, EventArgs e)
+        {
+            resetMotionDetectors();
+            resetStatusColorMotionText();
+        }
+
+        private void resetMotionDetectors()
+        {
+            if (detector1 != null)
+            {
+                detector1 = null;
+            }
+
+            if (detector2 != null)
+            {
+                detector2 = null;
+            }
+
+            if (detector3 != null)
+            {
+                detector3 = null;
+            }
+
+            if (detector4 != null)
+            {
+                detector4 = null;
+            }
+        }
+
+        private void viewPreviousImagesToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            SelectImageFolderForm form = new SelectImageFolderForm();
+            form.ShowDialog();
+        }
     }
 }
