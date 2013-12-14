@@ -154,6 +154,12 @@
     <Compile Include="FollowMeForm.Designer.cs">
       <DependentUpon>FollowMeForm.cs</DependentUpon>
     </Compile>
+    <Compile Include="InteractiveSettingsForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="InteractiveSettingsForm.Designer.cs">
+      <DependentUpon>InteractiveSettingsForm.cs</DependentUpon>
+    </Compile>
     <Compile Include="LoginForm.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -242,6 +248,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="FollowMeForm.resx">
       <DependentUpon>FollowMeForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="InteractiveSettingsForm.resx">
+      <DependentUpon>InteractiveSettingsForm.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="LoginForm.resx">
       <DependentUpon>LoginForm.cs</DependentUpon>

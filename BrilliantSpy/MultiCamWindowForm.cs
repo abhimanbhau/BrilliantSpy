@@ -959,5 +959,53 @@ namespace BrilliantSpy
             SelectImageFolderForm form = new SelectImageFolderForm();
             form.ShowDialog();
         }
+
+        private void toolsToolStripMenuItem1_Click(object sender, EventArgs e)
+        {
+            EncryptDecryptFilesForm form = new EncryptDecryptFilesForm();
+            form.ShowDialog();
+        }
+
+        private void compressToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            CompressFilesForm form = new CompressFilesForm();
+            form.ShowDialog();
+        }
+
+        private void preferancesToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            InteractiveSettingsForm form = new InteractiveSettingsForm();
+            form.ShowDialog();
+        }
+
+        private void suggestAnIdeaToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            SuggestionForm form = new SuggestionForm();
+            form.ShowDialog();
+        }
+
+        private void suggetionsToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            BugReportForm form = new BugReportForm();
+            form.ShowDialog();
+        }
+
+        private void openSourceLicensesToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            OpenSourceLicenseForm form = new OpenSourceLicenseForm();
+            form.ShowDialog();
+        }
+
+        private void aboutMeToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            AboutMeForm form = new AboutMeForm();
+            form.ShowDialog();
+        }
+
+        private void followMeToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            FollowMeForm form = new FollowMeForm();
+            form.ShowDialog();
+        }
     }
 }

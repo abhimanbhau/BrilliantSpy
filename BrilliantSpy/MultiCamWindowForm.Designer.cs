@@ -200,6 +200,7 @@
             this.followMeToolStripMenuItem.Name = "followMeToolStripMenuItem";
             this.followMeToolStripMenuItem.Size = new System.Drawing.Size(253, 22);
             this.followMeToolStripMenuItem.Text = "Follow Me";
+            this.followMeToolStripMenuItem.Click += new System.EventHandler(this.followMeToolStripMenuItem_Click);
             // 
             // aboutMeToolStripMenuItem
             // 
@@ -208,6 +209,7 @@
             this.aboutMeToolStripMenuItem.ShortcutKeys = ((System.Windows.Forms.Keys)((System.Windows.Forms.Keys.Control | System.Windows.Forms.Keys.A)));
             this.aboutMeToolStripMenuItem.Size = new System.Drawing.Size(253, 22);
             this.aboutMeToolStripMenuItem.Text = "About Me";
+            this.aboutMeToolStripMenuItem.Click += new System.EventHandler(this.aboutMeToolStripMenuItem_Click);
             // 
             // openSourceLicensesToolStripMenuItem
             // 
@@ -215,6 +217,7 @@
             this.openSourceLicensesToolStripMenuItem.Name = "openSourceLicensesToolStripMenuItem";
             this.openSourceLicensesToolStripMenuItem.Size = new System.Drawing.Size(253, 22);
             this.openSourceLicensesToolStripMenuItem.Text = "Open Source Licenses";
+            this.openSourceLicensesToolStripMenuItem.Click += new System.EventHandler(this.openSourceLicensesToolStripMenuItem_Click);
             // 
             // suggetionsToolStripMenuItem
             // 
@@ -222,6 +225,7 @@
             this.suggetionsToolStripMenuItem.Name = "suggetionsToolStripMenuItem";
             this.suggetionsToolStripMenuItem.Size = new System.Drawing.Size(253, 22);
             this.suggetionsToolStripMenuItem.Text = "Report Bug";
+            this.suggetionsToolStripMenuItem.Click += new System.EventHandler(this.suggetionsToolStripMenuItem_Click);
             // 
             // suggestAnIdeaToolStripMenuItem
             // 
@@ -229,6 +233,7 @@
             this.suggestAnIdeaToolStripMenuItem.Name = "suggestAnIdeaToolStripMenuItem";
             this.suggestAnIdeaToolStripMenuItem.Size = new System.Drawing.Size(253, 22);
             this.suggestAnIdeaToolStripMenuItem.Text = "Suggest an idea/Request a feature";
+            this.suggestAnIdeaToolStripMenuItem.Click += new System.EventHandler(this.suggestAnIdeaToolStripMenuItem_Click);
             // 
             // aboutToolStripMenuItem
             // 
@@ -249,6 +254,7 @@
             this.preferancesToolStripMenuItem.ShortcutKeys = ((System.Windows.Forms.Keys)((System.Windows.Forms.Keys.Control | System.Windows.Forms.Keys.P)));
             this.preferancesToolStripMenuItem.Size = new System.Drawing.Size(176, 22);
             this.preferancesToolStripMenuItem.Text = "Preferences";
+            this.preferancesToolStripMenuItem.Click += new System.EventHandler(this.preferancesToolStripMenuItem_Click);
             // 
             // compressToolStripMenuItem
             // 
@@ -256,6 +262,7 @@
             this.compressToolStripMenuItem.Name = "compressToolStripMenuItem";
             this.compressToolStripMenuItem.Size = new System.Drawing.Size(176, 22);
             this.compressToolStripMenuItem.Text = "Compress";
+            this.compressToolStripMenuItem.Click += new System.EventHandler(this.compressToolStripMenuItem_Click);
             // 
             // toolsToolStripMenuItem1
             // 
@@ -263,6 +270,7 @@
             this.toolsToolStripMenuItem1.Name = "toolsToolStripMenuItem1";
             this.toolsToolStripMenuItem1.Size = new System.Drawing.Size(176, 22);
             this.toolsToolStripMenuItem1.Text = "Encrypt/Decrypt";
+            this.toolsToolStripMenuItem1.Click += new System.EventHandler(this.toolsToolStripMenuItem1_Click);
             // 
             // toolsToolStripMenuItem
             // 
@@ -279,8 +287,8 @@
             this.viewPreviousImagesToolStripMenuItem.Image = global::BrilliantSpy.Properties.Resources.photo;
             this.viewPreviousImagesToolStripMenuItem.Name = "viewPreviousImagesToolStripMenuItem";
             this.viewPreviousImagesToolStripMenuItem.ShortcutKeys = ((System.Windows.Forms.Keys)((System.Windows.Forms.Keys.Control | System.Windows.Forms.Keys.H)));
-            this.viewPreviousImagesToolStripMenuItem.Size = new System.Drawing.Size(231, 22);
-            this.viewPreviousImagesToolStripMenuItem.Text = "View Previous Images";
+            this.viewPreviousImagesToolStripMenuItem.Size = new System.Drawing.Size(234, 22);
+            this.viewPreviousImagesToolStripMenuItem.Text = "Built-In Picture Viewer";
             this.viewPreviousImagesToolStripMenuItem.Click += new System.EventHandler(this.viewPreviousImagesToolStripMenuItem_Click);
             // 
             // historyToolStripMenuItem
@@ -310,7 +318,7 @@
             this.gridToolStripMenuItem,
             this.blobCountingToolStripMenuItem});
             this.camera1ToolStripMenuItem1.Name = "camera1ToolStripMenuItem1";
-            this.camera1ToolStripMenuItem1.Size = new System.Drawing.Size(152, 22);
+            this.camera1ToolStripMenuItem1.Size = new System.Drawing.Size(124, 22);
             this.camera1ToolStripMenuItem1.Text = "Camera 1";
             // 
             // areaHighLightToolStripMenuItem
@@ -349,7 +357,7 @@
             this.gridToolStripMenuItem1,
             this.blobCountingToolStripMenuItem1});
             this.camera2ToolStripMenuItem1.Name = "camera2ToolStripMenuItem1";
-            this.camera2ToolStripMenuItem1.Size = new System.Drawing.Size(152, 22);
+            this.camera2ToolStripMenuItem1.Size = new System.Drawing.Size(124, 22);
             this.camera2ToolStripMenuItem1.Text = "Camera 2";
             // 
             // areaHighLightToolStripMenuItem1
@@ -388,7 +396,7 @@
             this.gridToolStripMenuItem2,
             this.blobCountingToolStripMenuItem2});
             this.camera3ToolStripMenuItem2.Name = "camera3ToolStripMenuItem2";
-            this.camera3ToolStripMenuItem2.Size = new System.Drawing.Size(152, 22);
+            this.camera3ToolStripMenuItem2.Size = new System.Drawing.Size(124, 22);
             this.camera3ToolStripMenuItem2.Text = "Camera 3";
             // 
             // areaHighLightToolStripMenuItem2
@@ -427,7 +435,7 @@
             this.gridToolStripMenuItem3,
             this.blobCountingToolStripMenuItem3});
             this.camera4ToolStripMenuItem2.Name = "camera4ToolStripMenuItem2";
-            this.camera4ToolStripMenuItem2.Size = new System.Drawing.Size(152, 22);
+            this.camera4ToolStripMenuItem2.Size = new System.Drawing.Size(124, 22);
             this.camera4ToolStripMenuItem2.Text = "Camera 4";
             // 
             // areaHighLightToolStripMenuItem3
@@ -477,7 +485,7 @@
             this.twoFrameDifferenceToolStripMenuItem,
             this.noneToolStripMenuItem});
             this.camera1ToolStripMenuItem.Name = "camera1ToolStripMenuItem";
-            this.camera1ToolStripMenuItem.Size = new System.Drawing.Size(152, 22);
+            this.camera1ToolStripMenuItem.Size = new System.Drawing.Size(124, 22);
             this.camera1ToolStripMenuItem.Text = "Camera 1";
             // 
             // simpleBGModellingToolStripMenuItem
@@ -508,7 +516,7 @@
             this.twoFrameDifferenceToolStripMenuItem1,
             this.noneToolStripMenuItem1});
             this.camera2ToolStripMenuItem.Name = "camera2ToolStripMenuItem";
-            this.camera2ToolStripMenuItem.Size = new System.Drawing.Size(152, 22);
+            this.camera2ToolStripMenuItem.Size = new System.Drawing.Size(124, 22);
             this.camera2ToolStripMenuItem.Text = "Camera 2";
             // 
             // simpleBGModellingToolStripMenuItem1
@@ -539,7 +547,7 @@
             this.twoFrameDifferenceToolStripMenuItem2,
             this.noneToolStripMenuItem2});
             this.camera3ToolStripMenuItem1.Name = "camera3ToolStripMenuItem1";
-            this.camera3ToolStripMenuItem1.Size = new System.Drawing.Size(152, 22);
+            this.camera3ToolStripMenuItem1.Size = new System.Drawing.Size(124, 22);
             this.camera3ToolStripMenuItem1.Text = "Camera 3";
             // 
             // simpleBGModellingToolStripMenuItem2
@@ -570,7 +578,7 @@
             this.twoFrameDifferenceToolStripMenuItem3,
             this.noneToolStripMenuItem3});
             this.camera4ToolStripMenuItem1.Name = "camera4ToolStripMenuItem1";
-            this.camera4ToolStripMenuItem1.Size = new System.Drawing.Size(152, 22);
+            this.camera4ToolStripMenuItem1.Size = new System.Drawing.Size(124, 22);
             this.camera4ToolStripMenuItem1.Text = "Camera 4";
             // 
             // simpleBGModellingToolStripMenuItem3
@@ -848,7 +856,7 @@
             this.label3.Font = new System.Drawing.Font("Lucida Calligraphy", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label3.Location = new System.Drawing.Point(5, 2);
             this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(60, 53);
+            this.label3.Size = new System.Drawing.Size(58, 53);
             this.label3.TabIndex = 0;
             this.label3.Text = "Status 1";
             this.label3.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
@@ -858,7 +866,7 @@
             this.tableLayoutPanel2.CellBorderStyle = System.Windows.Forms.TableLayoutPanelCellBorderStyle.Inset;
             this.tableLayoutPanel2.ColumnCount = 2;
             this.tableLayoutPanel2.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 100F));
-            this.tableLayoutPanel2.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 213F));
+            this.tableLayoutPanel2.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 215F));
             this.tableLayoutPanel2.Controls.Add(this.label3, 0, 0);
             this.tableLayoutPanel2.Controls.Add(this.pcbStatus1, 1, 0);
             this.tableLayoutPanel2.Controls.Add(this.label4, 0, 1);
@@ -881,9 +889,9 @@
             // 
             this.pcbStatus1.Dock = System.Windows.Forms.DockStyle.Fill;
             this.pcbStatus1.Image = null;
-            this.pcbStatus1.Location = new System.Drawing.Point(73, 5);
+            this.pcbStatus1.Location = new System.Drawing.Point(71, 5);
             this.pcbStatus1.Name = "pcbStatus1";
-            this.pcbStatus1.Size = new System.Drawing.Size(207, 47);
+            this.pcbStatus1.Size = new System.Drawing.Size(209, 47);
             this.pcbStatus1.TabIndex = 1;
             this.pcbStatus1.TabStop = false;
             // 
@@ -894,7 +902,7 @@
             this.label4.Font = new System.Drawing.Font("Lucida Calligraphy", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label4.Location = new System.Drawing.Point(5, 57);
             this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(60, 53);
+            this.label4.Size = new System.Drawing.Size(58, 53);
             this.label4.TabIndex = 2;
             this.label4.Text = "Status 2";
             this.label4.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
@@ -906,7 +914,7 @@
             this.label5.Font = new System.Drawing.Font("Lucida Calligraphy", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label5.Location = new System.Drawing.Point(5, 112);
             this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(60, 53);
+            this.label5.Size = new System.Drawing.Size(58, 53);
             this.label5.TabIndex = 3;
             this.label5.Text = "Status 3";
             this.label5.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
@@ -918,7 +926,7 @@
             this.label6.Font = new System.Drawing.Font("Lucida Calligraphy", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label6.Location = new System.Drawing.Point(5, 167);
             this.label6.Name = "label6";
-            this.label6.Size = new System.Drawing.Size(60, 55);
+            this.label6.Size = new System.Drawing.Size(58, 55);
             this.label6.TabIndex = 4;
             this.label6.Text = "Status 4";
             this.label6.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
@@ -926,27 +934,27 @@
             // pcbStatus2
             // 
             this.pcbStatus2.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.pcbStatus2.Location = new System.Drawing.Point(73, 60);
+            this.pcbStatus2.Location = new System.Drawing.Point(71, 60);
             this.pcbStatus2.Name = "pcbStatus2";
-            this.pcbStatus2.Size = new System.Drawing.Size(207, 47);
+            this.pcbStatus2.Size = new System.Drawing.Size(209, 47);
             this.pcbStatus2.TabIndex = 5;
             this.pcbStatus2.TabStop = false;
             // 
             // pcbStatus3
             // 
             this.pcbStatus3.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.pcbStatus3.Location = new System.Drawing.Point(73, 115);
+            this.pcbStatus3.Location = new System.Drawing.Point(71, 115);
             this.pcbStatus3.Name = "pcbStatus3";
-            this.pcbStatus3.Size = new System.Drawing.Size(207, 47);
+            this.pcbStatus3.Size = new System.Drawing.Size(209, 47);
             this.pcbStatus3.TabIndex = 6;
             this.pcbStatus3.TabStop = false;
             // 
             // pcbStatus4
             // 
             this.pcbStatus4.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.pcbStatus4.Location = new System.Drawing.Point(73, 170);
+            this.pcbStatus4.Location = new System.Drawing.Point(71, 170);
             this.pcbStatus4.Name = "pcbStatus4";
-            this.pcbStatus4.Size = new System.Drawing.Size(207, 49);
+            this.pcbStatus4.Size = new System.Drawing.Size(209, 49);
             this.pcbStatus4.TabIndex = 7;
             this.pcbStatus4.TabStop = false;
             // 
