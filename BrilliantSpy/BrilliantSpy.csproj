@@ -75,6 +75,10 @@
     <Reference Include="AForge.Video.DirectShow">
       <HintPath>..\OpenSourceLibraries\AForge.Video.DirectShow.dll</HintPath>
     </Reference>
+    <Reference Include="AForge.Video.VFW, Version=2.2.4.0, Culture=neutral, PublicKeyToken=a82f807c999637c8, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\OpenSourceLibraries\AForge.Video.VFW.dll</HintPath>
+    </Reference>
     <Reference Include="AForge.Vision">
       <HintPath>..\OpenSourceLibraries\AForge.Vision.dll</HintPath>
     </Reference>
@@ -162,6 +166,12 @@
     <Compile Include="MainWindowForm.Designer.cs">
       <DependentUpon>MainWindowForm.cs</DependentUpon>
     </Compile>
+    <Compile Include="MultiCamWindowForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MultiCamWindowForm.Designer.cs">
+      <DependentUpon>MultiCamWindowForm.cs</DependentUpon>
+    </Compile>
     <Compile Include="OpenSourceLicenseForm.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -238,6 +248,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="MainWindowForm.resx">
       <DependentUpon>MainWindowForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MultiCamWindowForm.resx">
+      <DependentUpon>MultiCamWindowForm.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="OpenSourceLicenseForm.resx">
       <DependentUpon>OpenSourceLicenseForm.cs</DependentUpon>

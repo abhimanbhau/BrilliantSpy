@@ -150,6 +150,7 @@
             this.txtReverifyPassword.PasswordChar = '*';
             this.txtReverifyPassword.Size = new System.Drawing.Size(203, 20);
             this.txtReverifyPassword.TabIndex = 18;
+            this.txtReverifyPassword.KeyDown += new System.Windows.Forms.KeyEventHandler(this.txtReverifyPassword_KeyDown);
             // 
             // ChangeCredentialsForm
             // 

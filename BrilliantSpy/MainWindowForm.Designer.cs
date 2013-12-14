@@ -54,8 +54,8 @@
             this.suggestAnIdeaToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.suggetionsToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.openSourceLicensesToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.aboutMeToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.followMeToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.aboutMeToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.videoSourcePlayer = new AForge.Controls.VideoSourcePlayer();
             this.btnStopAlarm = new System.Windows.Forms.Button();
             this.btnStopProcessing = new System.Windows.Forms.Button();
@@ -76,6 +76,7 @@
             this.saveFile = new System.Windows.Forms.SaveFileDialog();
             this.toolTip = new System.Windows.Forms.ToolTip(this.components);
             this.btnResetDetector = new System.Windows.Forms.Button();
+            this.lblCurrentTime = new System.Windows.Forms.Label();
             this.MainMenuStrip.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pcbStatusPanel)).BeginInit();
             this.SuspendLayout();
@@ -294,6 +295,14 @@
             this.openSourceLicensesToolStripMenuItem.Text = "Open Source Licenses";
             this.openSourceLicensesToolStripMenuItem.Click += new System.EventHandler(this.openSourceLicensesToolStripMenuItem_Click);
             // 
+            // followMeToolStripMenuItem
+            // 
+            this.followMeToolStripMenuItem.Image = global::BrilliantSpy.Properties.Resources.cloud;
+            this.followMeToolStripMenuItem.Name = "followMeToolStripMenuItem";
+            this.followMeToolStripMenuItem.Size = new System.Drawing.Size(253, 22);
+            this.followMeToolStripMenuItem.Text = "Follow Me";
+            this.followMeToolStripMenuItem.Click += new System.EventHandler(this.followMeToolStripMenuItem_Click);
+            // 
             // aboutMeToolStripMenuItem
             // 
             this.aboutMeToolStripMenuItem.Image = global::BrilliantSpy.Properties.Resources.user;
@@ -302,14 +311,6 @@
             this.aboutMeToolStripMenuItem.Size = new System.Drawing.Size(253, 22);
             this.aboutMeToolStripMenuItem.Text = "About Me";
             this.aboutMeToolStripMenuItem.Click += new System.EventHandler(this.aboutMeToolStripMenuItem_Click);
-            // 
-            // followMeToolStripMenuItem
-            // 
-            this.followMeToolStripMenuItem.Image = global::BrilliantSpy.Properties.Resources.cloud;
-            this.followMeToolStripMenuItem.Name = "followMeToolStripMenuItem";
-            this.followMeToolStripMenuItem.Size = new System.Drawing.Size(253, 22);
-            this.followMeToolStripMenuItem.Text = "Follow Me";
-            this.followMeToolStripMenuItem.Click += new System.EventHandler(this.followMeToolStripMenuItem_Click);
             // 
             // videoSourcePlayer
             // 
@@ -490,12 +491,23 @@
             this.btnResetDetector.UseVisualStyleBackColor = true;
             this.btnResetDetector.Click += new System.EventHandler(this.btnResetDetector_Click);
             // 
+            // lblCurrentTime
+            // 
+            this.lblCurrentTime.AutoSize = true;
+            this.lblCurrentTime.Font = new System.Drawing.Font("Copperplate Gothic Bold", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblCurrentTime.Location = new System.Drawing.Point(9, 510);
+            this.lblCurrentTime.Name = "lblCurrentTime";
+            this.lblCurrentTime.Size = new System.Drawing.Size(37, 13);
+            this.lblCurrentTime.TabIndex = 35;
+            this.lblCurrentTime.Text = "TIME";
+            // 
             // MainWindowForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackgroundImage = global::BrilliantSpy.Properties.Resources.BG;
             this.ClientSize = new System.Drawing.Size(1008, 667);
+            this.Controls.Add(this.lblCurrentTime);
             this.Controls.Add(this.btnResetDetector);
             this.Controls.Add(this.lblWarning);
             this.Controls.Add(this.btnClearHistoryBox);
@@ -580,5 +592,6 @@
         private System.Windows.Forms.ToolStripMenuItem blobCountingToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem followMeToolStripMenuItem;
         private System.Windows.Forms.Button btnResetDetector;
+        private System.Windows.Forms.Label lblCurrentTime;
     }
 }

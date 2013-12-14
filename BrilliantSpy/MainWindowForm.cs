@@ -10,6 +10,7 @@ using AForge.Vision.Motion;
 using AForge.Video.DirectShow;
 using System.Media;
 using System.IO;
+using AForge.Video.VFW;
 
 namespace BrilliantSpy
 {
@@ -22,6 +23,7 @@ namespace BrilliantSpy
         FileVideoSource fileVideoSource;
         MotionDetector detector;
         SoundPlayer sound;
+        AVIWriter writer = new AVIWriter("wmv3");
         int detectedObject = 0;
         string[] files;
         int counter;
@@ -58,6 +60,11 @@ namespace BrilliantSpy
                     Default.homeDirectory);
                 info.Attributes = FileAttributes.Normal;
             }
+
+            if (!Directory.Exists(Properties.Settings.Default.videoCaptureFolder))
+            {
+                Directory.CreateDirectory(Properties.Settings.Default.videoCaptureFolder);
+            }
         }
 
         private void MainWindowForm_Load(object sender, EventArgs e)
@@ -66,6 +73,8 @@ namespace BrilliantSpy
                 Default.motionLevel, 1));
             lblWarning.Text = "";
             txtCurrentMotion.Visible = false;
+            lblCurrentTime.Text = Convert.ToString("Current System Time -> " +
+                DateTime.UtcNow.ToString().Trim());
         }
 
         private void startFeedFromCameraToolStripMenuItem_Click(object sender, EventArgs e)
@@ -216,7 +225,6 @@ namespace BrilliantSpy
                 }
                 else
                 {
-                    //pcbStatusPanel.BackColor = Color.Green;
                     if (chbEnableMotionDisplay.Checked == true)
                     {
                         txtCurrentMotion.Text = "MOTION->" + motion;
@@ -252,6 +260,12 @@ namespace BrilliantSpy
             {
                 StopVideoSource();
                 this.Dispose();
+            }
+            Properties.Settings.Default.howManyRuns = Properties.Settings.Default.howManyRuns + 1;
+            Properties.Settings.Default.Save();
+            if (writer != null)
+            {
+                writer.Close();
             }
         }
 

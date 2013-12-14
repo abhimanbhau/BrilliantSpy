@@ -17,6 +17,25 @@ namespace BrilliantSpy
 
         private void btnSubmit_Click(object sender, EventArgs e)
         {
+            changeCredentials();
+        }
+
+        private void ChangeCredentialsForm_Load(object sender, EventArgs e)
+        {
+            lblNote.Text = "Note : \n"
+                + "Username and password both are case-sensitive";
+        }
+
+        private void txtReverifyPassword_KeyDown(object sender, KeyEventArgs e)
+        {
+            if (e.KeyCode == Keys.Enter)
+            {
+                changeCredentials();
+            }
+        }
+
+        private void changeCredentials()
+        {
             if (txtOldUsername.Text.Length == 0 || txtOldPassword.Text.Length == 0 ||
                 txtNewUsername.Text.Length == 0 || txtNewPassword.Text.Length == 0)
             {
@@ -28,6 +47,13 @@ namespace BrilliantSpy
             {
                 MessageBox.Show(this, "New Password and Re-enter password field do not match",
                     "Error",
+                    MessageBoxButtons.OK, MessageBoxIcon.Error);
+                return;
+            }
+            else if (txtOldPassword.Text.Trim() == txtNewPassword.Text.Trim())
+            {
+                MessageBox.Show(this, "The old password and new password are same",
+                    "Enter different password",
                     MessageBoxButtons.OK, MessageBoxIcon.Error);
             }
             else
@@ -46,12 +72,6 @@ namespace BrilliantSpy
                         MessageBoxButtons.OK, MessageBoxIcon.Error);
                 }
             }
-        }
-
-        private void ChangeCredentialsForm_Load(object sender, EventArgs e)
-        {
-            lblNote.Text = "Note : \n"
-                + "Username and password both are case-sensitive";
         }
     }
 }

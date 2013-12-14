@@ -164,12 +164,27 @@ namespace BrilliantSpy.Properties {
             }
         }
         
-        [global::System.Configuration.ApplicationScopedSettingAttribute()]
+        [global::System.Configuration.UserScopedSettingAttribute()]
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
         [global::System.Configuration.DefaultSettingValueAttribute("0")]
         public double howManyRuns {
             get {
                 return ((double)(this["howManyRuns"]));
+            }
+            set {
+                this["howManyRuns"] = value;
+            }
+        }
+        
+        [global::System.Configuration.UserScopedSettingAttribute()]
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        [global::System.Configuration.DefaultSettingValueAttribute("D:\\BrilliantSpy\\CapturedVideos")]
+        public string videoCaptureFolder {
+            get {
+                return ((string)(this["videoCaptureFolder"]));
+            }
+            set {
+                this["videoCaptureFolder"] = value;
             }
         }
     }
