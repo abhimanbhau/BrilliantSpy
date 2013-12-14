@@ -866,7 +866,7 @@
             this.tableLayoutPanel2.CellBorderStyle = System.Windows.Forms.TableLayoutPanelCellBorderStyle.Inset;
             this.tableLayoutPanel2.ColumnCount = 2;
             this.tableLayoutPanel2.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 69F));
-            this.tableLayoutPanel2.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 160F));
+            this.tableLayoutPanel2.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 212F));
             this.tableLayoutPanel2.Controls.Add(this.label3, 0, 0);
             this.tableLayoutPanel2.Controls.Add(this.pcbStatus1, 1, 0);
             this.tableLayoutPanel2.Controls.Add(this.label4, 0, 1);
@@ -891,7 +891,7 @@
             this.pcbStatus1.Image = null;
             this.pcbStatus1.Location = new System.Drawing.Point(76, 5);
             this.pcbStatus1.Name = "pcbStatus1";
-            this.pcbStatus1.Size = new System.Drawing.Size(204, 47);
+            this.pcbStatus1.Size = new System.Drawing.Size(206, 47);
             this.pcbStatus1.TabIndex = 1;
             this.pcbStatus1.TabStop = false;
             // 
@@ -936,7 +936,7 @@
             this.pcbStatus2.Dock = System.Windows.Forms.DockStyle.Fill;
             this.pcbStatus2.Location = new System.Drawing.Point(76, 60);
             this.pcbStatus2.Name = "pcbStatus2";
-            this.pcbStatus2.Size = new System.Drawing.Size(204, 47);
+            this.pcbStatus2.Size = new System.Drawing.Size(206, 47);
             this.pcbStatus2.TabIndex = 5;
             this.pcbStatus2.TabStop = false;
             // 
@@ -945,7 +945,7 @@
             this.pcbStatus3.Dock = System.Windows.Forms.DockStyle.Fill;
             this.pcbStatus3.Location = new System.Drawing.Point(76, 115);
             this.pcbStatus3.Name = "pcbStatus3";
-            this.pcbStatus3.Size = new System.Drawing.Size(204, 47);
+            this.pcbStatus3.Size = new System.Drawing.Size(206, 47);
             this.pcbStatus3.TabIndex = 6;
             this.pcbStatus3.TabStop = false;
             // 
@@ -954,7 +954,7 @@
             this.pcbStatus4.Dock = System.Windows.Forms.DockStyle.Fill;
             this.pcbStatus4.Location = new System.Drawing.Point(76, 170);
             this.pcbStatus4.Name = "pcbStatus4";
-            this.pcbStatus4.Size = new System.Drawing.Size(204, 49);
+            this.pcbStatus4.Size = new System.Drawing.Size(206, 49);
             this.pcbStatus4.TabIndex = 7;
             this.pcbStatus4.TabStop = false;
             // 

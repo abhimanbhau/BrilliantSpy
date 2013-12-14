@@ -166,12 +166,6 @@
     <Compile Include="LoginForm.Designer.cs">
       <DependentUpon>LoginForm.cs</DependentUpon>
     </Compile>
-    <Compile Include="MainWindowForm.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="MainWindowForm.Designer.cs">
-      <DependentUpon>MainWindowForm.cs</DependentUpon>
-    </Compile>
     <Compile Include="MultiCamWindowForm.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -254,9 +248,6 @@
     </EmbeddedResource>
     <EmbeddedResource Include="LoginForm.resx">
       <DependentUpon>LoginForm.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="MainWindowForm.resx">
-      <DependentUpon>MainWindowForm.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="MultiCamWindowForm.resx">
       <DependentUpon>MultiCamWindowForm.cs</DependentUpon>
