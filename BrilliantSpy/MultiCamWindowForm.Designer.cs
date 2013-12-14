@@ -105,6 +105,7 @@
             // videoSourcePlayer1
             // 
             this.videoSourcePlayer1.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.videoSourcePlayer1.KeepAspectRatio = true;
             this.videoSourcePlayer1.Location = new System.Drawing.Point(3, 3);
             this.videoSourcePlayer1.Name = "videoSourcePlayer1";
             this.videoSourcePlayer1.Size = new System.Drawing.Size(434, 309);
@@ -115,6 +116,7 @@
             // videoSourcePlayer4
             // 
             this.videoSourcePlayer4.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.videoSourcePlayer4.KeepAspectRatio = true;
             this.videoSourcePlayer4.Location = new System.Drawing.Point(443, 318);
             this.videoSourcePlayer4.Name = "videoSourcePlayer4";
             this.videoSourcePlayer4.Size = new System.Drawing.Size(434, 309);
@@ -142,6 +144,7 @@
             // videoSourcePlayer2
             // 
             this.videoSourcePlayer2.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.videoSourcePlayer2.KeepAspectRatio = true;
             this.videoSourcePlayer2.Location = new System.Drawing.Point(443, 3);
             this.videoSourcePlayer2.Name = "videoSourcePlayer2";
             this.videoSourcePlayer2.Size = new System.Drawing.Size(434, 309);
@@ -152,6 +155,7 @@
             // videoSourcePlayer3
             // 
             this.videoSourcePlayer3.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.videoSourcePlayer3.KeepAspectRatio = true;
             this.videoSourcePlayer3.Location = new System.Drawing.Point(3, 318);
             this.videoSourcePlayer3.Name = "videoSourcePlayer3";
             this.videoSourcePlayer3.Size = new System.Drawing.Size(434, 309);
@@ -707,6 +711,7 @@
             this.cam1ToolStripMenuItem.Name = "cam1ToolStripMenuItem";
             this.cam1ToolStripMenuItem.Size = new System.Drawing.Size(152, 22);
             this.cam1ToolStripMenuItem.Text = "Camera 1";
+            this.cam1ToolStripMenuItem.Click += new System.EventHandler(this.cam1ToolStripMenuItem_Click);
             // 
             // cam2ToolStripMenuItem
             // 

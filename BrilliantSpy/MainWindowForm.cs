@@ -23,7 +23,7 @@ namespace BrilliantSpy
         FileVideoSource fileVideoSource;
         MotionDetector detector;
         SoundPlayer sound;
-        AVIWriter writer = new AVIWriter("wmv3");
+
         int detectedObject = 0;
         string[] files;
         int counter;
@@ -263,10 +263,6 @@ namespace BrilliantSpy
             }
             Properties.Settings.Default.howManyRuns = Properties.Settings.Default.howManyRuns + 1;
             Properties.Settings.Default.Save();
-            if (writer != null)
-            {
-                writer.Close();
-            }
         }
 
         private void StopVideoSource()
