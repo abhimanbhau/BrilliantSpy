@@ -870,7 +870,7 @@
             this.tableLayoutPanel2.CellBorderStyle = System.Windows.Forms.TableLayoutPanelCellBorderStyle.Inset;
             this.tableLayoutPanel2.ColumnCount = 2;
             this.tableLayoutPanel2.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 69F));
-            this.tableLayoutPanel2.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 230F));
+            this.tableLayoutPanel2.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 234F));
             this.tableLayoutPanel2.Controls.Add(this.pcbStatus1, 1, 0);
             this.tableLayoutPanel2.Controls.Add(this.pcbStatus2, 1, 1);
             this.tableLayoutPanel2.Controls.Add(this.pcbStatus3, 1, 2);
@@ -895,7 +895,7 @@
             this.pcbStatus1.Image = null;
             this.pcbStatus1.Location = new System.Drawing.Point(76, 5);
             this.pcbStatus1.Name = "pcbStatus1";
-            this.pcbStatus1.Size = new System.Drawing.Size(224, 47);
+            this.pcbStatus1.Size = new System.Drawing.Size(228, 47);
             this.pcbStatus1.TabIndex = 1;
             this.pcbStatus1.TabStop = false;
             // 
@@ -904,7 +904,7 @@
             this.pcbStatus2.Dock = System.Windows.Forms.DockStyle.Fill;
             this.pcbStatus2.Location = new System.Drawing.Point(76, 60);
             this.pcbStatus2.Name = "pcbStatus2";
-            this.pcbStatus2.Size = new System.Drawing.Size(224, 47);
+            this.pcbStatus2.Size = new System.Drawing.Size(228, 47);
             this.pcbStatus2.TabIndex = 5;
             this.pcbStatus2.TabStop = false;
             // 
@@ -913,7 +913,7 @@
             this.pcbStatus3.Dock = System.Windows.Forms.DockStyle.Fill;
             this.pcbStatus3.Location = new System.Drawing.Point(76, 115);
             this.pcbStatus3.Name = "pcbStatus3";
-            this.pcbStatus3.Size = new System.Drawing.Size(224, 47);
+            this.pcbStatus3.Size = new System.Drawing.Size(228, 47);
             this.pcbStatus3.TabIndex = 6;
             this.pcbStatus3.TabStop = false;
             // 
@@ -922,7 +922,7 @@
             this.pcbStatus4.Dock = System.Windows.Forms.DockStyle.Fill;
             this.pcbStatus4.Location = new System.Drawing.Point(76, 170);
             this.pcbStatus4.Name = "pcbStatus4";
-            this.pcbStatus4.Size = new System.Drawing.Size(224, 49);
+            this.pcbStatus4.Size = new System.Drawing.Size(228, 49);
             this.pcbStatus4.TabIndex = 7;
             this.pcbStatus4.TabStop = false;
             // 
@@ -1066,7 +1066,7 @@
             this.btnStop.Location = new System.Drawing.Point(3, 3);
             this.btnStop.Name = "btnStop";
             this.btnStop.Size = new System.Drawing.Size(89, 34);
-            this.btnStop.Style = MetroFramework.MetroColorStyle.Lime;
+            this.btnStop.Style = MetroFramework.MetroColorStyle.Purple;
             this.btnStop.StyleManager = null;
             this.btnStop.TabIndex = 3;
             this.btnStop.Text = "STOP";
@@ -1080,7 +1080,7 @@
             this.btnStopAlarm.Location = new System.Drawing.Point(98, 3);
             this.btnStopAlarm.Name = "btnStopAlarm";
             this.btnStopAlarm.Size = new System.Drawing.Size(89, 34);
-            this.btnStopAlarm.Style = MetroFramework.MetroColorStyle.Blue;
+            this.btnStopAlarm.Style = MetroFramework.MetroColorStyle.Purple;
             this.btnStopAlarm.StyleManager = null;
             this.btnStopAlarm.TabIndex = 4;
             this.btnStopAlarm.Text = "STOP ALARM";
@@ -1094,7 +1094,7 @@
             this.btnResetDetector.Location = new System.Drawing.Point(193, 3);
             this.btnResetDetector.Name = "btnResetDetector";
             this.btnResetDetector.Size = new System.Drawing.Size(89, 34);
-            this.btnResetDetector.Style = MetroFramework.MetroColorStyle.Blue;
+            this.btnResetDetector.Style = MetroFramework.MetroColorStyle.Purple;
             this.btnResetDetector.StyleManager = null;
             this.btnResetDetector.TabIndex = 5;
             this.btnResetDetector.Text = "RESET";
@@ -1118,6 +1118,7 @@
             this.MinimizeBox = false;
             this.Name = "MultiCamWindowForm";
             this.SizeGripStyle = System.Windows.Forms.SizeGripStyle.Hide;
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "BrilliantSpy : Turns Your PC Into An Intelligent Spy";
             this.FormClosing += new System.Windows.Forms.FormClosingEventHandler(this.MultiCamWindowForm_FormClosing);
             this.Load += new System.EventHandler(this.MultiCamWindowForm_Load);

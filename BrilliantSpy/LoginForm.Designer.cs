@@ -36,7 +36,7 @@
             // 
             // txtPassword
             // 
-            this.txtPassword.Location = new System.Drawing.Point(147, 69);
+            this.txtPassword.Location = new System.Drawing.Point(147, 108);
             this.txtPassword.Name = "txtPassword";
             this.txtPassword.PasswordChar = '*';
             this.txtPassword.Size = new System.Drawing.Size(178, 20);
@@ -45,7 +45,7 @@
             // 
             // txtUsername
             // 
-            this.txtUsername.Location = new System.Drawing.Point(147, 25);
+            this.txtUsername.Location = new System.Drawing.Point(147, 64);
             this.txtUsername.Name = "txtUsername";
             this.txtUsername.Size = new System.Drawing.Size(178, 20);
             this.txtUsername.TabIndex = 8;
@@ -55,7 +55,7 @@
             // 
             this.lblPassword.AutoSize = true;
             this.lblPassword.Font = new System.Drawing.Font("Lucida Calligraphy", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblPassword.Location = new System.Drawing.Point(20, 67);
+            this.lblPassword.Location = new System.Drawing.Point(20, 106);
             this.lblPassword.Name = "lblPassword";
             this.lblPassword.Size = new System.Drawing.Size(91, 21);
             this.lblPassword.TabIndex = 7;
@@ -66,7 +66,7 @@
             // 
             this.lblUsername.AutoSize = true;
             this.lblUsername.Font = new System.Drawing.Font("Lucida Calligraphy", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblUsername.Location = new System.Drawing.Point(20, 23);
+            this.lblUsername.Location = new System.Drawing.Point(20, 62);
             this.lblUsername.Name = "lblUsername";
             this.lblUsername.Size = new System.Drawing.Size(98, 21);
             this.lblUsername.TabIndex = 6;
@@ -78,20 +78,20 @@
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackgroundImage = global::BrilliantSpy.Properties.Resources.BG;
-            this.ClientSize = new System.Drawing.Size(344, 107);
+            this.ClientSize = new System.Drawing.Size(344, 149);
             this.Controls.Add(this.txtPassword);
             this.Controls.Add(this.txtUsername);
             this.Controls.Add(this.lblPassword);
             this.Controls.Add(this.lblUsername);
-            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
+            this.Location = new System.Drawing.Point(0, 0);
             this.MaximizeBox = false;
             this.MinimizeBox = false;
             this.Name = "LoginForm";
             this.ShowIcon = false;
             this.ShowInTaskbar = false;
             this.SizeGripStyle = System.Windows.Forms.SizeGripStyle.Hide;
-            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
-            this.Text = "LoginPageForm";
+            this.Style = MetroFramework.MetroColorStyle.Purple;
+            this.Text = "Login";
             this.Load += new System.EventHandler(this.LoginPageForm_Load);
             this.ResumeLayout(false);
             this.PerformLayout();

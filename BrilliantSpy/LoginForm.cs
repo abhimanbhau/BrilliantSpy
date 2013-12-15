@@ -5,10 +5,11 @@ using System.Data;
 using System.Drawing;
 using System.Text;
 using System.Windows.Forms;
+using MetroFramework.Forms;
 
 namespace BrilliantSpy
 {
-    public partial class LoginForm : Form
+    public partial class LoginForm : MetroForm
     {
         private bool loginSuccessfull = false;
 
@@ -58,14 +59,6 @@ namespace BrilliantSpy
         }
 
         private void txtPassword_KeyDown(object sender, KeyEventArgs e)
-        {
-            if (e.KeyCode == Keys.Enter)
-            {
-                DoLogin();
-            }
-        }
-
-        private void btnLogin_KeyDown(object sender, KeyEventArgs e)
         {
             if (e.KeyCode == Keys.Enter)
             {
