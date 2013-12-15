@@ -3,8 +3,6 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio 2012
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BrilliantSpy", "BrilliantSpy\BrilliantSpy.csproj", "{639FEF66-78D8-4A5C-BAA0-BCC035D04FBE}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BrilliantSpy-MultiCam", "BrilliantSpy-MultiCam\BrilliantSpy-MultiCam.csproj", "{DDE7CB2F-1DC4-4E16-B711-47E9A95FE6FD}"
-EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -15,10 +13,6 @@ Global
 		{639FEF66-78D8-4A5C-BAA0-BCC035D04FBE}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{639FEF66-78D8-4A5C-BAA0-BCC035D04FBE}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{639FEF66-78D8-4A5C-BAA0-BCC035D04FBE}.Release|Any CPU.Build.0 = Release|Any CPU
-		{DDE7CB2F-1DC4-4E16-B711-47E9A95FE6FD}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{DDE7CB2F-1DC4-4E16-B711-47E9A95FE6FD}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{DDE7CB2F-1DC4-4E16-B711-47E9A95FE6FD}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{DDE7CB2F-1DC4-4E16-B711-47E9A95FE6FD}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

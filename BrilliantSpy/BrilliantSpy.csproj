@@ -89,6 +89,9 @@
       <SpecificVersion>False</SpecificVersion>
       <HintPath>..\OpenSourceLibraries\KellermanSoftware.NET-Encryption-Library.dll</HintPath>
     </Reference>
+    <Reference Include="MetroFramework">
+      <HintPath>..\packages\ModernUI.1.1.0.1\lib\net20\MetroFramework.dll</HintPath>
+    </Reference>
     <Reference Include="System" />
     <Reference Include="System.Data" />
     <Reference Include="System.Deployment" />
@@ -281,6 +284,7 @@
     <None Include="app.config">
       <SubType>Designer</SubType>
     </None>
+    <None Include="packages.config" />
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>
       <LastGenOutput>Settings.Designer.cs</LastGenOutput>

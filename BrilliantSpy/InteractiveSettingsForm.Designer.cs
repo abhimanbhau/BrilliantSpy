@@ -40,11 +40,11 @@
             this.label9 = new System.Windows.Forms.Label();
             this.label10 = new System.Windows.Forms.Label();
             this.txtCurrentDiskUsage = new System.Windows.Forms.TextBox();
-            this.btnClearStorage = new System.Windows.Forms.Button();
             this.btnChangeCredentials = new System.Windows.Forms.Button();
             this.btnChangeMotionThresholds = new System.Windows.Forms.Button();
             this.comboBox1 = new System.Windows.Forms.ComboBox();
             this.button1 = new System.Windows.Forms.Button();
+            this.metroButton1 = new MetroFramework.Controls.MetroButton();
             this.tableLayoutPanel1.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -65,11 +65,11 @@
             this.tableLayoutPanel1.Controls.Add(this.label9, 0, 8);
             this.tableLayoutPanel1.Controls.Add(this.label10, 0, 9);
             this.tableLayoutPanel1.Controls.Add(this.txtCurrentDiskUsage, 1, 0);
-            this.tableLayoutPanel1.Controls.Add(this.btnClearStorage, 1, 1);
             this.tableLayoutPanel1.Controls.Add(this.btnChangeCredentials, 1, 2);
             this.tableLayoutPanel1.Controls.Add(this.btnChangeMotionThresholds, 1, 3);
             this.tableLayoutPanel1.Controls.Add(this.comboBox1, 1, 4);
             this.tableLayoutPanel1.Controls.Add(this.button1, 1, 5);
+            this.tableLayoutPanel1.Controls.Add(this.metroButton1, 1, 1);
             this.tableLayoutPanel1.Location = new System.Drawing.Point(12, 12);
             this.tableLayoutPanel1.Name = "tableLayoutPanel1";
             this.tableLayoutPanel1.RowCount = 10;
@@ -216,16 +216,6 @@
             this.txtCurrentDiskUsage.Size = new System.Drawing.Size(92, 33);
             this.txtCurrentDiskUsage.TabIndex = 10;
             // 
-            // btnClearStorage
-            // 
-            this.btnClearStorage.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.btnClearStorage.Image = global::BrilliantSpy.Properties.Resources.OK;
-            this.btnClearStorage.Location = new System.Drawing.Point(212, 51);
-            this.btnClearStorage.Name = "btnClearStorage";
-            this.btnClearStorage.Size = new System.Drawing.Size(92, 38);
-            this.btnClearStorage.TabIndex = 11;
-            this.btnClearStorage.UseVisualStyleBackColor = true;
-            // 
             // btnChangeCredentials
             // 
             this.btnChangeCredentials.Dock = System.Windows.Forms.DockStyle.Fill;
@@ -268,6 +258,18 @@
             this.button1.Text = "button1";
             this.button1.UseVisualStyleBackColor = true;
             // 
+            // metroButton1
+            // 
+            this.metroButton1.Highlight = false;
+            this.metroButton1.Location = new System.Drawing.Point(212, 51);
+            this.metroButton1.Name = "metroButton1";
+            this.metroButton1.Size = new System.Drawing.Size(75, 23);
+            this.metroButton1.Style = MetroFramework.MetroColorStyle.Blue;
+            this.metroButton1.StyleManager = null;
+            this.metroButton1.TabIndex = 16;
+            this.metroButton1.Text = "metroButton1";
+            this.metroButton1.Theme = MetroFramework.MetroThemeStyle.Light;
+            // 
             // InteractiveSettingsForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -275,15 +277,15 @@
             this.BackgroundImage = global::BrilliantSpy.Properties.Resources.BG;
             this.ClientSize = new System.Drawing.Size(386, 486);
             this.Controls.Add(this.tableLayoutPanel1);
-            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedToolWindow;
+            this.Location = new System.Drawing.Point(0, 0);
             this.MaximizeBox = false;
             this.MinimizeBox = false;
             this.Name = "InteractiveSettingsForm";
             this.ShowIcon = false;
             this.ShowInTaskbar = false;
             this.SizeGripStyle = System.Windows.Forms.SizeGripStyle.Hide;
-            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "BrilliantSpy Settings";
+            this.Load += new System.EventHandler(this.InteractiveSettingsForm_Load);
             this.tableLayoutPanel1.ResumeLayout(false);
             this.tableLayoutPanel1.PerformLayout();
             this.ResumeLayout(false);
@@ -304,10 +306,10 @@
         private System.Windows.Forms.Label label9;
         private System.Windows.Forms.Label label10;
         private System.Windows.Forms.TextBox txtCurrentDiskUsage;
-        private System.Windows.Forms.Button btnClearStorage;
         private System.Windows.Forms.Button btnChangeCredentials;
         private System.Windows.Forms.Button btnChangeMotionThresholds;
         private System.Windows.Forms.ComboBox comboBox1;
         private System.Windows.Forms.Button button1;
+        private MetroFramework.Controls.MetroButton metroButton1;
     }
 }

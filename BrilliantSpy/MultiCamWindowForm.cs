@@ -12,10 +12,11 @@ using System.Media;
 using System.IO;
 using AForge.Controls;
 using AForge.Video;
+using MetroFramework.Forms;
 
 namespace BrilliantSpy
 {
-    public partial class MultiCamWindowForm : Form
+    public partial class MultiCamWindowForm : MetroForm
     {
         string HistoryDBSavePath = Properties.Settings.Default.homeDirectory +
             @"\" + DateTime.UtcNow.ToShortDateString() + @"\";
