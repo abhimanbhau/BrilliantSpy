@@ -29,7 +29,6 @@
         private void InitializeComponent()
         {
             this.openFileDialog = new System.Windows.Forms.OpenFileDialog();
-            this.lblWarning = new System.Windows.Forms.Label();
             this.btnDecryptFiles = new System.Windows.Forms.Button();
             this.btnClearList = new System.Windows.Forms.Button();
             this.btnEncryptFiles = new System.Windows.Forms.Button();
@@ -47,17 +46,6 @@
             // 
             this.openFileDialog.FileName = "Select Files to encrypt";
             this.openFileDialog.Multiselect = true;
-            // 
-            // lblWarning
-            // 
-            this.lblWarning.AutoSize = true;
-            this.lblWarning.Font = new System.Drawing.Font("Lucida Bright", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblWarning.ForeColor = System.Drawing.Color.Red;
-            this.lblWarning.Location = new System.Drawing.Point(12, 243);
-            this.lblWarning.Name = "lblWarning";
-            this.lblWarning.Size = new System.Drawing.Size(44, 17);
-            this.lblWarning.TabIndex = 15;
-            this.lblWarning.Text = "AAA";
             // 
             // btnDecryptFiles
             // 
@@ -131,7 +119,7 @@
             this.listFiles.ForeColor = System.Drawing.Color.RoyalBlue;
             this.listFiles.FormattingEnabled = true;
             this.listFiles.ItemHeight = 21;
-            this.listFiles.Location = new System.Drawing.Point(12, 12);
+            this.listFiles.Location = new System.Drawing.Point(12, 71);
             this.listFiles.Name = "listFiles";
             this.listFiles.Size = new System.Drawing.Size(377, 172);
             this.listFiles.TabIndex = 8;
@@ -143,7 +131,7 @@
             this.tableLayoutPanel1.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 100F));
             this.tableLayoutPanel1.Controls.Add(this.btnBrowse, 0, 0);
             this.tableLayoutPanel1.Controls.Add(this.btnClearList, 0, 1);
-            this.tableLayoutPanel1.Location = new System.Drawing.Point(395, 12);
+            this.tableLayoutPanel1.Location = new System.Drawing.Point(395, 71);
             this.tableLayoutPanel1.Name = "tableLayoutPanel1";
             this.tableLayoutPanel1.RowCount = 2;
             this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 50F));
@@ -162,7 +150,7 @@
             this.tableLayoutPanel2.Controls.Add(this.txtPassword, 1, 0);
             this.tableLayoutPanel2.Controls.Add(this.btnEncryptFiles, 2, 0);
             this.tableLayoutPanel2.Controls.Add(this.btnDecryptFiles, 3, 0);
-            this.tableLayoutPanel2.Location = new System.Drawing.Point(12, 190);
+            this.tableLayoutPanel2.Location = new System.Drawing.Point(12, 249);
             this.tableLayoutPanel2.Name = "tableLayoutPanel2";
             this.tableLayoutPanel2.RowCount = 1;
             this.tableLayoutPanel2.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 100F));
@@ -174,33 +162,29 @@
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackgroundImage = global::BrilliantSpy.Properties.Resources.BG;
-            this.ClientSize = new System.Drawing.Size(482, 291);
+            this.ClientSize = new System.Drawing.Size(492, 303);
             this.Controls.Add(this.tableLayoutPanel2);
             this.Controls.Add(this.tableLayoutPanel1);
-            this.Controls.Add(this.lblWarning);
             this.Controls.Add(this.listFiles);
-            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedToolWindow;
+            this.Location = new System.Drawing.Point(0, 0);
             this.MaximizeBox = false;
             this.MinimizeBox = false;
             this.Name = "EncryptDecryptFilesForm";
             this.ShowIcon = false;
             this.ShowInTaskbar = false;
             this.SizeGripStyle = System.Windows.Forms.SizeGripStyle.Hide;
-            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "EncryptDecryptFilesForm";
             this.Load += new System.EventHandler(this.EncryptDecryptFilesForm_Load);
             this.tableLayoutPanel1.ResumeLayout(false);
             this.tableLayoutPanel2.ResumeLayout(false);
             this.tableLayoutPanel2.PerformLayout();
             this.ResumeLayout(false);
-            this.PerformLayout();
 
         }
 
         #endregion
 
         private System.Windows.Forms.OpenFileDialog openFileDialog;
-        private System.Windows.Forms.Label lblWarning;
         private System.Windows.Forms.Button btnDecryptFiles;
         private System.Windows.Forms.Button btnClearList;
         private System.Windows.Forms.Button btnEncryptFiles;

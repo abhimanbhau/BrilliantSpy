@@ -6,10 +6,11 @@ using System.Drawing;
 using System.Text;
 using System.Windows.Forms;
 using System.IO;
+using MetroFramework.Forms;
 
 namespace BrilliantSpy
 {
-    public partial class ChangeDirectoryPath : Form
+    public partial class ChangeDirectoryPath : MetroForm
     {
         private string directoryToChange;
         private string directoryToChangePath;
