@@ -34,10 +34,8 @@
             this.tableLayoutPanel = new System.Windows.Forms.TableLayoutPanel();
             this.videoSourcePlayer2 = new AForge.Controls.VideoSourcePlayer();
             this.videoSourcePlayer3 = new AForge.Controls.VideoSourcePlayer();
-            this.followMeToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.aboutMeToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.openSourceLicensesToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.suggetionsToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.suggestAnIdeaToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.aboutToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.preferancesToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
@@ -194,20 +192,12 @@
             this.videoSourcePlayer3.Text = "videoSourcePlayer3";
             this.videoSourcePlayer3.VideoSource = null;
             // 
-            // followMeToolStripMenuItem
-            // 
-            this.followMeToolStripMenuItem.Image = global::BrilliantSpy.Properties.Resources.cloud;
-            this.followMeToolStripMenuItem.Name = "followMeToolStripMenuItem";
-            this.followMeToolStripMenuItem.Size = new System.Drawing.Size(253, 22);
-            this.followMeToolStripMenuItem.Text = "Follow Me";
-            this.followMeToolStripMenuItem.Click += new System.EventHandler(this.followMeToolStripMenuItem_Click);
-            // 
             // aboutMeToolStripMenuItem
             // 
             this.aboutMeToolStripMenuItem.Image = global::BrilliantSpy.Properties.Resources.user;
             this.aboutMeToolStripMenuItem.Name = "aboutMeToolStripMenuItem";
             this.aboutMeToolStripMenuItem.ShortcutKeys = ((System.Windows.Forms.Keys)((System.Windows.Forms.Keys.Control | System.Windows.Forms.Keys.A)));
-            this.aboutMeToolStripMenuItem.Size = new System.Drawing.Size(253, 22);
+            this.aboutMeToolStripMenuItem.Size = new System.Drawing.Size(317, 22);
             this.aboutMeToolStripMenuItem.Text = "About Me";
             this.aboutMeToolStripMenuItem.Click += new System.EventHandler(this.aboutMeToolStripMenuItem_Click);
             // 
@@ -215,34 +205,24 @@
             // 
             this.openSourceLicensesToolStripMenuItem.Image = global::BrilliantSpy.Properties.Resources.world;
             this.openSourceLicensesToolStripMenuItem.Name = "openSourceLicensesToolStripMenuItem";
-            this.openSourceLicensesToolStripMenuItem.Size = new System.Drawing.Size(253, 22);
+            this.openSourceLicensesToolStripMenuItem.Size = new System.Drawing.Size(317, 22);
             this.openSourceLicensesToolStripMenuItem.Text = "Open Source Licenses";
             this.openSourceLicensesToolStripMenuItem.Click += new System.EventHandler(this.openSourceLicensesToolStripMenuItem_Click);
-            // 
-            // suggetionsToolStripMenuItem
-            // 
-            this.suggetionsToolStripMenuItem.Image = global::BrilliantSpy.Properties.Resources.pen;
-            this.suggetionsToolStripMenuItem.Name = "suggetionsToolStripMenuItem";
-            this.suggetionsToolStripMenuItem.Size = new System.Drawing.Size(253, 22);
-            this.suggetionsToolStripMenuItem.Text = "Report Bug";
-            this.suggetionsToolStripMenuItem.Click += new System.EventHandler(this.suggetionsToolStripMenuItem_Click);
             // 
             // suggestAnIdeaToolStripMenuItem
             // 
             this.suggestAnIdeaToolStripMenuItem.Image = global::BrilliantSpy.Properties.Resources.bubble;
             this.suggestAnIdeaToolStripMenuItem.Name = "suggestAnIdeaToolStripMenuItem";
-            this.suggestAnIdeaToolStripMenuItem.Size = new System.Drawing.Size(253, 22);
-            this.suggestAnIdeaToolStripMenuItem.Text = "Suggest an idea/Request a feature";
+            this.suggestAnIdeaToolStripMenuItem.Size = new System.Drawing.Size(317, 22);
+            this.suggestAnIdeaToolStripMenuItem.Text = "Suggest an idea/Request a feature/Report Bug";
             this.suggestAnIdeaToolStripMenuItem.Click += new System.EventHandler(this.suggestAnIdeaToolStripMenuItem_Click);
             // 
             // aboutToolStripMenuItem
             // 
             this.aboutToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
             this.suggestAnIdeaToolStripMenuItem,
-            this.suggetionsToolStripMenuItem,
             this.openSourceLicensesToolStripMenuItem,
-            this.aboutMeToolStripMenuItem,
-            this.followMeToolStripMenuItem});
+            this.aboutMeToolStripMenuItem});
             this.aboutToolStripMenuItem.Name = "aboutToolStripMenuItem";
             this.aboutToolStripMenuItem.Size = new System.Drawing.Size(44, 20);
             this.aboutToolStripMenuItem.Text = "Help";
@@ -870,7 +850,7 @@
             this.tableLayoutPanel2.CellBorderStyle = System.Windows.Forms.TableLayoutPanelCellBorderStyle.Inset;
             this.tableLayoutPanel2.ColumnCount = 2;
             this.tableLayoutPanel2.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 69F));
-            this.tableLayoutPanel2.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 234F));
+            this.tableLayoutPanel2.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 238F));
             this.tableLayoutPanel2.Controls.Add(this.pcbStatus1, 1, 0);
             this.tableLayoutPanel2.Controls.Add(this.pcbStatus2, 1, 1);
             this.tableLayoutPanel2.Controls.Add(this.pcbStatus3, 1, 2);
@@ -895,7 +875,7 @@
             this.pcbStatus1.Image = null;
             this.pcbStatus1.Location = new System.Drawing.Point(76, 5);
             this.pcbStatus1.Name = "pcbStatus1";
-            this.pcbStatus1.Size = new System.Drawing.Size(228, 47);
+            this.pcbStatus1.Size = new System.Drawing.Size(232, 47);
             this.pcbStatus1.TabIndex = 1;
             this.pcbStatus1.TabStop = false;
             // 
@@ -904,7 +884,7 @@
             this.pcbStatus2.Dock = System.Windows.Forms.DockStyle.Fill;
             this.pcbStatus2.Location = new System.Drawing.Point(76, 60);
             this.pcbStatus2.Name = "pcbStatus2";
-            this.pcbStatus2.Size = new System.Drawing.Size(228, 47);
+            this.pcbStatus2.Size = new System.Drawing.Size(232, 47);
             this.pcbStatus2.TabIndex = 5;
             this.pcbStatus2.TabStop = false;
             // 
@@ -913,7 +893,7 @@
             this.pcbStatus3.Dock = System.Windows.Forms.DockStyle.Fill;
             this.pcbStatus3.Location = new System.Drawing.Point(76, 115);
             this.pcbStatus3.Name = "pcbStatus3";
-            this.pcbStatus3.Size = new System.Drawing.Size(228, 47);
+            this.pcbStatus3.Size = new System.Drawing.Size(232, 47);
             this.pcbStatus3.TabIndex = 6;
             this.pcbStatus3.TabStop = false;
             // 
@@ -922,7 +902,7 @@
             this.pcbStatus4.Dock = System.Windows.Forms.DockStyle.Fill;
             this.pcbStatus4.Location = new System.Drawing.Point(76, 170);
             this.pcbStatus4.Name = "pcbStatus4";
-            this.pcbStatus4.Size = new System.Drawing.Size(228, 49);
+            this.pcbStatus4.Size = new System.Drawing.Size(232, 49);
             this.pcbStatus4.TabIndex = 7;
             this.pcbStatus4.TabStop = false;
             // 
@@ -1147,10 +1127,8 @@
         private System.Windows.Forms.TableLayoutPanel tableLayoutPanel;
         private AForge.Controls.VideoSourcePlayer videoSourcePlayer2;
         private AForge.Controls.VideoSourcePlayer videoSourcePlayer3;
-        private System.Windows.Forms.ToolStripMenuItem followMeToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem aboutMeToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem openSourceLicensesToolStripMenuItem;
-        private System.Windows.Forms.ToolStripMenuItem suggetionsToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem suggestAnIdeaToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem aboutToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem preferancesToolStripMenuItem;

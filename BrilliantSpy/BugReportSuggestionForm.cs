@@ -7,16 +7,22 @@ using System.Text;
 using System.Windows.Forms;
 using System.IO;
 using System.Net;
+using MetroFramework.Forms;
 
 namespace BrilliantSpy
 {
-    public partial class BugReportForm : Form
+    public partial class BugReportSuggestionForm : MetroForm
     {
         FtpWebRequest request;
 
-        public BugReportForm()
+        public BugReportSuggestionForm()
         {
             InitializeComponent();
+        }
+
+        private void BugReportForm_Load(object sender, EventArgs e)
+        {
+            this.Text = "Suggest An Idea or Report a Bug";
         }
 
         private void btnSubmit_Click(object sender, EventArgs e)
@@ -58,11 +64,6 @@ namespace BrilliantSpy
                     "Error",
                     MessageBoxButtons.OK, MessageBoxIcon.Error);
             }
-        }
-
-        private void BugReportForm_Load(object sender, EventArgs e)
-        {
-            this.Text = "Report a bug";
         }
     }
 }

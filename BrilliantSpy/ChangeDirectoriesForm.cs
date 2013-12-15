@@ -5,10 +5,11 @@ using System.Data;
 using System.Drawing;
 using System.Text;
 using System.Windows.Forms;
+using MetroFramework.Forms;
 
 namespace BrilliantSpy
 {
-    public partial class ChangeDirectoriesForm : Form
+    public partial class ChangeDirectoriesForm : MetroForm
     {
         public ChangeDirectoriesForm()
         {
@@ -21,5 +22,6 @@ namespace BrilliantSpy
                 Trim());
             form.Show();
         }
+
     }
 }

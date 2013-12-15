@@ -5,25 +5,15 @@ using System.Data;
 using System.Drawing;
 using System.Text;
 using System.Windows.Forms;
+using MetroFramework.Forms;
 
 namespace BrilliantSpy
 {
-    public partial class ChangeCredentialsForm : Form
+    public partial class ChangeCredentialsForm : MetroForm
     {
         public ChangeCredentialsForm()
         {
             InitializeComponent();
-        }
-
-        private void btnSubmit_Click(object sender, EventArgs e)
-        {
-            changeCredentials();
-        }
-
-        private void ChangeCredentialsForm_Load(object sender, EventArgs e)
-        {
-            lblNote.Text = "Note : \n"
-                + "Username and password both are case-sensitive";
         }
 
         private void txtReverifyPassword_KeyDown(object sender, KeyEventArgs e)
@@ -72,6 +62,11 @@ namespace BrilliantSpy
                         MessageBoxButtons.OK, MessageBoxIcon.Error);
                 }
             }
+        }
+
+        private void btnSubmit_Click(object sender, EventArgs e)
+        {
+            changeCredentials();
         }
     }
 }

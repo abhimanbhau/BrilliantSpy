@@ -28,176 +28,243 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.lblNote = new System.Windows.Forms.Label();
-            this.btnSubmit = new System.Windows.Forms.Button();
             this.txtNewPassword = new System.Windows.Forms.TextBox();
             this.txtNewUsername = new System.Windows.Forms.TextBox();
             this.txtOldPassword = new System.Windows.Forms.TextBox();
             this.txtOldUsername = new System.Windows.Forms.TextBox();
-            this.label4 = new System.Windows.Forms.Label();
-            this.label3 = new System.Windows.Forms.Label();
-            this.label2 = new System.Windows.Forms.Label();
-            this.label1 = new System.Windows.Forms.Label();
-            this.label5 = new System.Windows.Forms.Label();
             this.txtReverifyPassword = new System.Windows.Forms.TextBox();
+            this.tableLayoutPanel1 = new System.Windows.Forms.TableLayoutPanel();
+            this.metroLabel1 = new MetroFramework.Controls.MetroLabel();
+            this.metroLabel2 = new MetroFramework.Controls.MetroLabel();
+            this.metroLabel3 = new MetroFramework.Controls.MetroLabel();
+            this.metroLabel4 = new MetroFramework.Controls.MetroLabel();
+            this.metroLabel5 = new MetroFramework.Controls.MetroLabel();
+            this.btnSubmit = new MetroFramework.Controls.MetroButton();
+            this.tableLayoutPanel1.SuspendLayout();
             this.SuspendLayout();
-            // 
-            // lblNote
-            // 
-            this.lblNote.AutoSize = true;
-            this.lblNote.Font = new System.Drawing.Font("Copperplate Gothic Light", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblNote.ForeColor = System.Drawing.Color.Maroon;
-            this.lblNote.Location = new System.Drawing.Point(12, 282);
-            this.lblNote.Name = "lblNote";
-            this.lblNote.Size = new System.Drawing.Size(44, 17);
-            this.lblNote.TabIndex = 19;
-            this.lblNote.Text = "AAA";
-            // 
-            // btnSubmit
-            // 
-            this.btnSubmit.Image = global::BrilliantSpy.Properties.Resources.OK;
-            this.btnSubmit.Location = new System.Drawing.Point(342, 226);
-            this.btnSubmit.Name = "btnSubmit";
-            this.btnSubmit.Size = new System.Drawing.Size(75, 44);
-            this.btnSubmit.TabIndex = 21;
-            this.btnSubmit.UseVisualStyleBackColor = true;
-            this.btnSubmit.Click += new System.EventHandler(this.btnSubmit_Click);
             // 
             // txtNewPassword
             // 
-            this.txtNewPassword.Location = new System.Drawing.Point(214, 160);
+            this.txtNewPassword.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.txtNewPassword.Location = new System.Drawing.Point(171, 104);
             this.txtNewPassword.Name = "txtNewPassword";
             this.txtNewPassword.PasswordChar = '*';
-            this.txtNewPassword.Size = new System.Drawing.Size(203, 20);
+            this.txtNewPassword.Size = new System.Drawing.Size(276, 20);
             this.txtNewPassword.TabIndex = 17;
             // 
             // txtNewUsername
             // 
-            this.txtNewUsername.Location = new System.Drawing.Point(214, 115);
+            this.txtNewUsername.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.txtNewUsername.Location = new System.Drawing.Point(171, 71);
             this.txtNewUsername.Name = "txtNewUsername";
-            this.txtNewUsername.Size = new System.Drawing.Size(203, 20);
+            this.txtNewUsername.Size = new System.Drawing.Size(276, 20);
             this.txtNewUsername.TabIndex = 16;
             // 
             // txtOldPassword
             // 
-            this.txtOldPassword.Location = new System.Drawing.Point(214, 71);
+            this.txtOldPassword.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.txtOldPassword.Location = new System.Drawing.Point(171, 38);
             this.txtOldPassword.Name = "txtOldPassword";
             this.txtOldPassword.PasswordChar = '*';
-            this.txtOldPassword.Size = new System.Drawing.Size(203, 20);
+            this.txtOldPassword.Size = new System.Drawing.Size(276, 20);
             this.txtOldPassword.TabIndex = 15;
             // 
             // txtOldUsername
             // 
-            this.txtOldUsername.Location = new System.Drawing.Point(214, 31);
+            this.txtOldUsername.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.txtOldUsername.Location = new System.Drawing.Point(171, 5);
             this.txtOldUsername.Name = "txtOldUsername";
-            this.txtOldUsername.Size = new System.Drawing.Size(203, 20);
+            this.txtOldUsername.Size = new System.Drawing.Size(276, 20);
             this.txtOldUsername.TabIndex = 14;
-            // 
-            // label4
-            // 
-            this.label4.AutoSize = true;
-            this.label4.Font = new System.Drawing.Font("Lucida Calligraphy", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label4.Location = new System.Drawing.Point(17, 160);
-            this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(136, 21);
-            this.label4.TabIndex = 13;
-            this.label4.Text = "New Password";
-            // 
-            // label3
-            // 
-            this.label3.AutoSize = true;
-            this.label3.Font = new System.Drawing.Font("Lucida Calligraphy", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label3.Location = new System.Drawing.Point(17, 115);
-            this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(143, 21);
-            this.label3.TabIndex = 12;
-            this.label3.Text = "New Username";
-            // 
-            // label2
-            // 
-            this.label2.AutoSize = true;
-            this.label2.Font = new System.Drawing.Font("Lucida Calligraphy", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label2.Location = new System.Drawing.Point(17, 71);
-            this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(163, 21);
-            this.label2.TabIndex = 11;
-            this.label2.Text = "Current Password";
-            // 
-            // label1
-            // 
-            this.label1.AutoSize = true;
-            this.label1.Font = new System.Drawing.Font("Lucida Calligraphy", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label1.Location = new System.Drawing.Point(17, 29);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(170, 21);
-            this.label1.TabIndex = 10;
-            this.label1.Text = "Current Username";
-            // 
-            // label5
-            // 
-            this.label5.AutoSize = true;
-            this.label5.Font = new System.Drawing.Font("Lucida Calligraphy", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label5.Location = new System.Drawing.Point(17, 200);
-            this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(169, 21);
-            this.label5.TabIndex = 20;
-            this.label5.Text = "Re-enter Password";
             // 
             // txtReverifyPassword
             // 
-            this.txtReverifyPassword.Location = new System.Drawing.Point(214, 200);
+            this.txtReverifyPassword.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.txtReverifyPassword.Location = new System.Drawing.Point(171, 137);
             this.txtReverifyPassword.Name = "txtReverifyPassword";
             this.txtReverifyPassword.PasswordChar = '*';
-            this.txtReverifyPassword.Size = new System.Drawing.Size(203, 20);
+            this.txtReverifyPassword.Size = new System.Drawing.Size(276, 20);
             this.txtReverifyPassword.TabIndex = 18;
             this.txtReverifyPassword.KeyDown += new System.Windows.Forms.KeyEventHandler(this.txtReverifyPassword_KeyDown);
+            // 
+            // tableLayoutPanel1
+            // 
+            this.tableLayoutPanel1.CellBorderStyle = System.Windows.Forms.TableLayoutPanelCellBorderStyle.Inset;
+            this.tableLayoutPanel1.ColumnCount = 2;
+            this.tableLayoutPanel1.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 164F));
+            this.tableLayoutPanel1.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 100F));
+            this.tableLayoutPanel1.Controls.Add(this.txtReverifyPassword, 1, 4);
+            this.tableLayoutPanel1.Controls.Add(this.txtOldUsername, 1, 0);
+            this.tableLayoutPanel1.Controls.Add(this.txtOldPassword, 1, 1);
+            this.tableLayoutPanel1.Controls.Add(this.txtNewPassword, 1, 3);
+            this.tableLayoutPanel1.Controls.Add(this.txtNewUsername, 1, 2);
+            this.tableLayoutPanel1.Controls.Add(this.metroLabel1, 0, 0);
+            this.tableLayoutPanel1.Controls.Add(this.metroLabel2, 0, 1);
+            this.tableLayoutPanel1.Controls.Add(this.metroLabel3, 0, 2);
+            this.tableLayoutPanel1.Controls.Add(this.metroLabel4, 0, 3);
+            this.tableLayoutPanel1.Controls.Add(this.metroLabel5, 0, 4);
+            this.tableLayoutPanel1.Controls.Add(this.btnSubmit, 1, 5);
+            this.tableLayoutPanel1.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.tableLayoutPanel1.Location = new System.Drawing.Point(20, 60);
+            this.tableLayoutPanel1.Name = "tableLayoutPanel1";
+            this.tableLayoutPanel1.RowCount = 6;
+            this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 16.39944F));
+            this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 16.39944F));
+            this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 16.39944F));
+            this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 16.39944F));
+            this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 16.00105F));
+            this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 18.40121F));
+            this.tableLayoutPanel1.Size = new System.Drawing.Size(452, 204);
+            this.tableLayoutPanel1.TabIndex = 22;
+            // 
+            // metroLabel1
+            // 
+            this.metroLabel1.AutoSize = true;
+            this.metroLabel1.CustomBackground = false;
+            this.metroLabel1.CustomForeColor = false;
+            this.metroLabel1.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.metroLabel1.FontSize = MetroFramework.MetroLabelSize.Medium;
+            this.metroLabel1.FontWeight = MetroFramework.MetroLabelWeight.Light;
+            this.metroLabel1.LabelMode = MetroFramework.Controls.MetroLabelMode.Default;
+            this.metroLabel1.Location = new System.Drawing.Point(5, 2);
+            this.metroLabel1.Name = "metroLabel1";
+            this.metroLabel1.Size = new System.Drawing.Size(158, 31);
+            this.metroLabel1.Style = MetroFramework.MetroColorStyle.Blue;
+            this.metroLabel1.StyleManager = null;
+            this.metroLabel1.TabIndex = 22;
+            this.metroLabel1.Text = "Current Username";
+            this.metroLabel1.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.metroLabel1.Theme = MetroFramework.MetroThemeStyle.Light;
+            this.metroLabel1.UseStyleColors = false;
+            // 
+            // metroLabel2
+            // 
+            this.metroLabel2.AutoSize = true;
+            this.metroLabel2.CustomBackground = false;
+            this.metroLabel2.CustomForeColor = false;
+            this.metroLabel2.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.metroLabel2.FontSize = MetroFramework.MetroLabelSize.Medium;
+            this.metroLabel2.FontWeight = MetroFramework.MetroLabelWeight.Light;
+            this.metroLabel2.LabelMode = MetroFramework.Controls.MetroLabelMode.Default;
+            this.metroLabel2.Location = new System.Drawing.Point(5, 35);
+            this.metroLabel2.Name = "metroLabel2";
+            this.metroLabel2.Size = new System.Drawing.Size(158, 31);
+            this.metroLabel2.Style = MetroFramework.MetroColorStyle.Blue;
+            this.metroLabel2.StyleManager = null;
+            this.metroLabel2.TabIndex = 23;
+            this.metroLabel2.Text = "Current Password";
+            this.metroLabel2.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.metroLabel2.Theme = MetroFramework.MetroThemeStyle.Light;
+            this.metroLabel2.UseStyleColors = false;
+            // 
+            // metroLabel3
+            // 
+            this.metroLabel3.AutoSize = true;
+            this.metroLabel3.CustomBackground = false;
+            this.metroLabel3.CustomForeColor = false;
+            this.metroLabel3.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.metroLabel3.FontSize = MetroFramework.MetroLabelSize.Medium;
+            this.metroLabel3.FontWeight = MetroFramework.MetroLabelWeight.Light;
+            this.metroLabel3.LabelMode = MetroFramework.Controls.MetroLabelMode.Default;
+            this.metroLabel3.Location = new System.Drawing.Point(5, 68);
+            this.metroLabel3.Name = "metroLabel3";
+            this.metroLabel3.Size = new System.Drawing.Size(158, 31);
+            this.metroLabel3.Style = MetroFramework.MetroColorStyle.Blue;
+            this.metroLabel3.StyleManager = null;
+            this.metroLabel3.TabIndex = 24;
+            this.metroLabel3.Text = "New Username";
+            this.metroLabel3.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.metroLabel3.Theme = MetroFramework.MetroThemeStyle.Light;
+            this.metroLabel3.UseStyleColors = false;
+            // 
+            // metroLabel4
+            // 
+            this.metroLabel4.AutoSize = true;
+            this.metroLabel4.CustomBackground = false;
+            this.metroLabel4.CustomForeColor = false;
+            this.metroLabel4.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.metroLabel4.FontSize = MetroFramework.MetroLabelSize.Medium;
+            this.metroLabel4.FontWeight = MetroFramework.MetroLabelWeight.Light;
+            this.metroLabel4.LabelMode = MetroFramework.Controls.MetroLabelMode.Default;
+            this.metroLabel4.Location = new System.Drawing.Point(5, 101);
+            this.metroLabel4.Name = "metroLabel4";
+            this.metroLabel4.Size = new System.Drawing.Size(158, 31);
+            this.metroLabel4.Style = MetroFramework.MetroColorStyle.Blue;
+            this.metroLabel4.StyleManager = null;
+            this.metroLabel4.TabIndex = 25;
+            this.metroLabel4.Text = "New Password";
+            this.metroLabel4.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.metroLabel4.Theme = MetroFramework.MetroThemeStyle.Light;
+            this.metroLabel4.UseStyleColors = false;
+            // 
+            // metroLabel5
+            // 
+            this.metroLabel5.AutoSize = true;
+            this.metroLabel5.CustomBackground = false;
+            this.metroLabel5.CustomForeColor = false;
+            this.metroLabel5.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.metroLabel5.FontSize = MetroFramework.MetroLabelSize.Medium;
+            this.metroLabel5.FontWeight = MetroFramework.MetroLabelWeight.Light;
+            this.metroLabel5.LabelMode = MetroFramework.Controls.MetroLabelMode.Default;
+            this.metroLabel5.Location = new System.Drawing.Point(5, 134);
+            this.metroLabel5.Name = "metroLabel5";
+            this.metroLabel5.Size = new System.Drawing.Size(158, 30);
+            this.metroLabel5.Style = MetroFramework.MetroColorStyle.Blue;
+            this.metroLabel5.StyleManager = null;
+            this.metroLabel5.TabIndex = 26;
+            this.metroLabel5.Text = "Confirm Password";
+            this.metroLabel5.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.metroLabel5.Theme = MetroFramework.MetroThemeStyle.Light;
+            this.metroLabel5.UseStyleColors = false;
+            // 
+            // btnSubmit
+            // 
+            this.btnSubmit.Dock = System.Windows.Forms.DockStyle.Right;
+            this.btnSubmit.Highlight = false;
+            this.btnSubmit.Location = new System.Drawing.Point(372, 169);
+            this.btnSubmit.Name = "btnSubmit";
+            this.btnSubmit.Size = new System.Drawing.Size(75, 30);
+            this.btnSubmit.Style = MetroFramework.MetroColorStyle.Blue;
+            this.btnSubmit.StyleManager = null;
+            this.btnSubmit.TabIndex = 27;
+            this.btnSubmit.Text = "Submit";
+            this.btnSubmit.Theme = MetroFramework.MetroThemeStyle.Light;
+            this.btnSubmit.Click += new System.EventHandler(this.btnSubmit_Click);
             // 
             // ChangeCredentialsForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackgroundImage = global::BrilliantSpy.Properties.Resources.BG;
-            this.ClientSize = new System.Drawing.Size(439, 336);
-            this.Controls.Add(this.txtReverifyPassword);
-            this.Controls.Add(this.label5);
-            this.Controls.Add(this.lblNote);
-            this.Controls.Add(this.btnSubmit);
-            this.Controls.Add(this.txtNewPassword);
-            this.Controls.Add(this.txtNewUsername);
-            this.Controls.Add(this.txtOldPassword);
-            this.Controls.Add(this.txtOldUsername);
-            this.Controls.Add(this.label4);
-            this.Controls.Add(this.label3);
-            this.Controls.Add(this.label2);
-            this.Controls.Add(this.label1);
-            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedToolWindow;
+            this.ClientSize = new System.Drawing.Size(492, 284);
+            this.Controls.Add(this.tableLayoutPanel1);
+            this.Location = new System.Drawing.Point(0, 0);
             this.MaximizeBox = false;
             this.MinimizeBox = false;
             this.Name = "ChangeCredentialsForm";
             this.ShowIcon = false;
             this.ShowInTaskbar = false;
             this.SizeGripStyle = System.Windows.Forms.SizeGripStyle.Hide;
-            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Change Credentials";
-            this.Load += new System.EventHandler(this.ChangeCredentialsForm_Load);
+            this.tableLayoutPanel1.ResumeLayout(false);
+            this.tableLayoutPanel1.PerformLayout();
             this.ResumeLayout(false);
-            this.PerformLayout();
 
         }
 
         #endregion
 
-        private System.Windows.Forms.Label lblNote;
-        private System.Windows.Forms.Button btnSubmit;
         private System.Windows.Forms.TextBox txtNewPassword;
         private System.Windows.Forms.TextBox txtNewUsername;
         private System.Windows.Forms.TextBox txtOldPassword;
         private System.Windows.Forms.TextBox txtOldUsername;
-        private System.Windows.Forms.Label label4;
-        private System.Windows.Forms.Label label3;
-        private System.Windows.Forms.Label label2;
-        private System.Windows.Forms.Label label1;
-        private System.Windows.Forms.Label label5;
         private System.Windows.Forms.TextBox txtReverifyPassword;
+        private System.Windows.Forms.TableLayoutPanel tableLayoutPanel1;
+        private MetroFramework.Controls.MetroLabel metroLabel1;
+        private MetroFramework.Controls.MetroLabel metroLabel2;
+        private MetroFramework.Controls.MetroLabel metroLabel3;
+        private MetroFramework.Controls.MetroLabel metroLabel4;
+        private MetroFramework.Controls.MetroLabel metroLabel5;
+        private MetroFramework.Controls.MetroButton btnSubmit;
     }
 }

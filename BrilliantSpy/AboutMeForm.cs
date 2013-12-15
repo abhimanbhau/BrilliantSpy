@@ -105,5 +105,26 @@ namespace BrilliantSpy
         {
 
         }
+
+        private void metroLink1_Click(object sender, EventArgs e)
+        {
+            System.Diagnostics.Process.Start("http://www.facebook.com/abhimanbhau");
+        }
+
+        private void metroLink2_Click(object sender, EventArgs e)
+        {
+            System.Diagnostics.Process.Start("http://www.vit.edu");
+        }
+
+        private void metroLink3_Click(object sender, EventArgs e)
+        {
+            System.Diagnostics.Process.Start("mailto:abhimanbhau@gmail.com");
+        }
+
+        private void metroLink4_Click(object sender, EventArgs e)
+        {
+            System.Diagnostics.Process.Start("http://www.github.com/abhimanbhau");
+        }
+
     }
 }

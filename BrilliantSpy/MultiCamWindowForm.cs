@@ -932,13 +932,7 @@ namespace BrilliantSpy
 
         private void suggestAnIdeaToolStripMenuItem_Click(object sender, EventArgs e)
         {
-            SuggestionForm form = new SuggestionForm();
-            form.ShowDialog();
-        }
-
-        private void suggetionsToolStripMenuItem_Click(object sender, EventArgs e)
-        {
-            BugReportForm form = new BugReportForm();
+            BugReportSuggestionForm form = new BugReportSuggestionForm();
             form.ShowDialog();
         }
 
@@ -951,12 +945,6 @@ namespace BrilliantSpy
         private void aboutMeToolStripMenuItem_Click(object sender, EventArgs e)
         {
             AboutMeForm form = new AboutMeForm();
-            form.ShowDialog();
-        }
-
-        private void followMeToolStripMenuItem_Click(object sender, EventArgs e)
-        {
-            FollowMeForm form = new FollowMeForm();
             form.ShowDialog();
         }
 

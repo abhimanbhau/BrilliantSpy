@@ -106,11 +106,11 @@
     <Compile Include="AboutMeForm.Designer.cs">
       <DependentUpon>AboutMeForm.cs</DependentUpon>
     </Compile>
-    <Compile Include="BugReportForm.cs">
+    <Compile Include="BugReportSuggestionForm.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="BugReportForm.Designer.cs">
-      <DependentUpon>BugReportForm.cs</DependentUpon>
+    <Compile Include="BugReportSuggestionForm.Designer.cs">
+      <DependentUpon>BugReportSuggestionForm.cs</DependentUpon>
     </Compile>
     <Compile Include="ChangeCredentialsForm.cs">
       <SubType>Form</SubType>
@@ -150,12 +150,6 @@
     </Compile>
     <Compile Include="FirstRunForm.Designer.cs">
       <DependentUpon>FirstRunForm.cs</DependentUpon>
-    </Compile>
-    <Compile Include="FollowMeForm.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="FollowMeForm.Designer.cs">
-      <DependentUpon>FollowMeForm.cs</DependentUpon>
     </Compile>
     <Compile Include="InteractiveSettingsForm.cs">
       <SubType>Form</SubType>
@@ -222,8 +216,8 @@
     <EmbeddedResource Include="AboutMeForm.resx">
       <DependentUpon>AboutMeForm.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="BugReportForm.resx">
-      <DependentUpon>BugReportForm.cs</DependentUpon>
+    <EmbeddedResource Include="BugReportSuggestionForm.resx">
+      <DependentUpon>BugReportSuggestionForm.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="ChangeCredentialsForm.resx">
       <DependentUpon>ChangeCredentialsForm.cs</DependentUpon>
@@ -242,9 +236,6 @@
     </EmbeddedResource>
     <EmbeddedResource Include="FirstRunForm.resx">
       <DependentUpon>FirstRunForm.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="FollowMeForm.resx">
-      <DependentUpon>FollowMeForm.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="InteractiveSettingsForm.resx">
       <DependentUpon>InteractiveSettingsForm.cs</DependentUpon>
