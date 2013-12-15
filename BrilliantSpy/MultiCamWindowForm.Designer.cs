@@ -94,10 +94,6 @@
             this.MainMenuStrip = new System.Windows.Forms.MenuStrip();
             this.tableLayoutPanel1 = new System.Windows.Forms.TableLayoutPanel();
             this.txtDetectorLevel1 = new System.Windows.Forms.TextBox();
-            this.linkLabel1 = new System.Windows.Forms.LinkLabel();
-            this.linkLabel2 = new System.Windows.Forms.LinkLabel();
-            this.linkLabel3 = new System.Windows.Forms.LinkLabel();
-            this.linkLabel4 = new System.Windows.Forms.LinkLabel();
             this.txtDetectorLevel2 = new System.Windows.Forms.TextBox();
             this.txtDetectorLevel3 = new System.Windows.Forms.TextBox();
             this.txtDetectorLevel4 = new System.Windows.Forms.TextBox();
@@ -105,22 +101,26 @@
             this.txtMotionLevel2 = new System.Windows.Forms.TextBox();
             this.txtMotionLevel3 = new System.Windows.Forms.TextBox();
             this.txtMotionLevel4 = new System.Windows.Forms.TextBox();
-            this.label3 = new System.Windows.Forms.Label();
+            this.metroLink1 = new MetroFramework.Controls.MetroLink();
+            this.metroLink2 = new MetroFramework.Controls.MetroLink();
+            this.metroLink3 = new MetroFramework.Controls.MetroLink();
+            this.metroLink4 = new MetroFramework.Controls.MetroLink();
             this.tableLayoutPanel2 = new System.Windows.Forms.TableLayoutPanel();
             this.pcbStatus1 = new AForge.Controls.PictureBox();
-            this.label4 = new System.Windows.Forms.Label();
-            this.label5 = new System.Windows.Forms.Label();
-            this.label6 = new System.Windows.Forms.Label();
             this.pcbStatus2 = new System.Windows.Forms.PictureBox();
             this.pcbStatus3 = new System.Windows.Forms.PictureBox();
             this.pcbStatus4 = new System.Windows.Forms.PictureBox();
+            this.metroLabel1 = new MetroFramework.Controls.MetroLabel();
+            this.metroLabel2 = new MetroFramework.Controls.MetroLabel();
+            this.metroLabel3 = new MetroFramework.Controls.MetroLabel();
+            this.metroLabel4 = new MetroFramework.Controls.MetroLabel();
             this.tableLayoutPanel3 = new System.Windows.Forms.TableLayoutPanel();
             this.lstHistory = new System.Windows.Forms.ListBox();
-            this.btnClear = new System.Windows.Forms.Button();
+            this.btnClear = new MetroFramework.Controls.MetroButton();
             this.tableLayoutPanel4 = new System.Windows.Forms.TableLayoutPanel();
-            this.btnStop = new System.Windows.Forms.Button();
-            this.btnStopAlarm = new System.Windows.Forms.Button();
-            this.btnResetDetector = new System.Windows.Forms.Button();
+            this.btnStop = new MetroFramework.Controls.MetroButton();
+            this.btnStopAlarm = new MetroFramework.Controls.MetroButton();
+            this.btnResetDetector = new MetroFramework.Controls.MetroButton();
             this.tableLayoutPanel.SuspendLayout();
             this.MainMenuStrip.SuspendLayout();
             this.tableLayoutPanel1.SuspendLayout();
@@ -674,9 +674,9 @@
             this.historyToolStripMenuItem,
             this.toolsToolStripMenuItem,
             this.aboutToolStripMenuItem});
-            this.MainMenuStrip.Location = new System.Drawing.Point(20, 60);
+            this.MainMenuStrip.Location = new System.Drawing.Point(0, 0);
             this.MainMenuStrip.Name = "MainMenuStrip";
-            this.MainMenuStrip.Size = new System.Drawing.Size(1140, 24);
+            this.MainMenuStrip.Size = new System.Drawing.Size(1180, 24);
             this.MainMenuStrip.TabIndex = 4;
             this.MainMenuStrip.Text = "MainMenuStrip";
             // 
@@ -688,10 +688,6 @@
             this.tableLayoutPanel1.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 50F));
             this.tableLayoutPanel1.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 50F));
             this.tableLayoutPanel1.Controls.Add(this.txtDetectorLevel1, 1, 0);
-            this.tableLayoutPanel1.Controls.Add(this.linkLabel1, 0, 0);
-            this.tableLayoutPanel1.Controls.Add(this.linkLabel2, 0, 1);
-            this.tableLayoutPanel1.Controls.Add(this.linkLabel3, 0, 2);
-            this.tableLayoutPanel1.Controls.Add(this.linkLabel4, 0, 3);
             this.tableLayoutPanel1.Controls.Add(this.txtDetectorLevel2, 1, 1);
             this.tableLayoutPanel1.Controls.Add(this.txtDetectorLevel3, 1, 2);
             this.tableLayoutPanel1.Controls.Add(this.txtDetectorLevel4, 1, 3);
@@ -699,6 +695,10 @@
             this.tableLayoutPanel1.Controls.Add(this.txtMotionLevel2, 2, 1);
             this.tableLayoutPanel1.Controls.Add(this.txtMotionLevel3, 2, 2);
             this.tableLayoutPanel1.Controls.Add(this.txtMotionLevel4, 2, 3);
+            this.tableLayoutPanel1.Controls.Add(this.metroLink1, 0, 0);
+            this.tableLayoutPanel1.Controls.Add(this.metroLink2, 0, 1);
+            this.tableLayoutPanel1.Controls.Add(this.metroLink3, 0, 2);
+            this.tableLayoutPanel1.Controls.Add(this.metroLink4, 0, 3);
             this.tableLayoutPanel1.Location = new System.Drawing.Point(883, 30);
             this.tableLayoutPanel1.Name = "tableLayoutPanel1";
             this.tableLayoutPanel1.RowCount = 4;
@@ -718,62 +718,6 @@
             this.txtDetectorLevel1.ReadOnly = true;
             this.txtDetectorLevel1.Size = new System.Drawing.Size(66, 29);
             this.txtDetectorLevel1.TabIndex = 3;
-            // 
-            // linkLabel1
-            // 
-            this.linkLabel1.AutoSize = true;
-            this.linkLabel1.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.linkLabel1.Font = new System.Drawing.Font("Lucida Calligraphy", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.linkLabel1.Location = new System.Drawing.Point(6, 3);
-            this.linkLabel1.Name = "linkLabel1";
-            this.linkLabel1.Size = new System.Drawing.Size(123, 34);
-            this.linkLabel1.TabIndex = 4;
-            this.linkLabel1.TabStop = true;
-            this.linkLabel1.Text = "Cam 1 Motion";
-            this.linkLabel1.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            this.linkLabel1.LinkClicked += new System.Windows.Forms.LinkLabelLinkClickedEventHandler(this.linkLabel1_LinkClicked);
-            // 
-            // linkLabel2
-            // 
-            this.linkLabel2.AutoSize = true;
-            this.linkLabel2.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.linkLabel2.Font = new System.Drawing.Font("Lucida Calligraphy", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.linkLabel2.Location = new System.Drawing.Point(6, 40);
-            this.linkLabel2.Name = "linkLabel2";
-            this.linkLabel2.Size = new System.Drawing.Size(123, 34);
-            this.linkLabel2.TabIndex = 5;
-            this.linkLabel2.TabStop = true;
-            this.linkLabel2.Text = "Cam 2 Motion";
-            this.linkLabel2.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            this.linkLabel2.LinkClicked += new System.Windows.Forms.LinkLabelLinkClickedEventHandler(this.linkLabel2_LinkClicked);
-            // 
-            // linkLabel3
-            // 
-            this.linkLabel3.AutoSize = true;
-            this.linkLabel3.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.linkLabel3.Font = new System.Drawing.Font("Lucida Calligraphy", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.linkLabel3.Location = new System.Drawing.Point(6, 77);
-            this.linkLabel3.Name = "linkLabel3";
-            this.linkLabel3.Size = new System.Drawing.Size(123, 34);
-            this.linkLabel3.TabIndex = 6;
-            this.linkLabel3.TabStop = true;
-            this.linkLabel3.Text = "Cam 3 Motion";
-            this.linkLabel3.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            this.linkLabel3.LinkClicked += new System.Windows.Forms.LinkLabelLinkClickedEventHandler(this.linkLabel3_LinkClicked);
-            // 
-            // linkLabel4
-            // 
-            this.linkLabel4.AutoSize = true;
-            this.linkLabel4.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.linkLabel4.Font = new System.Drawing.Font("Lucida Calligraphy", 11F);
-            this.linkLabel4.Location = new System.Drawing.Point(6, 114);
-            this.linkLabel4.Name = "linkLabel4";
-            this.linkLabel4.Size = new System.Drawing.Size(123, 35);
-            this.linkLabel4.TabIndex = 7;
-            this.linkLabel4.TabStop = true;
-            this.linkLabel4.Text = "Cam 4 Motion";
-            this.linkLabel4.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            this.linkLabel4.LinkClicked += new System.Windows.Forms.LinkLabelLinkClickedEventHandler(this.linkLabel4_LinkClicked);
             // 
             // txtDetectorLevel2
             // 
@@ -849,32 +793,92 @@
             this.txtMotionLevel4.TabIndex = 14;
             this.txtMotionLevel4.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             // 
-            // label3
+            // metroLink1
             // 
-            this.label3.AutoSize = true;
-            this.label3.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.label3.Font = new System.Drawing.Font("Lucida Calligraphy", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label3.Location = new System.Drawing.Point(5, 2);
-            this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(63, 53);
-            this.label3.TabIndex = 0;
-            this.label3.Text = "Status 1";
-            this.label3.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.metroLink1.CustomBackground = false;
+            this.metroLink1.CustomForeColor = false;
+            this.metroLink1.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.metroLink1.FontSize = MetroFramework.MetroLinkSize.Small;
+            this.metroLink1.FontWeight = MetroFramework.MetroLinkWeight.Bold;
+            this.metroLink1.Location = new System.Drawing.Point(6, 6);
+            this.metroLink1.Name = "metroLink1";
+            this.metroLink1.Size = new System.Drawing.Size(123, 28);
+            this.metroLink1.Style = MetroFramework.MetroColorStyle.Blue;
+            this.metroLink1.StyleManager = null;
+            this.metroLink1.TabIndex = 15;
+            this.metroLink1.Text = "Cam 1 Motion";
+            this.metroLink1.Theme = MetroFramework.MetroThemeStyle.Light;
+            this.metroLink1.UseStyleColors = false;
+            this.metroLink1.Click += new System.EventHandler(this.metroLink1_Click);
+            // 
+            // metroLink2
+            // 
+            this.metroLink2.CustomBackground = false;
+            this.metroLink2.CustomForeColor = false;
+            this.metroLink2.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.metroLink2.FontSize = MetroFramework.MetroLinkSize.Small;
+            this.metroLink2.FontWeight = MetroFramework.MetroLinkWeight.Bold;
+            this.metroLink2.Location = new System.Drawing.Point(6, 43);
+            this.metroLink2.Name = "metroLink2";
+            this.metroLink2.Size = new System.Drawing.Size(123, 28);
+            this.metroLink2.Style = MetroFramework.MetroColorStyle.Blue;
+            this.metroLink2.StyleManager = null;
+            this.metroLink2.TabIndex = 16;
+            this.metroLink2.Text = "Cam 2 Motion";
+            this.metroLink2.Theme = MetroFramework.MetroThemeStyle.Light;
+            this.metroLink2.UseStyleColors = false;
+            this.metroLink2.Click += new System.EventHandler(this.metroLink2_Click);
+            // 
+            // metroLink3
+            // 
+            this.metroLink3.CustomBackground = false;
+            this.metroLink3.CustomForeColor = false;
+            this.metroLink3.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.metroLink3.FontSize = MetroFramework.MetroLinkSize.Small;
+            this.metroLink3.FontWeight = MetroFramework.MetroLinkWeight.Bold;
+            this.metroLink3.Location = new System.Drawing.Point(6, 80);
+            this.metroLink3.Name = "metroLink3";
+            this.metroLink3.Size = new System.Drawing.Size(123, 28);
+            this.metroLink3.Style = MetroFramework.MetroColorStyle.Blue;
+            this.metroLink3.StyleManager = null;
+            this.metroLink3.TabIndex = 17;
+            this.metroLink3.Text = "Cam 3 Motion";
+            this.metroLink3.Theme = MetroFramework.MetroThemeStyle.Light;
+            this.metroLink3.UseStyleColors = false;
+            this.metroLink3.Click += new System.EventHandler(this.metroLink3_Click);
+            // 
+            // metroLink4
+            // 
+            this.metroLink4.CustomBackground = false;
+            this.metroLink4.CustomForeColor = false;
+            this.metroLink4.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.metroLink4.FontSize = MetroFramework.MetroLinkSize.Small;
+            this.metroLink4.FontWeight = MetroFramework.MetroLinkWeight.Bold;
+            this.metroLink4.Location = new System.Drawing.Point(6, 117);
+            this.metroLink4.Name = "metroLink4";
+            this.metroLink4.Size = new System.Drawing.Size(123, 29);
+            this.metroLink4.Style = MetroFramework.MetroColorStyle.Blue;
+            this.metroLink4.StyleManager = null;
+            this.metroLink4.TabIndex = 18;
+            this.metroLink4.Text = "Cam 4 Motion";
+            this.metroLink4.Theme = MetroFramework.MetroThemeStyle.Light;
+            this.metroLink4.UseStyleColors = false;
+            this.metroLink4.Click += new System.EventHandler(this.metroLink4_Click);
             // 
             // tableLayoutPanel2
             // 
             this.tableLayoutPanel2.CellBorderStyle = System.Windows.Forms.TableLayoutPanelCellBorderStyle.Inset;
             this.tableLayoutPanel2.ColumnCount = 2;
             this.tableLayoutPanel2.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 69F));
-            this.tableLayoutPanel2.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 220F));
-            this.tableLayoutPanel2.Controls.Add(this.label3, 0, 0);
+            this.tableLayoutPanel2.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 230F));
             this.tableLayoutPanel2.Controls.Add(this.pcbStatus1, 1, 0);
-            this.tableLayoutPanel2.Controls.Add(this.label4, 0, 1);
-            this.tableLayoutPanel2.Controls.Add(this.label5, 0, 2);
-            this.tableLayoutPanel2.Controls.Add(this.label6, 0, 3);
             this.tableLayoutPanel2.Controls.Add(this.pcbStatus2, 1, 1);
             this.tableLayoutPanel2.Controls.Add(this.pcbStatus3, 1, 2);
             this.tableLayoutPanel2.Controls.Add(this.pcbStatus4, 1, 3);
+            this.tableLayoutPanel2.Controls.Add(this.metroLabel1, 0, 0);
+            this.tableLayoutPanel2.Controls.Add(this.metroLabel2, 0, 1);
+            this.tableLayoutPanel2.Controls.Add(this.metroLabel3, 0, 2);
+            this.tableLayoutPanel2.Controls.Add(this.metroLabel4, 0, 3);
             this.tableLayoutPanel2.Location = new System.Drawing.Point(883, 188);
             this.tableLayoutPanel2.Name = "tableLayoutPanel2";
             this.tableLayoutPanel2.RowCount = 4;
@@ -891,52 +895,16 @@
             this.pcbStatus1.Image = null;
             this.pcbStatus1.Location = new System.Drawing.Point(76, 5);
             this.pcbStatus1.Name = "pcbStatus1";
-            this.pcbStatus1.Size = new System.Drawing.Size(214, 47);
+            this.pcbStatus1.Size = new System.Drawing.Size(224, 47);
             this.pcbStatus1.TabIndex = 1;
             this.pcbStatus1.TabStop = false;
-            // 
-            // label4
-            // 
-            this.label4.AutoSize = true;
-            this.label4.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.label4.Font = new System.Drawing.Font("Lucida Calligraphy", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label4.Location = new System.Drawing.Point(5, 57);
-            this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(63, 53);
-            this.label4.TabIndex = 2;
-            this.label4.Text = "Status 2";
-            this.label4.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            // 
-            // label5
-            // 
-            this.label5.AutoSize = true;
-            this.label5.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.label5.Font = new System.Drawing.Font("Lucida Calligraphy", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label5.Location = new System.Drawing.Point(5, 112);
-            this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(63, 53);
-            this.label5.TabIndex = 3;
-            this.label5.Text = "Status 3";
-            this.label5.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            // 
-            // label6
-            // 
-            this.label6.AutoSize = true;
-            this.label6.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.label6.Font = new System.Drawing.Font("Lucida Calligraphy", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label6.Location = new System.Drawing.Point(5, 167);
-            this.label6.Name = "label6";
-            this.label6.Size = new System.Drawing.Size(63, 55);
-            this.label6.TabIndex = 4;
-            this.label6.Text = "Status 4";
-            this.label6.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
             // pcbStatus2
             // 
             this.pcbStatus2.Dock = System.Windows.Forms.DockStyle.Fill;
             this.pcbStatus2.Location = new System.Drawing.Point(76, 60);
             this.pcbStatus2.Name = "pcbStatus2";
-            this.pcbStatus2.Size = new System.Drawing.Size(214, 47);
+            this.pcbStatus2.Size = new System.Drawing.Size(224, 47);
             this.pcbStatus2.TabIndex = 5;
             this.pcbStatus2.TabStop = false;
             // 
@@ -945,7 +913,7 @@
             this.pcbStatus3.Dock = System.Windows.Forms.DockStyle.Fill;
             this.pcbStatus3.Location = new System.Drawing.Point(76, 115);
             this.pcbStatus3.Name = "pcbStatus3";
-            this.pcbStatus3.Size = new System.Drawing.Size(214, 47);
+            this.pcbStatus3.Size = new System.Drawing.Size(224, 47);
             this.pcbStatus3.TabIndex = 6;
             this.pcbStatus3.TabStop = false;
             // 
@@ -954,9 +922,89 @@
             this.pcbStatus4.Dock = System.Windows.Forms.DockStyle.Fill;
             this.pcbStatus4.Location = new System.Drawing.Point(76, 170);
             this.pcbStatus4.Name = "pcbStatus4";
-            this.pcbStatus4.Size = new System.Drawing.Size(214, 49);
+            this.pcbStatus4.Size = new System.Drawing.Size(224, 49);
             this.pcbStatus4.TabIndex = 7;
             this.pcbStatus4.TabStop = false;
+            // 
+            // metroLabel1
+            // 
+            this.metroLabel1.AutoSize = true;
+            this.metroLabel1.CustomBackground = false;
+            this.metroLabel1.CustomForeColor = false;
+            this.metroLabel1.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.metroLabel1.FontSize = MetroFramework.MetroLabelSize.Medium;
+            this.metroLabel1.FontWeight = MetroFramework.MetroLabelWeight.Light;
+            this.metroLabel1.LabelMode = MetroFramework.Controls.MetroLabelMode.Default;
+            this.metroLabel1.Location = new System.Drawing.Point(5, 2);
+            this.metroLabel1.Name = "metroLabel1";
+            this.metroLabel1.Size = new System.Drawing.Size(63, 53);
+            this.metroLabel1.Style = MetroFramework.MetroColorStyle.Blue;
+            this.metroLabel1.StyleManager = null;
+            this.metroLabel1.TabIndex = 8;
+            this.metroLabel1.Text = "Status 1";
+            this.metroLabel1.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.metroLabel1.Theme = MetroFramework.MetroThemeStyle.Light;
+            this.metroLabel1.UseStyleColors = false;
+            // 
+            // metroLabel2
+            // 
+            this.metroLabel2.AutoSize = true;
+            this.metroLabel2.CustomBackground = false;
+            this.metroLabel2.CustomForeColor = false;
+            this.metroLabel2.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.metroLabel2.FontSize = MetroFramework.MetroLabelSize.Medium;
+            this.metroLabel2.FontWeight = MetroFramework.MetroLabelWeight.Light;
+            this.metroLabel2.LabelMode = MetroFramework.Controls.MetroLabelMode.Default;
+            this.metroLabel2.Location = new System.Drawing.Point(5, 57);
+            this.metroLabel2.Name = "metroLabel2";
+            this.metroLabel2.Size = new System.Drawing.Size(63, 53);
+            this.metroLabel2.Style = MetroFramework.MetroColorStyle.Blue;
+            this.metroLabel2.StyleManager = null;
+            this.metroLabel2.TabIndex = 9;
+            this.metroLabel2.Text = "Status 2";
+            this.metroLabel2.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.metroLabel2.Theme = MetroFramework.MetroThemeStyle.Light;
+            this.metroLabel2.UseStyleColors = false;
+            // 
+            // metroLabel3
+            // 
+            this.metroLabel3.AutoSize = true;
+            this.metroLabel3.CustomBackground = false;
+            this.metroLabel3.CustomForeColor = false;
+            this.metroLabel3.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.metroLabel3.FontSize = MetroFramework.MetroLabelSize.Medium;
+            this.metroLabel3.FontWeight = MetroFramework.MetroLabelWeight.Light;
+            this.metroLabel3.LabelMode = MetroFramework.Controls.MetroLabelMode.Default;
+            this.metroLabel3.Location = new System.Drawing.Point(5, 112);
+            this.metroLabel3.Name = "metroLabel3";
+            this.metroLabel3.Size = new System.Drawing.Size(63, 53);
+            this.metroLabel3.Style = MetroFramework.MetroColorStyle.Blue;
+            this.metroLabel3.StyleManager = null;
+            this.metroLabel3.TabIndex = 10;
+            this.metroLabel3.Text = "Status 3";
+            this.metroLabel3.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.metroLabel3.Theme = MetroFramework.MetroThemeStyle.Light;
+            this.metroLabel3.UseStyleColors = false;
+            // 
+            // metroLabel4
+            // 
+            this.metroLabel4.AutoSize = true;
+            this.metroLabel4.CustomBackground = false;
+            this.metroLabel4.CustomForeColor = false;
+            this.metroLabel4.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.metroLabel4.FontSize = MetroFramework.MetroLabelSize.Medium;
+            this.metroLabel4.FontWeight = MetroFramework.MetroLabelWeight.Light;
+            this.metroLabel4.LabelMode = MetroFramework.Controls.MetroLabelMode.Default;
+            this.metroLabel4.Location = new System.Drawing.Point(5, 167);
+            this.metroLabel4.Name = "metroLabel4";
+            this.metroLabel4.Size = new System.Drawing.Size(63, 55);
+            this.metroLabel4.Style = MetroFramework.MetroColorStyle.Blue;
+            this.metroLabel4.StyleManager = null;
+            this.metroLabel4.TabIndex = 11;
+            this.metroLabel4.Text = "Status 4";
+            this.metroLabel4.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.metroLabel4.Theme = MetroFramework.MetroThemeStyle.Light;
+            this.metroLabel4.UseStyleColors = false;
             // 
             // tableLayoutPanel3
             // 
@@ -984,12 +1032,16 @@
             // btnClear
             // 
             this.btnClear.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.btnClear.Image = global::BrilliantSpy.Properties.Resources.clear;
+            this.btnClear.Highlight = false;
             this.btnClear.Location = new System.Drawing.Point(242, 3);
             this.btnClear.Name = "btnClear";
             this.btnClear.Size = new System.Drawing.Size(40, 184);
+            this.btnClear.Style = MetroFramework.MetroColorStyle.Blue;
+            this.btnClear.StyleManager = null;
             this.btnClear.TabIndex = 1;
-            this.btnClear.UseVisualStyleBackColor = true;
+            this.btnClear.Text = "Clear";
+            this.btnClear.Theme = MetroFramework.MetroThemeStyle.Light;
+            this.btnClear.Click += new System.EventHandler(this.btnClear_Click);
             // 
             // tableLayoutPanel4
             // 
@@ -1010,37 +1062,43 @@
             // btnStop
             // 
             this.btnStop.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.btnStop.Font = new System.Drawing.Font("Copperplate Gothic Bold", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnStop.Highlight = false;
             this.btnStop.Location = new System.Drawing.Point(3, 3);
             this.btnStop.Name = "btnStop";
             this.btnStop.Size = new System.Drawing.Size(89, 34);
-            this.btnStop.TabIndex = 0;
+            this.btnStop.Style = MetroFramework.MetroColorStyle.Lime;
+            this.btnStop.StyleManager = null;
+            this.btnStop.TabIndex = 3;
             this.btnStop.Text = "STOP";
-            this.btnStop.UseVisualStyleBackColor = true;
+            this.btnStop.Theme = MetroFramework.MetroThemeStyle.Light;
             this.btnStop.Click += new System.EventHandler(this.btnStop_Click);
             // 
             // btnStopAlarm
             // 
             this.btnStopAlarm.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.btnStopAlarm.Font = new System.Drawing.Font("Copperplate Gothic Bold", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnStopAlarm.Highlight = false;
             this.btnStopAlarm.Location = new System.Drawing.Point(98, 3);
             this.btnStopAlarm.Name = "btnStopAlarm";
             this.btnStopAlarm.Size = new System.Drawing.Size(89, 34);
-            this.btnStopAlarm.TabIndex = 1;
+            this.btnStopAlarm.Style = MetroFramework.MetroColorStyle.Blue;
+            this.btnStopAlarm.StyleManager = null;
+            this.btnStopAlarm.TabIndex = 4;
             this.btnStopAlarm.Text = "STOP ALARM";
-            this.btnStopAlarm.UseVisualStyleBackColor = true;
+            this.btnStopAlarm.Theme = MetroFramework.MetroThemeStyle.Light;
             this.btnStopAlarm.Click += new System.EventHandler(this.btnStopAlarm_Click);
             // 
             // btnResetDetector
             // 
             this.btnResetDetector.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.btnResetDetector.Font = new System.Drawing.Font("Copperplate Gothic Bold", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnResetDetector.Highlight = false;
             this.btnResetDetector.Location = new System.Drawing.Point(193, 3);
             this.btnResetDetector.Name = "btnResetDetector";
             this.btnResetDetector.Size = new System.Drawing.Size(89, 34);
-            this.btnResetDetector.TabIndex = 2;
+            this.btnResetDetector.Style = MetroFramework.MetroColorStyle.Blue;
+            this.btnResetDetector.StyleManager = null;
+            this.btnResetDetector.TabIndex = 5;
             this.btnResetDetector.Text = "RESET";
-            this.btnResetDetector.UseVisualStyleBackColor = true;
+            this.btnResetDetector.Theme = MetroFramework.MetroThemeStyle.Light;
             this.btnResetDetector.Click += new System.EventHandler(this.btnResetDetector_Click);
             // 
             // MultiCamWindowForm
@@ -1056,7 +1114,6 @@
             this.Controls.Add(this.tableLayoutPanel);
             this.Controls.Add(this.MainMenuStrip);
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
-            this.Location = new System.Drawing.Point(0, 0);
             this.MaximizeBox = false;
             this.MinimizeBox = false;
             this.Name = "MultiCamWindowForm";
@@ -1108,30 +1165,14 @@
         private System.Windows.Forms.ToolStripMenuItem menuToolStripMenuItem;
         private System.Windows.Forms.MenuStrip MainMenuStrip;
         private System.Windows.Forms.TableLayoutPanel tableLayoutPanel1;
-        private System.Windows.Forms.TextBox txtDetectorLevel1;
-        private System.Windows.Forms.Label label3;
         private System.Windows.Forms.TableLayoutPanel tableLayoutPanel2;
         private AForge.Controls.PictureBox pcbStatus1;
-        private System.Windows.Forms.Label label4;
-        private System.Windows.Forms.Label label5;
-        private System.Windows.Forms.Label label6;
         private System.Windows.Forms.PictureBox pcbStatus2;
         private System.Windows.Forms.PictureBox pcbStatus3;
         private System.Windows.Forms.PictureBox pcbStatus4;
-        private System.Windows.Forms.LinkLabel linkLabel1;
-        private System.Windows.Forms.LinkLabel linkLabel2;
-        private System.Windows.Forms.LinkLabel linkLabel3;
-        private System.Windows.Forms.LinkLabel linkLabel4;
-        private System.Windows.Forms.TextBox txtDetectorLevel2;
-        private System.Windows.Forms.TextBox txtDetectorLevel3;
-        private System.Windows.Forms.TextBox txtDetectorLevel4;
         private System.Windows.Forms.TableLayoutPanel tableLayoutPanel3;
         private System.Windows.Forms.ListBox lstHistory;
-        private System.Windows.Forms.Button btnClear;
         private System.Windows.Forms.TableLayoutPanel tableLayoutPanel4;
-        private System.Windows.Forms.Button btnStop;
-        private System.Windows.Forms.Button btnStopAlarm;
-        private System.Windows.Forms.Button btnResetDetector;
         private System.Windows.Forms.ToolStripMenuItem cam1ToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem cam2ToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem camera3ToolStripMenuItem;
@@ -1176,6 +1217,22 @@
         private System.Windows.Forms.TextBox txtMotionLevel2;
         private System.Windows.Forms.TextBox txtMotionLevel3;
         private System.Windows.Forms.TextBox txtMotionLevel4;
+        private System.Windows.Forms.TextBox txtDetectorLevel1;
+        private System.Windows.Forms.TextBox txtDetectorLevel2;
+        private System.Windows.Forms.TextBox txtDetectorLevel3;
+        private System.Windows.Forms.TextBox txtDetectorLevel4;
+        private MetroFramework.Controls.MetroButton btnStop;
+        private MetroFramework.Controls.MetroLink metroLink1;
+        private MetroFramework.Controls.MetroLink metroLink2;
+        private MetroFramework.Controls.MetroLink metroLink3;
+        private MetroFramework.Controls.MetroLink metroLink4;
+        private MetroFramework.Controls.MetroLabel metroLabel1;
+        private MetroFramework.Controls.MetroLabel metroLabel2;
+        private MetroFramework.Controls.MetroLabel metroLabel3;
+        private MetroFramework.Controls.MetroLabel metroLabel4;
+        private MetroFramework.Controls.MetroButton btnClear;
+        private MetroFramework.Controls.MetroButton btnStopAlarm;
+        private MetroFramework.Controls.MetroButton btnResetDetector;
 
     }
 }

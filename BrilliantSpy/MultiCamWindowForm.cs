@@ -16,7 +16,7 @@ using MetroFramework.Forms;
 
 namespace BrilliantSpy
 {
-    public partial class MultiCamWindowForm : MetroForm
+    public partial class MultiCamWindowForm : Form
     {
         string HistoryDBSavePath = Properties.Settings.Default.homeDirectory +
             @"\" + DateTime.UtcNow.ToShortDateString() + @"\";
@@ -73,30 +73,6 @@ namespace BrilliantSpy
                 2));
             txtMotionLevel3.Text = Convert.ToString(Math.Round(Properties.Settings.Default.motionLevelCam3,
                 2));
-            txtMotionLevel4.Text = Convert.ToString(Math.Round(Properties.Settings.Default.motionLevelCam4,
-                2));
-        }
-
-        private void linkLabel1_LinkClicked(object sender, LinkLabelLinkClickedEventArgs e)
-        {
-            txtMotionLevel1.Text = Convert.ToString(Math.Round(Properties.Settings.Default.motionLevelCam1,
-                2));
-        }
-
-        private void linkLabel2_LinkClicked(object sender, LinkLabelLinkClickedEventArgs e)
-        {
-            txtMotionLevel2.Text = Convert.ToString(Math.Round(Properties.Settings.Default.motionLevelCam2,
-                2));
-        }
-
-        private void linkLabel3_LinkClicked(object sender, LinkLabelLinkClickedEventArgs e)
-        {
-            txtMotionLevel3.Text = Convert.ToString(Math.Round(Properties.Settings.Default.motionLevelCam3,
-                2));
-        }
-
-        private void linkLabel4_LinkClicked(object sender, LinkLabelLinkClickedEventArgs e)
-        {
             txtMotionLevel4.Text = Convert.ToString(Math.Round(Properties.Settings.Default.motionLevelCam4,
                 2));
         }
@@ -881,13 +857,6 @@ namespace BrilliantSpy
             }
         }
 
-        private void btnStop_Click(object sender, EventArgs e)
-        {
-            stopVideoSources();
-            StopAlarmSound();
-            resetStatusColorMotionText();
-        }
-
         private void resetStatusColorMotionText()
         {
             pcbStatus1.BackColor = Color.Transparent;
@@ -912,24 +881,6 @@ namespace BrilliantSpy
                 sound.Dispose();
                 sound = null;
             }
-        }
-
-        private void btnStopAlarm_Click(object sender, EventArgs e)
-        {
-            try
-            {
-                StopAlarmSound();
-            }
-            catch (Exception ex)
-            {
-                System.Diagnostics.Debug.WriteLine("No sound playing" + ex.Message);
-            }
-        }
-
-        private void btnResetDetector_Click(object sender, EventArgs e)
-        {
-            resetMotionDetectors();
-            resetStatusColorMotionText();
         }
 
         private void resetMotionDetectors()
@@ -1007,6 +958,60 @@ namespace BrilliantSpy
         {
             FollowMeForm form = new FollowMeForm();
             form.ShowDialog();
+        }
+
+        private void btnStop_Click(object sender, EventArgs e)
+        {
+            stopVideoSources();
+            StopAlarmSound();
+            resetStatusColorMotionText();
+        }
+
+        private void metroLink1_Click(object sender, EventArgs e)
+        {
+            txtMotionLevel1.Text = Convert.ToString(Math.Round(Properties.Settings.Default.motionLevelCam1,
+                2));
+        }
+
+        private void metroLink2_Click(object sender, EventArgs e)
+        {
+            txtMotionLevel2.Text = Convert.ToString(Math.Round(Properties.Settings.Default.motionLevelCam2,
+                2));
+        }
+
+        private void metroLink3_Click(object sender, EventArgs e)
+        {
+            txtMotionLevel3.Text = Convert.ToString(Math.Round(Properties.Settings.Default.motionLevelCam3,
+                2));
+        }
+
+        private void metroLink4_Click(object sender, EventArgs e)
+        {
+            txtMotionLevel4.Text = Convert.ToString(Math.Round(Properties.Settings.Default.motionLevelCam4,
+               2));
+        }
+
+        private void btnClear_Click(object sender, EventArgs e)
+        {
+            lstHistory.Items.Clear();
+        }
+
+        private void btnStopAlarm_Click(object sender, EventArgs e)
+        {
+            try
+            {
+                StopAlarmSound();
+            }
+            catch (Exception ex)
+            {
+                System.Diagnostics.Debug.WriteLine("No sound playing" + ex.Message);
+            }
+        }
+
+        private void btnResetDetector_Click(object sender, EventArgs e)
+        {
+            resetMotionDetectors();
+            resetStatusColorMotionText();
         }
     }
 }
