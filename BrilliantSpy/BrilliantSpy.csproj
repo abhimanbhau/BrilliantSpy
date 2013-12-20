@@ -26,6 +26,8 @@
     <ApplicationVersion>1.0.0.%2a</ApplicationVersion>
     <UseApplicationTrust>false</UseApplicationTrust>
     <BootstrapperEnabled>true</BootstrapperEnabled>
+    <ProductVersion>10.0.0</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
     <PlatformTarget>x86</PlatformTarget>
@@ -50,10 +52,6 @@
     <SignAssembly>true</SignAssembly>
   </PropertyGroup>
   <PropertyGroup>
-    <AssemblyOriginatorKeyFile>
-    </AssemblyOriginatorKeyFile>
-  </PropertyGroup>
-  <PropertyGroup>
     <ApplicationIcon>Icon.ico</ApplicationIcon>
   </PropertyGroup>
   <ItemGroup>
@@ -75,19 +73,11 @@
     <Reference Include="AForge.Video.DirectShow">
       <HintPath>..\OpenSourceLibraries\AForge.Video.DirectShow.dll</HintPath>
     </Reference>
-    <Reference Include="AForge.Video.VFW, Version=2.2.4.0, Culture=neutral, PublicKeyToken=a82f807c999637c8, processorArchitecture=MSIL">
-      <SpecificVersion>False</SpecificVersion>
-      <HintPath>..\OpenSourceLibraries\AForge.Video.VFW.dll</HintPath>
-    </Reference>
     <Reference Include="AForge.Vision">
       <HintPath>..\OpenSourceLibraries\AForge.Vision.dll</HintPath>
     </Reference>
     <Reference Include="Ionic.Zip">
       <HintPath>..\OpenSourceLibraries\Ionic.Zip.dll</HintPath>
-    </Reference>
-    <Reference Include="KellermanSoftware.NET-Encryption-Library, Version=2.3.0.0, Culture=neutral, PublicKeyToken=dccbd7ce7d6a58c0, processorArchitecture=MSIL">
-      <SpecificVersion>False</SpecificVersion>
-      <HintPath>..\OpenSourceLibraries\KellermanSoftware.NET-Encryption-Library.dll</HintPath>
     </Reference>
     <Reference Include="MetroFramework">
       <HintPath>..\packages\ModernUI.1.1.0.1\lib\net20\MetroFramework.dll</HintPath>
@@ -98,6 +88,12 @@
     <Reference Include="System.Drawing" />
     <Reference Include="System.Windows.Forms" />
     <Reference Include="System.Xml" />
+    <Reference Include="AForge.Video.VFW">
+      <HintPath>..\OpenSourceLibraries\AForge.Video.VFW.dll</HintPath>
+    </Reference>
+    <Reference Include="KellermanSoftware.NET-Encryption-Library">
+      <HintPath>..\OpenSourceLibraries\KellermanSoftware.NET-Encryption-Library.dll</HintPath>
+    </Reference>
   </ItemGroup>
   <ItemGroup>
     <Compile Include="AboutMeForm.cs">
