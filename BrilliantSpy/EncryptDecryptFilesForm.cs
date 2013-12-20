@@ -23,35 +23,18 @@ namespace BrilliantSpy
             openFileDialog.Multiselect = true;
         }
 
-        private void btnDecryptFiles_Click(object sender, EventArgs e)
+        private void btnBrowse_Click(object sender, EventArgs e)
         {
-            try
+            openFileDialog.ShowDialog();
+            foreach (string file in openFileDialog.FileNames)
             {
-                foreach (object path in listFiles.Items)
-                {
-                    FileEncryptTools.decryptFile(path.ToString(), txtPassword.Text);
-                }
-                MessageBox.Show(this, "Successfully decrypted all selected image files\n"
-                    + @"Decrypted files are stored in " +
-                    Properties.Settings.Default.homeDirectory +
-                    @"\decrypted " +
-                    "directory",
-                    "Success"
-                    , MessageBoxButtons.OK, MessageBoxIcon.Information);
+                listFiles.Items.Add(file);
             }
-            catch (Exception ex)
-            {
-                MessageBox.Show(this, "Error in Decrypting files\n" + ex.Message, "Error",
-                    MessageBoxButtons.OK, MessageBoxIcon.Error);
-            }
-            listFiles.Items.Clear();
         }
 
         private void btnClearList_Click(object sender, EventArgs e)
         {
             listFiles.Items.Clear();
-            MessageBox.Show(this, "List is cleared", "Success",
-                MessageBoxButtons.OK, MessageBoxIcon.Information);
         }
 
         private void btnEncryptFiles_Click(object sender, EventArgs e)
@@ -75,13 +58,28 @@ namespace BrilliantSpy
             listFiles.Items.Clear();
         }
 
-        private void btnBrowse_Click(object sender, EventArgs e)
+        private void btnDecryptFiles_Click(object sender, EventArgs e)
         {
-            openFileDialog.ShowDialog();
-            foreach (string file in openFileDialog.FileNames)
+            try
             {
-                listFiles.Items.Add(file);
+                foreach (object path in listFiles.Items)
+                {
+                    FileEncryptTools.decryptFile(path.ToString(), txtPassword.Text);
+                }
+                MessageBox.Show(this, "Successfully decrypted all selected image files\n"
+                    + @"Decrypted files are stored in " +
+                    Properties.Settings.Default.homeDirectory +
+                    @"\decrypted " +
+                    "directory",
+                    "Success"
+                    , MessageBoxButtons.OK, MessageBoxIcon.Information);
             }
+            catch (Exception ex)
+            {
+                MessageBox.Show(this, "Error in Decrypting files\n" + ex.Message, "Error",
+                    MessageBoxButtons.OK, MessageBoxIcon.Error);
+            }
+            listFiles.Items.Clear();
         }
     }
 }

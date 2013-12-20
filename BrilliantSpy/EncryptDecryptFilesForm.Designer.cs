@@ -29,15 +29,15 @@
         private void InitializeComponent()
         {
             this.openFileDialog = new System.Windows.Forms.OpenFileDialog();
-            this.btnDecryptFiles = new System.Windows.Forms.Button();
-            this.btnClearList = new System.Windows.Forms.Button();
-            this.btnEncryptFiles = new System.Windows.Forms.Button();
             this.label1 = new System.Windows.Forms.Label();
             this.txtPassword = new System.Windows.Forms.TextBox();
-            this.btnBrowse = new System.Windows.Forms.Button();
             this.listFiles = new System.Windows.Forms.ListBox();
             this.tableLayoutPanel1 = new System.Windows.Forms.TableLayoutPanel();
+            this.btnBrowse = new MetroFramework.Controls.MetroButton();
+            this.btnClearList = new MetroFramework.Controls.MetroButton();
             this.tableLayoutPanel2 = new System.Windows.Forms.TableLayoutPanel();
+            this.btnEncryptFiles = new MetroFramework.Controls.MetroButton();
+            this.btnDecryptFiles = new MetroFramework.Controls.MetroButton();
             this.tableLayoutPanel1.SuspendLayout();
             this.tableLayoutPanel2.SuspendLayout();
             this.SuspendLayout();
@@ -46,39 +46,6 @@
             // 
             this.openFileDialog.FileName = "Select Files to encrypt";
             this.openFileDialog.Multiselect = true;
-            // 
-            // btnDecryptFiles
-            // 
-            this.btnDecryptFiles.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.btnDecryptFiles.Location = new System.Drawing.Point(313, 3);
-            this.btnDecryptFiles.Name = "btnDecryptFiles";
-            this.btnDecryptFiles.Size = new System.Drawing.Size(61, 31);
-            this.btnDecryptFiles.TabIndex = 14;
-            this.btnDecryptFiles.Text = "Decrypt";
-            this.btnDecryptFiles.UseVisualStyleBackColor = true;
-            this.btnDecryptFiles.Click += new System.EventHandler(this.btnDecryptFiles_Click);
-            // 
-            // btnClearList
-            // 
-            this.btnClearList.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.btnClearList.Image = global::BrilliantSpy.Properties.Resources.clear;
-            this.btnClearList.Location = new System.Drawing.Point(4, 89);
-            this.btnClearList.Name = "btnClearList";
-            this.btnClearList.Size = new System.Drawing.Size(67, 79);
-            this.btnClearList.TabIndex = 13;
-            this.btnClearList.UseVisualStyleBackColor = true;
-            this.btnClearList.Click += new System.EventHandler(this.btnClearList_Click);
-            // 
-            // btnEncryptFiles
-            // 
-            this.btnEncryptFiles.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.btnEncryptFiles.Location = new System.Drawing.Point(245, 3);
-            this.btnEncryptFiles.Name = "btnEncryptFiles";
-            this.btnEncryptFiles.Size = new System.Drawing.Size(62, 31);
-            this.btnEncryptFiles.TabIndex = 12;
-            this.btnEncryptFiles.Text = "Encrypt";
-            this.btnEncryptFiles.UseVisualStyleBackColor = true;
-            this.btnEncryptFiles.Click += new System.EventHandler(this.btnEncryptFiles_Click);
             // 
             // label1
             // 
@@ -101,17 +68,6 @@
             this.txtPassword.PasswordChar = '*';
             this.txtPassword.Size = new System.Drawing.Size(139, 29);
             this.txtPassword.TabIndex = 10;
-            // 
-            // btnBrowse
-            // 
-            this.btnBrowse.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.btnBrowse.Image = global::BrilliantSpy.Properties.Resources.vallet;
-            this.btnBrowse.Location = new System.Drawing.Point(4, 4);
-            this.btnBrowse.Name = "btnBrowse";
-            this.btnBrowse.Size = new System.Drawing.Size(67, 78);
-            this.btnBrowse.TabIndex = 9;
-            this.btnBrowse.UseVisualStyleBackColor = true;
-            this.btnBrowse.Click += new System.EventHandler(this.btnBrowse_Click);
             // 
             // listFiles
             // 
@@ -139,6 +95,34 @@
             this.tableLayoutPanel1.Size = new System.Drawing.Size(75, 172);
             this.tableLayoutPanel1.TabIndex = 16;
             // 
+            // btnBrowse
+            // 
+            this.btnBrowse.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.btnBrowse.Highlight = false;
+            this.btnBrowse.Location = new System.Drawing.Point(4, 4);
+            this.btnBrowse.Name = "btnBrowse";
+            this.btnBrowse.Size = new System.Drawing.Size(67, 78);
+            this.btnBrowse.Style = MetroFramework.MetroColorStyle.Blue;
+            this.btnBrowse.StyleManager = null;
+            this.btnBrowse.TabIndex = 14;
+            this.btnBrowse.Text = "Browse";
+            this.btnBrowse.Theme = MetroFramework.MetroThemeStyle.Light;
+            this.btnBrowse.Click += new System.EventHandler(this.btnBrowse_Click);
+            // 
+            // btnClearList
+            // 
+            this.btnClearList.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.btnClearList.Highlight = false;
+            this.btnClearList.Location = new System.Drawing.Point(4, 89);
+            this.btnClearList.Name = "btnClearList";
+            this.btnClearList.Size = new System.Drawing.Size(67, 79);
+            this.btnClearList.Style = MetroFramework.MetroColorStyle.Blue;
+            this.btnClearList.StyleManager = null;
+            this.btnClearList.TabIndex = 15;
+            this.btnClearList.Text = "Clear";
+            this.btnClearList.Theme = MetroFramework.MetroThemeStyle.Light;
+            this.btnClearList.Click += new System.EventHandler(this.btnClearList_Click);
+            // 
             // tableLayoutPanel2
             // 
             this.tableLayoutPanel2.ColumnCount = 4;
@@ -157,6 +141,34 @@
             this.tableLayoutPanel2.Size = new System.Drawing.Size(377, 37);
             this.tableLayoutPanel2.TabIndex = 17;
             // 
+            // btnEncryptFiles
+            // 
+            this.btnEncryptFiles.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.btnEncryptFiles.Highlight = false;
+            this.btnEncryptFiles.Location = new System.Drawing.Point(245, 3);
+            this.btnEncryptFiles.Name = "btnEncryptFiles";
+            this.btnEncryptFiles.Size = new System.Drawing.Size(62, 31);
+            this.btnEncryptFiles.Style = MetroFramework.MetroColorStyle.Blue;
+            this.btnEncryptFiles.StyleManager = null;
+            this.btnEncryptFiles.TabIndex = 15;
+            this.btnEncryptFiles.Text = "Encrypt";
+            this.btnEncryptFiles.Theme = MetroFramework.MetroThemeStyle.Light;
+            this.btnEncryptFiles.Click += new System.EventHandler(this.btnEncryptFiles_Click);
+            // 
+            // btnDecryptFiles
+            // 
+            this.btnDecryptFiles.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.btnDecryptFiles.Highlight = false;
+            this.btnDecryptFiles.Location = new System.Drawing.Point(313, 3);
+            this.btnDecryptFiles.Name = "btnDecryptFiles";
+            this.btnDecryptFiles.Size = new System.Drawing.Size(61, 31);
+            this.btnDecryptFiles.Style = MetroFramework.MetroColorStyle.Blue;
+            this.btnDecryptFiles.StyleManager = null;
+            this.btnDecryptFiles.TabIndex = 16;
+            this.btnDecryptFiles.Text = "Decrypt";
+            this.btnDecryptFiles.Theme = MetroFramework.MetroThemeStyle.Light;
+            this.btnDecryptFiles.Click += new System.EventHandler(this.btnDecryptFiles_Click);
+            // 
             // EncryptDecryptFilesForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -173,6 +185,7 @@
             this.ShowIcon = false;
             this.ShowInTaskbar = false;
             this.SizeGripStyle = System.Windows.Forms.SizeGripStyle.Hide;
+            this.Style = MetroFramework.MetroColorStyle.Purple;
             this.Text = "EncryptDecryptFilesForm";
             this.Load += new System.EventHandler(this.EncryptDecryptFilesForm_Load);
             this.tableLayoutPanel1.ResumeLayout(false);
@@ -185,14 +198,14 @@
         #endregion
 
         private System.Windows.Forms.OpenFileDialog openFileDialog;
-        private System.Windows.Forms.Button btnDecryptFiles;
-        private System.Windows.Forms.Button btnClearList;
-        private System.Windows.Forms.Button btnEncryptFiles;
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.TextBox txtPassword;
-        private System.Windows.Forms.Button btnBrowse;
         private System.Windows.Forms.ListBox listFiles;
         private System.Windows.Forms.TableLayoutPanel tableLayoutPanel1;
         private System.Windows.Forms.TableLayoutPanel tableLayoutPanel2;
+        private MetroFramework.Controls.MetroButton btnBrowse;
+        private MetroFramework.Controls.MetroButton btnClearList;
+        private MetroFramework.Controls.MetroButton btnEncryptFiles;
+        private MetroFramework.Controls.MetroButton btnDecryptFiles;
     }
 }

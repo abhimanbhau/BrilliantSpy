@@ -8,7 +8,7 @@ using System.Windows.Forms;
 
 namespace BrilliantSpy
 {
-    public partial class FirstRunForm : SettingsForm
+    public partial class FirstRunForm : InteractiveSettingsForm
     {
         public FirstRunForm()
         {

@@ -173,6 +173,11 @@
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
     <Compile Include="SelectImageFolderForm.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -267,11 +272,6 @@
       <Generator>SettingsSingleFileGenerator</Generator>
       <LastGenOutput>Settings.Designer.cs</LastGenOutput>
     </None>
-    <Compile Include="Properties\Resources.Designer.cs">
-      <AutoGen>True</AutoGen>
-      <DesignTime>True</DesignTime>
-      <DependentUpon>Resources.resx</DependentUpon>
-    </Compile>
     <Compile Include="Properties\Settings.Designer.cs">
       <AutoGen>True</AutoGen>
       <DependentUpon>Settings.settings</DependentUpon>
@@ -307,20 +307,14 @@
   </ItemGroup>
   <ItemGroup>
     <Content Include="Icon.ico" />
-    <None Include="Resources\up.png" />
     <None Include="Resources\SplashBG.jpg" />
     <None Include="Resources\shutdown.png" />
-    <None Include="Resources\OK.png" />
     <None Include="Resources\None.png" />
     <None Include="Resources\NO_Image.jpg" />
-    <None Include="Resources\down.png" />
-    <None Include="Resources\clear.png" />
     <None Include="Resources\Abhimanbhau.JPG" />
-    <None Include="Resources\multi-video.png" />
     <None Include="Resources\data.png" />
     <None Include="Resources\key.png" />
     <None Include="Resources\cloud.png" />
-    <None Include="Resources\vallet.png" />
     <None Include="Resources\world.png" />
     <None Include="Resources\pen.png" />
     <None Include="Resources\bubble.png" />
