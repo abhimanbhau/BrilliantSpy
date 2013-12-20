@@ -5,10 +5,11 @@ using System.Data;
 using System.Drawing;
 using System.Text;
 using System.Windows.Forms;
+using MetroFramework.Forms;
 
 namespace BrilliantSpy
 {
-    public partial class ViewLicenseForm : Form
+    public partial class ViewLicenseForm : MetroForm
     {
         string license;
 

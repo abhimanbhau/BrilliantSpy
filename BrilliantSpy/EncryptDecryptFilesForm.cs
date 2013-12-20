@@ -45,13 +45,11 @@ namespace BrilliantSpy
                     MessageBoxButtons.OK, MessageBoxIcon.Error);
             }
             listFiles.Items.Clear();
-            lblWarning.Text = "";
         }
 
         private void btnClearList_Click(object sender, EventArgs e)
         {
             listFiles.Items.Clear();
-            lblWarning.Text = "";
             MessageBox.Show(this, "List is cleared", "Success",
                 MessageBoxButtons.OK, MessageBoxIcon.Information);
         }
@@ -75,7 +73,6 @@ namespace BrilliantSpy
                     MessageBoxButtons.OK, MessageBoxIcon.Error);
             }
             listFiles.Items.Clear();
-            lblWarning.Text = "";
         }
 
         private void btnBrowse_Click(object sender, EventArgs e)
@@ -84,12 +81,6 @@ namespace BrilliantSpy
             foreach (string file in openFileDialog.FileNames)
             {
                 listFiles.Items.Add(file);
-            }
-            if (listFiles.Items.Count > 5)
-            {
-                lblWarning.Text = "You have selected more than '5' files" +
-                    "Operation may take\n significant time" +
-                " on slower/older machines";
             }
         }
     }

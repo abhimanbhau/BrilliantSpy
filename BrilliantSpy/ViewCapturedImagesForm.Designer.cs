@@ -89,14 +89,14 @@
             this.ClientSize = new System.Drawing.Size(662, 531);
             this.Controls.Add(this.tableLayoutPanel1);
             this.Controls.Add(this.HistoryViewer);
-            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedToolWindow;
+            this.Location = new System.Drawing.Point(0, 0);
             this.MaximizeBox = false;
             this.MinimizeBox = false;
             this.Name = "ViewCapturedImagesForm";
             this.ShowIcon = false;
             this.ShowInTaskbar = false;
             this.SizeGripStyle = System.Windows.Forms.SizeGripStyle.Hide;
-            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
+            this.Style = MetroFramework.MetroColorStyle.Purple;
             this.Text = "ViewHistoryForm";
             this.Load += new System.EventHandler(this.ViewCapturedImagesForm_Load);
             this.KeyDown += new System.Windows.Forms.KeyEventHandler(this.ViewCapturedImagesForm_KeyDown);

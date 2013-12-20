@@ -35,14 +35,14 @@
             // lstFolders
             // 
             this.lstFolders.FormattingEnabled = true;
-            this.lstFolders.Location = new System.Drawing.Point(12, 12);
+            this.lstFolders.Location = new System.Drawing.Point(23, 63);
             this.lstFolders.Name = "lstFolders";
             this.lstFolders.Size = new System.Drawing.Size(318, 212);
             this.lstFolders.TabIndex = 0;
             // 
             // btnSelectedFolder
             // 
-            this.btnSelectedFolder.Location = new System.Drawing.Point(135, 230);
+            this.btnSelectedFolder.Location = new System.Drawing.Point(155, 281);
             this.btnSelectedFolder.Name = "btnSelectedFolder";
             this.btnSelectedFolder.Size = new System.Drawing.Size(75, 23);
             this.btnSelectedFolder.TabIndex = 1;
@@ -55,17 +55,16 @@
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackgroundImage = global::BrilliantSpy.Properties.Resources.BG;
-            this.ClientSize = new System.Drawing.Size(342, 261);
+            this.ClientSize = new System.Drawing.Size(377, 347);
             this.Controls.Add(this.btnSelectedFolder);
             this.Controls.Add(this.lstFolders);
-            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedToolWindow;
+            this.Location = new System.Drawing.Point(0, 0);
             this.MaximizeBox = false;
             this.MinimizeBox = false;
             this.Name = "SelectImageFolderForm";
             this.ShowIcon = false;
             this.ShowInTaskbar = false;
             this.SizeGripStyle = System.Windows.Forms.SizeGripStyle.Hide;
-            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Select Folder From list below";
             this.Load += new System.EventHandler(this.SelectImageFolderForm_Load);
             this.ResumeLayout(false);

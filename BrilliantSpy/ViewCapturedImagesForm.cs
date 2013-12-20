@@ -6,10 +6,11 @@ using System.Drawing;
 using System.Text;
 using System.Windows.Forms;
 using System.IO;
+using MetroFramework.Forms;
 
 namespace BrilliantSpy
 {
-    public partial class ViewCapturedImagesForm : Form
+    public partial class ViewCapturedImagesForm : MetroForm
     {
         string HistoryDBPath;
         static string[] images;

@@ -34,9 +34,9 @@
             // rtbLicenseView
             // 
             this.rtbLicenseView.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.rtbLicenseView.Location = new System.Drawing.Point(0, 0);
+            this.rtbLicenseView.Location = new System.Drawing.Point(20, 60);
             this.rtbLicenseView.Name = "rtbLicenseView";
-            this.rtbLicenseView.Size = new System.Drawing.Size(535, 441);
+            this.rtbLicenseView.Size = new System.Drawing.Size(495, 361);
             this.rtbLicenseView.TabIndex = 1;
             this.rtbLicenseView.Text = "";
             // 
@@ -46,14 +46,14 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(535, 441);
             this.Controls.Add(this.rtbLicenseView);
-            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedToolWindow;
+            this.Location = new System.Drawing.Point(0, 0);
             this.MaximizeBox = false;
             this.MinimizeBox = false;
             this.Name = "ViewLicenseForm";
             this.ShowIcon = false;
             this.ShowInTaskbar = false;
             this.SizeGripStyle = System.Windows.Forms.SizeGripStyle.Hide;
-            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
+            this.Style = MetroFramework.MetroColorStyle.Purple;
             this.Text = "ViewLicenseForm";
             this.Load += new System.EventHandler(this.ViewLicenseForm_Load);
             this.ResumeLayout(false);
