@@ -39,22 +39,22 @@
             // btnNext
             // 
             this.btnNext.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.btnNext.Image = global::BrilliantSpy.Properties.Resources.up;
             this.btnNext.Location = new System.Drawing.Point(322, 3);
             this.btnNext.Name = "btnNext";
             this.btnNext.Size = new System.Drawing.Size(313, 27);
             this.btnNext.TabIndex = 5;
+            this.btnNext.Text = "Next";
             this.btnNext.UseVisualStyleBackColor = true;
             this.btnNext.Click += new System.EventHandler(this.btnNext_Click);
             // 
             // btnBack
             // 
             this.btnBack.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.btnBack.Image = global::BrilliantSpy.Properties.Resources.down;
             this.btnBack.Location = new System.Drawing.Point(3, 3);
             this.btnBack.Name = "btnBack";
             this.btnBack.Size = new System.Drawing.Size(313, 27);
             this.btnBack.TabIndex = 4;
+            this.btnBack.Text = "Previous";
             this.btnBack.UseVisualStyleBackColor = true;
             this.btnBack.Click += new System.EventHandler(this.btnBack_Click);
             // 
@@ -85,7 +85,6 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.BackgroundImage = global::BrilliantSpy.Properties.Resources.BG;
             this.ClientSize = new System.Drawing.Size(662, 531);
             this.Controls.Add(this.tableLayoutPanel1);
             this.Controls.Add(this.HistoryViewer);

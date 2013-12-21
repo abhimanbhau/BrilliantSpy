@@ -73,7 +73,6 @@
             // 
             // btnIsHiddenSet
             // 
-            this.btnIsHiddenSet.Image = global::BrilliantSpy.Properties.Resources.OK;
             this.btnIsHiddenSet.Location = new System.Drawing.Point(372, 318);
             this.btnIsHiddenSet.Name = "btnIsHiddenSet";
             this.btnIsHiddenSet.Size = new System.Drawing.Size(75, 34);
@@ -105,7 +104,7 @@
             // 
             // btnSetCustomWarningMessage
             // 
-            this.btnSetCustomWarningMessage.Image = global::BrilliantSpy.Properties.Resources.OK;
+           
             this.btnSetCustomWarningMessage.Location = new System.Drawing.Point(372, 275);
             this.btnSetCustomWarningMessage.Name = "btnSetCustomWarningMessage";
             this.btnSetCustomWarningMessage.Size = new System.Drawing.Size(75, 34);
@@ -254,7 +253,7 @@
             // 
             // btnViewMotionInPlayer
             // 
-            this.btnViewMotionInPlayer.Image = global::BrilliantSpy.Properties.Resources.OK;
+
             this.btnViewMotionInPlayer.Location = new System.Drawing.Point(372, 410);
             this.btnViewMotionInPlayer.Name = "btnViewMotionInPlayer";
             this.btnViewMotionInPlayer.Size = new System.Drawing.Size(75, 34);
@@ -266,7 +265,6 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.BackgroundImage = global::BrilliantSpy.Properties.Resources.BG;
             this.ClientSize = new System.Drawing.Size(459, 486);
             this.Controls.Add(this.btnViewMotionInPlayer);
             this.Controls.Add(this.cmbIsShowMotionInPlayer);

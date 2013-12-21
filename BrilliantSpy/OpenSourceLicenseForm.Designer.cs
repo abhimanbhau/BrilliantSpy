@@ -35,7 +35,7 @@
             // 
             // btnAForge
             // 
-            this.btnAForge.Location = new System.Drawing.Point(12, 70);
+            this.btnAForge.Location = new System.Drawing.Point(12, 129);
             this.btnAForge.Name = "btnAForge";
             this.btnAForge.Size = new System.Drawing.Size(307, 23);
             this.btnAForge.TabIndex = 5;
@@ -45,7 +45,7 @@
             // 
             // btnKellerman
             // 
-            this.btnKellerman.Location = new System.Drawing.Point(12, 41);
+            this.btnKellerman.Location = new System.Drawing.Point(12, 100);
             this.btnKellerman.Name = "btnKellerman";
             this.btnKellerman.Size = new System.Drawing.Size(307, 23);
             this.btnKellerman.TabIndex = 4;
@@ -55,7 +55,7 @@
             // 
             // button1
             // 
-            this.button1.Location = new System.Drawing.Point(12, 12);
+            this.button1.Location = new System.Drawing.Point(12, 71);
             this.button1.Name = "button1";
             this.button1.Size = new System.Drawing.Size(307, 23);
             this.button1.TabIndex = 6;
@@ -67,20 +67,19 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.BackgroundImage = global::BrilliantSpy.Properties.Resources.BG;
-            this.ClientSize = new System.Drawing.Size(331, 104);
+            this.ClientSize = new System.Drawing.Size(269, 200);
             this.Controls.Add(this.button1);
             this.Controls.Add(this.btnAForge);
             this.Controls.Add(this.btnKellerman);
-            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedToolWindow;
+            this.Location = new System.Drawing.Point(0, 0);
             this.MaximizeBox = false;
             this.MinimizeBox = false;
             this.Name = "OpenSourceLicenseForm";
             this.ShowIcon = false;
             this.ShowInTaskbar = false;
             this.SizeGripStyle = System.Windows.Forms.SizeGripStyle.Hide;
-            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Open Source Licenses";
+            this.Load += new System.EventHandler(this.OpenSourceLicenseForm_Load);
             this.ResumeLayout(false);
 
         }

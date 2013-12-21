@@ -95,16 +95,6 @@ namespace BrilliantSpy.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
-        internal static System.Drawing.Bitmap BG {
-            get {
-                object obj = ResourceManager.GetObject("BG", resourceCulture);
-                return ((System.Drawing.Bitmap)(obj));
-            }
-        }
-        
-        /// <summary>
-        ///   Looks up a localized resource of type System.Drawing.Bitmap.
-        /// </summary>
         internal static System.Drawing.Bitmap bubble {
             get {
                 object obj = ResourceManager.GetObject("bubble", resourceCulture);
@@ -248,16 +238,6 @@ namespace BrilliantSpy.Properties {
         internal static System.IO.UnmanagedMemoryStream siren04 {
             get {
                 return ResourceManager.GetStream("siren04", resourceCulture);
-            }
-        }
-        
-        /// <summary>
-        ///   Looks up a localized resource of type System.Drawing.Bitmap.
-        /// </summary>
-        internal static System.Drawing.Bitmap SplashBG {
-            get {
-                object obj = ResourceManager.GetObject("SplashBG", resourceCulture);
-                return ((System.Drawing.Bitmap)(obj));
             }
         }
         

@@ -34,6 +34,7 @@
             this.metroButton4 = new MetroFramework.Controls.MetroButton();
             this.metroButton5 = new MetroFramework.Controls.MetroButton();
             this.tableLayoutPanel5 = new System.Windows.Forms.TableLayoutPanel();
+            this.metroButton9 = new MetroFramework.Controls.MetroButton();
             this.metroLabel1 = new MetroFramework.Controls.MetroLabel();
             this.metroLabel2 = new MetroFramework.Controls.MetroLabel();
             this.metroLabel3 = new MetroFramework.Controls.MetroLabel();
@@ -43,13 +44,12 @@
             this.metroLabel7 = new MetroFramework.Controls.MetroLabel();
             this.metroLabel8 = new MetroFramework.Controls.MetroLabel();
             this.metroLabel9 = new MetroFramework.Controls.MetroLabel();
-            this.metroLabel11 = new MetroFramework.Controls.MetroLabel();
             this.metroLabel10 = new MetroFramework.Controls.MetroLabel();
+            this.metroLabel11 = new MetroFramework.Controls.MetroLabel();
             this.metroButton1 = new MetroFramework.Controls.MetroButton();
             this.tableLayoutPanel6 = new System.Windows.Forms.TableLayoutPanel();
-            this.metroButton9 = new MetroFramework.Controls.MetroButton();
             this.metroButton10 = new MetroFramework.Controls.MetroButton();
-            this.metroTextBox1 = new MetroFramework.Controls.MetroTextBox();
+            this.txtCurrentUsage = new MetroFramework.Controls.MetroTextBox();
             this.metroToggle1 = new MetroFramework.Controls.MetroToggle();
             this.metroToggle2 = new MetroFramework.Controls.MetroToggle();
             this.metroToggle3 = new MetroFramework.Controls.MetroToggle();
@@ -62,7 +62,7 @@
             // 
             this.tableLayoutPanel1.CellBorderStyle = System.Windows.Forms.TableLayoutPanelCellBorderStyle.Inset;
             this.tableLayoutPanel1.ColumnCount = 2;
-            this.tableLayoutPanel1.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 358F));
+            this.tableLayoutPanel1.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 385F));
             this.tableLayoutPanel1.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 100F));
             this.tableLayoutPanel1.Controls.Add(this.metroButton2, 1, 1);
             this.tableLayoutPanel1.Controls.Add(this.metroButton3, 1, 2);
@@ -82,7 +82,7 @@
             this.tableLayoutPanel1.Controls.Add(this.metroLabel11, 0, 10);
             this.tableLayoutPanel1.Controls.Add(this.metroButton1, 1, 10);
             this.tableLayoutPanel1.Controls.Add(this.tableLayoutPanel6, 1, 9);
-            this.tableLayoutPanel1.Controls.Add(this.metroTextBox1, 1, 0);
+            this.tableLayoutPanel1.Controls.Add(this.txtCurrentUsage, 1, 0);
             this.tableLayoutPanel1.Controls.Add(this.metroToggle1, 1, 4);
             this.tableLayoutPanel1.Controls.Add(this.metroToggle2, 1, 6);
             this.tableLayoutPanel1.Controls.Add(this.metroToggle3, 1, 7);
@@ -108,9 +108,9 @@
             // 
             this.metroButton2.Dock = System.Windows.Forms.DockStyle.Fill;
             this.metroButton2.Highlight = false;
-            this.metroButton2.Location = new System.Drawing.Point(365, 39);
+            this.metroButton2.Location = new System.Drawing.Point(392, 39);
             this.metroButton2.Name = "metroButton2";
-            this.metroButton2.Size = new System.Drawing.Size(137, 26);
+            this.metroButton2.Size = new System.Drawing.Size(110, 26);
             this.metroButton2.Style = MetroFramework.MetroColorStyle.Blue;
             this.metroButton2.StyleManager = null;
             this.metroButton2.TabIndex = 11;
@@ -121,9 +121,9 @@
             // 
             this.metroButton3.Dock = System.Windows.Forms.DockStyle.Fill;
             this.metroButton3.Highlight = false;
-            this.metroButton3.Location = new System.Drawing.Point(365, 73);
+            this.metroButton3.Location = new System.Drawing.Point(392, 73);
             this.metroButton3.Name = "metroButton3";
-            this.metroButton3.Size = new System.Drawing.Size(137, 26);
+            this.metroButton3.Size = new System.Drawing.Size(110, 26);
             this.metroButton3.Style = MetroFramework.MetroColorStyle.Blue;
             this.metroButton3.StyleManager = null;
             this.metroButton3.TabIndex = 13;
@@ -134,9 +134,9 @@
             // 
             this.metroButton4.Dock = System.Windows.Forms.DockStyle.Fill;
             this.metroButton4.Highlight = false;
-            this.metroButton4.Location = new System.Drawing.Point(365, 107);
+            this.metroButton4.Location = new System.Drawing.Point(392, 107);
             this.metroButton4.Name = "metroButton4";
-            this.metroButton4.Size = new System.Drawing.Size(137, 26);
+            this.metroButton4.Size = new System.Drawing.Size(110, 26);
             this.metroButton4.Style = MetroFramework.MetroColorStyle.Blue;
             this.metroButton4.StyleManager = null;
             this.metroButton4.TabIndex = 14;
@@ -147,9 +147,9 @@
             // 
             this.metroButton5.Dock = System.Windows.Forms.DockStyle.Fill;
             this.metroButton5.Highlight = false;
-            this.metroButton5.Location = new System.Drawing.Point(365, 175);
+            this.metroButton5.Location = new System.Drawing.Point(392, 175);
             this.metroButton5.Name = "metroButton5";
-            this.metroButton5.Size = new System.Drawing.Size(137, 26);
+            this.metroButton5.Size = new System.Drawing.Size(110, 26);
             this.metroButton5.Style = MetroFramework.MetroColorStyle.Blue;
             this.metroButton5.StyleManager = null;
             this.metroButton5.TabIndex = 15;
@@ -163,12 +163,25 @@
             this.tableLayoutPanel5.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 50F));
             this.tableLayoutPanel5.Controls.Add(this.metroButton9, 1, 0);
             this.tableLayoutPanel5.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.tableLayoutPanel5.Location = new System.Drawing.Point(365, 277);
+            this.tableLayoutPanel5.Location = new System.Drawing.Point(392, 277);
             this.tableLayoutPanel5.Name = "tableLayoutPanel5";
             this.tableLayoutPanel5.RowCount = 1;
             this.tableLayoutPanel5.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 50F));
-            this.tableLayoutPanel5.Size = new System.Drawing.Size(137, 26);
+            this.tableLayoutPanel5.Size = new System.Drawing.Size(110, 26);
             this.tableLayoutPanel5.TabIndex = 20;
+            // 
+            // metroButton9
+            // 
+            this.metroButton9.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.metroButton9.Highlight = false;
+            this.metroButton9.Location = new System.Drawing.Point(58, 3);
+            this.metroButton9.Name = "metroButton9";
+            this.metroButton9.Size = new System.Drawing.Size(49, 20);
+            this.metroButton9.Style = MetroFramework.MetroColorStyle.Blue;
+            this.metroButton9.StyleManager = null;
+            this.metroButton9.TabIndex = 0;
+            this.metroButton9.Text = "metroButton9";
+            this.metroButton9.Theme = MetroFramework.MetroThemeStyle.Light;
             // 
             // metroLabel1
             // 
@@ -181,7 +194,7 @@
             this.metroLabel1.LabelMode = MetroFramework.Controls.MetroLabelMode.Default;
             this.metroLabel1.Location = new System.Drawing.Point(5, 2);
             this.metroLabel1.Name = "metroLabel1";
-            this.metroLabel1.Size = new System.Drawing.Size(352, 32);
+            this.metroLabel1.Size = new System.Drawing.Size(379, 32);
             this.metroLabel1.Style = MetroFramework.MetroColorStyle.Blue;
             this.metroLabel1.StyleManager = null;
             this.metroLabel1.TabIndex = 21;
@@ -201,7 +214,7 @@
             this.metroLabel2.LabelMode = MetroFramework.Controls.MetroLabelMode.Default;
             this.metroLabel2.Location = new System.Drawing.Point(5, 36);
             this.metroLabel2.Name = "metroLabel2";
-            this.metroLabel2.Size = new System.Drawing.Size(352, 32);
+            this.metroLabel2.Size = new System.Drawing.Size(379, 32);
             this.metroLabel2.Style = MetroFramework.MetroColorStyle.Blue;
             this.metroLabel2.StyleManager = null;
             this.metroLabel2.TabIndex = 22;
@@ -221,7 +234,7 @@
             this.metroLabel3.LabelMode = MetroFramework.Controls.MetroLabelMode.Default;
             this.metroLabel3.Location = new System.Drawing.Point(5, 70);
             this.metroLabel3.Name = "metroLabel3";
-            this.metroLabel3.Size = new System.Drawing.Size(352, 32);
+            this.metroLabel3.Size = new System.Drawing.Size(379, 32);
             this.metroLabel3.Style = MetroFramework.MetroColorStyle.Blue;
             this.metroLabel3.StyleManager = null;
             this.metroLabel3.TabIndex = 23;
@@ -241,7 +254,7 @@
             this.metroLabel4.LabelMode = MetroFramework.Controls.MetroLabelMode.Default;
             this.metroLabel4.Location = new System.Drawing.Point(5, 104);
             this.metroLabel4.Name = "metroLabel4";
-            this.metroLabel4.Size = new System.Drawing.Size(352, 32);
+            this.metroLabel4.Size = new System.Drawing.Size(379, 32);
             this.metroLabel4.Style = MetroFramework.MetroColorStyle.Blue;
             this.metroLabel4.StyleManager = null;
             this.metroLabel4.TabIndex = 24;
@@ -261,7 +274,7 @@
             this.metroLabel5.LabelMode = MetroFramework.Controls.MetroLabelMode.Default;
             this.metroLabel5.Location = new System.Drawing.Point(5, 138);
             this.metroLabel5.Name = "metroLabel5";
-            this.metroLabel5.Size = new System.Drawing.Size(352, 32);
+            this.metroLabel5.Size = new System.Drawing.Size(379, 32);
             this.metroLabel5.Style = MetroFramework.MetroColorStyle.Blue;
             this.metroLabel5.StyleManager = null;
             this.metroLabel5.TabIndex = 25;
@@ -281,7 +294,7 @@
             this.metroLabel6.LabelMode = MetroFramework.Controls.MetroLabelMode.Default;
             this.metroLabel6.Location = new System.Drawing.Point(5, 172);
             this.metroLabel6.Name = "metroLabel6";
-            this.metroLabel6.Size = new System.Drawing.Size(352, 32);
+            this.metroLabel6.Size = new System.Drawing.Size(379, 32);
             this.metroLabel6.Style = MetroFramework.MetroColorStyle.Blue;
             this.metroLabel6.StyleManager = null;
             this.metroLabel6.TabIndex = 26;
@@ -301,7 +314,7 @@
             this.metroLabel7.LabelMode = MetroFramework.Controls.MetroLabelMode.Default;
             this.metroLabel7.Location = new System.Drawing.Point(5, 206);
             this.metroLabel7.Name = "metroLabel7";
-            this.metroLabel7.Size = new System.Drawing.Size(352, 32);
+            this.metroLabel7.Size = new System.Drawing.Size(379, 32);
             this.metroLabel7.Style = MetroFramework.MetroColorStyle.Blue;
             this.metroLabel7.StyleManager = null;
             this.metroLabel7.TabIndex = 27;
@@ -321,7 +334,7 @@
             this.metroLabel8.LabelMode = MetroFramework.Controls.MetroLabelMode.Default;
             this.metroLabel8.Location = new System.Drawing.Point(5, 240);
             this.metroLabel8.Name = "metroLabel8";
-            this.metroLabel8.Size = new System.Drawing.Size(352, 32);
+            this.metroLabel8.Size = new System.Drawing.Size(379, 32);
             this.metroLabel8.Style = MetroFramework.MetroColorStyle.Blue;
             this.metroLabel8.StyleManager = null;
             this.metroLabel8.TabIndex = 28;
@@ -341,7 +354,7 @@
             this.metroLabel9.LabelMode = MetroFramework.Controls.MetroLabelMode.Default;
             this.metroLabel9.Location = new System.Drawing.Point(5, 274);
             this.metroLabel9.Name = "metroLabel9";
-            this.metroLabel9.Size = new System.Drawing.Size(352, 32);
+            this.metroLabel9.Size = new System.Drawing.Size(379, 32);
             this.metroLabel9.Style = MetroFramework.MetroColorStyle.Blue;
             this.metroLabel9.StyleManager = null;
             this.metroLabel9.TabIndex = 29;
@@ -349,26 +362,6 @@
             this.metroLabel9.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             this.metroLabel9.Theme = MetroFramework.MetroThemeStyle.Light;
             this.metroLabel9.UseStyleColors = false;
-            // 
-            // metroLabel11
-            // 
-            this.metroLabel11.AutoSize = true;
-            this.metroLabel11.CustomBackground = false;
-            this.metroLabel11.CustomForeColor = false;
-            this.metroLabel11.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.metroLabel11.FontSize = MetroFramework.MetroLabelSize.Medium;
-            this.metroLabel11.FontWeight = MetroFramework.MetroLabelWeight.Light;
-            this.metroLabel11.LabelMode = MetroFramework.Controls.MetroLabelMode.Default;
-            this.metroLabel11.Location = new System.Drawing.Point(5, 342);
-            this.metroLabel11.Name = "metroLabel11";
-            this.metroLabel11.Size = new System.Drawing.Size(352, 42);
-            this.metroLabel11.Style = MetroFramework.MetroColorStyle.Blue;
-            this.metroLabel11.StyleManager = null;
-            this.metroLabel11.TabIndex = 31;
-            this.metroLabel11.Text = "Reset Everything";
-            this.metroLabel11.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            this.metroLabel11.Theme = MetroFramework.MetroThemeStyle.Light;
-            this.metroLabel11.UseStyleColors = false;
             // 
             // metroLabel10
             // 
@@ -381,7 +374,7 @@
             this.metroLabel10.LabelMode = MetroFramework.Controls.MetroLabelMode.Default;
             this.metroLabel10.Location = new System.Drawing.Point(5, 308);
             this.metroLabel10.Name = "metroLabel10";
-            this.metroLabel10.Size = new System.Drawing.Size(352, 32);
+            this.metroLabel10.Size = new System.Drawing.Size(379, 32);
             this.metroLabel10.Style = MetroFramework.MetroColorStyle.Blue;
             this.metroLabel10.StyleManager = null;
             this.metroLabel10.TabIndex = 30;
@@ -390,13 +383,33 @@
             this.metroLabel10.Theme = MetroFramework.MetroThemeStyle.Light;
             this.metroLabel10.UseStyleColors = false;
             // 
+            // metroLabel11
+            // 
+            this.metroLabel11.AutoSize = true;
+            this.metroLabel11.CustomBackground = false;
+            this.metroLabel11.CustomForeColor = false;
+            this.metroLabel11.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.metroLabel11.FontSize = MetroFramework.MetroLabelSize.Medium;
+            this.metroLabel11.FontWeight = MetroFramework.MetroLabelWeight.Light;
+            this.metroLabel11.LabelMode = MetroFramework.Controls.MetroLabelMode.Default;
+            this.metroLabel11.Location = new System.Drawing.Point(5, 342);
+            this.metroLabel11.Name = "metroLabel11";
+            this.metroLabel11.Size = new System.Drawing.Size(379, 42);
+            this.metroLabel11.Style = MetroFramework.MetroColorStyle.Blue;
+            this.metroLabel11.StyleManager = null;
+            this.metroLabel11.TabIndex = 31;
+            this.metroLabel11.Text = "Reset Everything";
+            this.metroLabel11.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.metroLabel11.Theme = MetroFramework.MetroThemeStyle.Light;
+            this.metroLabel11.UseStyleColors = false;
+            // 
             // metroButton1
             // 
             this.metroButton1.Dock = System.Windows.Forms.DockStyle.Fill;
             this.metroButton1.Highlight = false;
-            this.metroButton1.Location = new System.Drawing.Point(365, 345);
+            this.metroButton1.Location = new System.Drawing.Point(392, 345);
             this.metroButton1.Name = "metroButton1";
-            this.metroButton1.Size = new System.Drawing.Size(137, 36);
+            this.metroButton1.Size = new System.Drawing.Size(110, 36);
             this.metroButton1.Style = MetroFramework.MetroColorStyle.Blue;
             this.metroButton1.StyleManager = null;
             this.metroButton1.TabIndex = 32;
@@ -409,56 +422,43 @@
             this.tableLayoutPanel6.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 50F));
             this.tableLayoutPanel6.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 50F));
             this.tableLayoutPanel6.Controls.Add(this.metroButton10, 1, 0);
-            this.tableLayoutPanel6.Location = new System.Drawing.Point(365, 311);
+            this.tableLayoutPanel6.Location = new System.Drawing.Point(392, 311);
             this.tableLayoutPanel6.Name = "tableLayoutPanel6";
             this.tableLayoutPanel6.RowCount = 1;
             this.tableLayoutPanel6.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 50F));
-            this.tableLayoutPanel6.Size = new System.Drawing.Size(137, 26);
+            this.tableLayoutPanel6.Size = new System.Drawing.Size(110, 26);
             this.tableLayoutPanel6.TabIndex = 33;
-            // 
-            // metroButton9
-            // 
-            this.metroButton9.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.metroButton9.Highlight = false;
-            this.metroButton9.Location = new System.Drawing.Point(71, 3);
-            this.metroButton9.Name = "metroButton9";
-            this.metroButton9.Size = new System.Drawing.Size(63, 20);
-            this.metroButton9.Style = MetroFramework.MetroColorStyle.Blue;
-            this.metroButton9.StyleManager = null;
-            this.metroButton9.TabIndex = 0;
-            this.metroButton9.Text = "metroButton9";
-            this.metroButton9.Theme = MetroFramework.MetroThemeStyle.Light;
             // 
             // metroButton10
             // 
             this.metroButton10.Dock = System.Windows.Forms.DockStyle.Fill;
             this.metroButton10.Highlight = false;
-            this.metroButton10.Location = new System.Drawing.Point(71, 3);
+            this.metroButton10.Location = new System.Drawing.Point(58, 3);
             this.metroButton10.Name = "metroButton10";
-            this.metroButton10.Size = new System.Drawing.Size(63, 20);
+            this.metroButton10.Size = new System.Drawing.Size(49, 20);
             this.metroButton10.Style = MetroFramework.MetroColorStyle.Blue;
             this.metroButton10.StyleManager = null;
             this.metroButton10.TabIndex = 0;
             this.metroButton10.Text = "metroButton10";
             this.metroButton10.Theme = MetroFramework.MetroThemeStyle.Light;
             // 
-            // metroTextBox1
+            // txtCurrentUsage
             // 
-            this.metroTextBox1.CustomBackground = false;
-            this.metroTextBox1.CustomForeColor = false;
-            this.metroTextBox1.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.metroTextBox1.FontSize = MetroFramework.MetroTextBoxSize.Small;
-            this.metroTextBox1.FontWeight = MetroFramework.MetroTextBoxWeight.Regular;
-            this.metroTextBox1.Location = new System.Drawing.Point(365, 5);
-            this.metroTextBox1.Multiline = false;
-            this.metroTextBox1.Name = "metroTextBox1";
-            this.metroTextBox1.SelectedText = "";
-            this.metroTextBox1.Size = new System.Drawing.Size(137, 26);
-            this.metroTextBox1.Style = MetroFramework.MetroColorStyle.Blue;
-            this.metroTextBox1.StyleManager = null;
-            this.metroTextBox1.TabIndex = 34;
-            this.metroTextBox1.Theme = MetroFramework.MetroThemeStyle.Light;
-            this.metroTextBox1.UseStyleColors = false;
+            this.txtCurrentUsage.CustomBackground = false;
+            this.txtCurrentUsage.CustomForeColor = false;
+            this.txtCurrentUsage.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.txtCurrentUsage.FontSize = MetroFramework.MetroTextBoxSize.Small;
+            this.txtCurrentUsage.FontWeight = MetroFramework.MetroTextBoxWeight.Regular;
+            this.txtCurrentUsage.Location = new System.Drawing.Point(392, 5);
+            this.txtCurrentUsage.Multiline = false;
+            this.txtCurrentUsage.Name = "txtCurrentUsage";
+            this.txtCurrentUsage.SelectedText = "";
+            this.txtCurrentUsage.Size = new System.Drawing.Size(110, 26);
+            this.txtCurrentUsage.Style = MetroFramework.MetroColorStyle.Blue;
+            this.txtCurrentUsage.StyleManager = null;
+            this.txtCurrentUsage.TabIndex = 34;
+            this.txtCurrentUsage.Theme = MetroFramework.MetroThemeStyle.Light;
+            this.txtCurrentUsage.UseStyleColors = false;
             // 
             // metroToggle1
             // 
@@ -468,9 +468,9 @@
             this.metroToggle1.Dock = System.Windows.Forms.DockStyle.Fill;
             this.metroToggle1.FontSize = MetroFramework.MetroLinkSize.Small;
             this.metroToggle1.FontWeight = MetroFramework.MetroLinkWeight.Regular;
-            this.metroToggle1.Location = new System.Drawing.Point(365, 141);
+            this.metroToggle1.Location = new System.Drawing.Point(392, 141);
             this.metroToggle1.Name = "metroToggle1";
-            this.metroToggle1.Size = new System.Drawing.Size(137, 26);
+            this.metroToggle1.Size = new System.Drawing.Size(110, 26);
             this.metroToggle1.Style = MetroFramework.MetroColorStyle.Blue;
             this.metroToggle1.StyleManager = null;
             this.metroToggle1.TabIndex = 35;
@@ -487,9 +487,9 @@
             this.metroToggle2.Dock = System.Windows.Forms.DockStyle.Fill;
             this.metroToggle2.FontSize = MetroFramework.MetroLinkSize.Small;
             this.metroToggle2.FontWeight = MetroFramework.MetroLinkWeight.Regular;
-            this.metroToggle2.Location = new System.Drawing.Point(365, 209);
+            this.metroToggle2.Location = new System.Drawing.Point(392, 209);
             this.metroToggle2.Name = "metroToggle2";
-            this.metroToggle2.Size = new System.Drawing.Size(137, 26);
+            this.metroToggle2.Size = new System.Drawing.Size(110, 26);
             this.metroToggle2.Style = MetroFramework.MetroColorStyle.Blue;
             this.metroToggle2.StyleManager = null;
             this.metroToggle2.TabIndex = 36;
@@ -506,9 +506,9 @@
             this.metroToggle3.Dock = System.Windows.Forms.DockStyle.Fill;
             this.metroToggle3.FontSize = MetroFramework.MetroLinkSize.Small;
             this.metroToggle3.FontWeight = MetroFramework.MetroLinkWeight.Regular;
-            this.metroToggle3.Location = new System.Drawing.Point(365, 243);
+            this.metroToggle3.Location = new System.Drawing.Point(392, 243);
             this.metroToggle3.Name = "metroToggle3";
-            this.metroToggle3.Size = new System.Drawing.Size(137, 26);
+            this.metroToggle3.Size = new System.Drawing.Size(110, 26);
             this.metroToggle3.Style = MetroFramework.MetroColorStyle.Blue;
             this.metroToggle3.StyleManager = null;
             this.metroToggle3.TabIndex = 37;
@@ -521,7 +521,6 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.BackgroundImage = global::BrilliantSpy.Properties.Resources.BG;
             this.ClientSize = new System.Drawing.Size(547, 466);
             this.Controls.Add(this.tableLayoutPanel1);
             this.Location = new System.Drawing.Point(0, 0);
@@ -564,7 +563,7 @@
         private System.Windows.Forms.TableLayoutPanel tableLayoutPanel6;
         private MetroFramework.Controls.MetroButton metroButton9;
         private MetroFramework.Controls.MetroButton metroButton10;
-        private MetroFramework.Controls.MetroTextBox metroTextBox1;
+        private MetroFramework.Controls.MetroTextBox txtCurrentUsage;
         private MetroFramework.Controls.MetroToggle metroToggle1;
         private MetroFramework.Controls.MetroToggle metroToggle2;
         private MetroFramework.Controls.MetroToggle metroToggle3;

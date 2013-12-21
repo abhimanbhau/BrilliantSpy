@@ -97,7 +97,6 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.BackgroundImage = global::BrilliantSpy.Properties.Resources.SplashBG;
             this.ClientSize = new System.Drawing.Size(450, 260);
             this.Controls.Add(this.btnExit);
             this.Controls.Add(this.btnLogin);

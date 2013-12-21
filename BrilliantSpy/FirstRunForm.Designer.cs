@@ -34,12 +34,13 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(459, 486);
+            this.ClientSize = new System.Drawing.Size(628, 471);
+            this.Location = new System.Drawing.Point(0, 0);
             this.Name = "FirstRunForm";
-            this.Text = "FirstRunForm";
+            this.Style = MetroFramework.MetroColorStyle.Purple;
+            this.Text = "Initial Setup";
             this.Load += new System.EventHandler(this.FirstRunForm_Load);
             this.ResumeLayout(false);
-            this.PerformLayout();
 
         }
 

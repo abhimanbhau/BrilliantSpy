@@ -5,10 +5,11 @@ using System.Data;
 using System.Drawing;
 using System.Text;
 using System.Windows.Forms;
+using MetroFramework.Forms;
 
 namespace BrilliantSpy
 {
-    public partial class OpenSourceLicenseForm : Form
+    public partial class OpenSourceLicenseForm : MetroForm
     {
         public OpenSourceLicenseForm()
         {
@@ -31,6 +32,11 @@ namespace BrilliantSpy
         {
             ViewLicenseForm form = new ViewLicenseForm("BrilliantSpy");
             form.ShowDialog();
+        }
+
+        private void OpenSourceLicenseForm_Load(object sender, EventArgs e)
+        {
+
         }
     }
 }

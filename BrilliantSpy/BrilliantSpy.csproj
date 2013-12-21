@@ -279,9 +279,6 @@
     </Compile>
   </ItemGroup>
   <ItemGroup>
-    <None Include="Resources\BG.png" />
-  </ItemGroup>
-  <ItemGroup>
     <None Include="Resources\siren04.wav" />
   </ItemGroup>
   <ItemGroup>
@@ -307,7 +304,6 @@
   </ItemGroup>
   <ItemGroup>
     <Content Include="Icon.ico" />
-    <None Include="Resources\SplashBG.jpg" />
     <None Include="Resources\shutdown.png" />
     <None Include="Resources\None.png" />
     <None Include="Resources\NO_Image.jpg" />
