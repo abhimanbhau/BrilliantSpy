@@ -114,7 +114,7 @@
             this.metroButton2.Style = MetroFramework.MetroColorStyle.Blue;
             this.metroButton2.StyleManager = null;
             this.metroButton2.TabIndex = 11;
-            this.metroButton2.Text = "metroButton2";
+            this.metroButton2.Text = "btnClearStorage";
             this.metroButton2.Theme = MetroFramework.MetroThemeStyle.Light;
             // 
             // metroButton3
