@@ -41,9 +41,7 @@ namespace BrilliantSpy
         {
             if (listFiles.Items.Count == 0)
             {
-                radDesktopAlert.CaptionText = "No files selected";
-                radDesktopAlert.ContentText = "Please select files to encrypt";
-                radDesktopAlert.Show();
+                
                 return;
             }
             try
@@ -69,9 +67,7 @@ namespace BrilliantSpy
         {
             if (listFiles.Items.Count == 0)
             {
-                radDesktopAlert.CaptionText = "No files selected";
-                radDesktopAlert.ContentText = "Please select files to decrypt";
-                radDesktopAlert.Show();
+                
                 return;
             }
             try
@@ -90,9 +86,7 @@ namespace BrilliantSpy
             }
             catch (Exception ex)
             {
-                radDesktopAlert.CaptionText = "Failed to decrypt files";
-                radDesktopAlert.ContentText = ex.Message;
-                radDesktopAlert.Show();
+                
             }
             listFiles.Items.Clear();
         }

@@ -94,9 +94,6 @@
     <Reference Include="KellermanSoftware.NET-Encryption-Library">
       <HintPath>..\OpenSourceLibraries\KellermanSoftware.NET-Encryption-Library.dll</HintPath>
     </Reference>
-    <Reference Include="Telerik.WinControls, Version=2013.1.321.20, Culture=neutral, PublicKeyToken=5bb2a467cbec794e" />
-    <Reference Include="Telerik.WinControls.UI, Version=2013.1.321.20, Culture=neutral, PublicKeyToken=5bb2a467cbec794e" />
-    <Reference Include="TelerikCommon, Version=2013.1.321.20, Culture=neutral, PublicKeyToken=5bb2a467cbec794e" />
   </ItemGroup>
   <ItemGroup>
     <Compile Include="AboutMeForm.cs">
