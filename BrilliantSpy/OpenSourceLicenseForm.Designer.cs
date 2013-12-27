@@ -28,49 +28,96 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.btnAForge = new System.Windows.Forms.Button();
-            this.btnKellerman = new System.Windows.Forms.Button();
-            this.button1 = new System.Windows.Forms.Button();
+            this.tableLayoutPanel1 = new System.Windows.Forms.TableLayoutPanel();
+            this.btnBrilliantSpy = new MetroFramework.Controls.MetroButton();
+            this.btnKellerman = new MetroFramework.Controls.MetroButton();
+            this.btnAForge = new MetroFramework.Controls.MetroButton();
+            this.btnMetroFramework = new MetroFramework.Controls.MetroButton();
+            this.tableLayoutPanel1.SuspendLayout();
             this.SuspendLayout();
             // 
-            // btnAForge
+            // tableLayoutPanel1
             // 
-            this.btnAForge.Location = new System.Drawing.Point(12, 129);
-            this.btnAForge.Name = "btnAForge";
-            this.btnAForge.Size = new System.Drawing.Size(307, 23);
-            this.btnAForge.TabIndex = 5;
-            this.btnAForge.Text = "AForge.NET";
-            this.btnAForge.UseVisualStyleBackColor = true;
-            this.btnAForge.Click += new System.EventHandler(this.btnAForge_Click);
+            this.tableLayoutPanel1.CellBorderStyle = System.Windows.Forms.TableLayoutPanelCellBorderStyle.Inset;
+            this.tableLayoutPanel1.ColumnCount = 1;
+            this.tableLayoutPanel1.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 100F));
+            this.tableLayoutPanel1.Controls.Add(this.btnBrilliantSpy, 0, 0);
+            this.tableLayoutPanel1.Controls.Add(this.btnKellerman, 0, 1);
+            this.tableLayoutPanel1.Controls.Add(this.btnAForge, 0, 2);
+            this.tableLayoutPanel1.Controls.Add(this.btnMetroFramework, 0, 3);
+            this.tableLayoutPanel1.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.tableLayoutPanel1.Location = new System.Drawing.Point(20, 60);
+            this.tableLayoutPanel1.Name = "tableLayoutPanel1";
+            this.tableLayoutPanel1.RowCount = 4;
+            this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 25F));
+            this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 25F));
+            this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 25F));
+            this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 25F));
+            this.tableLayoutPanel1.Size = new System.Drawing.Size(229, 144);
+            this.tableLayoutPanel1.TabIndex = 0;
+            // 
+            // btnBrilliantSpy
+            // 
+            this.btnBrilliantSpy.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.btnBrilliantSpy.Highlight = false;
+            this.btnBrilliantSpy.Location = new System.Drawing.Point(5, 5);
+            this.btnBrilliantSpy.Name = "btnBrilliantSpy";
+            this.btnBrilliantSpy.Size = new System.Drawing.Size(219, 27);
+            this.btnBrilliantSpy.Style = MetroFramework.MetroColorStyle.Blue;
+            this.btnBrilliantSpy.StyleManager = null;
+            this.btnBrilliantSpy.TabIndex = 0;
+            this.btnBrilliantSpy.Text = "Brilliant Spy License";
+            this.btnBrilliantSpy.Theme = MetroFramework.MetroThemeStyle.Light;
+            this.btnBrilliantSpy.Click += new System.EventHandler(this.btnBrilliantSpy_Click);
             // 
             // btnKellerman
             // 
-            this.btnKellerman.Location = new System.Drawing.Point(12, 100);
+            this.btnKellerman.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.btnKellerman.Highlight = false;
+            this.btnKellerman.Location = new System.Drawing.Point(5, 40);
             this.btnKellerman.Name = "btnKellerman";
-            this.btnKellerman.Size = new System.Drawing.Size(307, 23);
-            this.btnKellerman.TabIndex = 4;
-            this.btnKellerman.Text = "Kellerman .Net Encryption Library";
-            this.btnKellerman.UseVisualStyleBackColor = true;
-            this.btnKellerman.Click += new System.EventHandler(this.btnKellerman_Click);
+            this.btnKellerman.Size = new System.Drawing.Size(219, 27);
+            this.btnKellerman.Style = MetroFramework.MetroColorStyle.Blue;
+            this.btnKellerman.StyleManager = null;
+            this.btnKellerman.TabIndex = 1;
+            this.btnKellerman.Text = "Kellerman License";
+            this.btnKellerman.Theme = MetroFramework.MetroThemeStyle.Light;
+            this.btnKellerman.Click += new System.EventHandler(this.btnKellerman_Click_1);
             // 
-            // button1
+            // btnAForge
             // 
-            this.button1.Location = new System.Drawing.Point(12, 71);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(307, 23);
-            this.button1.TabIndex = 6;
-            this.button1.Text = "BrilliantSpy License";
-            this.button1.UseVisualStyleBackColor = true;
-            this.button1.Click += new System.EventHandler(this.button1_Click);
+            this.btnAForge.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.btnAForge.Highlight = false;
+            this.btnAForge.Location = new System.Drawing.Point(5, 75);
+            this.btnAForge.Name = "btnAForge";
+            this.btnAForge.Size = new System.Drawing.Size(219, 27);
+            this.btnAForge.Style = MetroFramework.MetroColorStyle.Blue;
+            this.btnAForge.StyleManager = null;
+            this.btnAForge.TabIndex = 2;
+            this.btnAForge.Text = "AForge.NET License";
+            this.btnAForge.Theme = MetroFramework.MetroThemeStyle.Light;
+            this.btnAForge.Click += new System.EventHandler(this.btnAForge_Click_1);
+            // 
+            // btnMetroFramework
+            // 
+            this.btnMetroFramework.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.btnMetroFramework.Highlight = false;
+            this.btnMetroFramework.Location = new System.Drawing.Point(5, 110);
+            this.btnMetroFramework.Name = "btnMetroFramework";
+            this.btnMetroFramework.Size = new System.Drawing.Size(219, 29);
+            this.btnMetroFramework.Style = MetroFramework.MetroColorStyle.Blue;
+            this.btnMetroFramework.StyleManager = null;
+            this.btnMetroFramework.TabIndex = 3;
+            this.btnMetroFramework.Text = "Metro Framework License";
+            this.btnMetroFramework.Theme = MetroFramework.MetroThemeStyle.Light;
+            this.btnMetroFramework.Click += new System.EventHandler(this.btnMetroFramework_Click);
             // 
             // OpenSourceLicenseForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(269, 200);
-            this.Controls.Add(this.button1);
-            this.Controls.Add(this.btnAForge);
-            this.Controls.Add(this.btnKellerman);
+            this.ClientSize = new System.Drawing.Size(269, 224);
+            this.Controls.Add(this.tableLayoutPanel1);
             this.Location = new System.Drawing.Point(0, 0);
             this.MaximizeBox = false;
             this.MinimizeBox = false;
@@ -78,16 +125,20 @@
             this.ShowIcon = false;
             this.ShowInTaskbar = false;
             this.SizeGripStyle = System.Windows.Forms.SizeGripStyle.Hide;
+            this.Style = MetroFramework.MetroColorStyle.Purple;
             this.Text = "Open Source Licenses";
-            this.Load += new System.EventHandler(this.OpenSourceLicenseForm_Load);
+            this.tableLayoutPanel1.ResumeLayout(false);
             this.ResumeLayout(false);
 
         }
 
         #endregion
 
-        private System.Windows.Forms.Button btnAForge;
-        private System.Windows.Forms.Button btnKellerman;
-        private System.Windows.Forms.Button button1;
+        private System.Windows.Forms.TableLayoutPanel tableLayoutPanel1;
+        private MetroFramework.Controls.MetroButton btnBrilliantSpy;
+        private MetroFramework.Controls.MetroButton btnKellerman;
+        private MetroFramework.Controls.MetroButton btnAForge;
+        private MetroFramework.Controls.MetroButton btnMetroFramework;
+
     }
 }

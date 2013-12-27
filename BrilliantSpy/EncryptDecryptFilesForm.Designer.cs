@@ -28,6 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
+            this.components = new System.ComponentModel.Container();
             this.openFileDialog = new System.Windows.Forms.OpenFileDialog();
             this.label1 = new System.Windows.Forms.Label();
             this.txtPassword = new System.Windows.Forms.TextBox();
@@ -38,6 +39,7 @@
             this.tableLayoutPanel2 = new System.Windows.Forms.TableLayoutPanel();
             this.btnEncryptFiles = new MetroFramework.Controls.MetroButton();
             this.btnDecryptFiles = new MetroFramework.Controls.MetroButton();
+            this.radDesktopAlert = new Telerik.WinControls.UI.RadDesktopAlert(this.components);
             this.tableLayoutPanel1.SuspendLayout();
             this.tableLayoutPanel2.SuspendLayout();
             this.SuspendLayout();
@@ -206,5 +208,6 @@
         private MetroFramework.Controls.MetroButton btnClearList;
         private MetroFramework.Controls.MetroButton btnEncryptFiles;
         private MetroFramework.Controls.MetroButton btnDecryptFiles;
+        private Telerik.WinControls.UI.RadDesktopAlert radDesktopAlert;
     }
 }

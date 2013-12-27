@@ -54,7 +54,6 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.BackgroundImage = global::BrilliantSpy.Properties.Resources.BG;
             this.ClientSize = new System.Drawing.Size(377, 347);
             this.Controls.Add(this.btnSelectedFolder);
             this.Controls.Add(this.lstFolders);

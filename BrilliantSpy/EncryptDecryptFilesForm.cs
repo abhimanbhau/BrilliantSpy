@@ -39,6 +39,13 @@ namespace BrilliantSpy
 
         private void btnEncryptFiles_Click(object sender, EventArgs e)
         {
+            if (listFiles.Items.Count == 0)
+            {
+                radDesktopAlert.CaptionText = "No files selected";
+                radDesktopAlert.ContentText = "Please select files to encrypt";
+                radDesktopAlert.Show();
+                return;
+            }
             try
             {
                 foreach (object path in listFiles.Items)
@@ -60,6 +67,13 @@ namespace BrilliantSpy
 
         private void btnDecryptFiles_Click(object sender, EventArgs e)
         {
+            if (listFiles.Items.Count == 0)
+            {
+                radDesktopAlert.CaptionText = "No files selected";
+                radDesktopAlert.ContentText = "Please select files to decrypt";
+                radDesktopAlert.Show();
+                return;
+            }
             try
             {
                 foreach (object path in listFiles.Items)
@@ -76,8 +90,9 @@ namespace BrilliantSpy
             }
             catch (Exception ex)
             {
-                MessageBox.Show(this, "Error in Decrypting files\n" + ex.Message, "Error",
-                    MessageBoxButtons.OK, MessageBoxIcon.Error);
+                radDesktopAlert.CaptionText = "Failed to decrypt files";
+                radDesktopAlert.ContentText = ex.Message;
+                radDesktopAlert.Show();
             }
             listFiles.Items.Clear();
         }

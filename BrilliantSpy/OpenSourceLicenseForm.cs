@@ -16,27 +16,28 @@ namespace BrilliantSpy
             InitializeComponent();
         }
 
-        private void btnKellerman_Click(object sender, EventArgs e)
-        {
-            ViewLicenseForm form = new ViewLicenseForm("Kellerman");
-            form.ShowDialog();
-        }
-
-        private void btnAForge_Click(object sender, EventArgs e)
-        {
-            ViewLicenseForm form = new ViewLicenseForm("AForge");
-            form.ShowDialog();
-        }
-
-        private void button1_Click(object sender, EventArgs e)
+        private void btnBrilliantSpy_Click(object sender, EventArgs e)
         {
             ViewLicenseForm form = new ViewLicenseForm("BrilliantSpy");
             form.ShowDialog();
         }
 
-        private void OpenSourceLicenseForm_Load(object sender, EventArgs e)
+        private void btnAForge_Click_1(object sender, EventArgs e)
         {
+            ViewLicenseForm form = new ViewLicenseForm("AForge");
+            form.ShowDialog();
+        }
 
+        private void btnKellerman_Click_1(object sender, EventArgs e)
+        {
+            ViewLicenseForm form = new ViewLicenseForm("Kellerman");
+            form.ShowDialog();
+        }
+
+        private void btnMetroFramework_Click(object sender, EventArgs e)
+        {
+            ViewLicenseForm form = new ViewLicenseForm("Metro");
+            form.ShowDialog();
         }
     }
 }
