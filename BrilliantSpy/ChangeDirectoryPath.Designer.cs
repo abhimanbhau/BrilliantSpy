@@ -28,8 +28,6 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.txtCurrentDirectoryPath = new System.Windows.Forms.TextBox();
-            this.txtNewDirectoryPath = new System.Windows.Forms.TextBox();
             this.selectFolder = new System.Windows.Forms.FolderBrowserDialog();
             this.tableLayoutPanel1 = new System.Windows.Forms.TableLayoutPanel();
             this.tableLayoutPanel2 = new System.Windows.Forms.TableLayoutPanel();
@@ -37,28 +35,11 @@
             this.btnNewSet = new MetroFramework.Controls.MetroButton();
             this.metroLabel1 = new MetroFramework.Controls.MetroLabel();
             this.metroLabel2 = new MetroFramework.Controls.MetroLabel();
+            this.txtCurrentDirectoryPath = new MetroFramework.Controls.MetroTextBox();
+            this.txtNewDirectoryPath = new MetroFramework.Controls.MetroTextBox();
             this.tableLayoutPanel1.SuspendLayout();
             this.tableLayoutPanel2.SuspendLayout();
             this.SuspendLayout();
-            // 
-            // txtCurrentDirectoryPath
-            // 
-            this.txtCurrentDirectoryPath.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.txtCurrentDirectoryPath.Font = new System.Drawing.Font("Lucida Console", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtCurrentDirectoryPath.Location = new System.Drawing.Point(150, 5);
-            this.txtCurrentDirectoryPath.Name = "txtCurrentDirectoryPath";
-            this.txtCurrentDirectoryPath.ReadOnly = true;
-            this.txtCurrentDirectoryPath.Size = new System.Drawing.Size(191, 23);
-            this.txtCurrentDirectoryPath.TabIndex = 1;
-            // 
-            // txtNewDirectoryPath
-            // 
-            this.txtNewDirectoryPath.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.txtNewDirectoryPath.Font = new System.Drawing.Font("Lucida Console", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtNewDirectoryPath.Location = new System.Drawing.Point(150, 37);
-            this.txtNewDirectoryPath.Name = "txtNewDirectoryPath";
-            this.txtNewDirectoryPath.Size = new System.Drawing.Size(191, 23);
-            this.txtNewDirectoryPath.TabIndex = 3;
             // 
             // tableLayoutPanel1
             // 
@@ -66,11 +47,11 @@
             this.tableLayoutPanel1.ColumnCount = 2;
             this.tableLayoutPanel1.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 143F));
             this.tableLayoutPanel1.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 100F));
-            this.tableLayoutPanel1.Controls.Add(this.txtCurrentDirectoryPath, 1, 0);
-            this.tableLayoutPanel1.Controls.Add(this.txtNewDirectoryPath, 1, 1);
             this.tableLayoutPanel1.Controls.Add(this.tableLayoutPanel2, 1, 2);
             this.tableLayoutPanel1.Controls.Add(this.metroLabel1, 0, 0);
             this.tableLayoutPanel1.Controls.Add(this.metroLabel2, 0, 1);
+            this.tableLayoutPanel1.Controls.Add(this.txtCurrentDirectoryPath, 1, 0);
+            this.tableLayoutPanel1.Controls.Add(this.txtNewDirectoryPath, 1, 1);
             this.tableLayoutPanel1.Dock = System.Windows.Forms.DockStyle.Fill;
             this.tableLayoutPanel1.Location = new System.Drawing.Point(20, 60);
             this.tableLayoutPanel1.Name = "tableLayoutPanel1";
@@ -83,6 +64,7 @@
             // 
             // tableLayoutPanel2
             // 
+            this.tableLayoutPanel2.CellBorderStyle = System.Windows.Forms.TableLayoutPanelCellBorderStyle.Inset;
             this.tableLayoutPanel2.ColumnCount = 2;
             this.tableLayoutPanel2.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 50F));
             this.tableLayoutPanel2.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 50F));
@@ -99,9 +81,9 @@
             // 
             this.btnBrowse.Dock = System.Windows.Forms.DockStyle.Fill;
             this.btnBrowse.Highlight = false;
-            this.btnBrowse.Location = new System.Drawing.Point(3, 3);
+            this.btnBrowse.Location = new System.Drawing.Point(5, 5);
             this.btnBrowse.Name = "btnBrowse";
-            this.btnBrowse.Size = new System.Drawing.Size(89, 26);
+            this.btnBrowse.Size = new System.Drawing.Size(86, 22);
             this.btnBrowse.Style = MetroFramework.MetroColorStyle.Blue;
             this.btnBrowse.StyleManager = null;
             this.btnBrowse.TabIndex = 6;
@@ -113,9 +95,9 @@
             // 
             this.btnNewSet.Dock = System.Windows.Forms.DockStyle.Fill;
             this.btnNewSet.Highlight = false;
-            this.btnNewSet.Location = new System.Drawing.Point(98, 3);
+            this.btnNewSet.Location = new System.Drawing.Point(99, 5);
             this.btnNewSet.Name = "btnNewSet";
-            this.btnNewSet.Size = new System.Drawing.Size(90, 26);
+            this.btnNewSet.Size = new System.Drawing.Size(87, 22);
             this.btnNewSet.Style = MetroFramework.MetroColorStyle.Blue;
             this.btnNewSet.StyleManager = null;
             this.btnNewSet.TabIndex = 7;
@@ -163,6 +145,42 @@
             this.metroLabel2.Theme = MetroFramework.MetroThemeStyle.Light;
             this.metroLabel2.UseStyleColors = false;
             // 
+            // txtCurrentDirectoryPath
+            // 
+            this.txtCurrentDirectoryPath.CustomBackground = false;
+            this.txtCurrentDirectoryPath.CustomForeColor = false;
+            this.txtCurrentDirectoryPath.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.txtCurrentDirectoryPath.FontSize = MetroFramework.MetroTextBoxSize.Small;
+            this.txtCurrentDirectoryPath.FontWeight = MetroFramework.MetroTextBoxWeight.Regular;
+            this.txtCurrentDirectoryPath.Location = new System.Drawing.Point(150, 5);
+            this.txtCurrentDirectoryPath.Multiline = false;
+            this.txtCurrentDirectoryPath.Name = "txtCurrentDirectoryPath";
+            this.txtCurrentDirectoryPath.SelectedText = "";
+            this.txtCurrentDirectoryPath.Size = new System.Drawing.Size(191, 24);
+            this.txtCurrentDirectoryPath.Style = MetroFramework.MetroColorStyle.Blue;
+            this.txtCurrentDirectoryPath.StyleManager = null;
+            this.txtCurrentDirectoryPath.TabIndex = 7;
+            this.txtCurrentDirectoryPath.Theme = MetroFramework.MetroThemeStyle.Light;
+            this.txtCurrentDirectoryPath.UseStyleColors = true;
+            // 
+            // txtNewDirectoryPath
+            // 
+            this.txtNewDirectoryPath.CustomBackground = false;
+            this.txtNewDirectoryPath.CustomForeColor = false;
+            this.txtNewDirectoryPath.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.txtNewDirectoryPath.FontSize = MetroFramework.MetroTextBoxSize.Small;
+            this.txtNewDirectoryPath.FontWeight = MetroFramework.MetroTextBoxWeight.Regular;
+            this.txtNewDirectoryPath.Location = new System.Drawing.Point(150, 37);
+            this.txtNewDirectoryPath.Multiline = false;
+            this.txtNewDirectoryPath.Name = "txtNewDirectoryPath";
+            this.txtNewDirectoryPath.SelectedText = "";
+            this.txtNewDirectoryPath.Size = new System.Drawing.Size(191, 24);
+            this.txtNewDirectoryPath.Style = MetroFramework.MetroColorStyle.Blue;
+            this.txtNewDirectoryPath.StyleManager = null;
+            this.txtNewDirectoryPath.TabIndex = 8;
+            this.txtNewDirectoryPath.Theme = MetroFramework.MetroThemeStyle.Light;
+            this.txtNewDirectoryPath.UseStyleColors = true;
+            // 
             // ChangeDirectoryPath
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -189,8 +207,6 @@
 
         #endregion
 
-        private System.Windows.Forms.TextBox txtCurrentDirectoryPath;
-        private System.Windows.Forms.TextBox txtNewDirectoryPath;
         private System.Windows.Forms.FolderBrowserDialog selectFolder;
         private System.Windows.Forms.TableLayoutPanel tableLayoutPanel1;
         private System.Windows.Forms.TableLayoutPanel tableLayoutPanel2;
@@ -198,5 +214,7 @@
         private MetroFramework.Controls.MetroLabel metroLabel2;
         private MetroFramework.Controls.MetroButton btnBrowse;
         private MetroFramework.Controls.MetroButton btnNewSet;
+        private MetroFramework.Controls.MetroTextBox txtCurrentDirectoryPath;
+        private MetroFramework.Controls.MetroTextBox txtNewDirectoryPath;
     }
 }

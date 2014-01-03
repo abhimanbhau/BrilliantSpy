@@ -23,6 +23,16 @@ namespace BrilliantSpy
 
         private void ChangeDirectoryPath_Load(object sender, EventArgs e)
         {
+            this.Style = Properties.Settings.Default.colorScheme;
+            this.Theme = Properties.Settings.Default.theme;
+
+            metroLabel1.Style = Properties.Settings.Default.colorScheme;
+            metroLabel2.Style = Properties.Settings.Default.colorScheme;
+            metroLabel1.Theme = Properties.Settings.Default.theme;
+            metroLabel2.Theme = Properties.Settings.Default.theme;
+
+            
+
             switch (directoryToChange)
             {
                 case "HOME":

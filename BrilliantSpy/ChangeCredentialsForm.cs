@@ -68,5 +68,36 @@ namespace BrilliantSpy
         {
             changeCredentials();
         }
+
+        private void ChangeCredentialsForm_Load(object sender, EventArgs e)
+        {
+            this.Style = Properties.Settings.Default.colorScheme;
+            this.Theme = Properties.Settings.Default.theme;
+
+            metroLabel1.Style = Properties.Settings.Default.colorScheme;
+            metroLabel2.Style = Properties.Settings.Default.colorScheme;
+            metroLabel3.Style = Properties.Settings.Default.colorScheme;
+            metroLabel4.Style = Properties.Settings.Default.colorScheme;
+            metroLabel5.Style = Properties.Settings.Default.colorScheme;
+            metroLabel1.Theme = Properties.Settings.Default.theme;
+            metroLabel2.Theme = Properties.Settings.Default.theme;
+            metroLabel3.Theme = Properties.Settings.Default.theme;
+            metroLabel4.Theme = Properties.Settings.Default.theme;
+            metroLabel5.Theme = Properties.Settings.Default.theme;
+
+            btnSubmit.Style = Properties.Settings.Default.colorScheme;
+            btnSubmit.Theme = Properties.Settings.Default.theme;
+
+            txtNewPassword.Style = Properties.Settings.Default.colorScheme;
+            txtNewUsername.Style = Properties.Settings.Default.colorScheme;
+            txtOldPassword.Style = Properties.Settings.Default.colorScheme;
+            txtOldUsername.Style = Properties.Settings.Default.colorScheme;
+            txtReverifyPassword.Style = Properties.Settings.Default.colorScheme;
+            txtNewPassword.Theme = Properties.Settings.Default.theme;
+            txtNewUsername.Theme = Properties.Settings.Default.theme;
+            txtOldPassword.Theme = Properties.Settings.Default.theme;
+            txtOldUsername.Theme = Properties.Settings.Default.theme;
+            txtReverifyPassword.Theme = Properties.Settings.Default.theme; ;
+        }
     }
 }

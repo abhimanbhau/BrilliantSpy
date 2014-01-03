@@ -23,5 +23,17 @@ namespace BrilliantSpy
             form.Show();
         }
 
+        private void ChangeDirectoriesForm_Load(object sender, EventArgs e)
+        {
+            this.Style = Properties.Settings.Default.colorScheme;
+            this.Theme = Properties.Settings.Default.theme;
+
+            cmbSelectChangeDirectory.Theme = Properties.Settings.Default.theme;
+            btnChangeDirectory.Theme = Properties.Settings.Default.theme;
+
+            cmbSelectChangeDirectory.Style = Properties.Settings.Default.colorScheme;
+            btnChangeDirectory.Style = Properties.Settings.Default.colorScheme;
+        }
+
     }
 }
