@@ -18,7 +18,9 @@ namespace BrilliantSpy
 
         private void FirstRunForm_Load(object sender, EventArgs e)
         {
-
+            MessageBox.Show(this, "I see you are running the app for first time\n"
+            + "Let's do the basic setup", "Initial setup(Recommended)", 
+                MessageBoxButtons.OK, MessageBoxIcon.Information);
         }
     }
 }

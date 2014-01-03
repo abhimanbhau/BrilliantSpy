@@ -33,8 +33,11 @@
             this.tableLayoutPanel1 = new System.Windows.Forms.TableLayoutPanel();
             this.metroLabel1 = new MetroFramework.Controls.MetroLabel();
             this.metroLabel2 = new MetroFramework.Controls.MetroLabel();
+            this.tableLayoutPanel3 = new System.Windows.Forms.TableLayoutPanel();
             this.btnSubmit = new MetroFramework.Controls.MetroButton();
+            this.btnAdvancedReport = new MetroFramework.Controls.MetroButton();
             this.tableLayoutPanel1.SuspendLayout();
+            this.tableLayoutPanel3.SuspendLayout();
             this.SuspendLayout();
             // 
             // txtTitle
@@ -64,7 +67,7 @@
             this.tableLayoutPanel1.Controls.Add(this.txtMessage, 1, 1);
             this.tableLayoutPanel1.Controls.Add(this.metroLabel1, 0, 0);
             this.tableLayoutPanel1.Controls.Add(this.metroLabel2, 0, 1);
-            this.tableLayoutPanel1.Controls.Add(this.btnSubmit, 1, 2);
+            this.tableLayoutPanel1.Controls.Add(this.tableLayoutPanel3, 1, 2);
             this.tableLayoutPanel1.Dock = System.Windows.Forms.DockStyle.Fill;
             this.tableLayoutPanel1.Location = new System.Drawing.Point(20, 60);
             this.tableLayoutPanel1.Name = "tableLayoutPanel1";
@@ -115,19 +118,49 @@
             this.metroLabel2.Theme = MetroFramework.MetroThemeStyle.Light;
             this.metroLabel2.UseStyleColors = false;
             // 
+            // tableLayoutPanel3
+            // 
+            this.tableLayoutPanel3.CellBorderStyle = System.Windows.Forms.TableLayoutPanelCellBorderStyle.Inset;
+            this.tableLayoutPanel3.ColumnCount = 2;
+            this.tableLayoutPanel3.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 49.48454F));
+            this.tableLayoutPanel3.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 50.51546F));
+            this.tableLayoutPanel3.Controls.Add(this.btnSubmit, 0, 0);
+            this.tableLayoutPanel3.Controls.Add(this.btnAdvancedReport, 1, 0);
+            this.tableLayoutPanel3.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.tableLayoutPanel3.Location = new System.Drawing.Point(132, 244);
+            this.tableLayoutPanel3.Name = "tableLayoutPanel3";
+            this.tableLayoutPanel3.RowCount = 1;
+            this.tableLayoutPanel3.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 50F));
+            this.tableLayoutPanel3.Size = new System.Drawing.Size(390, 39);
+            this.tableLayoutPanel3.TabIndex = 14;
+            // 
             // btnSubmit
             // 
-            this.btnSubmit.Dock = System.Windows.Forms.DockStyle.Right;
+            this.btnSubmit.Dock = System.Windows.Forms.DockStyle.Fill;
             this.btnSubmit.Highlight = false;
-            this.btnSubmit.Location = new System.Drawing.Point(447, 244);
+            this.btnSubmit.Location = new System.Drawing.Point(5, 5);
             this.btnSubmit.Name = "btnSubmit";
-            this.btnSubmit.Size = new System.Drawing.Size(75, 39);
+            this.btnSubmit.Size = new System.Drawing.Size(184, 29);
             this.btnSubmit.Style = MetroFramework.MetroColorStyle.Purple;
             this.btnSubmit.StyleManager = null;
-            this.btnSubmit.TabIndex = 12;
+            this.btnSubmit.TabIndex = 14;
             this.btnSubmit.Text = "Submit";
             this.btnSubmit.Theme = MetroFramework.MetroThemeStyle.Light;
             this.btnSubmit.Click += new System.EventHandler(this.btnSubmit_Click);
+            // 
+            // btnAdvancedReport
+            // 
+            this.btnAdvancedReport.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.btnAdvancedReport.Highlight = false;
+            this.btnAdvancedReport.Location = new System.Drawing.Point(197, 5);
+            this.btnAdvancedReport.Name = "btnAdvancedReport";
+            this.btnAdvancedReport.Size = new System.Drawing.Size(188, 29);
+            this.btnAdvancedReport.Style = MetroFramework.MetroColorStyle.Blue;
+            this.btnAdvancedReport.StyleManager = null;
+            this.btnAdvancedReport.TabIndex = 15;
+            this.btnAdvancedReport.Text = "Advanced";
+            this.btnAdvancedReport.Theme = MetroFramework.MetroThemeStyle.Light;
+            this.btnAdvancedReport.Click += new System.EventHandler(this.btnAdvancedReport_Click);
             // 
             // BugReportSuggestionForm
             // 
@@ -147,6 +180,7 @@
             this.Load += new System.EventHandler(this.BugReportForm_Load);
             this.tableLayoutPanel1.ResumeLayout(false);
             this.tableLayoutPanel1.PerformLayout();
+            this.tableLayoutPanel3.ResumeLayout(false);
             this.ResumeLayout(false);
 
         }
@@ -158,6 +192,8 @@
         private System.Windows.Forms.TableLayoutPanel tableLayoutPanel1;
         private MetroFramework.Controls.MetroLabel metroLabel1;
         private MetroFramework.Controls.MetroLabel metroLabel2;
+        private System.Windows.Forms.TableLayoutPanel tableLayoutPanel3;
         private MetroFramework.Controls.MetroButton btnSubmit;
+        private MetroFramework.Controls.MetroButton btnAdvancedReport;
     }
 }

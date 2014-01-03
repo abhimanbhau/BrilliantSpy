@@ -65,5 +65,21 @@ namespace BrilliantSpy
                     MessageBoxButtons.OK, MessageBoxIcon.Error);
             }
         }
+
+        private void btnAdvancedReport_Click(object sender, EventArgs e)
+        {
+            if (MessageBox.Show(this, "If you want to send any error logs or screenshot of"
+                + " error or force close.\nUpload it on dropbox that will open after OK button pressed", 
+                "Thanks in advanced for your valuable suggestions",
+                MessageBoxButtons.OKCancel, MessageBoxIcon.Exclamation) == System.Windows.Forms.DialogResult.OK)
+            {
+                System.Diagnostics.Process.Start("http://www.drivehq.com/Dropbox/Dropbox.aspx?dropBoxID=94245865");
+                this.Close();
+            }
+            else
+            {
+                return;
+            }
+        }
     }
 }
