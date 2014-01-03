@@ -29,11 +29,12 @@
         private void InitializeComponent()
         {
             this.tableLayoutPanel1 = new System.Windows.Forms.TableLayoutPanel();
-            this.metroCheckBox1 = new MetroFramework.Controls.MetroCheckBox();
-            this.metroCheckBox2 = new MetroFramework.Controls.MetroCheckBox();
-            this.metroCheckBox3 = new MetroFramework.Controls.MetroCheckBox();
-            this.metroCheckBox4 = new MetroFramework.Controls.MetroCheckBox();
+            this.chbHomeDirectory = new MetroFramework.Controls.MetroCheckBox();
+            this.chbCompressed = new MetroFramework.Controls.MetroCheckBox();
+            this.chbDecrypted = new MetroFramework.Controls.MetroCheckBox();
+            this.chbEncrypted = new MetroFramework.Controls.MetroCheckBox();
             this.metroLabel1 = new MetroFramework.Controls.MetroLabel();
+            this.btnClear = new MetroFramework.Controls.MetroButton();
             this.tableLayoutPanel1.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -41,11 +42,11 @@
             // 
             this.tableLayoutPanel1.ColumnCount = 1;
             this.tableLayoutPanel1.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 100F));
-            this.tableLayoutPanel1.Controls.Add(this.metroCheckBox4, 0, 3);
-            this.tableLayoutPanel1.Controls.Add(this.metroCheckBox1, 0, 2);
-            this.tableLayoutPanel1.Controls.Add(this.metroCheckBox3, 0, 1);
-            this.tableLayoutPanel1.Controls.Add(this.metroCheckBox2, 0, 0);
-            this.tableLayoutPanel1.Location = new System.Drawing.Point(23, 95);
+            this.tableLayoutPanel1.Controls.Add(this.chbHomeDirectory, 0, 3);
+            this.tableLayoutPanel1.Controls.Add(this.chbCompressed, 0, 2);
+            this.tableLayoutPanel1.Controls.Add(this.chbDecrypted, 0, 1);
+            this.tableLayoutPanel1.Controls.Add(this.chbEncrypted, 0, 0);
+            this.tableLayoutPanel1.Location = new System.Drawing.Point(23, 82);
             this.tableLayoutPanel1.Name = "tableLayoutPanel1";
             this.tableLayoutPanel1.RowCount = 4;
             this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 25F));
@@ -55,77 +56,81 @@
             this.tableLayoutPanel1.Size = new System.Drawing.Size(294, 100);
             this.tableLayoutPanel1.TabIndex = 1;
             // 
-            // metroCheckBox1
+            // chbHomeDirectory
             // 
-            this.metroCheckBox1.AutoSize = true;
-            this.metroCheckBox1.CustomBackground = false;
-            this.metroCheckBox1.CustomForeColor = false;
-            this.metroCheckBox1.FontSize = MetroFramework.MetroLinkSize.Small;
-            this.metroCheckBox1.FontWeight = MetroFramework.MetroLinkWeight.Regular;
-            this.metroCheckBox1.Location = new System.Drawing.Point(3, 53);
-            this.metroCheckBox1.Name = "metroCheckBox1";
-            this.metroCheckBox1.Size = new System.Drawing.Size(166, 15);
-            this.metroCheckBox1.Style = MetroFramework.MetroColorStyle.Blue;
-            this.metroCheckBox1.StyleManager = null;
-            this.metroCheckBox1.TabIndex = 0;
-            this.metroCheckBox1.Text = "Compressed Files Directory";
-            this.metroCheckBox1.Theme = MetroFramework.MetroThemeStyle.Light;
-            this.metroCheckBox1.UseStyleColors = false;
-            this.metroCheckBox1.UseVisualStyleBackColor = true;
+            this.chbHomeDirectory.AutoSize = true;
+            this.chbHomeDirectory.CustomBackground = false;
+            this.chbHomeDirectory.CustomForeColor = false;
+            this.chbHomeDirectory.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.chbHomeDirectory.FontSize = MetroFramework.MetroLinkSize.Small;
+            this.chbHomeDirectory.FontWeight = MetroFramework.MetroLinkWeight.Regular;
+            this.chbHomeDirectory.Location = new System.Drawing.Point(3, 78);
+            this.chbHomeDirectory.Name = "chbHomeDirectory";
+            this.chbHomeDirectory.Size = new System.Drawing.Size(288, 19);
+            this.chbHomeDirectory.Style = MetroFramework.MetroColorStyle.Blue;
+            this.chbHomeDirectory.StyleManager = null;
+            this.chbHomeDirectory.TabIndex = 3;
+            this.chbHomeDirectory.Text = "Home Directory";
+            this.chbHomeDirectory.Theme = MetroFramework.MetroThemeStyle.Light;
+            this.chbHomeDirectory.UseStyleColors = false;
+            this.chbHomeDirectory.UseVisualStyleBackColor = true;
             // 
-            // metroCheckBox2
+            // chbCompressed
             // 
-            this.metroCheckBox2.AutoSize = true;
-            this.metroCheckBox2.CustomBackground = false;
-            this.metroCheckBox2.CustomForeColor = false;
-            this.metroCheckBox2.FontSize = MetroFramework.MetroLinkSize.Small;
-            this.metroCheckBox2.FontWeight = MetroFramework.MetroLinkWeight.Regular;
-            this.metroCheckBox2.Location = new System.Drawing.Point(3, 3);
-            this.metroCheckBox2.Name = "metroCheckBox2";
-            this.metroCheckBox2.Size = new System.Drawing.Size(153, 15);
-            this.metroCheckBox2.Style = MetroFramework.MetroColorStyle.Blue;
-            this.metroCheckBox2.StyleManager = null;
-            this.metroCheckBox2.TabIndex = 1;
-            this.metroCheckBox2.Text = "Encrypted Files Directory";
-            this.metroCheckBox2.Theme = MetroFramework.MetroThemeStyle.Light;
-            this.metroCheckBox2.UseStyleColors = false;
-            this.metroCheckBox2.UseVisualStyleBackColor = true;
+            this.chbCompressed.AutoSize = true;
+            this.chbCompressed.CustomBackground = false;
+            this.chbCompressed.CustomForeColor = false;
+            this.chbCompressed.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.chbCompressed.FontSize = MetroFramework.MetroLinkSize.Small;
+            this.chbCompressed.FontWeight = MetroFramework.MetroLinkWeight.Regular;
+            this.chbCompressed.Location = new System.Drawing.Point(3, 53);
+            this.chbCompressed.Name = "chbCompressed";
+            this.chbCompressed.Size = new System.Drawing.Size(288, 19);
+            this.chbCompressed.Style = MetroFramework.MetroColorStyle.Blue;
+            this.chbCompressed.StyleManager = null;
+            this.chbCompressed.TabIndex = 0;
+            this.chbCompressed.Text = "Compressed Files Directory";
+            this.chbCompressed.Theme = MetroFramework.MetroThemeStyle.Light;
+            this.chbCompressed.UseStyleColors = false;
+            this.chbCompressed.UseVisualStyleBackColor = true;
             // 
-            // metroCheckBox3
+            // chbDecrypted
             // 
-            this.metroCheckBox3.AutoSize = true;
-            this.metroCheckBox3.CustomBackground = false;
-            this.metroCheckBox3.CustomForeColor = false;
-            this.metroCheckBox3.FontSize = MetroFramework.MetroLinkSize.Small;
-            this.metroCheckBox3.FontWeight = MetroFramework.MetroLinkWeight.Regular;
-            this.metroCheckBox3.Location = new System.Drawing.Point(3, 28);
-            this.metroCheckBox3.Name = "metroCheckBox3";
-            this.metroCheckBox3.Size = new System.Drawing.Size(154, 15);
-            this.metroCheckBox3.Style = MetroFramework.MetroColorStyle.Blue;
-            this.metroCheckBox3.StyleManager = null;
-            this.metroCheckBox3.TabIndex = 2;
-            this.metroCheckBox3.Text = "Decrypted Files Directory";
-            this.metroCheckBox3.Theme = MetroFramework.MetroThemeStyle.Light;
-            this.metroCheckBox3.UseStyleColors = false;
-            this.metroCheckBox3.UseVisualStyleBackColor = true;
+            this.chbDecrypted.AutoSize = true;
+            this.chbDecrypted.CustomBackground = false;
+            this.chbDecrypted.CustomForeColor = false;
+            this.chbDecrypted.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.chbDecrypted.FontSize = MetroFramework.MetroLinkSize.Small;
+            this.chbDecrypted.FontWeight = MetroFramework.MetroLinkWeight.Regular;
+            this.chbDecrypted.Location = new System.Drawing.Point(3, 28);
+            this.chbDecrypted.Name = "chbDecrypted";
+            this.chbDecrypted.Size = new System.Drawing.Size(288, 19);
+            this.chbDecrypted.Style = MetroFramework.MetroColorStyle.Blue;
+            this.chbDecrypted.StyleManager = null;
+            this.chbDecrypted.TabIndex = 2;
+            this.chbDecrypted.Text = "Decrypted Files Directory";
+            this.chbDecrypted.Theme = MetroFramework.MetroThemeStyle.Light;
+            this.chbDecrypted.UseStyleColors = false;
+            this.chbDecrypted.UseVisualStyleBackColor = true;
             // 
-            // metroCheckBox4
+            // chbEncrypted
             // 
-            this.metroCheckBox4.AutoSize = true;
-            this.metroCheckBox4.CustomBackground = false;
-            this.metroCheckBox4.CustomForeColor = false;
-            this.metroCheckBox4.FontSize = MetroFramework.MetroLinkSize.Small;
-            this.metroCheckBox4.FontWeight = MetroFramework.MetroLinkWeight.Regular;
-            this.metroCheckBox4.Location = new System.Drawing.Point(3, 78);
-            this.metroCheckBox4.Name = "metroCheckBox4";
-            this.metroCheckBox4.Size = new System.Drawing.Size(107, 15);
-            this.metroCheckBox4.Style = MetroFramework.MetroColorStyle.Blue;
-            this.metroCheckBox4.StyleManager = null;
-            this.metroCheckBox4.TabIndex = 3;
-            this.metroCheckBox4.Text = "Home Directory";
-            this.metroCheckBox4.Theme = MetroFramework.MetroThemeStyle.Light;
-            this.metroCheckBox4.UseStyleColors = false;
-            this.metroCheckBox4.UseVisualStyleBackColor = true;
+            this.chbEncrypted.AutoSize = true;
+            this.chbEncrypted.CustomBackground = false;
+            this.chbEncrypted.CustomForeColor = false;
+            this.chbEncrypted.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.chbEncrypted.FontSize = MetroFramework.MetroLinkSize.Small;
+            this.chbEncrypted.FontWeight = MetroFramework.MetroLinkWeight.Regular;
+            this.chbEncrypted.Location = new System.Drawing.Point(3, 3);
+            this.chbEncrypted.Name = "chbEncrypted";
+            this.chbEncrypted.Size = new System.Drawing.Size(288, 19);
+            this.chbEncrypted.Style = MetroFramework.MetroColorStyle.Blue;
+            this.chbEncrypted.StyleManager = null;
+            this.chbEncrypted.TabIndex = 1;
+            this.chbEncrypted.Text = "Encrypted Files Directory";
+            this.chbEncrypted.Theme = MetroFramework.MetroThemeStyle.Light;
+            this.chbEncrypted.UseStyleColors = false;
+            this.chbEncrypted.UseVisualStyleBackColor = true;
             // 
             // metroLabel1
             // 
@@ -146,11 +151,25 @@
             this.metroLabel1.Theme = MetroFramework.MetroThemeStyle.Light;
             this.metroLabel1.UseStyleColors = false;
             // 
+            // btnClear
+            // 
+            this.btnClear.Highlight = false;
+            this.btnClear.Location = new System.Drawing.Point(227, 188);
+            this.btnClear.Name = "btnClear";
+            this.btnClear.Size = new System.Drawing.Size(90, 30);
+            this.btnClear.Style = MetroFramework.MetroColorStyle.Blue;
+            this.btnClear.StyleManager = null;
+            this.btnClear.TabIndex = 3;
+            this.btnClear.Text = "GO";
+            this.btnClear.Theme = MetroFramework.MetroThemeStyle.Light;
+            this.btnClear.Click += new System.EventHandler(this.btnClear_Click);
+            // 
             // ClearStorageDirectoriesForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(333, 215);
+            this.ClientSize = new System.Drawing.Size(324, 225);
+            this.Controls.Add(this.btnClear);
             this.Controls.Add(this.metroLabel1);
             this.Controls.Add(this.tableLayoutPanel1);
             this.Location = new System.Drawing.Point(0, 0);
@@ -174,10 +193,11 @@
         #endregion
 
         private System.Windows.Forms.TableLayoutPanel tableLayoutPanel1;
-        private MetroFramework.Controls.MetroCheckBox metroCheckBox1;
-        private MetroFramework.Controls.MetroCheckBox metroCheckBox2;
-        private MetroFramework.Controls.MetroCheckBox metroCheckBox3;
-        private MetroFramework.Controls.MetroCheckBox metroCheckBox4;
+        private MetroFramework.Controls.MetroCheckBox chbCompressed;
+        private MetroFramework.Controls.MetroCheckBox chbEncrypted;
+        private MetroFramework.Controls.MetroCheckBox chbDecrypted;
+        private MetroFramework.Controls.MetroCheckBox chbHomeDirectory;
         private MetroFramework.Controls.MetroLabel metroLabel1;
+        private MetroFramework.Controls.MetroButton btnClear;
     }
 }
