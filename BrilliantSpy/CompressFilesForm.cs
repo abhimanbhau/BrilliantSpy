@@ -20,6 +20,7 @@ namespace BrilliantSpy
 
         private void CompressFilesForm_Load(object sender, EventArgs e)
         {
+            this.Text = "Compress files to save disk space";
             openFileDialog.Filter = "BrilliantSpy Captured Image Files (*.bmp)|*.bmp";
             openFileDialog.InitialDirectory = Properties.Settings.Default.homeDirectory;
             openFileDialog.Multiselect = true;
