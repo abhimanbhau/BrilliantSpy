@@ -41,7 +41,7 @@ namespace BrilliantSpy
         {
             if (listFiles.Items.Count == 0)
             {
-                
+
                 return;
             }
             try
@@ -67,7 +67,7 @@ namespace BrilliantSpy
         {
             if (listFiles.Items.Count == 0)
             {
-                
+
                 return;
             }
             try
@@ -86,7 +86,8 @@ namespace BrilliantSpy
             }
             catch (Exception ex)
             {
-                
+                MessageBox.Show(this, "Error in decrypting files" + ex.Message, "Error",
+                    MessageBoxButtons.OK, MessageBoxIcon.Error);
             }
             listFiles.Items.Clear();
         }

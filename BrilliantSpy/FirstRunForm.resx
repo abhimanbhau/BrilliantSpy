@@ -117,4 +117,19 @@
   <resheader name="writer">
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
+  <data name="metroLabel1.Text" xml:space="preserve">
+    <value>Change Your Credentials by clicking button below.
+It's recommended that you select a strong password.
+
+Note : Both username and password are case-sensitive
+Default username and password is 'abhiman'(w/o quotes)
+
+After you set your credentials, app will close and you have
+to re-run the app and check out preferences and set them 
+as per your requirement.
+
+Thank You for using this app.
+Abhimanbhau Kolte,
+Pune.</value>
+  </data>
 </root>

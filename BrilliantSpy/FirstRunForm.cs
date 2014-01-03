@@ -22,5 +22,12 @@ namespace BrilliantSpy
             + "Let's do the basic setup", "Initial setup(Recommended)", 
                 MessageBoxButtons.OK, MessageBoxIcon.Information);
         }
+
+        private void btnChangeCredentials_Click(object sender, EventArgs e)
+        {
+            ChangeCredentialsForm form = new ChangeCredentialsForm();
+            form.ShowDialog();
+            this.Close();
+        }
     }
 }
