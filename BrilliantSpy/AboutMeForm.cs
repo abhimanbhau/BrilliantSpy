@@ -103,7 +103,25 @@ namespace BrilliantSpy
 
         private void AboutMeForm_Load(object sender, EventArgs e)
         {
+            this.Theme = Properties.Settings.Default.theme;
+            metroLabel1.Theme = Properties.Settings.Default.theme;
+            metroLabel2.Theme = Properties.Settings.Default.theme;
+            metroLabel3.Theme = Properties.Settings.Default.theme;
+            metroLabel4.Theme = Properties.Settings.Default.theme;
+            metroLink1.Theme = Properties.Settings.Default.theme;
+            metroLink2.Theme = Properties.Settings.Default.theme;
+            metroLink3.Theme = Properties.Settings.Default.theme;
+            metroLink4.Theme = Properties.Settings.Default.theme;
 
+            this.Style = Properties.Settings.Default.colorScheme;
+            metroLabel1.Style = Properties.Settings.Default.colorScheme;
+            metroLabel2.Style = Properties.Settings.Default.colorScheme;
+            metroLabel3.Style = Properties.Settings.Default.colorScheme;
+            metroLabel4.Style = Properties.Settings.Default.colorScheme;
+            metroLink1.Style = Properties.Settings.Default.colorScheme;
+            metroLink2.Style = Properties.Settings.Default.colorScheme;
+            metroLink3.Style = Properties.Settings.Default.colorScheme;
+            metroLink4.Style = Properties.Settings.Default.colorScheme;
         }
 
         private void metroLink1_Click(object sender, EventArgs e)

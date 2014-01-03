@@ -126,7 +126,7 @@ namespace BrilliantSpy
                 default:
                     MessageBox.Show(this, "Did You Select Valid Choice?", "Error"
                         , MessageBoxButtons.OK, MessageBoxIcon.Error);
-                    break;
+                    return;
             }
             Properties.Settings.Default.Save();
             MessageBox.Show(this, "Restart to apply changes", "Success",
@@ -137,18 +137,18 @@ namespace BrilliantSpy
         {
             switch (cmbTheme.Text.ToString())
             {
-                case "LIGHT":
+                case "Light":
                     Properties.Settings.Default.theme = MetroFramework.MetroThemeStyle.Light;
                     break;
 
-                case "DARK":
+                case "Dark":
                     Properties.Settings.Default.theme = MetroFramework.MetroThemeStyle.Dark;
                     break;
 
                 default:
                     MessageBox.Show(this, "Did You Select Valid Choice?", "Error"
                         , MessageBoxButtons.OK, MessageBoxIcon.Error);
-                    break;
+                    return;
             }
             Properties.Settings.Default.Save();
             MessageBox.Show(this, "Restart to apply changes", "Success",

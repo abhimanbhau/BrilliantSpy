@@ -22,7 +22,20 @@ namespace BrilliantSpy
 
         private void BugReportForm_Load(object sender, EventArgs e)
         {
-            this.Text = "Suggest An Idea or Report a Bug";
+            this.Style = Properties.Settings.Default.colorScheme;
+            this.Theme = Properties.Settings.Default.theme;
+            txtTitle.Style = Properties.Settings.Default.colorScheme;
+            txtTitle.Theme = Properties.Settings.Default.theme;
+            txtMessage.Style = Properties.Settings.Default.colorScheme;
+            txtMessage.Theme = Properties.Settings.Default.theme;
+            metroLabel1.Style = Properties.Settings.Default.colorScheme;
+            metroLabel2.Style = Properties.Settings.Default.colorScheme;
+            btnAdvancedReport.Style = Properties.Settings.Default.colorScheme;
+            btnSubmit.Style = Properties.Settings.Default.colorScheme;
+            metroLabel1.Theme = Properties.Settings.Default.theme;
+            metroLabel2.Theme = Properties.Settings.Default.theme;
+            btnAdvancedReport.Theme = Properties.Settings.Default.theme;
+            btnSubmit.Theme = Properties.Settings.Default.theme;
         }
 
         private void btnSubmit_Click(object sender, EventArgs e)
@@ -69,7 +82,7 @@ namespace BrilliantSpy
         private void btnAdvancedReport_Click(object sender, EventArgs e)
         {
             if (MessageBox.Show(this, "If you want to send any error logs or screenshot of"
-                + " error or force close.\nUpload it on dropbox that will open after OK button pressed", 
+                + " error or force close.\nUpload it on dropbox that will open after OK button pressed",
                 "Thanks in advanced for your valuable suggestions",
                 MessageBoxButtons.OKCancel, MessageBoxIcon.Exclamation) == System.Windows.Forms.DialogResult.OK)
             {

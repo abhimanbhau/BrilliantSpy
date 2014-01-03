@@ -28,34 +28,17 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.txtTitle = new System.Windows.Forms.TextBox();
-            this.txtMessage = new System.Windows.Forms.TextBox();
             this.tableLayoutPanel1 = new System.Windows.Forms.TableLayoutPanel();
             this.metroLabel1 = new MetroFramework.Controls.MetroLabel();
             this.metroLabel2 = new MetroFramework.Controls.MetroLabel();
             this.tableLayoutPanel3 = new System.Windows.Forms.TableLayoutPanel();
             this.btnSubmit = new MetroFramework.Controls.MetroButton();
             this.btnAdvancedReport = new MetroFramework.Controls.MetroButton();
+            this.txtTitle = new MetroFramework.Controls.MetroTextBox();
+            this.txtMessage = new MetroFramework.Controls.MetroTextBox();
             this.tableLayoutPanel1.SuspendLayout();
             this.tableLayoutPanel3.SuspendLayout();
             this.SuspendLayout();
-            // 
-            // txtTitle
-            // 
-            this.txtTitle.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.txtTitle.Location = new System.Drawing.Point(132, 5);
-            this.txtTitle.Name = "txtTitle";
-            this.txtTitle.Size = new System.Drawing.Size(390, 20);
-            this.txtTitle.TabIndex = 7;
-            // 
-            // txtMessage
-            // 
-            this.txtMessage.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.txtMessage.Location = new System.Drawing.Point(132, 36);
-            this.txtMessage.Multiline = true;
-            this.txtMessage.Name = "txtMessage";
-            this.txtMessage.Size = new System.Drawing.Size(390, 200);
-            this.txtMessage.TabIndex = 6;
             // 
             // tableLayoutPanel1
             // 
@@ -63,11 +46,11 @@
             this.tableLayoutPanel1.ColumnCount = 2;
             this.tableLayoutPanel1.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 125F));
             this.tableLayoutPanel1.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 100F));
-            this.tableLayoutPanel1.Controls.Add(this.txtTitle, 1, 0);
-            this.tableLayoutPanel1.Controls.Add(this.txtMessage, 1, 1);
             this.tableLayoutPanel1.Controls.Add(this.metroLabel1, 0, 0);
             this.tableLayoutPanel1.Controls.Add(this.metroLabel2, 0, 1);
             this.tableLayoutPanel1.Controls.Add(this.tableLayoutPanel3, 1, 2);
+            this.tableLayoutPanel1.Controls.Add(this.txtTitle, 1, 0);
+            this.tableLayoutPanel1.Controls.Add(this.txtMessage, 1, 1);
             this.tableLayoutPanel1.Dock = System.Windows.Forms.DockStyle.Fill;
             this.tableLayoutPanel1.Location = new System.Drawing.Point(20, 60);
             this.tableLayoutPanel1.Name = "tableLayoutPanel1";
@@ -96,7 +79,7 @@
             this.metroLabel1.Text = "Subject";
             this.metroLabel1.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             this.metroLabel1.Theme = MetroFramework.MetroThemeStyle.Light;
-            this.metroLabel1.UseStyleColors = false;
+            this.metroLabel1.UseStyleColors = true;
             // 
             // metroLabel2
             // 
@@ -116,7 +99,7 @@
             this.metroLabel2.Text = "Message";
             this.metroLabel2.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             this.metroLabel2.Theme = MetroFramework.MetroThemeStyle.Light;
-            this.metroLabel2.UseStyleColors = false;
+            this.metroLabel2.UseStyleColors = true;
             // 
             // tableLayoutPanel3
             // 
@@ -162,6 +145,42 @@
             this.btnAdvancedReport.Theme = MetroFramework.MetroThemeStyle.Light;
             this.btnAdvancedReport.Click += new System.EventHandler(this.btnAdvancedReport_Click);
             // 
+            // txtTitle
+            // 
+            this.txtTitle.CustomBackground = false;
+            this.txtTitle.CustomForeColor = false;
+            this.txtTitle.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.txtTitle.FontSize = MetroFramework.MetroTextBoxSize.Small;
+            this.txtTitle.FontWeight = MetroFramework.MetroTextBoxWeight.Regular;
+            this.txtTitle.Location = new System.Drawing.Point(132, 5);
+            this.txtTitle.Multiline = false;
+            this.txtTitle.Name = "txtTitle";
+            this.txtTitle.SelectedText = "";
+            this.txtTitle.Size = new System.Drawing.Size(390, 23);
+            this.txtTitle.Style = MetroFramework.MetroColorStyle.Blue;
+            this.txtTitle.StyleManager = null;
+            this.txtTitle.TabIndex = 15;
+            this.txtTitle.Theme = MetroFramework.MetroThemeStyle.Light;
+            this.txtTitle.UseStyleColors = true;
+            // 
+            // txtMessage
+            // 
+            this.txtMessage.CustomBackground = false;
+            this.txtMessage.CustomForeColor = false;
+            this.txtMessage.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.txtMessage.FontSize = MetroFramework.MetroTextBoxSize.Small;
+            this.txtMessage.FontWeight = MetroFramework.MetroTextBoxWeight.Regular;
+            this.txtMessage.Location = new System.Drawing.Point(132, 36);
+            this.txtMessage.Multiline = true;
+            this.txtMessage.Name = "txtMessage";
+            this.txtMessage.SelectedText = "";
+            this.txtMessage.Size = new System.Drawing.Size(390, 200);
+            this.txtMessage.Style = MetroFramework.MetroColorStyle.Blue;
+            this.txtMessage.StyleManager = null;
+            this.txtMessage.TabIndex = 16;
+            this.txtMessage.Theme = MetroFramework.MetroThemeStyle.Light;
+            this.txtMessage.UseStyleColors = true;
+            // 
             // BugReportSuggestionForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -176,7 +195,7 @@
             this.ShowInTaskbar = false;
             this.SizeGripStyle = System.Windows.Forms.SizeGripStyle.Hide;
             this.Style = MetroFramework.MetroColorStyle.Purple;
-            this.Text = "BugReportForm";
+            this.Text = "Suggest An Idea or Report a Bug";
             this.Load += new System.EventHandler(this.BugReportForm_Load);
             this.tableLayoutPanel1.ResumeLayout(false);
             this.tableLayoutPanel1.PerformLayout();
@@ -187,13 +206,13 @@
 
         #endregion
 
-        private System.Windows.Forms.TextBox txtTitle;
-        private System.Windows.Forms.TextBox txtMessage;
         private System.Windows.Forms.TableLayoutPanel tableLayoutPanel1;
         private MetroFramework.Controls.MetroLabel metroLabel1;
         private MetroFramework.Controls.MetroLabel metroLabel2;
         private System.Windows.Forms.TableLayoutPanel tableLayoutPanel3;
         private MetroFramework.Controls.MetroButton btnSubmit;
         private MetroFramework.Controls.MetroButton btnAdvancedReport;
+        private MetroFramework.Controls.MetroTextBox txtTitle;
+        private MetroFramework.Controls.MetroTextBox txtMessage;
     }
 }
