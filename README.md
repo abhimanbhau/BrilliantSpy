@@ -49,11 +49,18 @@ Features
 24. File compression tool built-in.(Creates normal as well as protected archives)
 25. Many I forgot..... And More to come
 
+Version 2
+New Features
+* Metro UI/More Sophisticated layout.
+* New Features
+* Improved preferences menu [Interactive settings]
+* Theme and color scheme support
+
 TO-DO
 1. Manageable maximum disk space usage
 2. Choice of selecting custom audio alarm
 3. Capture images as well as video when suspect-able motion is detected
-4. More eye-candy for UI / More corporate look
+4. More eye-candy for UI / More corporate look *************************=========DONE============*****************
 5. Auto upload images to your email a/c at pre-defined time intervals
 5. Add more features
 
