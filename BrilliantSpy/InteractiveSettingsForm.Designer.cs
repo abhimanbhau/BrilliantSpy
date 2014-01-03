@@ -29,12 +29,13 @@
         private void InitializeComponent()
         {
             this.tableLayoutPanel1 = new System.Windows.Forms.TableLayoutPanel();
-            this.metroButton2 = new MetroFramework.Controls.MetroButton();
-            this.metroButton3 = new MetroFramework.Controls.MetroButton();
-            this.metroButton4 = new MetroFramework.Controls.MetroButton();
-            this.metroButton5 = new MetroFramework.Controls.MetroButton();
+            this.btnClearStorage = new MetroFramework.Controls.MetroButton();
+            this.btnChangeCredentials = new MetroFramework.Controls.MetroButton();
+            this.btnChangeMotionLevel = new MetroFramework.Controls.MetroButton();
+            this.btnChangeStorageDirectoryPath = new MetroFramework.Controls.MetroButton();
             this.tableLayoutPanel5 = new System.Windows.Forms.TableLayoutPanel();
-            this.metroButton9 = new MetroFramework.Controls.MetroButton();
+            this.btnSetColorScheme = new MetroFramework.Controls.MetroButton();
+            this.cmbColorScheme = new MetroFramework.Controls.MetroComboBox();
             this.metroLabel1 = new MetroFramework.Controls.MetroLabel();
             this.metroLabel2 = new MetroFramework.Controls.MetroLabel();
             this.metroLabel3 = new MetroFramework.Controls.MetroLabel();
@@ -46,9 +47,10 @@
             this.metroLabel9 = new MetroFramework.Controls.MetroLabel();
             this.metroLabel10 = new MetroFramework.Controls.MetroLabel();
             this.metroLabel11 = new MetroFramework.Controls.MetroLabel();
-            this.metroButton1 = new MetroFramework.Controls.MetroButton();
+            this.btnReset = new MetroFramework.Controls.MetroButton();
             this.tableLayoutPanel6 = new System.Windows.Forms.TableLayoutPanel();
-            this.metroButton10 = new MetroFramework.Controls.MetroButton();
+            this.btnSetTheme = new MetroFramework.Controls.MetroButton();
+            this.cmbTheme = new MetroFramework.Controls.MetroComboBox();
             this.txtCurrentUsage = new MetroFramework.Controls.MetroTextBox();
             this.metroToggle1 = new MetroFramework.Controls.MetroToggle();
             this.metroToggle2 = new MetroFramework.Controls.MetroToggle();
@@ -62,12 +64,12 @@
             // 
             this.tableLayoutPanel1.CellBorderStyle = System.Windows.Forms.TableLayoutPanelCellBorderStyle.Inset;
             this.tableLayoutPanel1.ColumnCount = 2;
-            this.tableLayoutPanel1.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 291F));
+            this.tableLayoutPanel1.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 251F));
             this.tableLayoutPanel1.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 100F));
-            this.tableLayoutPanel1.Controls.Add(this.metroButton2, 1, 1);
-            this.tableLayoutPanel1.Controls.Add(this.metroButton3, 1, 2);
-            this.tableLayoutPanel1.Controls.Add(this.metroButton4, 1, 3);
-            this.tableLayoutPanel1.Controls.Add(this.metroButton5, 1, 5);
+            this.tableLayoutPanel1.Controls.Add(this.btnClearStorage, 1, 1);
+            this.tableLayoutPanel1.Controls.Add(this.btnChangeCredentials, 1, 2);
+            this.tableLayoutPanel1.Controls.Add(this.btnChangeMotionLevel, 1, 3);
+            this.tableLayoutPanel1.Controls.Add(this.btnChangeStorageDirectoryPath, 1, 5);
             this.tableLayoutPanel1.Controls.Add(this.tableLayoutPanel5, 1, 8);
             this.tableLayoutPanel1.Controls.Add(this.metroLabel1, 0, 0);
             this.tableLayoutPanel1.Controls.Add(this.metroLabel2, 0, 1);
@@ -80,7 +82,7 @@
             this.tableLayoutPanel1.Controls.Add(this.metroLabel9, 0, 8);
             this.tableLayoutPanel1.Controls.Add(this.metroLabel10, 0, 9);
             this.tableLayoutPanel1.Controls.Add(this.metroLabel11, 0, 10);
-            this.tableLayoutPanel1.Controls.Add(this.metroButton1, 1, 10);
+            this.tableLayoutPanel1.Controls.Add(this.btnReset, 1, 10);
             this.tableLayoutPanel1.Controls.Add(this.tableLayoutPanel6, 1, 9);
             this.tableLayoutPanel1.Controls.Add(this.txtCurrentUsage, 1, 0);
             this.tableLayoutPanel1.Controls.Add(this.metroToggle1, 1, 4);
@@ -101,60 +103,61 @@
             this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 9.090908F));
             this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 9.090908F));
             this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 9.090907F));
-            this.tableLayoutPanel1.Size = new System.Drawing.Size(414, 387);
+            this.tableLayoutPanel1.Size = new System.Drawing.Size(414, 534);
             this.tableLayoutPanel1.TabIndex = 0;
             // 
-            // metroButton2
+            // btnClearStorage
             // 
-            this.metroButton2.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.metroButton2.Highlight = false;
-            this.metroButton2.Location = new System.Drawing.Point(298, 39);
-            this.metroButton2.Name = "metroButton2";
-            this.metroButton2.Size = new System.Drawing.Size(111, 26);
-            this.metroButton2.Style = MetroFramework.MetroColorStyle.Blue;
-            this.metroButton2.StyleManager = null;
-            this.metroButton2.TabIndex = 11;
-            this.metroButton2.Text = "btnClearStorage";
-            this.metroButton2.Theme = MetroFramework.MetroThemeStyle.Light;
+            this.btnClearStorage.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.btnClearStorage.Highlight = false;
+            this.btnClearStorage.Location = new System.Drawing.Point(258, 53);
+            this.btnClearStorage.Name = "btnClearStorage";
+            this.btnClearStorage.Size = new System.Drawing.Size(151, 40);
+            this.btnClearStorage.Style = MetroFramework.MetroColorStyle.Magenta;
+            this.btnClearStorage.StyleManager = null;
+            this.btnClearStorage.TabIndex = 11;
+            this.btnClearStorage.Text = "Clear Storage";
+            this.btnClearStorage.Theme = MetroFramework.MetroThemeStyle.Light;
+            this.btnClearStorage.Click += new System.EventHandler(this.btnClearStorage_Click);
             // 
-            // metroButton3
+            // btnChangeCredentials
             // 
-            this.metroButton3.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.metroButton3.Highlight = false;
-            this.metroButton3.Location = new System.Drawing.Point(298, 73);
-            this.metroButton3.Name = "metroButton3";
-            this.metroButton3.Size = new System.Drawing.Size(111, 26);
-            this.metroButton3.Style = MetroFramework.MetroColorStyle.Blue;
-            this.metroButton3.StyleManager = null;
-            this.metroButton3.TabIndex = 13;
-            this.metroButton3.Text = "metroButton3";
-            this.metroButton3.Theme = MetroFramework.MetroThemeStyle.Light;
+            this.btnChangeCredentials.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.btnChangeCredentials.Highlight = false;
+            this.btnChangeCredentials.Location = new System.Drawing.Point(258, 101);
+            this.btnChangeCredentials.Name = "btnChangeCredentials";
+            this.btnChangeCredentials.Size = new System.Drawing.Size(151, 40);
+            this.btnChangeCredentials.Style = MetroFramework.MetroColorStyle.Blue;
+            this.btnChangeCredentials.StyleManager = null;
+            this.btnChangeCredentials.TabIndex = 13;
+            this.btnChangeCredentials.Text = "Change";
+            this.btnChangeCredentials.Theme = MetroFramework.MetroThemeStyle.Light;
             // 
-            // metroButton4
+            // btnChangeMotionLevel
             // 
-            this.metroButton4.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.metroButton4.Highlight = false;
-            this.metroButton4.Location = new System.Drawing.Point(298, 107);
-            this.metroButton4.Name = "metroButton4";
-            this.metroButton4.Size = new System.Drawing.Size(111, 26);
-            this.metroButton4.Style = MetroFramework.MetroColorStyle.Blue;
-            this.metroButton4.StyleManager = null;
-            this.metroButton4.TabIndex = 14;
-            this.metroButton4.Text = "metroButton4";
-            this.metroButton4.Theme = MetroFramework.MetroThemeStyle.Light;
+            this.btnChangeMotionLevel.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.btnChangeMotionLevel.Highlight = false;
+            this.btnChangeMotionLevel.Location = new System.Drawing.Point(258, 149);
+            this.btnChangeMotionLevel.Name = "btnChangeMotionLevel";
+            this.btnChangeMotionLevel.Size = new System.Drawing.Size(151, 40);
+            this.btnChangeMotionLevel.Style = MetroFramework.MetroColorStyle.Blue;
+            this.btnChangeMotionLevel.StyleManager = null;
+            this.btnChangeMotionLevel.TabIndex = 14;
+            this.btnChangeMotionLevel.Text = "Change";
+            this.btnChangeMotionLevel.Theme = MetroFramework.MetroThemeStyle.Light;
             // 
-            // metroButton5
+            // btnChangeStorageDirectoryPath
             // 
-            this.metroButton5.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.metroButton5.Highlight = false;
-            this.metroButton5.Location = new System.Drawing.Point(298, 175);
-            this.metroButton5.Name = "metroButton5";
-            this.metroButton5.Size = new System.Drawing.Size(111, 26);
-            this.metroButton5.Style = MetroFramework.MetroColorStyle.Blue;
-            this.metroButton5.StyleManager = null;
-            this.metroButton5.TabIndex = 15;
-            this.metroButton5.Text = "metroButton5";
-            this.metroButton5.Theme = MetroFramework.MetroThemeStyle.Light;
+            this.btnChangeStorageDirectoryPath.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.btnChangeStorageDirectoryPath.Highlight = false;
+            this.btnChangeStorageDirectoryPath.Location = new System.Drawing.Point(258, 245);
+            this.btnChangeStorageDirectoryPath.Name = "btnChangeStorageDirectoryPath";
+            this.btnChangeStorageDirectoryPath.Size = new System.Drawing.Size(151, 40);
+            this.btnChangeStorageDirectoryPath.Style = MetroFramework.MetroColorStyle.Blue;
+            this.btnChangeStorageDirectoryPath.StyleManager = null;
+            this.btnChangeStorageDirectoryPath.TabIndex = 15;
+            this.btnChangeStorageDirectoryPath.Text = "Change";
+            this.btnChangeStorageDirectoryPath.Theme = MetroFramework.MetroThemeStyle.Light;
             // 
             // tableLayoutPanel5
             // 
@@ -162,27 +165,61 @@
             this.tableLayoutPanel5.ColumnCount = 2;
             this.tableLayoutPanel5.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 50F));
             this.tableLayoutPanel5.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 50F));
-            this.tableLayoutPanel5.Controls.Add(this.metroButton9, 1, 0);
+            this.tableLayoutPanel5.Controls.Add(this.btnSetColorScheme, 1, 0);
+            this.tableLayoutPanel5.Controls.Add(this.cmbColorScheme, 0, 0);
             this.tableLayoutPanel5.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.tableLayoutPanel5.Location = new System.Drawing.Point(298, 277);
+            this.tableLayoutPanel5.Location = new System.Drawing.Point(258, 389);
             this.tableLayoutPanel5.Name = "tableLayoutPanel5";
             this.tableLayoutPanel5.RowCount = 1;
             this.tableLayoutPanel5.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 50F));
-            this.tableLayoutPanel5.Size = new System.Drawing.Size(111, 26);
+            this.tableLayoutPanel5.Size = new System.Drawing.Size(151, 40);
             this.tableLayoutPanel5.TabIndex = 20;
             // 
-            // metroButton9
+            // btnSetColorScheme
             // 
-            this.metroButton9.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.metroButton9.Highlight = false;
-            this.metroButton9.Location = new System.Drawing.Point(59, 5);
-            this.metroButton9.Name = "metroButton9";
-            this.metroButton9.Size = new System.Drawing.Size(47, 16);
-            this.metroButton9.Style = MetroFramework.MetroColorStyle.Blue;
-            this.metroButton9.StyleManager = null;
-            this.metroButton9.TabIndex = 0;
-            this.metroButton9.Text = "metroButton9";
-            this.metroButton9.Theme = MetroFramework.MetroThemeStyle.Light;
+            this.btnSetColorScheme.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.btnSetColorScheme.Highlight = false;
+            this.btnSetColorScheme.Location = new System.Drawing.Point(79, 5);
+            this.btnSetColorScheme.Name = "btnSetColorScheme";
+            this.btnSetColorScheme.Size = new System.Drawing.Size(67, 30);
+            this.btnSetColorScheme.Style = MetroFramework.MetroColorStyle.Blue;
+            this.btnSetColorScheme.StyleManager = null;
+            this.btnSetColorScheme.TabIndex = 0;
+            this.btnSetColorScheme.Text = "Set";
+            this.btnSetColorScheme.Theme = MetroFramework.MetroThemeStyle.Light;
+            this.btnSetColorScheme.Click += new System.EventHandler(this.btnSetColorScheme_Click);
+            // 
+            // cmbColorScheme
+            // 
+            this.cmbColorScheme.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.cmbColorScheme.DrawMode = System.Windows.Forms.DrawMode.OwnerDrawFixed;
+            this.cmbColorScheme.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.cmbColorScheme.FontSize = MetroFramework.MetroLinkSize.Medium;
+            this.cmbColorScheme.FontWeight = MetroFramework.MetroLinkWeight.Regular;
+            this.cmbColorScheme.FormattingEnabled = true;
+            this.cmbColorScheme.ItemHeight = 23;
+            this.cmbColorScheme.Items.AddRange(new object[] {
+            "BLACK",
+            "WHITE",
+            "SILVER",
+            "BLUE",
+            "GREEN",
+            "LIME",
+            "TEAL",
+            "ORANGE",
+            "BROWN",
+            "PINK",
+            "MANGENTA",
+            "PURPLE",
+            "RED",
+            "YELLOW"});
+            this.cmbColorScheme.Location = new System.Drawing.Point(5, 5);
+            this.cmbColorScheme.Name = "cmbColorScheme";
+            this.cmbColorScheme.Size = new System.Drawing.Size(66, 29);
+            this.cmbColorScheme.Style = MetroFramework.MetroColorStyle.Blue;
+            this.cmbColorScheme.StyleManager = null;
+            this.cmbColorScheme.TabIndex = 1;
+            this.cmbColorScheme.Theme = MetroFramework.MetroThemeStyle.Light;
             // 
             // metroLabel1
             // 
@@ -195,7 +232,7 @@
             this.metroLabel1.LabelMode = MetroFramework.Controls.MetroLabelMode.Default;
             this.metroLabel1.Location = new System.Drawing.Point(5, 2);
             this.metroLabel1.Name = "metroLabel1";
-            this.metroLabel1.Size = new System.Drawing.Size(285, 32);
+            this.metroLabel1.Size = new System.Drawing.Size(245, 46);
             this.metroLabel1.Style = MetroFramework.MetroColorStyle.Blue;
             this.metroLabel1.StyleManager = null;
             this.metroLabel1.TabIndex = 21;
@@ -213,9 +250,9 @@
             this.metroLabel2.FontSize = MetroFramework.MetroLabelSize.Medium;
             this.metroLabel2.FontWeight = MetroFramework.MetroLabelWeight.Light;
             this.metroLabel2.LabelMode = MetroFramework.Controls.MetroLabelMode.Default;
-            this.metroLabel2.Location = new System.Drawing.Point(5, 36);
+            this.metroLabel2.Location = new System.Drawing.Point(5, 50);
             this.metroLabel2.Name = "metroLabel2";
-            this.metroLabel2.Size = new System.Drawing.Size(285, 32);
+            this.metroLabel2.Size = new System.Drawing.Size(245, 46);
             this.metroLabel2.Style = MetroFramework.MetroColorStyle.Blue;
             this.metroLabel2.StyleManager = null;
             this.metroLabel2.TabIndex = 22;
@@ -233,9 +270,9 @@
             this.metroLabel3.FontSize = MetroFramework.MetroLabelSize.Medium;
             this.metroLabel3.FontWeight = MetroFramework.MetroLabelWeight.Light;
             this.metroLabel3.LabelMode = MetroFramework.Controls.MetroLabelMode.Default;
-            this.metroLabel3.Location = new System.Drawing.Point(5, 70);
+            this.metroLabel3.Location = new System.Drawing.Point(5, 98);
             this.metroLabel3.Name = "metroLabel3";
-            this.metroLabel3.Size = new System.Drawing.Size(285, 32);
+            this.metroLabel3.Size = new System.Drawing.Size(245, 46);
             this.metroLabel3.Style = MetroFramework.MetroColorStyle.Blue;
             this.metroLabel3.StyleManager = null;
             this.metroLabel3.TabIndex = 23;
@@ -253,9 +290,9 @@
             this.metroLabel4.FontSize = MetroFramework.MetroLabelSize.Medium;
             this.metroLabel4.FontWeight = MetroFramework.MetroLabelWeight.Light;
             this.metroLabel4.LabelMode = MetroFramework.Controls.MetroLabelMode.Default;
-            this.metroLabel4.Location = new System.Drawing.Point(5, 104);
+            this.metroLabel4.Location = new System.Drawing.Point(5, 146);
             this.metroLabel4.Name = "metroLabel4";
-            this.metroLabel4.Size = new System.Drawing.Size(285, 32);
+            this.metroLabel4.Size = new System.Drawing.Size(245, 46);
             this.metroLabel4.Style = MetroFramework.MetroColorStyle.Blue;
             this.metroLabel4.StyleManager = null;
             this.metroLabel4.TabIndex = 24;
@@ -273,9 +310,9 @@
             this.metroLabel5.FontSize = MetroFramework.MetroLabelSize.Medium;
             this.metroLabel5.FontWeight = MetroFramework.MetroLabelWeight.Light;
             this.metroLabel5.LabelMode = MetroFramework.Controls.MetroLabelMode.Default;
-            this.metroLabel5.Location = new System.Drawing.Point(5, 138);
+            this.metroLabel5.Location = new System.Drawing.Point(5, 194);
             this.metroLabel5.Name = "metroLabel5";
-            this.metroLabel5.Size = new System.Drawing.Size(285, 32);
+            this.metroLabel5.Size = new System.Drawing.Size(245, 46);
             this.metroLabel5.Style = MetroFramework.MetroColorStyle.Blue;
             this.metroLabel5.StyleManager = null;
             this.metroLabel5.TabIndex = 25;
@@ -293,9 +330,9 @@
             this.metroLabel6.FontSize = MetroFramework.MetroLabelSize.Medium;
             this.metroLabel6.FontWeight = MetroFramework.MetroLabelWeight.Light;
             this.metroLabel6.LabelMode = MetroFramework.Controls.MetroLabelMode.Default;
-            this.metroLabel6.Location = new System.Drawing.Point(5, 172);
+            this.metroLabel6.Location = new System.Drawing.Point(5, 242);
             this.metroLabel6.Name = "metroLabel6";
-            this.metroLabel6.Size = new System.Drawing.Size(285, 32);
+            this.metroLabel6.Size = new System.Drawing.Size(245, 46);
             this.metroLabel6.Style = MetroFramework.MetroColorStyle.Blue;
             this.metroLabel6.StyleManager = null;
             this.metroLabel6.TabIndex = 26;
@@ -313,9 +350,9 @@
             this.metroLabel7.FontSize = MetroFramework.MetroLabelSize.Medium;
             this.metroLabel7.FontWeight = MetroFramework.MetroLabelWeight.Light;
             this.metroLabel7.LabelMode = MetroFramework.Controls.MetroLabelMode.Default;
-            this.metroLabel7.Location = new System.Drawing.Point(5, 206);
+            this.metroLabel7.Location = new System.Drawing.Point(5, 290);
             this.metroLabel7.Name = "metroLabel7";
-            this.metroLabel7.Size = new System.Drawing.Size(285, 32);
+            this.metroLabel7.Size = new System.Drawing.Size(245, 46);
             this.metroLabel7.Style = MetroFramework.MetroColorStyle.Blue;
             this.metroLabel7.StyleManager = null;
             this.metroLabel7.TabIndex = 27;
@@ -333,9 +370,9 @@
             this.metroLabel8.FontSize = MetroFramework.MetroLabelSize.Medium;
             this.metroLabel8.FontWeight = MetroFramework.MetroLabelWeight.Light;
             this.metroLabel8.LabelMode = MetroFramework.Controls.MetroLabelMode.Default;
-            this.metroLabel8.Location = new System.Drawing.Point(5, 240);
+            this.metroLabel8.Location = new System.Drawing.Point(5, 338);
             this.metroLabel8.Name = "metroLabel8";
-            this.metroLabel8.Size = new System.Drawing.Size(285, 32);
+            this.metroLabel8.Size = new System.Drawing.Size(245, 46);
             this.metroLabel8.Style = MetroFramework.MetroColorStyle.Blue;
             this.metroLabel8.StyleManager = null;
             this.metroLabel8.TabIndex = 28;
@@ -353,9 +390,9 @@
             this.metroLabel9.FontSize = MetroFramework.MetroLabelSize.Medium;
             this.metroLabel9.FontWeight = MetroFramework.MetroLabelWeight.Light;
             this.metroLabel9.LabelMode = MetroFramework.Controls.MetroLabelMode.Default;
-            this.metroLabel9.Location = new System.Drawing.Point(5, 274);
+            this.metroLabel9.Location = new System.Drawing.Point(5, 386);
             this.metroLabel9.Name = "metroLabel9";
-            this.metroLabel9.Size = new System.Drawing.Size(285, 32);
+            this.metroLabel9.Size = new System.Drawing.Size(245, 46);
             this.metroLabel9.Style = MetroFramework.MetroColorStyle.Blue;
             this.metroLabel9.StyleManager = null;
             this.metroLabel9.TabIndex = 29;
@@ -373,9 +410,9 @@
             this.metroLabel10.FontSize = MetroFramework.MetroLabelSize.Medium;
             this.metroLabel10.FontWeight = MetroFramework.MetroLabelWeight.Light;
             this.metroLabel10.LabelMode = MetroFramework.Controls.MetroLabelMode.Default;
-            this.metroLabel10.Location = new System.Drawing.Point(5, 308);
+            this.metroLabel10.Location = new System.Drawing.Point(5, 434);
             this.metroLabel10.Name = "metroLabel10";
-            this.metroLabel10.Size = new System.Drawing.Size(285, 32);
+            this.metroLabel10.Size = new System.Drawing.Size(245, 46);
             this.metroLabel10.Style = MetroFramework.MetroColorStyle.Blue;
             this.metroLabel10.StyleManager = null;
             this.metroLabel10.TabIndex = 30;
@@ -393,9 +430,9 @@
             this.metroLabel11.FontSize = MetroFramework.MetroLabelSize.Medium;
             this.metroLabel11.FontWeight = MetroFramework.MetroLabelWeight.Light;
             this.metroLabel11.LabelMode = MetroFramework.Controls.MetroLabelMode.Default;
-            this.metroLabel11.Location = new System.Drawing.Point(5, 342);
+            this.metroLabel11.Location = new System.Drawing.Point(5, 482);
             this.metroLabel11.Name = "metroLabel11";
-            this.metroLabel11.Size = new System.Drawing.Size(285, 43);
+            this.metroLabel11.Size = new System.Drawing.Size(245, 50);
             this.metroLabel11.Style = MetroFramework.MetroColorStyle.Blue;
             this.metroLabel11.StyleManager = null;
             this.metroLabel11.TabIndex = 31;
@@ -404,18 +441,19 @@
             this.metroLabel11.Theme = MetroFramework.MetroThemeStyle.Light;
             this.metroLabel11.UseStyleColors = false;
             // 
-            // metroButton1
+            // btnReset
             // 
-            this.metroButton1.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.metroButton1.Highlight = false;
-            this.metroButton1.Location = new System.Drawing.Point(298, 345);
-            this.metroButton1.Name = "metroButton1";
-            this.metroButton1.Size = new System.Drawing.Size(111, 37);
-            this.metroButton1.Style = MetroFramework.MetroColorStyle.Blue;
-            this.metroButton1.StyleManager = null;
-            this.metroButton1.TabIndex = 32;
-            this.metroButton1.Text = "metroButton1";
-            this.metroButton1.Theme = MetroFramework.MetroThemeStyle.Light;
+            this.btnReset.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.btnReset.Highlight = false;
+            this.btnReset.Location = new System.Drawing.Point(258, 485);
+            this.btnReset.Name = "btnReset";
+            this.btnReset.Size = new System.Drawing.Size(151, 44);
+            this.btnReset.Style = MetroFramework.MetroColorStyle.Blue;
+            this.btnReset.StyleManager = null;
+            this.btnReset.TabIndex = 32;
+            this.btnReset.Text = "Reset";
+            this.btnReset.Theme = MetroFramework.MetroThemeStyle.Light;
+            this.btnReset.Click += new System.EventHandler(this.btnReset_Click);
             // 
             // tableLayoutPanel6
             // 
@@ -423,45 +461,67 @@
             this.tableLayoutPanel6.ColumnCount = 2;
             this.tableLayoutPanel6.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 50F));
             this.tableLayoutPanel6.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 50F));
-            this.tableLayoutPanel6.Controls.Add(this.metroButton10, 1, 0);
+            this.tableLayoutPanel6.Controls.Add(this.btnSetTheme, 1, 0);
+            this.tableLayoutPanel6.Controls.Add(this.cmbTheme, 0, 0);
             this.tableLayoutPanel6.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.tableLayoutPanel6.Location = new System.Drawing.Point(298, 311);
+            this.tableLayoutPanel6.Location = new System.Drawing.Point(258, 437);
             this.tableLayoutPanel6.Name = "tableLayoutPanel6";
             this.tableLayoutPanel6.RowCount = 1;
             this.tableLayoutPanel6.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 50F));
-            this.tableLayoutPanel6.Size = new System.Drawing.Size(111, 26);
+            this.tableLayoutPanel6.Size = new System.Drawing.Size(151, 40);
             this.tableLayoutPanel6.TabIndex = 33;
             // 
-            // metroButton10
+            // btnSetTheme
             // 
-            this.metroButton10.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.metroButton10.Highlight = false;
-            this.metroButton10.Location = new System.Drawing.Point(59, 5);
-            this.metroButton10.Name = "metroButton10";
-            this.metroButton10.Size = new System.Drawing.Size(47, 16);
-            this.metroButton10.Style = MetroFramework.MetroColorStyle.Blue;
-            this.metroButton10.StyleManager = null;
-            this.metroButton10.TabIndex = 0;
-            this.metroButton10.Text = "metroButton10";
-            this.metroButton10.Theme = MetroFramework.MetroThemeStyle.Light;
+            this.btnSetTheme.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.btnSetTheme.Highlight = false;
+            this.btnSetTheme.Location = new System.Drawing.Point(79, 5);
+            this.btnSetTheme.Name = "btnSetTheme";
+            this.btnSetTheme.Size = new System.Drawing.Size(67, 30);
+            this.btnSetTheme.Style = MetroFramework.MetroColorStyle.Blue;
+            this.btnSetTheme.StyleManager = null;
+            this.btnSetTheme.TabIndex = 0;
+            this.btnSetTheme.Text = "Set";
+            this.btnSetTheme.Theme = MetroFramework.MetroThemeStyle.Light;
+            this.btnSetTheme.Click += new System.EventHandler(this.btnSetTheme_Click);
+            // 
+            // cmbTheme
+            // 
+            this.cmbTheme.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.cmbTheme.DrawMode = System.Windows.Forms.DrawMode.OwnerDrawFixed;
+            this.cmbTheme.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.cmbTheme.FontSize = MetroFramework.MetroLinkSize.Medium;
+            this.cmbTheme.FontWeight = MetroFramework.MetroLinkWeight.Regular;
+            this.cmbTheme.FormattingEnabled = true;
+            this.cmbTheme.ItemHeight = 23;
+            this.cmbTheme.Items.AddRange(new object[] {
+            "Light",
+            "Dark"});
+            this.cmbTheme.Location = new System.Drawing.Point(5, 5);
+            this.cmbTheme.Name = "cmbTheme";
+            this.cmbTheme.Size = new System.Drawing.Size(66, 29);
+            this.cmbTheme.Style = MetroFramework.MetroColorStyle.Blue;
+            this.cmbTheme.StyleManager = null;
+            this.cmbTheme.TabIndex = 1;
+            this.cmbTheme.Theme = MetroFramework.MetroThemeStyle.Light;
             // 
             // txtCurrentUsage
             // 
             this.txtCurrentUsage.CustomBackground = false;
             this.txtCurrentUsage.CustomForeColor = false;
             this.txtCurrentUsage.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.txtCurrentUsage.FontSize = MetroFramework.MetroTextBoxSize.Small;
+            this.txtCurrentUsage.FontSize = MetroFramework.MetroTextBoxSize.Tall;
             this.txtCurrentUsage.FontWeight = MetroFramework.MetroTextBoxWeight.Regular;
-            this.txtCurrentUsage.Location = new System.Drawing.Point(298, 5);
+            this.txtCurrentUsage.Location = new System.Drawing.Point(258, 5);
             this.txtCurrentUsage.Multiline = false;
             this.txtCurrentUsage.Name = "txtCurrentUsage";
             this.txtCurrentUsage.SelectedText = "";
-            this.txtCurrentUsage.Size = new System.Drawing.Size(111, 26);
+            this.txtCurrentUsage.Size = new System.Drawing.Size(151, 40);
             this.txtCurrentUsage.Style = MetroFramework.MetroColorStyle.Blue;
             this.txtCurrentUsage.StyleManager = null;
             this.txtCurrentUsage.TabIndex = 34;
             this.txtCurrentUsage.Theme = MetroFramework.MetroThemeStyle.Light;
-            this.txtCurrentUsage.UseStyleColors = false;
+            this.txtCurrentUsage.UseStyleColors = true;
             // 
             // metroToggle1
             // 
@@ -471,9 +531,9 @@
             this.metroToggle1.Dock = System.Windows.Forms.DockStyle.Fill;
             this.metroToggle1.FontSize = MetroFramework.MetroLinkSize.Small;
             this.metroToggle1.FontWeight = MetroFramework.MetroLinkWeight.Regular;
-            this.metroToggle1.Location = new System.Drawing.Point(298, 141);
+            this.metroToggle1.Location = new System.Drawing.Point(258, 197);
             this.metroToggle1.Name = "metroToggle1";
-            this.metroToggle1.Size = new System.Drawing.Size(111, 26);
+            this.metroToggle1.Size = new System.Drawing.Size(151, 40);
             this.metroToggle1.Style = MetroFramework.MetroColorStyle.Blue;
             this.metroToggle1.StyleManager = null;
             this.metroToggle1.TabIndex = 35;
@@ -490,9 +550,9 @@
             this.metroToggle2.Dock = System.Windows.Forms.DockStyle.Fill;
             this.metroToggle2.FontSize = MetroFramework.MetroLinkSize.Small;
             this.metroToggle2.FontWeight = MetroFramework.MetroLinkWeight.Regular;
-            this.metroToggle2.Location = new System.Drawing.Point(298, 209);
+            this.metroToggle2.Location = new System.Drawing.Point(258, 293);
             this.metroToggle2.Name = "metroToggle2";
-            this.metroToggle2.Size = new System.Drawing.Size(111, 26);
+            this.metroToggle2.Size = new System.Drawing.Size(151, 40);
             this.metroToggle2.Style = MetroFramework.MetroColorStyle.Blue;
             this.metroToggle2.StyleManager = null;
             this.metroToggle2.TabIndex = 36;
@@ -509,9 +569,9 @@
             this.metroToggle3.Dock = System.Windows.Forms.DockStyle.Fill;
             this.metroToggle3.FontSize = MetroFramework.MetroLinkSize.Small;
             this.metroToggle3.FontWeight = MetroFramework.MetroLinkWeight.Regular;
-            this.metroToggle3.Location = new System.Drawing.Point(298, 243);
+            this.metroToggle3.Location = new System.Drawing.Point(258, 341);
             this.metroToggle3.Name = "metroToggle3";
-            this.metroToggle3.Size = new System.Drawing.Size(111, 26);
+            this.metroToggle3.Size = new System.Drawing.Size(151, 40);
             this.metroToggle3.Style = MetroFramework.MetroColorStyle.Blue;
             this.metroToggle3.StyleManager = null;
             this.metroToggle3.TabIndex = 37;
@@ -524,7 +584,7 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(454, 467);
+            this.ClientSize = new System.Drawing.Size(454, 614);
             this.Controls.Add(this.tableLayoutPanel1);
             this.Location = new System.Drawing.Point(0, 0);
             this.MaximizeBox = false;
@@ -547,10 +607,10 @@
         #endregion
 
         private System.Windows.Forms.TableLayoutPanel tableLayoutPanel1;
-        private MetroFramework.Controls.MetroButton metroButton2;
-        private MetroFramework.Controls.MetroButton metroButton3;
-        private MetroFramework.Controls.MetroButton metroButton4;
-        private MetroFramework.Controls.MetroButton metroButton5;
+        private MetroFramework.Controls.MetroButton btnClearStorage;
+        private MetroFramework.Controls.MetroButton btnChangeCredentials;
+        private MetroFramework.Controls.MetroButton btnChangeMotionLevel;
+        private MetroFramework.Controls.MetroButton btnChangeStorageDirectoryPath;
         private System.Windows.Forms.TableLayoutPanel tableLayoutPanel5;
         private MetroFramework.Controls.MetroLabel metroLabel1;
         private MetroFramework.Controls.MetroLabel metroLabel2;
@@ -563,13 +623,15 @@
         private MetroFramework.Controls.MetroLabel metroLabel9;
         private MetroFramework.Controls.MetroLabel metroLabel10;
         private MetroFramework.Controls.MetroLabel metroLabel11;
-        private MetroFramework.Controls.MetroButton metroButton1;
+        private MetroFramework.Controls.MetroButton btnReset;
         private System.Windows.Forms.TableLayoutPanel tableLayoutPanel6;
-        private MetroFramework.Controls.MetroButton metroButton9;
-        private MetroFramework.Controls.MetroButton metroButton10;
+        private MetroFramework.Controls.MetroButton btnSetColorScheme;
+        private MetroFramework.Controls.MetroButton btnSetTheme;
         private MetroFramework.Controls.MetroTextBox txtCurrentUsage;
         private MetroFramework.Controls.MetroToggle metroToggle1;
         private MetroFramework.Controls.MetroToggle metroToggle2;
         private MetroFramework.Controls.MetroToggle metroToggle3;
+        private MetroFramework.Controls.MetroComboBox cmbColorScheme;
+        private MetroFramework.Controls.MetroComboBox cmbTheme;
     }
 }

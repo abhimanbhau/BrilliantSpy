@@ -126,6 +126,12 @@
     <Compile Include="ChangeDirectoryPath.Designer.cs">
       <DependentUpon>ChangeDirectoryPath.cs</DependentUpon>
     </Compile>
+    <Compile Include="ClearStorageDirectoriesForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ClearStorageDirectoriesForm.Designer.cs">
+      <DependentUpon>ClearStorageDirectoriesForm.cs</DependentUpon>
+    </Compile>
     <Compile Include="CompressFilesForm.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -222,6 +228,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="ChangeDirectoryPath.resx">
       <DependentUpon>ChangeDirectoryPath.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ClearStorageDirectoriesForm.resx">
+      <DependentUpon>ClearStorageDirectoriesForm.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="CompressFilesForm.resx">
       <DependentUpon>CompressFilesForm.cs</DependentUpon>
