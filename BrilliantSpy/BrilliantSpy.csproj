@@ -316,17 +316,12 @@
     <None Include="Resources\None.png" />
     <None Include="Resources\NO_Image.jpg" />
     <None Include="Resources\Abhimanbhau.JPG" />
-    <None Include="Resources\data.png" />
-    <None Include="Resources\key.png" />
-    <None Include="Resources\cloud.png" />
     <None Include="Resources\world.png" />
     <None Include="Resources\pen.png" />
-    <None Include="Resources\bubble.png" />
     <None Include="Resources\user.png" />
     <None Include="Resources\settings.png" />
     <None Include="Resources\photo.png" />
     <None Include="Resources\video.png" />
-    <None Include="Resources\camera.png" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
