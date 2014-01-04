@@ -67,7 +67,6 @@ namespace BrilliantSpy
                     fs.Close();
                     Stream requestStream = request.GetRequestStream();
                     requestStream.Write(buffer, 0, buffer.Length);
-                    requestStream.Close();
                     requestStream.Flush();
                 }
             }

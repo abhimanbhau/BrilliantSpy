@@ -196,11 +196,11 @@
     <Compile Include="SettingsForm.Designer.cs">
       <DependentUpon>SettingsForm.cs</DependentUpon>
     </Compile>
-    <Compile Include="SplashScreenForm.cs">
+    <Compile Include="SplashHubForm.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="SplashScreenForm.Designer.cs">
-      <DependentUpon>SplashScreenForm.cs</DependentUpon>
+    <Compile Include="SplashHubForm.Designer.cs">
+      <DependentUpon>SplashHubForm.cs</DependentUpon>
     </Compile>
     <Compile Include="ViewCapturedImagesForm.cs">
       <SubType>Form</SubType>
@@ -264,8 +264,8 @@
     <EmbeddedResource Include="SettingsForm.resx">
       <DependentUpon>SettingsForm.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="SplashScreenForm.resx">
-      <DependentUpon>SplashScreenForm.cs</DependentUpon>
+    <EmbeddedResource Include="SplashHubForm.resx">
+      <DependentUpon>SplashHubForm.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="ViewCapturedImagesForm.resx">
       <DependentUpon>ViewCapturedImagesForm.cs</DependentUpon>

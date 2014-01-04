@@ -31,7 +31,15 @@ namespace BrilliantSpy
             metroLabel1.Theme = Properties.Settings.Default.theme;
             metroLabel2.Theme = Properties.Settings.Default.theme;
 
-            
+            txtCurrentDirectoryPath.Style = Properties.Settings.Default.colorScheme;
+            txtNewDirectoryPath.Style = Properties.Settings.Default.colorScheme;
+            txtNewDirectoryPath.Theme = Properties.Settings.Default.theme; ;
+            txtCurrentDirectoryPath.Theme = Properties.Settings.Default.theme;
+
+            btnBrowse.Style = Properties.Settings.Default.colorScheme;
+            btnNewSet.Style = Properties.Settings.Default.colorScheme;
+            btnBrowse.Theme = Properties.Settings.Default.theme;
+            btnNewSet.Theme = Properties.Settings.Default.theme;
 
             switch (directoryToChange)
             {
@@ -80,7 +88,7 @@ namespace BrilliantSpy
                         "Read note", MessageBoxButtons.OKCancel, MessageBoxIcon.Hand) ==
                         System.Windows.Forms.DialogResult.Cancel)
                     {
-                        this.Close();
+                        break;
                     }
                     else
                     {

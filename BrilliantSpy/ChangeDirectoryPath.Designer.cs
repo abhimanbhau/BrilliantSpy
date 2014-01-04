@@ -123,7 +123,7 @@
             this.metroLabel1.Text = "Current Path";
             this.metroLabel1.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             this.metroLabel1.Theme = MetroFramework.MetroThemeStyle.Light;
-            this.metroLabel1.UseStyleColors = false;
+            this.metroLabel1.UseStyleColors = true;
             // 
             // metroLabel2
             // 
@@ -143,7 +143,7 @@
             this.metroLabel2.Text = "New Path";
             this.metroLabel2.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             this.metroLabel2.Theme = MetroFramework.MetroThemeStyle.Light;
-            this.metroLabel2.UseStyleColors = false;
+            this.metroLabel2.UseStyleColors = true;
             // 
             // txtCurrentDirectoryPath
             // 

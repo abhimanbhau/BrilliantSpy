@@ -64,7 +64,7 @@
             this.pictureBox1.Image = global::BrilliantSpy.Properties.Resources.Abhimanbhau;
             this.pictureBox1.Location = new System.Drawing.Point(3, 3);
             this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(249, 188);
+            this.pictureBox1.Size = new System.Drawing.Size(250, 188);
             this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.pictureBox1.TabIndex = 0;
             this.pictureBox1.TabStop = false;
@@ -84,14 +84,14 @@
             this.tableLayoutPanel2.Controls.Add(this.metroLabel4, 0, 3);
             this.tableLayoutPanel2.Controls.Add(this.metroLink4, 1, 3);
             this.tableLayoutPanel2.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.tableLayoutPanel2.Location = new System.Drawing.Point(258, 3);
+            this.tableLayoutPanel2.Location = new System.Drawing.Point(259, 3);
             this.tableLayoutPanel2.Name = "tableLayoutPanel2";
             this.tableLayoutPanel2.RowCount = 4;
             this.tableLayoutPanel2.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 25F));
             this.tableLayoutPanel2.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 25F));
             this.tableLayoutPanel2.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 25F));
             this.tableLayoutPanel2.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 25F));
-            this.tableLayoutPanel2.Size = new System.Drawing.Size(408, 188);
+            this.tableLayoutPanel2.Size = new System.Drawing.Size(407, 188);
             this.tableLayoutPanel2.TabIndex = 1;
             // 
             // metroLabel1
@@ -106,13 +106,13 @@
             this.metroLabel1.Location = new System.Drawing.Point(5, 2);
             this.metroLabel1.Name = "metroLabel1";
             this.metroLabel1.Size = new System.Drawing.Size(101, 44);
-            this.metroLabel1.Style = MetroFramework.MetroColorStyle.Blue;
+            this.metroLabel1.Style = MetroFramework.MetroColorStyle.Purple;
             this.metroLabel1.StyleManager = null;
             this.metroLabel1.TabIndex = 0;
             this.metroLabel1.Text = "Name";
             this.metroLabel1.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             this.metroLabel1.Theme = MetroFramework.MetroThemeStyle.Light;
-            this.metroLabel1.UseStyleColors = false;
+            this.metroLabel1.UseStyleColors = true;
             // 
             // metroLabel2
             // 
@@ -132,7 +132,7 @@
             this.metroLabel2.Text = "College";
             this.metroLabel2.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             this.metroLabel2.Theme = MetroFramework.MetroThemeStyle.Light;
-            this.metroLabel2.UseStyleColors = false;
+            this.metroLabel2.UseStyleColors = true;
             // 
             // metroLink1
             // 
@@ -143,7 +143,7 @@
             this.metroLink1.FontWeight = MetroFramework.MetroLinkWeight.Bold;
             this.metroLink1.Location = new System.Drawing.Point(114, 5);
             this.metroLink1.Name = "metroLink1";
-            this.metroLink1.Size = new System.Drawing.Size(289, 38);
+            this.metroLink1.Size = new System.Drawing.Size(288, 38);
             this.metroLink1.Style = MetroFramework.MetroColorStyle.Purple;
             this.metroLink1.StyleManager = null;
             this.metroLink1.TabIndex = 3;
@@ -161,7 +161,7 @@
             this.metroLink2.FontWeight = MetroFramework.MetroLinkWeight.Bold;
             this.metroLink2.Location = new System.Drawing.Point(114, 51);
             this.metroLink2.Name = "metroLink2";
-            this.metroLink2.Size = new System.Drawing.Size(289, 38);
+            this.metroLink2.Size = new System.Drawing.Size(288, 38);
             this.metroLink2.Style = MetroFramework.MetroColorStyle.Purple;
             this.metroLink2.StyleManager = null;
             this.metroLink2.TabIndex = 4;
@@ -188,7 +188,7 @@
             this.metroLabel3.Text = "Email-ID";
             this.metroLabel3.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             this.metroLabel3.Theme = MetroFramework.MetroThemeStyle.Light;
-            this.metroLabel3.UseStyleColors = false;
+            this.metroLabel3.UseStyleColors = true;
             // 
             // metroLink3
             // 
@@ -199,7 +199,7 @@
             this.metroLink3.FontWeight = MetroFramework.MetroLinkWeight.Bold;
             this.metroLink3.Location = new System.Drawing.Point(114, 97);
             this.metroLink3.Name = "metroLink3";
-            this.metroLink3.Size = new System.Drawing.Size(289, 38);
+            this.metroLink3.Size = new System.Drawing.Size(288, 38);
             this.metroLink3.Style = MetroFramework.MetroColorStyle.Purple;
             this.metroLink3.StyleManager = null;
             this.metroLink3.TabIndex = 6;
@@ -226,7 +226,7 @@
             this.metroLabel4.Text = "Github";
             this.metroLabel4.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             this.metroLabel4.Theme = MetroFramework.MetroThemeStyle.Light;
-            this.metroLabel4.UseStyleColors = false;
+            this.metroLabel4.UseStyleColors = true;
             // 
             // metroLink4
             // 
@@ -237,7 +237,7 @@
             this.metroLink4.FontWeight = MetroFramework.MetroLinkWeight.Bold;
             this.metroLink4.Location = new System.Drawing.Point(114, 143);
             this.metroLink4.Name = "metroLink4";
-            this.metroLink4.Size = new System.Drawing.Size(289, 40);
+            this.metroLink4.Size = new System.Drawing.Size(288, 40);
             this.metroLink4.Style = MetroFramework.MetroColorStyle.Purple;
             this.metroLink4.StyleManager = null;
             this.metroLink4.TabIndex = 8;

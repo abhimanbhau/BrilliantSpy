@@ -87,17 +87,6 @@ namespace BrilliantSpy
 
             btnSubmit.Style = Properties.Settings.Default.colorScheme;
             btnSubmit.Theme = Properties.Settings.Default.theme;
-
-            txtNewPassword.Style = Properties.Settings.Default.colorScheme;
-            txtNewUsername.Style = Properties.Settings.Default.colorScheme;
-            txtOldPassword.Style = Properties.Settings.Default.colorScheme;
-            txtOldUsername.Style = Properties.Settings.Default.colorScheme;
-            txtReverifyPassword.Style = Properties.Settings.Default.colorScheme;
-            txtNewPassword.Theme = Properties.Settings.Default.theme;
-            txtNewUsername.Theme = Properties.Settings.Default.theme;
-            txtOldPassword.Theme = Properties.Settings.Default.theme;
-            txtOldUsername.Theme = Properties.Settings.Default.theme;
-            txtReverifyPassword.Theme = Properties.Settings.Default.theme; ;
         }
     }
 }

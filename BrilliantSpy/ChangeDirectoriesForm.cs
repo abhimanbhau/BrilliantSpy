@@ -30,9 +30,11 @@ namespace BrilliantSpy
 
             cmbSelectChangeDirectory.Theme = Properties.Settings.Default.theme;
             btnChangeDirectory.Theme = Properties.Settings.Default.theme;
-
             cmbSelectChangeDirectory.Style = Properties.Settings.Default.colorScheme;
             btnChangeDirectory.Style = Properties.Settings.Default.colorScheme;
+
+            metroLabel1.Style = Properties.Settings.Default.colorScheme;
+            metroLabel1.Theme = Properties.Settings.Default.theme;
         }
 
     }

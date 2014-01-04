@@ -35,11 +35,11 @@
             this.metroLabel4 = new MetroFramework.Controls.MetroLabel();
             this.metroLabel5 = new MetroFramework.Controls.MetroLabel();
             this.btnSubmit = new MetroFramework.Controls.MetroButton();
-            this.txtOldUsername = new MetroFramework.Controls.MetroTextBox();
-            this.txtOldPassword = new MetroFramework.Controls.MetroTextBox();
-            this.txtNewUsername = new MetroFramework.Controls.MetroTextBox();
-            this.txtNewPassword = new MetroFramework.Controls.MetroTextBox();
-            this.txtReverifyPassword = new MetroFramework.Controls.MetroTextBox();
+            this.txtOldUsername = new System.Windows.Forms.TextBox();
+            this.txtOldPassword = new System.Windows.Forms.TextBox();
+            this.txtNewUsername = new System.Windows.Forms.TextBox();
+            this.txtNewPassword = new System.Windows.Forms.TextBox();
+            this.txtReverifyPassword = new System.Windows.Forms.TextBox();
             this.tableLayoutPanel1.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -91,7 +91,7 @@
             this.metroLabel1.Text = "Current Username";
             this.metroLabel1.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             this.metroLabel1.Theme = MetroFramework.MetroThemeStyle.Light;
-            this.metroLabel1.UseStyleColors = false;
+            this.metroLabel1.UseStyleColors = true;
             // 
             // metroLabel2
             // 
@@ -111,7 +111,7 @@
             this.metroLabel2.Text = "Current Password";
             this.metroLabel2.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             this.metroLabel2.Theme = MetroFramework.MetroThemeStyle.Light;
-            this.metroLabel2.UseStyleColors = false;
+            this.metroLabel2.UseStyleColors = true;
             // 
             // metroLabel3
             // 
@@ -131,7 +131,7 @@
             this.metroLabel3.Text = "New Username";
             this.metroLabel3.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             this.metroLabel3.Theme = MetroFramework.MetroThemeStyle.Light;
-            this.metroLabel3.UseStyleColors = false;
+            this.metroLabel3.UseStyleColors = true;
             // 
             // metroLabel4
             // 
@@ -151,7 +151,7 @@
             this.metroLabel4.Text = "New Password";
             this.metroLabel4.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             this.metroLabel4.Theme = MetroFramework.MetroThemeStyle.Light;
-            this.metroLabel4.UseStyleColors = false;
+            this.metroLabel4.UseStyleColors = true;
             // 
             // metroLabel5
             // 
@@ -171,7 +171,7 @@
             this.metroLabel5.Text = "Confirm Password";
             this.metroLabel5.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             this.metroLabel5.Theme = MetroFramework.MetroThemeStyle.Light;
-            this.metroLabel5.UseStyleColors = false;
+            this.metroLabel5.UseStyleColors = true;
             // 
             // btnSubmit
             // 
@@ -189,93 +189,46 @@
             // 
             // txtOldUsername
             // 
-            this.txtOldUsername.CustomBackground = false;
-            this.txtOldUsername.CustomForeColor = false;
             this.txtOldUsername.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.txtOldUsername.FontSize = MetroFramework.MetroTextBoxSize.Small;
-            this.txtOldUsername.FontWeight = MetroFramework.MetroTextBoxWeight.Regular;
             this.txtOldUsername.Location = new System.Drawing.Point(171, 5);
-            this.txtOldUsername.Multiline = false;
             this.txtOldUsername.Name = "txtOldUsername";
-            this.txtOldUsername.SelectedText = "";
-            this.txtOldUsername.Size = new System.Drawing.Size(265, 22);
-            this.txtOldUsername.Style = MetroFramework.MetroColorStyle.Blue;
-            this.txtOldUsername.StyleManager = null;
-            this.txtOldUsername.TabIndex = 28;
-            this.txtOldUsername.Theme = MetroFramework.MetroThemeStyle.Light;
-            this.txtOldUsername.UseStyleColors = true;
+            this.txtOldUsername.Size = new System.Drawing.Size(265, 20);
+            this.txtOldUsername.TabIndex = 1;
             // 
             // txtOldPassword
             // 
-            this.txtOldPassword.CustomBackground = false;
-            this.txtOldPassword.CustomForeColor = false;
             this.txtOldPassword.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.txtOldPassword.FontSize = MetroFramework.MetroTextBoxSize.Small;
-            this.txtOldPassword.FontWeight = MetroFramework.MetroTextBoxWeight.Regular;
             this.txtOldPassword.Location = new System.Drawing.Point(171, 35);
-            this.txtOldPassword.Multiline = false;
             this.txtOldPassword.Name = "txtOldPassword";
-            this.txtOldPassword.SelectedText = "";
-            this.txtOldPassword.Size = new System.Drawing.Size(265, 22);
-            this.txtOldPassword.Style = MetroFramework.MetroColorStyle.Blue;
-            this.txtOldPassword.StyleManager = null;
-            this.txtOldPassword.TabIndex = 29;
-            this.txtOldPassword.Theme = MetroFramework.MetroThemeStyle.Light;
-            this.txtOldPassword.UseStyleColors = true;
+            this.txtOldPassword.PasswordChar = '*';
+            this.txtOldPassword.Size = new System.Drawing.Size(265, 20);
+            this.txtOldPassword.TabIndex = 2;
             // 
             // txtNewUsername
             // 
-            this.txtNewUsername.CustomBackground = false;
-            this.txtNewUsername.CustomForeColor = false;
             this.txtNewUsername.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.txtNewUsername.FontSize = MetroFramework.MetroTextBoxSize.Small;
-            this.txtNewUsername.FontWeight = MetroFramework.MetroTextBoxWeight.Regular;
             this.txtNewUsername.Location = new System.Drawing.Point(171, 65);
-            this.txtNewUsername.Multiline = false;
             this.txtNewUsername.Name = "txtNewUsername";
-            this.txtNewUsername.SelectedText = "";
-            this.txtNewUsername.Size = new System.Drawing.Size(265, 22);
-            this.txtNewUsername.Style = MetroFramework.MetroColorStyle.Blue;
-            this.txtNewUsername.StyleManager = null;
-            this.txtNewUsername.TabIndex = 30;
-            this.txtNewUsername.Theme = MetroFramework.MetroThemeStyle.Light;
-            this.txtNewUsername.UseStyleColors = true;
+            this.txtNewUsername.Size = new System.Drawing.Size(265, 20);
+            this.txtNewUsername.TabIndex = 3;
             // 
             // txtNewPassword
             // 
-            this.txtNewPassword.CustomBackground = false;
-            this.txtNewPassword.CustomForeColor = false;
             this.txtNewPassword.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.txtNewPassword.FontSize = MetroFramework.MetroTextBoxSize.Small;
-            this.txtNewPassword.FontWeight = MetroFramework.MetroTextBoxWeight.Regular;
             this.txtNewPassword.Location = new System.Drawing.Point(171, 95);
-            this.txtNewPassword.Multiline = false;
             this.txtNewPassword.Name = "txtNewPassword";
-            this.txtNewPassword.SelectedText = "";
-            this.txtNewPassword.Size = new System.Drawing.Size(265, 22);
-            this.txtNewPassword.Style = MetroFramework.MetroColorStyle.Blue;
-            this.txtNewPassword.StyleManager = null;
-            this.txtNewPassword.TabIndex = 31;
-            this.txtNewPassword.Theme = MetroFramework.MetroThemeStyle.Light;
-            this.txtNewPassword.UseStyleColors = true;
+            this.txtNewPassword.PasswordChar = '*';
+            this.txtNewPassword.Size = new System.Drawing.Size(265, 20);
+            this.txtNewPassword.TabIndex = 4;
             // 
             // txtReverifyPassword
             // 
-            this.txtReverifyPassword.CustomBackground = false;
-            this.txtReverifyPassword.CustomForeColor = false;
             this.txtReverifyPassword.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.txtReverifyPassword.FontSize = MetroFramework.MetroTextBoxSize.Small;
-            this.txtReverifyPassword.FontWeight = MetroFramework.MetroTextBoxWeight.Regular;
             this.txtReverifyPassword.Location = new System.Drawing.Point(171, 125);
-            this.txtReverifyPassword.Multiline = false;
             this.txtReverifyPassword.Name = "txtReverifyPassword";
-            this.txtReverifyPassword.SelectedText = "";
-            this.txtReverifyPassword.Size = new System.Drawing.Size(265, 22);
-            this.txtReverifyPassword.Style = MetroFramework.MetroColorStyle.Blue;
-            this.txtReverifyPassword.StyleManager = null;
-            this.txtReverifyPassword.TabIndex = 32;
-            this.txtReverifyPassword.Theme = MetroFramework.MetroThemeStyle.Light;
-            this.txtReverifyPassword.UseStyleColors = true;
+            this.txtReverifyPassword.PasswordChar = '*';
+            this.txtReverifyPassword.Size = new System.Drawing.Size(265, 20);
+            this.txtReverifyPassword.TabIndex = 5;
             // 
             // ChangeCredentialsForm
             // 
@@ -308,10 +261,10 @@
         private MetroFramework.Controls.MetroLabel metroLabel4;
         private MetroFramework.Controls.MetroLabel metroLabel5;
         private MetroFramework.Controls.MetroButton btnSubmit;
-        private MetroFramework.Controls.MetroTextBox txtOldUsername;
-        private MetroFramework.Controls.MetroTextBox txtOldPassword;
-        private MetroFramework.Controls.MetroTextBox txtNewUsername;
-        private MetroFramework.Controls.MetroTextBox txtNewPassword;
-        private MetroFramework.Controls.MetroTextBox txtReverifyPassword;
+        private System.Windows.Forms.TextBox txtOldUsername;
+        private System.Windows.Forms.TextBox txtOldPassword;
+        private System.Windows.Forms.TextBox txtNewUsername;
+        private System.Windows.Forms.TextBox txtNewPassword;
+        private System.Windows.Forms.TextBox txtReverifyPassword;
     }
 }

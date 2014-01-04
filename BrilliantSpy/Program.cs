@@ -23,7 +23,7 @@ namespace BrilliantSpy
             }
             else
             {
-                SplashScreenForm form = new SplashScreenForm();
+                SplashHubForm form = new SplashHubForm();
                 Application.Run(form);
                 if (form.isLogin)
                 {
