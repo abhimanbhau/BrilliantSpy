@@ -18,7 +18,10 @@ namespace BrilliantSpy
 
         private void ClearStorageDirectoriesForm_Load(object sender, EventArgs e)
         {
-
+            this.Style = chbCompressed.Style = chbDecrypted.Style = chbEncrypted.Style
+                = chbHomeDirectory.Style = Properties.Settings.Default.colorScheme;
+            this.Theme = chbCompressed.Theme = chbDecrypted.Theme = chbEncrypted.Theme
+                = chbHomeDirectory.Theme = Properties.Settings.Default.theme;
         }
 
         private void btnClear_Click(object sender, EventArgs e)

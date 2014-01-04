@@ -39,5 +39,11 @@ namespace BrilliantSpy
             ViewLicenseForm form = new ViewLicenseForm("Metro");
             form.ShowDialog();
         }
+
+        private void OpenSourceLicenseForm_Load(object sender, EventArgs e)
+        {
+            this.Style = Properties.Settings.Default.colorScheme;
+            this.Theme = Properties.Settings.Default.theme;
+        }
     }
 }

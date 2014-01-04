@@ -25,7 +25,8 @@ namespace BrilliantSpy
 
         private void LoginPageForm_Load(object sender, EventArgs e)
         {
-            this.TopMost = true;
+            this.Style = Properties.Settings.Default.colorScheme;
+            this.Theme = Properties.Settings.Default.theme;
         }
 
         private void DoLogin()

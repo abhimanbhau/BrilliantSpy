@@ -19,6 +19,9 @@ namespace BrilliantSpy
 
         private void SelectImageFolderForm_Load(object sender, EventArgs e)
         {
+            this.Style = Properties.Settings.Default.colorScheme;
+            this.Theme = Properties.Settings.Default.theme;
+
             string[] folders = Directory.GetDirectories(Properties.Settings.Default.homeDirectory);
             if (folders.Length == 0)
             {

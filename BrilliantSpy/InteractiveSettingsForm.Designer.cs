@@ -132,6 +132,7 @@
             this.btnChangeCredentials.TabIndex = 13;
             this.btnChangeCredentials.Text = "Change";
             this.btnChangeCredentials.Theme = MetroFramework.MetroThemeStyle.Light;
+            this.btnChangeCredentials.Click += new System.EventHandler(this.btnChangeCredentials_Click);
             // 
             // btnChangeMotionLevel
             // 

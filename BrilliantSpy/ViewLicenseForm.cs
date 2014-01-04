@@ -26,6 +26,9 @@ namespace BrilliantSpy
 
         private void ViewLicenseForm_Load(object sender, EventArgs e)
         {
+            this.Style = Properties.Settings.Default.colorScheme;
+            this.Theme = Properties.Settings.Default.theme;
+
             if (license == "BrilliantSpy")
             {
                 rtbLicenseView.Text = Properties.Resources.LICENSE;

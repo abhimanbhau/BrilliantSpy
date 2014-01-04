@@ -21,6 +21,9 @@ namespace BrilliantSpy
 
         private void InteractiveSettingsForm_Load(object sender, EventArgs e)
         {
+            this.Style = Properties.Settings.Default.colorScheme;
+            this.Theme = Properties.Settings.Default.theme;
+
             if (!(Directory.Exists(Properties.Settings.Default.homeDirectory)))
             {
                 Directory.CreateDirectory(Properties.Settings.Default.homeDirectory);
@@ -153,6 +156,12 @@ namespace BrilliantSpy
             Properties.Settings.Default.Save();
             MessageBox.Show(this, "Restart to apply changes", "Success",
                 MessageBoxButtons.OK, MessageBoxIcon.Information);
+        }
+
+        private void btnChangeCredentials_Click(object sender, EventArgs e)
+        {
+            ChangeCredentialsForm form = new ChangeCredentialsForm();
+            form.ShowDialog();
         }
     }
 }

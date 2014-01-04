@@ -35,14 +35,14 @@
             // lstFolders
             // 
             this.lstFolders.FormattingEnabled = true;
-            this.lstFolders.Location = new System.Drawing.Point(23, 63);
+            this.lstFolders.Location = new System.Drawing.Point(16, 63);
             this.lstFolders.Name = "lstFolders";
             this.lstFolders.Size = new System.Drawing.Size(318, 212);
             this.lstFolders.TabIndex = 0;
             // 
             // btnSelectedFolder
             // 
-            this.btnSelectedFolder.Location = new System.Drawing.Point(155, 281);
+            this.btnSelectedFolder.Location = new System.Drawing.Point(259, 281);
             this.btnSelectedFolder.Name = "btnSelectedFolder";
             this.btnSelectedFolder.Size = new System.Drawing.Size(75, 23);
             this.btnSelectedFolder.TabIndex = 1;
@@ -54,7 +54,7 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(377, 347);
+            this.ClientSize = new System.Drawing.Size(351, 317);
             this.Controls.Add(this.btnSelectedFolder);
             this.Controls.Add(this.lstFolders);
             this.Location = new System.Drawing.Point(0, 0);

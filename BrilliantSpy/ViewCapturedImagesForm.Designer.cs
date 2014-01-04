@@ -39,9 +39,9 @@
             // btnNext
             // 
             this.btnNext.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.btnNext.Location = new System.Drawing.Point(322, 3);
+            this.btnNext.Location = new System.Drawing.Point(323, 5);
             this.btnNext.Name = "btnNext";
-            this.btnNext.Size = new System.Drawing.Size(313, 27);
+            this.btnNext.Size = new System.Drawing.Size(310, 23);
             this.btnNext.TabIndex = 5;
             this.btnNext.Text = "Next";
             this.btnNext.UseVisualStyleBackColor = true;
@@ -50,9 +50,9 @@
             // btnBack
             // 
             this.btnBack.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.btnBack.Location = new System.Drawing.Point(3, 3);
+            this.btnBack.Location = new System.Drawing.Point(5, 5);
             this.btnBack.Name = "btnBack";
-            this.btnBack.Size = new System.Drawing.Size(313, 27);
+            this.btnBack.Size = new System.Drawing.Size(310, 23);
             this.btnBack.TabIndex = 4;
             this.btnBack.Text = "Previous";
             this.btnBack.UseVisualStyleBackColor = true;
@@ -61,20 +61,21 @@
             // HistoryViewer
             // 
             this.HistoryViewer.Image = global::BrilliantSpy.Properties.Resources.NO_Image;
-            this.HistoryViewer.Location = new System.Drawing.Point(11, 10);
+            this.HistoryViewer.Location = new System.Drawing.Point(12, 67);
             this.HistoryViewer.Name = "HistoryViewer";
-            this.HistoryViewer.Size = new System.Drawing.Size(640, 480);
+            this.HistoryViewer.Size = new System.Drawing.Size(638, 480);
             this.HistoryViewer.TabIndex = 3;
             this.HistoryViewer.TabStop = false;
             // 
             // tableLayoutPanel1
             // 
+            this.tableLayoutPanel1.CellBorderStyle = System.Windows.Forms.TableLayoutPanelCellBorderStyle.Outset;
             this.tableLayoutPanel1.ColumnCount = 2;
             this.tableLayoutPanel1.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 50F));
             this.tableLayoutPanel1.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 50F));
             this.tableLayoutPanel1.Controls.Add(this.btnBack, 0, 0);
             this.tableLayoutPanel1.Controls.Add(this.btnNext, 1, 0);
-            this.tableLayoutPanel1.Location = new System.Drawing.Point(12, 496);
+            this.tableLayoutPanel1.Location = new System.Drawing.Point(12, 553);
             this.tableLayoutPanel1.Name = "tableLayoutPanel1";
             this.tableLayoutPanel1.RowCount = 1;
             this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 100F));
@@ -85,7 +86,7 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(662, 531);
+            this.ClientSize = new System.Drawing.Size(662, 609);
             this.Controls.Add(this.tableLayoutPanel1);
             this.Controls.Add(this.HistoryViewer);
             this.Location = new System.Drawing.Point(0, 0);

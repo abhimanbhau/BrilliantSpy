@@ -24,6 +24,9 @@ namespace BrilliantSpy
 
         private void ViewCapturedImagesForm_Load(object sender, EventArgs e)
         {
+            this.Style = Properties.Settings.Default.colorScheme;
+            this.Theme = Properties.Settings.Default.theme;
+
             images = Directory.GetFiles(HistoryDBPath + "\\", "*.*");
             if (images.Length != 0)
             {
@@ -44,7 +47,7 @@ namespace BrilliantSpy
 
         private void ViewCapturedImagesForm_KeyDown(object sender, KeyEventArgs e)
         {
-            if (e.KeyCode == Keys.ControlKey && e.KeyCode ==  Keys.Left)
+            if (e.KeyCode == Keys.ControlKey && e.KeyCode == Keys.Left)
             {
                 ViewPreviousPicture();
             }

@@ -33,6 +33,7 @@
             // 
             // rtbLicenseView
             // 
+            this.rtbLicenseView.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.rtbLicenseView.Dock = System.Windows.Forms.DockStyle.Fill;
             this.rtbLicenseView.Location = new System.Drawing.Point(20, 60);
             this.rtbLicenseView.Name = "rtbLicenseView";

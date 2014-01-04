@@ -127,6 +127,7 @@
             this.SizeGripStyle = System.Windows.Forms.SizeGripStyle.Hide;
             this.Style = MetroFramework.MetroColorStyle.Purple;
             this.Text = "Open Source Licenses";
+            this.Load += new System.EventHandler(this.OpenSourceLicenseForm_Load);
             this.tableLayoutPanel1.ResumeLayout(false);
             this.ResumeLayout(false);
 
