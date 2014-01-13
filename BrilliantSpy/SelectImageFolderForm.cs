@@ -43,7 +43,7 @@ namespace BrilliantSpy
             }
         }
 
-        private void btnSelectedFolder_Click(object sender, EventArgs e)
+        private void btnSelect_Click(object sender, EventArgs e)
         {
             if (lstFolders.Text.Trim() == "")
             {

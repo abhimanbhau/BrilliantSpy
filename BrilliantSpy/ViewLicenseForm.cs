@@ -39,10 +39,15 @@ namespace BrilliantSpy
                 rtbLicenseView.Text = Properties.Resources.Aforge_Net_License;
                 this.Text = "AForge.Net Computer Vision Library License";
             }
-            else
+            else if(license == "Kellerman")
             {
                 rtbLicenseView.Text = Properties.Resources.Aforge_Net_License;
                 this.Text = "Kellerman .Net Encryption Library License";
+            }
+            else
+            {
+                rtbLicenseView.Text = Properties.Resources.MetroFramework_License;
+                this.Text = "MetroFramework License";
             }
         }
     }

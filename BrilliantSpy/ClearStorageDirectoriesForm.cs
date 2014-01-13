@@ -37,6 +37,7 @@ namespace BrilliantSpy
                         == System.Windows.Forms.DialogResult.Yes)
                     {
                         DirectoryTools.deleteDirectory(Properties.Settings.Default.homeDirectory);
+                        this.Close();
                     }
                     else
                     {

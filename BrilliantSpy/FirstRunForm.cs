@@ -22,8 +22,10 @@ namespace BrilliantSpy
             + "Let's do the basic setup", "Initial setup(Recommended)",
                 MessageBoxButtons.OK, MessageBoxIcon.Information);
 
-            this.Style = metroLabel1.Style = Properties.Settings.Default.colorScheme;
-            this.Theme = metroLabel1.Theme = Properties.Settings.Default.theme;
+            this.Style = metroLabel1.Style = btnChangeCredentials.Style
+                = metroLabel1.Style = Properties.Settings.Default.colorScheme;
+            this.Theme = metroLabel1.Theme = btnChangeCredentials.Theme
+                = metroLabel1.Theme = Properties.Settings.Default.theme;
         }
 
         private void btnChangeCredentials_Click(object sender, EventArgs e)

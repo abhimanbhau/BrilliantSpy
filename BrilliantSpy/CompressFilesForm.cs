@@ -20,6 +20,11 @@ namespace BrilliantSpy
 
         private void CompressFilesForm_Load(object sender, EventArgs e)
         {
+            this.Style = metroLabel1.Style = btnBrowse.Style = btnClearList.Style
+                = btnCompressFiles.Style = Properties.Settings.Default.colorScheme;
+            this.Theme = metroLabel1.Theme = btnBrowse.Theme = btnClearList.Theme
+                = btnCompressFiles.Theme = Properties.Settings.Default.theme;
+
             this.Text = "Compress files to save disk space";
             openFileDialog.Filter = "BrilliantSpy Captured Image Files (*.bmp)|*.bmp";
             openFileDialog.InitialDirectory = Properties.Settings.Default.homeDirectory;

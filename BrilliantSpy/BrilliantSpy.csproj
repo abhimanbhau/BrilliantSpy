@@ -196,6 +196,12 @@
     <Compile Include="SettingsForm.Designer.cs">
       <DependentUpon>SettingsForm.cs</DependentUpon>
     </Compile>
+    <Compile Include="SilentModeToggleForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="SilentModeToggleForm.Designer.cs">
+      <DependentUpon>SilentModeToggleForm.cs</DependentUpon>
+    </Compile>
     <Compile Include="SplashHubForm.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -264,6 +270,9 @@
     <EmbeddedResource Include="SettingsForm.resx">
       <DependentUpon>SettingsForm.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="SilentModeToggleForm.resx">
+      <DependentUpon>SilentModeToggleForm.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="SplashHubForm.resx">
       <DependentUpon>SplashHubForm.cs</DependentUpon>
     </EmbeddedResource>
@@ -312,6 +321,8 @@
   </ItemGroup>
   <ItemGroup>
     <Content Include="Icon.ico" />
+    <None Include="Resources\megaphone.png" />
+    <None Include="Resources\MetroFramework_License.txt" />
     <None Include="Resources\shutdown.png" />
     <None Include="Resources\None.png" />
     <None Include="Resources\NO_Image.jpg" />

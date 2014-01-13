@@ -42,6 +42,7 @@
             this.compressToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.toolsToolStripMenuItem1 = new System.Windows.Forms.ToolStripMenuItem();
             this.toolsToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.silentModeToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.viewPreviousImagesToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.historyToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.highlightingAlgorithmToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
@@ -232,7 +233,7 @@
             this.preferancesToolStripMenuItem.Image = global::BrilliantSpy.Properties.Resources.settings;
             this.preferancesToolStripMenuItem.Name = "preferancesToolStripMenuItem";
             this.preferancesToolStripMenuItem.ShortcutKeys = ((System.Windows.Forms.Keys)((System.Windows.Forms.Keys.Control | System.Windows.Forms.Keys.P)));
-            this.preferancesToolStripMenuItem.Size = new System.Drawing.Size(176, 22);
+            this.preferancesToolStripMenuItem.Size = new System.Drawing.Size(182, 22);
             this.preferancesToolStripMenuItem.Text = "Preferences";
             this.preferancesToolStripMenuItem.Click += new System.EventHandler(this.preferancesToolStripMenuItem_Click);
             // 
@@ -240,7 +241,7 @@
             // 
             this.compressToolStripMenuItem.Image = global::BrilliantSpy.Properties.Resources.data;
             this.compressToolStripMenuItem.Name = "compressToolStripMenuItem";
-            this.compressToolStripMenuItem.Size = new System.Drawing.Size(176, 22);
+            this.compressToolStripMenuItem.Size = new System.Drawing.Size(182, 22);
             this.compressToolStripMenuItem.Text = "Compress";
             this.compressToolStripMenuItem.Click += new System.EventHandler(this.compressToolStripMenuItem_Click);
             // 
@@ -248,7 +249,7 @@
             // 
             this.toolsToolStripMenuItem1.Image = global::BrilliantSpy.Properties.Resources.key;
             this.toolsToolStripMenuItem1.Name = "toolsToolStripMenuItem1";
-            this.toolsToolStripMenuItem1.Size = new System.Drawing.Size(176, 22);
+            this.toolsToolStripMenuItem1.Size = new System.Drawing.Size(182, 22);
             this.toolsToolStripMenuItem1.Text = "Encrypt/Decrypt";
             this.toolsToolStripMenuItem1.Click += new System.EventHandler(this.toolsToolStripMenuItem1_Click);
             // 
@@ -257,10 +258,19 @@
             this.toolsToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
             this.toolsToolStripMenuItem1,
             this.compressToolStripMenuItem,
+            this.silentModeToolStripMenuItem,
             this.preferancesToolStripMenuItem});
             this.toolsToolStripMenuItem.Name = "toolsToolStripMenuItem";
             this.toolsToolStripMenuItem.Size = new System.Drawing.Size(48, 20);
             this.toolsToolStripMenuItem.Text = "Tools";
+            // 
+            // silentModeToolStripMenuItem
+            // 
+            this.silentModeToolStripMenuItem.Image = global::BrilliantSpy.Properties.Resources.megaphone;
+            this.silentModeToolStripMenuItem.Name = "silentModeToolStripMenuItem";
+            this.silentModeToolStripMenuItem.ShortcutKeys = ((System.Windows.Forms.Keys)((System.Windows.Forms.Keys.Control | System.Windows.Forms.Keys.M)));
+            this.silentModeToolStripMenuItem.Size = new System.Drawing.Size(182, 22);
+            this.silentModeToolStripMenuItem.Text = "Silent Mode";
             // 
             // viewPreviousImagesToolStripMenuItem
             // 
@@ -1211,6 +1221,7 @@
         private MetroFramework.Controls.MetroButton btnClear;
         private MetroFramework.Controls.MetroButton btnStopAlarm;
         private MetroFramework.Controls.MetroButton btnResetDetector;
+        private System.Windows.Forms.ToolStripMenuItem silentModeToolStripMenuItem;
 
     }
 }

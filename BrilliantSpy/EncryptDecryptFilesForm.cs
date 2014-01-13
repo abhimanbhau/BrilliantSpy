@@ -18,6 +18,13 @@ namespace BrilliantSpy
 
         private void EncryptDecryptFilesForm_Load(object sender, EventArgs e)
         {
+            this.Style = metroLabel1.Style = btnBrowse.Style = btnClearList.Style
+                = btnDecryptFiles.Style = btnEncryptFiles.Style
+                = Properties.Settings.Default.colorScheme;
+            this.Theme = metroLabel1.Theme = btnBrowse.Theme = btnClearList.Theme
+                = btnDecryptFiles.Theme = btnEncryptFiles.Theme
+                = Properties.Settings.Default.theme;
+
             openFileDialog.Filter = "BrilliantSpy Captured Image Files (*.bmp)|*.bmp";
             openFileDialog.InitialDirectory = Properties.Settings.Default.homeDirectory;
             openFileDialog.Multiselect = true;

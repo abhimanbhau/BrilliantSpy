@@ -42,8 +42,10 @@ namespace BrilliantSpy
 
         private void OpenSourceLicenseForm_Load(object sender, EventArgs e)
         {
-            this.Style = Properties.Settings.Default.colorScheme;
-            this.Theme = Properties.Settings.Default.theme;
+            this.Style = btnAForge.Style = btnBrilliantSpy.Style = btnKellerman.Style
+                = btnMetroFramework.Style = Properties.Settings.Default.colorScheme;
+            this.Theme = btnAForge.Theme = btnBrilliantSpy.Theme = btnKellerman.Theme
+                = btnMetroFramework.Theme = Properties.Settings.Default.theme;
         }
     }
 }

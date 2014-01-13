@@ -176,7 +176,7 @@
             this.metroLabel1.Text = "Password";
             this.metroLabel1.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             this.metroLabel1.Theme = MetroFramework.MetroThemeStyle.Light;
-            this.metroLabel1.UseStyleColors = false;
+            this.metroLabel1.UseStyleColors = true;
             // 
             // EncryptDecryptFilesForm
             // 

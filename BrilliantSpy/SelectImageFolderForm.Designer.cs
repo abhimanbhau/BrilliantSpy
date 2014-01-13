@@ -29,7 +29,7 @@
         private void InitializeComponent()
         {
             this.lstFolders = new System.Windows.Forms.ListBox();
-            this.btnSelectedFolder = new System.Windows.Forms.Button();
+            this.btnSelect = new MetroFramework.Controls.MetroButton();
             this.SuspendLayout();
             // 
             // lstFolders
@@ -40,22 +40,25 @@
             this.lstFolders.Size = new System.Drawing.Size(318, 212);
             this.lstFolders.TabIndex = 0;
             // 
-            // btnSelectedFolder
+            // btnSelect
             // 
-            this.btnSelectedFolder.Location = new System.Drawing.Point(259, 281);
-            this.btnSelectedFolder.Name = "btnSelectedFolder";
-            this.btnSelectedFolder.Size = new System.Drawing.Size(75, 23);
-            this.btnSelectedFolder.TabIndex = 1;
-            this.btnSelectedFolder.Text = "Select";
-            this.btnSelectedFolder.UseVisualStyleBackColor = true;
-            this.btnSelectedFolder.Click += new System.EventHandler(this.btnSelectedFolder_Click);
+            this.btnSelect.Highlight = false;
+            this.btnSelect.Location = new System.Drawing.Point(259, 281);
+            this.btnSelect.Name = "btnSelect";
+            this.btnSelect.Size = new System.Drawing.Size(75, 23);
+            this.btnSelect.Style = MetroFramework.MetroColorStyle.Blue;
+            this.btnSelect.StyleManager = null;
+            this.btnSelect.TabIndex = 1;
+            this.btnSelect.Text = "Select";
+            this.btnSelect.Theme = MetroFramework.MetroThemeStyle.Light;
+            this.btnSelect.Click += new System.EventHandler(this.btnSelect_Click);
             // 
             // SelectImageFolderForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(351, 317);
-            this.Controls.Add(this.btnSelectedFolder);
+            this.Controls.Add(this.btnSelect);
             this.Controls.Add(this.lstFolders);
             this.Location = new System.Drawing.Point(0, 0);
             this.MaximizeBox = false;
@@ -73,6 +76,6 @@
         #endregion
 
         private System.Windows.Forms.ListBox lstFolders;
-        private System.Windows.Forms.Button btnSelectedFolder;
+        private MetroFramework.Controls.MetroButton btnSelect;
     }
 }

@@ -35,16 +35,6 @@ namespace BrilliantSpy
 
         }
 
-        private void btnNext_Click(object sender, EventArgs e)
-        {
-            ViewNextPicture();
-        }
-
-        private void btnBack_Click(object sender, EventArgs e)
-        {
-            ViewPreviousPicture();
-        }
-
         private void ViewCapturedImagesForm_KeyDown(object sender, KeyEventArgs e)
         {
             if (e.KeyCode == Keys.ControlKey && e.KeyCode == Keys.Left)
@@ -102,6 +92,16 @@ namespace BrilliantSpy
             {
                 this.Close();
             }
+        }
+
+        private void btnPrevious_Click(object sender, EventArgs e)
+        {
+            ViewPreviousPicture();
+        }
+
+        private void btnNext_Click_1(object sender, EventArgs e)
+        {
+            ViewNextPicture();
         }
     }
 }

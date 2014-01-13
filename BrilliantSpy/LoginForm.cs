@@ -25,8 +25,11 @@ namespace BrilliantSpy
 
         private void LoginPageForm_Load(object sender, EventArgs e)
         {
-            this.Style = Properties.Settings.Default.colorScheme;
-            this.Theme = Properties.Settings.Default.theme;
+            this.FocusMe();
+            this.Style = metroLabel1.Style = metroLabel2.Style
+                = Properties.Settings.Default.colorScheme;
+            this.Theme = metroLabel1.Theme = metroLabel2.Theme 
+                = Properties.Settings.Default.theme;
         }
 
         private void DoLogin()
