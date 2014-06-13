@@ -18,8 +18,9 @@ namespace BrilliantSpy
 {
     public partial class MultiCamWindowForm : Form
     {
+        bool cam1FullScreen;
         string HistoryDBSavePath = Properties.Settings.Default.homeDirectory +
-            @"\" + DateTime.UtcNow.ToShortDateString() + @"\";
+            @"\" + DateTime.UtcNow.ToShortDateString();
         VideoCaptureDevice videoSource1, videoSource2, videoSource3, videoSource4;
         MotionDetector detector1, detector2, detector3, detector4;
         SoundPlayer sound;
@@ -32,15 +33,15 @@ namespace BrilliantSpy
         public MultiCamWindowForm()
         {
             InitializeComponent();
-            if (Directory.Exists(HistoryDBSavePath + "\\"))
+            if (Directory.Exists(HistoryDBSavePath))
             {
-                files = Directory.GetFiles(HistoryDBSavePath + "\\");
+                files = Directory.GetFiles(HistoryDBSavePath);
             }
 
             else
             {
-                Directory.CreateDirectory(HistoryDBSavePath + "\\");
-                files = Directory.GetFiles(HistoryDBSavePath + "\\");
+                Directory.CreateDirectory(HistoryDBSavePath);
+                files = Directory.GetFiles(HistoryDBSavePath);
             }
 
             counter = files.Length + 1;
@@ -1000,6 +1001,23 @@ namespace BrilliantSpy
         {
             resetMotionDetectors();
             resetStatusColorMotionText();
+        }
+
+        private void videoSourcePlayer1_MouseDoubleClick(object sender, MouseEventArgs e)
+        {
+            if (cam1FullScreen)
+            {
+                videoSourcePlayer1.Size = new Size(434, 309);
+                videoSourcePlayer1.SetBounds(0, 0, 434, 309);
+                Refresh();
+                cam1FullScreen = !cam1FullScreen;
+            }
+            else
+            {
+                videoSourcePlayer1.Size = new Size(651, 464);
+                videoSourcePlayer1.SetBounds(0, 0, 651, 464);
+                Refresh();
+            }
         }
     }
 }

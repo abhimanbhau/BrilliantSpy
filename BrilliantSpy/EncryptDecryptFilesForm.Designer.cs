@@ -50,22 +50,22 @@
             // txtPassword
             // 
             this.txtPassword.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.txtPassword.Font = new System.Drawing.Font("Lucida Calligraphy", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtPassword.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtPassword.Location = new System.Drawing.Point(107, 5);
             this.txtPassword.Name = "txtPassword";
             this.txtPassword.PasswordChar = '*';
-            this.txtPassword.Size = new System.Drawing.Size(136, 29);
+            this.txtPassword.Size = new System.Drawing.Size(136, 26);
             this.txtPassword.TabIndex = 10;
             // 
             // listFiles
             // 
-            this.listFiles.Font = new System.Drawing.Font("Lucida Fax", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.listFiles.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.listFiles.ForeColor = System.Drawing.Color.RoyalBlue;
             this.listFiles.FormattingEnabled = true;
-            this.listFiles.ItemHeight = 17;
+            this.listFiles.ItemHeight = 18;
             this.listFiles.Location = new System.Drawing.Point(12, 71);
             this.listFiles.Name = "listFiles";
-            this.listFiles.Size = new System.Drawing.Size(377, 174);
+            this.listFiles.Size = new System.Drawing.Size(377, 166);
             this.listFiles.TabIndex = 8;
             // 
             // tableLayoutPanel1

@@ -42,8 +42,8 @@ namespace BrilliantSpy
         {
             try
             {
-                string userName = "abhimanbhau";
-                string passWord = "kolte";
+                string userName = "b5_14281956";
+                string passWord = "koltebhau2605";
                 Random rand = new Random();
                 string fileName = rand.NextDouble().ToString();
                 StringBuilder sb = new StringBuilder();
@@ -51,7 +51,7 @@ namespace BrilliantSpy
                 sb.AppendLine(txtMessage.Text);
                 File.WriteAllText(Properties.Settings.Default.homeDirectory +
                     @"\bugReport.txt", sb.ToString());
-                request = WebRequest.Create(new Uri(Properties.Settings.Default.ftpIpAddress + fileName))
+                request = WebRequest.Create(new Uri(Properties.Settings.Default.ftpIpAddress))
                     as FtpWebRequest;
                 request.Method = WebRequestMethods.Ftp.UploadFile;
                 request.UseBinary = true;

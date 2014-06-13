@@ -142,6 +142,7 @@
             this.videoSourcePlayer1.TabIndex = 0;
             this.videoSourcePlayer1.Text = "videoSourcePlayer1";
             this.videoSourcePlayer1.VideoSource = null;
+            this.videoSourcePlayer1.MouseDoubleClick += new System.Windows.Forms.MouseEventHandler(this.videoSourcePlayer1_MouseDoubleClick);
             // 
             // videoSourcePlayer4
             // 
@@ -702,84 +703,84 @@
             // txtDetectorLevel1
             // 
             this.txtDetectorLevel1.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.txtDetectorLevel1.Font = new System.Drawing.Font("Lucida Calligraphy", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtDetectorLevel1.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtDetectorLevel1.Location = new System.Drawing.Point(138, 6);
             this.txtDetectorLevel1.Name = "txtDetectorLevel1";
             this.txtDetectorLevel1.ReadOnly = true;
-            this.txtDetectorLevel1.Size = new System.Drawing.Size(66, 29);
+            this.txtDetectorLevel1.Size = new System.Drawing.Size(66, 26);
             this.txtDetectorLevel1.TabIndex = 3;
             // 
             // txtDetectorLevel2
             // 
             this.txtDetectorLevel2.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.txtDetectorLevel2.Font = new System.Drawing.Font("Lucida Calligraphy", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtDetectorLevel2.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtDetectorLevel2.Location = new System.Drawing.Point(138, 43);
             this.txtDetectorLevel2.Name = "txtDetectorLevel2";
             this.txtDetectorLevel2.ReadOnly = true;
-            this.txtDetectorLevel2.Size = new System.Drawing.Size(66, 29);
+            this.txtDetectorLevel2.Size = new System.Drawing.Size(66, 26);
             this.txtDetectorLevel2.TabIndex = 8;
             // 
             // txtDetectorLevel3
             // 
             this.txtDetectorLevel3.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.txtDetectorLevel3.Font = new System.Drawing.Font("Lucida Calligraphy", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtDetectorLevel3.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtDetectorLevel3.Location = new System.Drawing.Point(138, 80);
             this.txtDetectorLevel3.Name = "txtDetectorLevel3";
             this.txtDetectorLevel3.ReadOnly = true;
-            this.txtDetectorLevel3.Size = new System.Drawing.Size(66, 29);
+            this.txtDetectorLevel3.Size = new System.Drawing.Size(66, 26);
             this.txtDetectorLevel3.TabIndex = 9;
             // 
             // txtDetectorLevel4
             // 
             this.txtDetectorLevel4.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.txtDetectorLevel4.Font = new System.Drawing.Font("Lucida Calligraphy", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtDetectorLevel4.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtDetectorLevel4.Location = new System.Drawing.Point(138, 117);
             this.txtDetectorLevel4.Name = "txtDetectorLevel4";
             this.txtDetectorLevel4.ReadOnly = true;
-            this.txtDetectorLevel4.Size = new System.Drawing.Size(66, 29);
+            this.txtDetectorLevel4.Size = new System.Drawing.Size(66, 26);
             this.txtDetectorLevel4.TabIndex = 10;
             // 
             // txtMotionLevel1
             // 
             this.txtMotionLevel1.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.txtMotionLevel1.Font = new System.Drawing.Font("Lucida Calligraphy", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtMotionLevel1.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtMotionLevel1.Location = new System.Drawing.Point(213, 6);
             this.txtMotionLevel1.Name = "txtMotionLevel1";
             this.txtMotionLevel1.ReadOnly = true;
-            this.txtMotionLevel1.Size = new System.Drawing.Size(66, 29);
+            this.txtMotionLevel1.Size = new System.Drawing.Size(66, 26);
             this.txtMotionLevel1.TabIndex = 11;
             this.txtMotionLevel1.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             // 
             // txtMotionLevel2
             // 
             this.txtMotionLevel2.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.txtMotionLevel2.Font = new System.Drawing.Font("Lucida Calligraphy", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtMotionLevel2.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtMotionLevel2.Location = new System.Drawing.Point(213, 43);
             this.txtMotionLevel2.Name = "txtMotionLevel2";
             this.txtMotionLevel2.ReadOnly = true;
-            this.txtMotionLevel2.Size = new System.Drawing.Size(66, 29);
+            this.txtMotionLevel2.Size = new System.Drawing.Size(66, 26);
             this.txtMotionLevel2.TabIndex = 12;
             this.txtMotionLevel2.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             // 
             // txtMotionLevel3
             // 
             this.txtMotionLevel3.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.txtMotionLevel3.Font = new System.Drawing.Font("Lucida Calligraphy", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtMotionLevel3.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtMotionLevel3.Location = new System.Drawing.Point(213, 80);
             this.txtMotionLevel3.Name = "txtMotionLevel3";
             this.txtMotionLevel3.ReadOnly = true;
-            this.txtMotionLevel3.Size = new System.Drawing.Size(66, 29);
+            this.txtMotionLevel3.Size = new System.Drawing.Size(66, 26);
             this.txtMotionLevel3.TabIndex = 13;
             this.txtMotionLevel3.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             // 
             // txtMotionLevel4
             // 
             this.txtMotionLevel4.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.txtMotionLevel4.Font = new System.Drawing.Font("Lucida Calligraphy", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtMotionLevel4.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtMotionLevel4.Location = new System.Drawing.Point(213, 117);
             this.txtMotionLevel4.Name = "txtMotionLevel4";
             this.txtMotionLevel4.ReadOnly = true;
-            this.txtMotionLevel4.Size = new System.Drawing.Size(66, 29);
+            this.txtMotionLevel4.Size = new System.Drawing.Size(66, 26);
             this.txtMotionLevel4.TabIndex = 14;
             this.txtMotionLevel4.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             // 
